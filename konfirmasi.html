@@ -2,17 +2,17 @@
 <html lang="en">
 
 
-<!-- Mirrored from demo.dashboardpack.com/architectui-html-pro/components-scrollable-elements.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 Feb 2021 08:04:09 GMT -->
+<!-- Mirrored from demo.dashboardpack.com/architectui-html-pro/components-tabs.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 Feb 2021 08:04:05 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Scrollable Elements - Add scrolling areas to any elements with custom scrollbars or default browser ones.</title>
+    <title>Tabs - Tabs are used to split content between multiple sections. Wide variety available.</title>
     <meta name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
-    <meta name="description" content="Add scrolling areas to any elements with custom scrollbars or default browser ones.">
+    <meta name="description" content="Tabs are used to split content between multiple sections. Wide variety available.">
 
     <!-- Disable tap highlight on IE -->
     <meta name="msapplication-tap-highlight" content="no">
@@ -1400,22 +1400,22 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li     
+                                <li  class="mm-active"     
                                       
                                       
-                                     class="mm-active"   
+                                      
                                       >
                                     <a href="#">
                                         <i class="metismenu-icon pe-7s-car"></i> Components
                                         <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                     </a>
-                                    <ul     
+                                    <ul  class="mm-show"     
                                           
                                           
-                                         class="mm-show"   
+                                          
                                           >
                                         <li>
-                                            <a href="components-tabs.html" >
+                                            <a href="components-tabs.html"  class="mm-active" >
                                                 <i class="metismenu-icon"></i>Tabs
                                             </a>
                                         </li>
@@ -1470,7 +1470,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="components-scrollable-elements.html"  class="mm-active" >
+                                            <a href="components-scrollable-elements.html" >
                                                 <i class="metismenu-icon"></i>Scrollable
                                             </a>
                                         </li>
@@ -1649,311 +1649,622 @@
                     </div>
                 </div>    <div class="app-main__outer">
                     <div class="app-main__inner">
-                        <div class="app-page-title">
-                            <div class="page-title-wrapper">
-                                <div class="page-title-heading">
-                                    <div class="page-title-icon">
-                                        <i class="pe-7s-radio icon-gradient bg-strong-bliss"></i>
-                                    </div>
-                                    <div>Scrollable Elements
-                                        <div class="page-title-subheading">Add scrolling areas to any elements with custom scrollbars or default browser ones.</div>
-                                    </div>
-                                </div>
-                                <div class="page-title-actions">
-                                    <button type="button" data-toggle="tooltip" title="Example Tooltip" data-placement="bottom"
-                                        class="btn-shadow mr-3 btn btn-dark">
-                                        <i class="fa fa-star"></i>
-                                    </button>
-                                    <div class="d-inline-block dropdown">
-                                        <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-shadow dropdown-toggle btn btn-info">
-                                            <span class="btn-icon-wrapper pr-2 opacity-7">
-                                                <i class="fa fa-business-time fa-w-20"></i>
-                                            </span>
-                                            Buttons
-                                        </button>
-                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
-                                            <ul class="nav flex-column">
-                                                <li class="nav-item">
-                                                    <a class="nav-link">
-                                                        <i class="nav-link-icon lnr-inbox"></i>
-                                                        <span> Inbox</span>
-                                                        <div class="ml-auto badge badge-pill badge-secondary">86</div>
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link">
-                                                        <i class="nav-link-icon lnr-book"></i>
-                                                        <span> Book</span>
-                                                        <div class="ml-auto badge badge-pill badge-danger">5</div>
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link">
-                                                        <i class="nav-link-icon lnr-picture"></i>
-                                                        <span> Picture</span>
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a disabled class="nav-link disabled">
-                                                        <i class="nav-link-icon lnr-file-empty"></i>
-                                                        <span> File Disabled</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
+                                   <ul class="body-tabs body-tabs-layout tabs-animated body-tabs-animated nav">
+                            <li class="nav-item">
+                                <a role="tab" class="nav-link active" id="tab-0" data-toggle="tab" href="#tab-content-0">
+                                    <span>Konfirmasi Postingan</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a role="tab" class="nav-link" id="tab-1" data-toggle="tab" href="#tab-content-1">
+                                    <span>Konfirmasi Pembayaran</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a role="tab" class="nav-link" id="tab-2" data-toggle="tab" href="#tab-content-2">
+                                    <span>Konfirmasi Donasi</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane tabs-animation fade show active" id="tab-content-0" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="main-card mb-3 card">
+                                            <div class="card-header"><i class="header-icon lnr-license icon-gradient bg-plum-plate"> </i>Header with Tabs
+                                                <div class="btn-actions-pane-right">
+                                                    <div role="group" class="btn-group-sm nav btn-group">
+                                                        <a data-toggle="tab" href="#tab-eg1-0" class="btn-shadow active btn btn-primary">Tab 1</a>
+                                                        <a data-toggle="tab" href="#tab-eg1-1" class="btn-shadow  btn btn-primary">Tab 2</a>
+                                                        <a data-toggle="tab" href="#tab-eg1-2" class="btn-shadow  btn btn-primary">Tab 3</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="tab-content">
+                                                    <div class="tab-pane active" id="tab-eg1-0" role="tabpanel"><p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                                                        software like Aldus PageMaker
+                                                        including versions of Lorem Ipsum.</p></div>
+                                                    <div class="tab-pane" id="tab-eg1-1" role="tabpanel"><p>Like Aldus PageMaker including versions of Lorem. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                                                        essentially unchanged. </p></div>
+                                                    <div class="tab-pane" id="tab-eg1-2" role="tabpanel"><p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                                        type specimen book. It has
+                                                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p></div>
+                                                </div>
+                                            </div>
+                                            <div class="d-block text-right card-footer">
+                                                <a href="javascript:void(0);" class="btn-wide btn btn-success">Save</a>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>    </div>
-                        </div>            <div class="row">
-                            <div class="col-lg-6">
-                                <div class="main-card mb-3 card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Medium Scrollable Area</h5>
-                                        <div class="scroll-area-md">
-                                            <div class="scrollbar-container ps--active-y"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sodales ullamcorper vehicula. Duis placerat quam porta lorem lobortis, sit amet sodales mauris
-                                                finibus. Donec posuere diam at volutpat viverra. Cras fringilla auctor augue sed congue. Maecenas mollis quis enim quis egestas. In sollicitudin mi a pretium varius. Integer eleifend sodales pharetra. Nullam vitae
-                                                libero sem. Nulla et eros congue, tincidunt ante eu, tincidunt eros. Donec nisl purus, convallis a hendrerit ut, eleifend in lectus. Proin luctus dignissim lacus, in laoreet arcu eleifend non. Quisque viverra ipsum
-                                                a massa porta convallis. Donec tincidunt imperdiet purus, interdum elementum ante commodo a. Quisque pharetra arcu sapien, vel ornare magna sollicitudin quis.</p>
-                                                <p>Nunc congue magna eget eros blandit, eu viverra magna semper. Nullam in diam a metus dictum consequat. Quisque ultricies, ipsum non euismod semper, velit felis lacinia nibh, et finibus quam leo vitae nisi.
-                                                    Maecenas interdum diam quis risus bibendum, eu fermentum est pharetra. In dictum at enim pretium bibendum. Praesent efficitur iaculis dolor in sodales. Morbi maximus in ipsum in malesuada. Proin semper lacus
-                                                    tempor magna aliquam, sed aliquam dui scelerisque. Donec nisi nulla, rhoncus a tristique eget, ultrices vitae dolor. Ut id urna vitae ante tincidunt pharetra at non metus. Nunc in suscipit nulla. Sed vitae leo
-                                                    vulputate, euismod tortor vel, aliquet velit. Curabitur eget tincidunt elit. Nam et ligula finibus, eleifend velit et, commodo quam. Praesent non libero velit.</p>
-                                                <p>Nunc congue magna eget eros blandit, eu viverra magna semper. Nullam in diam a metus dictum consequat. Quisque ultricies, ipsum non euismod semper, velit felis lacinia nibh, et finibus quam leo vitae nisi.
-                                                    Maecenas interdum diam quis risus bibendum, eu fermentum est pharetra. In dictum at enim pretium bibendum. Praesent efficitur iaculis dolor in sodales. Morbi maximus in ipsum in malesuada. Proin semper lacus
-                                                    tempor magna aliquam, sed aliquam dui scelerisque. Donec nisi nulla, rhoncus a tristique eget, ultrices vitae dolor. Ut id urna vitae ante tincidunt pharetra at non metus. Nunc in suscipit nulla. Sed vitae leo
-                                                    vulputate, euismod tortor vel, aliquet velit. Curabitur eget tincidunt elit. Nam et ligula finibus, eleifend velit et, commodo quam. Praesent non libero velit.</p>
-                                                <p>Nunc congue magna eget eros blandit, eu viverra magna semper. Nullam in diam a metus dictum consequat. Quisque ultricies, ipsum non euismod semper, velit felis lacinia nibh, et finibus quam leo vitae nisi.
-                                                    Maecenas interdum diam quis risus bibendum, eu fermentum est pharetra. In dictum at enim pretium bibendum. Praesent efficitur iaculis dolor in sodales. Morbi maximus in ipsum in malesuada. Proin semper lacus
-                                                    tempor magna aliquam, sed aliquam dui scelerisque. Donec nisi nulla, rhoncus a tristique eget, ultrices vitae dolor. Ut id urna vitae ante tincidunt pharetra at non metus. Nunc in suscipit nulla. Sed vitae leo
-                                                    vulputate, euismod tortor vel, aliquet velit. Curabitur eget tincidunt elit. Nam et ligula finibus, eleifend velit et, commodo quam. Praesent non libero velit.</p>
+                                        <div class="main-card mb-3 card">
+                                            <div class="card-header"><i class="header-icon lnr-license icon-gradient bg-plum-plate"> </i>Header Tabs Buttons
+                                                <div class="btn-actions-pane-right">
+                                                    <div class="nav">
+                                                        <a data-toggle="tab" href="#tab-eg2-0" class="btn-pill btn-wide active btn btn-outline-alternate btn-sm">Tab 1</a>
+                                                        <a data-toggle="tab" href="#tab-eg2-1" class="btn-pill btn-wide mr-1 ml-1  btn btn-outline-alternate btn-sm">Tab 2</a>
+                                                        <a data-toggle="tab" href="#tab-eg2-2" class="btn-pill btn-wide  btn btn-outline-alternate btn-sm">Tab 3</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="tab-content">
+                                                    <div class="tab-pane active" id="tab-eg2-0" role="tabpanel">
+                                                        <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                                                        software like Aldus PageMaker
+                                                        including versions of Lorem Ipsum.</p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-eg2-1" role="tabpanel">
+                                                        <p>Like Aldus PageMaker including versions of Lorem. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                                                        essentially unchanged. </p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-eg2-2" role="tabpanel">
+                                                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                                        type specimen book. It has
+                                                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-block text-right card-footer">
+                                                <a href="javascript:void(0);" class="btn-wide btn btn-success">Save</a>
+                                            </div>
+                                        </div>
+                                        <div class="main-card mb-3 card">
+                                            <div class="card-header">
+                                                <i class="header-icon lnr-gift icon-gradient bg-mixed-hopes"> </i>Alternate Tabs
+                                                <div class="btn-actions-pane-right">
+                                                    <div role="group" class="btn-group-sm nav btn-group">
+                                                        <a data-toggle="tab" href="#tab-eg3-0" class="btn-pill pl-3 active btn btn-focus">Tab 1</a>
+                                                        <a data-toggle="tab" href="#tab-eg3-1" class="btn btn-focus">Tab 2</a>
+                                                        <a data-toggle="tab" href="#tab-eg3-2" class="btn-pill pr-3  btn btn-focus">Tab 3</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="tab-content">
+                                                    <div class="tab-pane active" id="tab-eg3-0" role="tabpanel">
+                                                        <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                                                        software like Aldus PageMaker
+                                                        including versions of Lorem Ipsum.</p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-eg3-1" role="tabpanel">
+                                                        <p>Like Aldus PageMaker including versions of Lorem. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                                                        essentially unchanged. </p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-eg3-2" role="tabpanel">
+                                                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                                        type specimen book. It has
+                                                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main-card mb-3 card">
+                                            <div class="card-header">
+                                                <i class="header-icon lnr-gift icon-gradient bg-grow-early"> </i>Header Tabs Standard Buttons
+                                                <div class="btn-actions-pane-right">
+                                                    <div class="nav">
+                                                        <a data-toggle="tab" href="#tab-eg4-0" class="border-0 btn-pill btn-wide btn-transition active btn btn-outline-danger">Tab 1</a>
+                                                        <a data-toggle="tab" href="#tab-eg4-1" class="mr-1 ml-1 btn-pill btn-wide border-0 btn-transition  btn btn-outline-danger">Tab 2</a>
+                                                        <a data-toggle="tab" href="#tab-eg4-2" class="border-0 btn-pill btn-wide btn-transition  btn btn-outline-danger">Tab 3</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="tab-content">
+                                                    <div class="tab-pane active" id="tab-eg4-0" role="tabpanel">
+                                                        <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                                                        software like Aldus PageMaker
+                                                        including versions of Lorem Ipsum.</p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-eg4-1" role="tabpanel">
+                                                        <p>Like Aldus PageMaker including versions of Lorem. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                                                        essentially unchanged. </p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-eg4-2" role="tabpanel">
+                                                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                                        type specimen book. It has
+                                                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-block text-right card-footer">
+                                                <a href="javascript:void(0);" class="btn-wide btn btn-success">Save</a>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="main-card mb-3 card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Large Scrollable Area</h5>
-                                        <div class="scroll-area-lg">
-                                            <div class="scrollbar-container ps--active-y"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sodales ullamcorper vehicula. Duis placerat quam porta lorem lobortis, sit amet sodales mauris
-                                                finibus. Donec posuere diam at volutpat viverra. Cras fringilla auctor augue sed congue. Maecenas mollis quis enim quis egestas. In sollicitudin mi a pretium varius. Integer eleifend sodales pharetra. Nullam vitae
-                                                libero sem. Nulla et eros congue, tincidunt ante eu, tincidunt eros. Donec nisl purus, convallis a hendrerit ut, eleifend in lectus. Proin luctus dignissim lacus, in laoreet arcu eleifend non. Quisque viverra ipsum
-                                                a massa porta convallis. Donec tincidunt imperdiet purus, interdum elementum ante commodo a. Quisque pharetra arcu sapien, vel ornare magna sollicitudin quis.</p>
-                                                <p>Nunc congue magna eget eros blandit, eu viverra magna semper. Nullam in diam a metus dictum consequat. Quisque ultricies, ipsum non euismod semper, velit felis lacinia nibh, et finibus quam leo vitae nisi.
-                                                    Maecenas interdum diam quis risus bibendum, eu fermentum est pharetra. In dictum at enim pretium bibendum. Praesent efficitur iaculis dolor in sodales. Morbi maximus in ipsum in malesuada. Proin semper lacus
-                                                    tempor magna aliquam, sed aliquam dui scelerisque. Donec nisi nulla, rhoncus a tristique eget, ultrices vitae dolor. Ut id urna vitae ante tincidunt pharetra at non metus. Nunc in suscipit nulla. Sed vitae leo
-                                                    vulputate, euismod tortor vel, aliquet velit. Curabitur eget tincidunt elit. Nam et ligula finibus, eleifend velit et, commodo quam. Praesent non libero velit.</p>
-                                                <p>Nunc congue magna eget eros blandit, eu viverra magna semper. Nullam in diam a metus dictum consequat. Quisque ultricies, ipsum non euismod semper, velit felis lacinia nibh, et finibus quam leo vitae nisi.
-                                                    Maecenas interdum diam quis risus bibendum, eu fermentum est pharetra. In dictum at enim pretium bibendum. Praesent efficitur iaculis dolor in sodales. Morbi maximus in ipsum in malesuada. Proin semper lacus
-                                                    tempor magna aliquam, sed aliquam dui scelerisque. Donec nisi nulla, rhoncus a tristique eget, ultrices vitae dolor. Ut id urna vitae ante tincidunt pharetra at non metus. Nunc in suscipit nulla. Sed vitae leo
-                                                    vulputate, euismod tortor vel, aliquet velit. Curabitur eget tincidunt elit. Nam et ligula finibus, eleifend velit et, commodo quam. Praesent non libero velit.</p>
-                                                <p>Nunc congue magna eget eros blandit, eu viverra magna semper. Nullam in diam a metus dictum consequat. Quisque ultricies, ipsum non euismod semper, velit felis lacinia nibh, et finibus quam leo vitae nisi.
-                                                    Maecenas interdum diam quis risus bibendum, eu fermentum est pharetra. In dictum at enim pretium bibendum. Praesent efficitur iaculis dolor in sodales. Morbi maximus in ipsum in malesuada. Proin semper lacus
-                                                    tempor magna aliquam, sed aliquam dui scelerisque. Donec nisi nulla, rhoncus a tristique eget, ultrices vitae dolor. Ut id urna vitae ante tincidunt pharetra at non metus. Nunc in suscipit nulla. Sed vitae leo
-                                                    vulputate, euismod tortor vel, aliquet velit. Curabitur eget tincidunt elit. Nam et ligula finibus, eleifend velit et, commodo quam. Praesent non libero velit.</p>
+                                    <div class="col-md-6">
+                                        <div class="mb-3 card">
+                                            <div class="card-header-tab card-header">
+                                                <div class="card-header-title">
+                                                    <i class="header-icon lnr-bicycle icon-gradient bg-love-kiss"> </i>
+                                                    Header Alternate Tabs
+                                                </div>
+                                                <ul class="nav">
+                                                    <li class="nav-item"><a data-toggle="tab" href="#tab-eg5-0" class="active nav-link">Tab 1</a></li>
+                                                    <li class="nav-item"><a data-toggle="tab" href="#tab-eg5-1" class="nav-link">Tab 2</a></li>
+                                                    <li class="nav-item"><a data-toggle="tab" href="#tab-eg5-2" class="nav-link">Tab 3</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="tab-content">
+                                                    <div class="tab-pane active" id="tab-eg5-0" role="tabpanel">
+                                                        <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                                                        software like Aldus PageMaker
+                                                        including versions of Lorem Ipsum.</p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-eg5-1" role="tabpanel">
+                                                        <p>Like Aldus PageMaker including versions of Lorem. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                                                        essentially unchanged. </p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-eg5-2" role="tabpanel">
+                                                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                                        type specimen book. It has
+                                                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-block text-right card-footer">
+                                                <a href="javascript:void(0);" class="btn-wide btn-shadow btn btn-danger">Delete</a>
+                                            </div>
+                                        </div>
+                                        <div class="main-card mb-3 card">
+                                            <div class="card-header">
+                                                <i class="header-icon lnr-gift icon-gradient bg-grow-early"> </i>Header Tabs Standard Buttons
+                                                <div class="btn-actions-pane-right">
+                                                    <div class="nav">
+                                                        <a data-toggle="tab" href="#tab-eg6-0" class="border-0 btn-transition active btn btn-outline-primary">Tab 1</a>
+                                                        <a data-toggle="tab" href="#tab-eg6-1" class="mr-1 ml-1 border-0 btn-transition  btn btn-outline-primary">Tab 2</a>
+                                                        <a data-toggle="tab" href="#tab-eg6-2" class="border-0 btn-transition  btn btn-outline-primary">Tab 3</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="tab-content">
+                                                    <div class="tab-pane active" id="tab-eg6-0" role="tabpanel">
+                                                        <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                                                        software like Aldus PageMaker
+                                                        including versions of Lorem Ipsum.</p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-eg6-1" role="tabpanel">
+                                                        <p>Like Aldus PageMaker including versions of Lorem. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                                                        essentially unchanged. </p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-eg6-2" role="tabpanel">
+                                                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                                        type specimen book. It has
+                                                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-block text-right card-footer">
+                                                <a href="javascript:void(0);" class="btn-wide btn btn-success">Save</a>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 card">
+                                            <div class="card-header">
+                                                <ul class="nav nav-justified">
+                                                    <li class="nav-item"><a data-toggle="tab" href="#tab-eg7-0" class="active nav-link">Tab 1</a></li>
+                                                    <li class="nav-item"><a data-toggle="tab" href="#tab-eg7-1" class="nav-link">Tab 2</a></li>
+                                                    <li class="nav-item"><a data-toggle="tab" href="#tab-eg7-2" class="nav-link">Tab 3</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="tab-content">
+                                                    <div class="tab-pane active" id="tab-eg7-0" role="tabpanel">
+                                                        <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                                                        software like Aldus PageMaker
+                                                        including versions of Lorem Ipsum.</p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-eg7-1" role="tabpanel">
+                                                        <p>Like Aldus PageMaker including versions of Lorem. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                                                        essentially unchanged. </p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-eg7-2" role="tabpanel">
+                                                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                                        type specimen book. It has
+                                                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="main-card mb-3 card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Small Scrollable Area</h5>
-                                        <div class="scroll-area-sm">
-                                            <div class="scrollbar-container ps--active-y"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sodales ullamcorper vehicula. Duis placerat quam porta lorem lobortis, sit amet sodales mauris
-                                                finibus. Donec posuere diam at volutpat viverra. Cras fringilla auctor augue sed congue. Maecenas mollis quis enim quis egestas. In sollicitudin mi a pretium varius. Integer eleifend sodales pharetra. Nullam vitae
-                                                libero sem. Nulla et eros congue, tincidunt ante eu, tincidunt eros. Donec nisl purus, convallis a hendrerit ut, eleifend in lectus. Proin luctus dignissim lacus, in laoreet arcu eleifend non. Quisque viverra ipsum
-                                                a massa porta convallis. Donec tincidunt imperdiet purus, interdum elementum ante commodo a. Quisque pharetra arcu sapien, vel ornare magna sollicitudin quis.</p>
-                                                <p>Nunc congue magna eget eros blandit, eu viverra magna semper. Nullam in diam a metus dictum consequat. Quisque ultricies, ipsum non euismod semper, velit felis lacinia nibh, et finibus quam leo vitae nisi.
-                                                    Maecenas interdum diam quis risus bibendum, eu fermentum est pharetra. In dictum at enim pretium bibendum. Praesent efficitur iaculis dolor in sodales. Morbi maximus in ipsum in malesuada. Proin semper lacus
-                                                    tempor magna aliquam, sed aliquam dui scelerisque. Donec nisi nulla, rhoncus a tristique eget, ultrices vitae dolor. Ut id urna vitae ante tincidunt pharetra at non metus. Nunc in suscipit nulla. Sed vitae leo
-                                                    vulputate, euismod tortor vel, aliquet velit. Curabitur eget tincidunt elit. Nam et ligula finibus, eleifend velit et, commodo quam. Praesent non libero velit.</p>
-                                                <p>Nunc congue magna eget eros blandit, eu viverra magna semper. Nullam in diam a metus dictum consequat. Quisque ultricies, ipsum non euismod semper, velit felis lacinia nibh, et finibus quam leo vitae nisi.
-                                                    Maecenas interdum diam quis risus bibendum, eu fermentum est pharetra. In dictum at enim pretium bibendum. Praesent efficitur iaculis dolor in sodales. Morbi maximus in ipsum in malesuada. Proin semper lacus
-                                                    tempor magna aliquam, sed aliquam dui scelerisque. Donec nisi nulla, rhoncus a tristique eget, ultrices vitae dolor. Ut id urna vitae ante tincidunt pharetra at non metus. Nunc in suscipit nulla. Sed vitae leo
-                                                    vulputate, euismod tortor vel, aliquet velit. Curabitur eget tincidunt elit. Nam et ligula finibus, eleifend velit et, commodo quam. Praesent non libero velit.</p>
-                                                <p>Nunc congue magna eget eros blandit, eu viverra magna semper. Nullam in diam a metus dictum consequat. Quisque ultricies, ipsum non euismod semper, velit felis lacinia nibh, et finibus quam leo vitae nisi.
-                                                    Maecenas interdum diam quis risus bibendum, eu fermentum est pharetra. In dictum at enim pretium bibendum. Praesent efficitur iaculis dolor in sodales. Morbi maximus in ipsum in malesuada. Proin semper lacus
-                                                    tempor magna aliquam, sed aliquam dui scelerisque. Donec nisi nulla, rhoncus a tristique eget, ultrices vitae dolor. Ut id urna vitae ante tincidunt pharetra at non metus. Nunc in suscipit nulla. Sed vitae leo
-                                                    vulputate, euismod tortor vel, aliquet velit. Curabitur eget tincidunt elit. Nam et ligula finibus, eleifend velit et, commodo quam. Praesent non libero velit.</p>
+                            <div class="tab-pane tabs-animation fade" id="tab-content-1" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-3 card">
+                                            <div class="card-body">
+                                                <ul class="tabs-animated-shadow tabs-animated nav">
+                                                    <li class="nav-item">
+                                                        <a role="tab" class="nav-link active" id="tab-c-0" data-toggle="tab" href="#tab-animated-0">
+                                                            <span>Tab 1</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a role="tab" class="nav-link" id="tab-c-1" data-toggle="tab" href="#tab-animated-1">
+                                                            <span>Tab 2</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a role="tab" class="nav-link" id="tab-c-2" data-toggle="tab" href="#tab-animated-2">
+                                                            <span>Tab 3</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <div class="tab-content">
+                                                    <div class="tab-pane active" id="tab-animated-0" role="tabpanel">
+                                                        <p class="mb-0">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                                                            book.
+                                                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-animated-1" role="tabpanel">
+                                                        <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                                            unknown
+                                                            printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-animated-2" role="tabpanel">
+                                                        <p class="mb-0">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                                                            PageMaker including versions of Lorem Ipsum.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 card">
+                                            <div class="card-header card-header-tab-animation">
+                                                <ul class="nav nav-justified">
+                                                    <li class="nav-item"><a data-toggle="tab" href="#tab-eg115-0" class="active nav-link">Tab 1</a></li>
+                                                    <li class="nav-item"><a data-toggle="tab" href="#tab-eg115-1" class="nav-link">Tab 2</a></li>
+                                                    <li class="nav-item"><a data-toggle="tab" href="#tab-eg115-2" class="nav-link">Tab 3</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="tab-content">
+                                                    <div class="tab-pane active" id="tab-eg115-0" role="tabpanel">
+                                                        <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                                                        software like Aldus PageMaker
+                                                        including versions of Lorem Ipsum.</p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-eg115-1" role="tabpanel">
+                                                        <p>Like Aldus PageMaker including versions of Lorem. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                                                        essentially unchanged. </p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-eg115-2" role="tabpanel">
+                                                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                                        type specimen book. It has
+                                                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3 card">
+                                            <div class="card-body">
+                                                <ul class="tabs-animated-shadow nav-justified tabs-animated nav">
+                                                    <li class="nav-item">
+                                                        <a role="tab" class="nav-link active" id="tab-c1-0" data-toggle="tab" href="#tab-animated1-0">
+                                                            <span class="nav-text">Tab 1</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a role="tab" class="nav-link" id="tab-c1-1" data-toggle="tab" href="#tab-animated1-1">
+                                                            <span class="nav-text">Tab 2</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a role="tab" class="nav-link" id="tab-c1-2" data-toggle="tab" href="#tab-animated1-2">
+                                                            <span class="nav-text">Tab 3</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <div class="tab-content">
+                                                    <div class="tab-pane active" id="tab-animated1-0" role="tabpanel">
+                                                        <p class="mb-0">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                                                            book.
+                                                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-animated1-1" role="tabpanel">
+                                                        <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                                            unknown
+                                                            printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-animated1-2" role="tabpanel">
+                                                        <p class="mb-0">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                                                            PageMaker including versions of Lorem Ipsum.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 card">
+                                            <div class="card-header-tab card-header-tab-animation card-header">
+                                                <div class="card-header-title font-size-lg text-capitalize font-weight-normal">
+                                                    <i class="header-icon lnr-gift icon-gradient bg-love-kiss"> </i>Tabs Alternate Animation
+                                                </div>
+                                                <ul class="nav">
+                                                    <li class="nav-item"><a data-toggle="tab" href="#tab-eg8-0" class="active nav-link">Tab 1</a></li>
+                                                    <li class="nav-item"><a data-toggle="tab" href="#tab-eg8-1" class="nav-link">Tab 2</a></li>
+                                                    <li class="nav-item"><a data-toggle="tab" href="#tab-eg8-2" class="nav-link">Tab 3</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="tab-content">
+                                                    <div class="tab-pane active" id="tab-eg8-0" role="tabpanel">
+                                                        <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                                                        software like Aldus PageMaker
+                                                        including versions of Lorem Ipsum.</p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-eg8-1" role="tabpanel">
+                                                        <p>Like Aldus PageMaker including versions of Lorem. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                                                        essentially unchanged. </p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-eg8-2" role="tabpanel">
+                                                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                                        type specimen book. It has
+                                                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-block text-center card-footer">
+                                                <a href="javascript:void(0);" class="btn-wide btn btn-link">Link Button</a>
+                                                <a href="javascript:void(0);" class="btn-wide btn-shadow btn btn-danger">Delete</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="main-card mb-3 card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Scrollable Dropdown Menus</h5>
-                                        <div class="btn-group dropdown">
-                                            <button type="button" aria-haspopup="true" data-toggle="dropdown" aria-expanded="false" class="mb-2 mr-2 dropdown-toggle btn btn-primary">Bottom Header Buttons</button>
-                                            <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-lg dropdown-menu">
-                                                <div class="dropdown-menu-header">
-                                                    <div class="dropdown-menu-header-inner bg-primary">
-                                                        <div class="menu-header-image" style="background-image: url('assets/images/dropdown-header/abstract1.jpg');"></div>
-                                                        <div class="menu-header-content">
-                                                            <div><h5 class="menu-header-title">Settings</h5><h6 class="menu-header-subtitle">Manage all of your options</h6></div>
-                                                            <div class="menu-header-btn-pane">
-                                                                <button class="mr-2 btn btn-dark btn-sm">Settings</button>
-                                                                <button class="btn-icon btn-icon-only btn btn-warning btn-sm"><i class="pe-7s-config btn-icon-wrapper"> </i></button>
+            
+                            </div>
+                            <div class="tab-pane tabs-animation fade" id="tab-content-2" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="mb-3 card">
+                                            <div class="tabs-lg-alternate card-header">
+                                                <ul class="nav nav-justified">
+                                                    <li class="nav-item">
+                                                        <a data-toggle="tab" href="#tab-eg9-0" class="active nav-link">
+                                                            <div class="widget-number">Tab 1</div>
+                                                            <div class="tab-subheading">
+                                                                    <span class="pr-2 opactiy-6">
+                                                                        <i class="fa fa-comment-dots"></i>
+                                                                    </span>
+                                                                Totals
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="scroll-area-xs">
-                                                    <div class="scrollbar-container">
-                                                        <ul class="nav flex-column">
-                                                            <li class="nav-item-header nav-item">Activity</li>
-                                                            <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Chat
-                                                                <div class="ml-auto badge badge-pill badge-info">8</div>
-                                                            </a></li>
-                                                            <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Recover Password</a></li>
-                                                            <li class="nav-item-header nav-item">My Account</li>
-                                                            <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Settings
-                                                                <div class="ml-auto badge badge-success">New</div>
-                                                            </a></li>
-                                                            <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Messages
-                                                                <div class="ml-auto badge badge-warning">512</div>
-                                                            </a></li>
-                                                            <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Logs</a></li>
-                                                            <li class="nav-item-divider nav-item"></li>
-                                                            <li class="nav-item-btn nav-item">
-                                                                <button class="btn-wide btn-shadow btn btn-danger btn-sm">Cancel</button>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="btn-group dropdown">
-                                            <button type="button" aria-haspopup="true" data-toggle="dropdown" aria-expanded="false" class="mb-2 mr-2 dropdown-toggle btn btn-success">Left Aligned Header</button>
-                                            <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-lg dropdown-menu">
-                                                <div class="dropdown-menu-header">
-                                                    <div class="dropdown-menu-header-inner bg-success">
-                                                        <div class="menu-header-image opacity-1" style="background-image: url('assets/images/dropdown-header/abstract3.jpg');"></div>
-                                                        <div class="menu-header-content text-left"><h5 class="menu-header-title">Settings</h5><h6 class="menu-header-subtitle">Manage all of your options</h6>
-                                                            <div class="menu-header-btn-pane">
-                                                                <button class="mr-2 btn btn-dark btn-sm">Settings</button>
-                                                                <button class="btn-icon btn-icon-only btn btn-warning btn-sm"><i class="pe-7s-config btn-icon-wrapper"> </i></button>
+                                                        </a></li>
+                                                    <li class="nav-item">
+                                                        <a data-toggle="tab" href="#tab-eg9-1" class="nav-link">
+                                                            <div class="widget-number">Tab 2</div>
+                                                            <div class="tab-subheading">Products</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a data-toggle="tab" href="#tab-eg9-2" class="nav-link">
+                                                            <div class="widget-number text-danger">Tab 3</div>
+                                                            <div class="tab-subheading">
+                                                                <span class="pr-2 opactiy-6">
+                                                                    <i class="fa fa-bullhorn"></i>
+                                                                </span>
+                                                                Income
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="scroll-area-xs" style="height: 150px;">
-                                                    <div class="scrollbar-container">
-                                                        <ul class="nav flex-column">
-                                                            <li class="nav-item-header nav-item">Activity</li>
-                                                            <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Chat
-                                                                <div class="ml-auto badge badge-pill badge-info">8</div>
-                                                            </a></li>
-                                                            <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Recover Password</a></li>
-                                                            <li class="nav-item-header nav-item">My Account</li>
-                                                            <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Settings
-                                                                <div class="ml-auto badge badge-success">New</div>
-                                                            </a></li>
-                                                            <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Messages
-                                                                <div class="ml-auto badge badge-warning">512</div>
-                                                            </a></li>
-                                                            <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Logs</a></li>
-                                                            <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Messages
-                                                                <div class="ml-auto badge badge-warning">512</div>
-                                                            </a></li>
-                                                            <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Logs</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <ul class="nav flex-column">
-                                                    <li class="nav-item-divider nav-item"></li>
-                                                    <li class="nav-item-btn nav-item">
-                                                        <button class="btn-wide btn-shadow btn btn-danger btn-sm">Cancel</button>
+                                                        </a>
                                                     </li>
                                                 </ul>
                                             </div>
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="tab-eg9-0" role="tabpanel">
+                                                    <div class="card-body">
+                                                        <p class="mb-0">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="tab-eg9-1" role="tabpanel">
+                                                    <div class="card-body">
+                                                        <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="tab-eg9-2" role="tabpanel">
+                                                    <div class="card-body">
+                                                        <p class="mb-0">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                                                        PageMaker including versions of Lorem Ipsum.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="btn-group dropdown">
-                                            <button type="button" aria-haspopup="true" data-toggle="dropdown" aria-expanded="false" class="mb-2 mr-2 dropdown-toggle btn btn-secondary">Left Aligned Header Buttons</button>
-                                            <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-lg dropdown-menu">
-                                                <div class="dropdown-menu-header">
-                                                    <div class="dropdown-menu-header-inner bg-secondary">
-                                                        <div class="menu-header-image opacity-5" style="background-image: url('assets/images/dropdown-header/abstract2.jpg');"></div>
-                                                        <div class="menu-header-content btn-pane-right">
-                                                            <div><h5 class="menu-header-title">Settings</h5><h6 class="menu-header-subtitle">Manage all of your options</h6></div>
-                                                            <div class="menu-header-btn-pane">
-                                                                <button class="btn-icon btn-icon-only btn btn-warning btn-sm"><i class="pe-7s-config btn-icon-wrapper"> </i></button>
-                                                            </div>
-                                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="main-card mb-3 card">
+                                            <div class="card-body"><h5 class="card-title">Basic</h5>
+                                                <ul class="nav nav-tabs">
+                                                    <li class="nav-item"><a data-toggle="tab" href="#tab-eg10-0" class="active nav-link">Tab 1</a></li>
+                                                    <li class="nav-item"><a data-toggle="tab" href="#tab-eg10-1" class="nav-link">Tab 2</a></li>
+                                                    <li class="nav-item"><a data-toggle="tab" href="#tab-eg10-2" class="nav-link">Tab 3</a></li>
+                                                </ul>
+                                                <div class="tab-content">
+                                                    <div class="tab-pane active" id="tab-eg10-0" role="tabpanel">
+                                                        <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                                                        software like Aldus PageMaker
+                                                        including versions of Lorem Ipsum.</p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-eg10-1" role="tabpanel">
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                                        when an unknown printer took a
+                                                        galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-eg10-2" role="tabpanel">
+                                                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                                        type specimen book. It has
+                                                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
                                                     </div>
                                                 </div>
-                                                <div class="scroll-area-xs">
-                                                    <div class="scrollbar-container">
-                                                        <ul class="nav flex-column">
-                                                            <li class="nav-item-header nav-item">Activity</li>
-                                                            <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Chat
-                                                                <div class="ml-auto badge badge-pill badge-info">8</div>
-                                                            </a></li>
-                                                            <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Recover Password</a></li>
-                                                            <li class="nav-item-header nav-item">My Account</li>
-                                                            <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Settings
-                                                                <div class="ml-auto badge badge-success">New</div>
-                                                            </a></li>
-                                                            <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Messages
-                                                                <div class="ml-auto badge badge-warning">512</div>
-                                                            </a></li>
-                                                            <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Logs</a></li>
-                                                            <li class="nav-item-divider nav-item"></li>
-                                                            <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Logs</a></li>
-                                                        </ul>
+                                            </div>
+                                        </div>
+                                        <div class="main-card mb-3 card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Justified Alignment</h5>
+                                                <ul class="nav nav-tabs nav-justified">
+                                                    <li class="nav-item"><a data-toggle="tab" href="#tab-eg11-0" class="active nav-link">Tab 1</a></li>
+                                                    <li class="nav-item"><a data-toggle="tab" href="#tab-eg11-1" class="nav-link">Tab 2</a></li>
+                                                    <li class="nav-item"><a data-toggle="tab" href="#tab-eg11-2" class="nav-link">Tab 3</a></li>
+                                                </ul>
+                                                <div class="tab-content">
+                                                    <div class="tab-pane active" id="tab-eg11-0" role="tabpanel">
+                                                        <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                                                        software like Aldus PageMaker
+                                                        including versions of Lorem Ipsum.</p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-eg11-1" role="tabpanel">
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                                        when an unknown printer took a
+                                                        galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-eg11-2" role="tabpanel">
+                                                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                                        type specimen book. It has
+                                                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
                                                     </div>
                                                 </div>
-                                                <ul class="nav flex-column">
-                                                    <li class="nav-item-divider nav-item"></li>
-                                                    <li class="nav-item-btn nav-item">
-                                                        <button class="btn-wide btn-shadow btn btn-danger btn-sm">Cancel</button>
+                                            </div>
+                                        </div>
+                                        <div class="main-card mb-3 card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Tabs Variations</h5>
+                                                <div class="mb-3">
+                                                    <div role="group" class="btn-group-sm nav btn-group">
+                                                        <a data-toggle="tab" href="#tab-eg12-0" class="btn-pill pl-3 active btn btn-warning">Tab 1</a>
+                                                        <a data-toggle="tab" href="#tab-eg12-1" class="btn btn-warning">Tab 2</a>
+                                                        <a data-toggle="tab" href="#tab-eg12-2" class="btn-pill pr-3  btn btn-warning">Tab 3</a>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-content">
+                                                    <div class="tab-pane active" id="tab-eg12-0" role="tabpanel">
+                                                        <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                                                        software like Aldus PageMaker
+                                                        including versions of Lorem Ipsum.</p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-eg12-1" role="tabpanel">
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                                        when an unknown printer took a
+                                                        galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-eg12-2" role="tabpanel">
+                                                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                                        type specimen book. It has
+                                                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="main-card mb-3 card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Pills</h5>
+                                                <ul class="nav nav-pills">
+                                                    <li class="nav-item"><a data-toggle="tab" href="#tab-eg13-0" class="active nav-link">Pill 1</a></li>
+                                                    <li class="nav-item"><a data-toggle="tab" href="#tab-eg13-1" class="nav-link">Pill 2</a></li>
+                                                    <li class="nav-item"><a data-toggle="tab" href="#tab-eg13-2" class="nav-link">Pill 3</a></li>
+                                                </ul>
+                                                <div class="tab-content">
+                                                    <div class="tab-pane active" id="tab-eg13-0" role="tabpanel">
+                                                        <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                                                        software like Aldus PageMaker
+                                                        including versions of Lorem Ipsum.</p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-eg13-1" role="tabpanel">
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                                        when an unknown printer took a
+                                                        galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-eg13-2" role="tabpanel">
+                                                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                                        type specimen book. It has
+                                                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main-card mb-3 card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Pills</h5>
+                                                <ul class="nav nav-pills nav-fill">
+                                                    <li class="nav-item">
+                                                        <a data-toggle="tab" href="#tab-eg14-0" class="active nav-link">Pill 1</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a data-toggle="tab" href="#tab-eg14-1" class="nav-link">Pill 2</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a data-toggle="tab" href="#tab-eg14-2" class="nav-link">Pill 3</a>
                                                     </li>
                                                 </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="main-card mb-3 card">
-                                    <div class="card-header">
-                                        <i class="header-icon lnr-laptop-phone icon-gradient bg-plum-plate"> </i>
-                                        Header Menu
-                                        <div class="btn-actions-pane-right actions-icon-btn">
-                                            <button class="btn-icon btn-icon-only btn btn-link"><i class="pe-7s-leaf btn-icon-wrapper"></i></button>
-                                            <button class="btn-icon btn-icon-only btn btn-link"><i class="pe-7s-cloud-download btn-icon-wrapper"></i></button>
-                                            <div class="btn-group">
-                                                <button type="button" aria-haspopup="true" aria-expanded="false" class="btn-icon btn-icon-only btn btn-link"><i class="pe-7s-menu btn-icon-wrapper"></i></button>
-                                                <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-right dropdown-menu-shadow dropdown-menu-hover-link dropdown-menu"><h6 tabindex="-1" class="dropdown-header">Header</h6>
-                                                    <button type="button" tabindex="0" class="dropdown-item"><i class="dropdown-icon lnr-inbox"> </i><span>Menus</span></button>
-                                                    <button type="button" tabindex="0" class="dropdown-item"><i class="dropdown-icon lnr-file-empty"> </i><span>Settings</span></button>
-                                                    <button type="button" tabindex="0" class="dropdown-item"><i class="dropdown-icon lnr-book"> </i><span>Actions</span></button>
-                                                    <div tabindex="-1" class="dropdown-divider"></div>
-                                                    <div class="p-3 text-right">
-                                                        <button class="mr-2 btn-shadow btn-sm btn btn-link">View Details</button>
-                                                        <button class="mr-2 btn-shadow btn-sm btn btn-primary">Action</button>
+                                                <div class="tab-content">
+                                                    <div class="tab-pane active" id="tab-eg14-0" role="tabpanel">
+                                                        <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                                                        software like Aldus PageMaker
+                                                        including versions of Lorem Ipsum.</p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-eg14-1" role="tabpanel">
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                                        when an unknown printer took a
+                                                        galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-eg14-2" role="tabpanel">
+                                                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                                        type specimen book. It has
+                                                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="scroll-area-sm">
-                                            <div class="scrollbar-container ps--active-y"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sodales ullamcorper vehicula. Duis placerat quam porta lorem lobortis, sit amet sodales mauris
-                                                finibus. Donec posuere diam at volutpat viverra. Cras fringilla auctor augue sed congue. Maecenas mollis quis enim quis egestas. In sollicitudin mi a pretium varius. Integer eleifend sodales pharetra. Nullam vitae
-                                                libero sem. Nulla et eros congue, tincidunt ante eu, tincidunt eros. Donec nisl purus, convallis a hendrerit ut, eleifend in lectus. Proin luctus dignissim lacus, in laoreet arcu eleifend non. Quisque viverra ipsum
-                                                a massa porta convallis. Donec tincidunt imperdiet purus, interdum elementum ante commodo a. Quisque pharetra arcu sapien, vel ornare magna sollicitudin quis.</p>
-                                                <p>Nunc congue magna eget eros blandit, eu viverra magna semper. Nullam in diam a metus dictum consequat. Quisque ultricies, ipsum non euismod semper, velit felis lacinia nibh, et finibus quam leo vitae nisi.
-                                                    Maecenas interdum diam quis risus bibendum, eu fermentum est pharetra. In dictum at enim pretium bibendum. Praesent efficitur iaculis dolor in sodales. Morbi maximus in ipsum in malesuada. Proin semper lacus
-                                                    tempor magna aliquam, sed aliquam dui scelerisque. Donec nisi nulla, rhoncus a tristique eget, ultrices vitae dolor. Ut id urna vitae ante tincidunt pharetra at non metus. Nunc in suscipit nulla. Sed vitae leo
-                                                    vulputate, euismod tortor vel, aliquet velit. Curabitur eget tincidunt elit. Nam et ligula finibus, eleifend velit et, commodo quam. Praesent non libero velit.</p>
-                                                <p>Nunc congue magna eget eros blandit, eu viverra magna semper. Nullam in diam a metus dictum consequat. Quisque ultricies, ipsum non euismod semper, velit felis lacinia nibh, et finibus quam leo vitae nisi.
-                                                    Maecenas interdum diam quis risus bibendum, eu fermentum est pharetra. In dictum at enim pretium bibendum. Praesent efficitur iaculis dolor in sodales. Morbi maximus in ipsum in malesuada. Proin semper lacus
-                                                    tempor magna aliquam, sed aliquam dui scelerisque. Donec nisi nulla, rhoncus a tristique eget, ultrices vitae dolor. Ut id urna vitae ante tincidunt pharetra at non metus. Nunc in suscipit nulla. Sed vitae leo
-                                                    vulputate, euismod tortor vel, aliquet velit. Curabitur eget tincidunt elit. Nam et ligula finibus, eleifend velit et, commodo quam. Praesent non libero velit.</p>
+                                        <div class="main-card mb-3 card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Button Group Tabs</h5>
+                                                <div class="mb-3 text-center">
+                                                    <div role="group" class="btn-group-sm nav btn-group">
+                                                        <a data-toggle="tab" href="#tab-eg15-0" class="btn-shadow active btn btn-primary">Tab 1</a>
+                                                        <a data-toggle="tab" href="#tab-eg15-1" class="btn-shadow  btn btn-primary">Tab 2</a>
+                                                        <a data-toggle="tab" href="#tab-eg15-2" class="btn-shadow  btn btn-primary">Tab 3</a>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-content">
+                                                    <div class="tab-pane active" id="tab-eg15-0" role="tabpanel">
+                                                        <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                                                        software like Aldus PageMaker
+                                                        including versions of Lorem Ipsum.</p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-eg15-1" role="tabpanel">
+                                                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                                        type specimen book. It has
+                                                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-eg15-2" role="tabpanel">
+                                                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                                        type specimen book. It has not only five centuries, but also the leap into not only five centuries, but also the leap into
+                                                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="d-block text-right card-footer">
-                                        <button class="mr-2 btn btn-link btn-sm">Cancel</button>
-                                        <button class="btn btn-success btn-lg">Save</button>
                                     </div>
                                 </div>
                             </div>
@@ -1966,7 +2277,7 @@
                                     <div class="footer-dots">
                                         <div class="dropdown">
                                             <a aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" class="dot-btn-wrapper">
-                                                <i class=""></i>
+                                                <i class="dot-btn-icon lnr-bullhorn icon-gradient bg-mean-fruit"></i>
                                                 <div class="badge badge-dot badge-abs badge-dot-sm badge-danger">Notifications</div>
                                             </a>
                                             <div tabindex="-1" role="menu" aria-hidden="true"
@@ -2924,5 +3235,5 @@
     <div class="app-drawer-overlay d-none animated fadeIn"></div><script type="text/javascript" src="assets/scripts/main.d810cf0ae7f39f28f336.js"></script></body>
 
 
-<!-- Mirrored from demo.dashboardpack.com/architectui-html-pro/components-scrollable-elements.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 Feb 2021 08:04:10 GMT -->
+<!-- Mirrored from demo.dashboardpack.com/architectui-html-pro/components-tabs.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 Feb 2021 08:04:05 GMT -->
 </html>
