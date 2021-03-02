@@ -23,17 +23,15 @@
     <div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
         <div class="app-header header-shadow">
             <div class="app-header__logo">
-                <div class="header__panel">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
                     <div>
-                        <button type="button" class="text-left hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
                             <span class="hamburger-box">
                                 <span class="hamburger-inner"></span>
                             </span>
                         </button>
                     </div>
-                </div>
-                <div class="ml-auto">
-                    <div class="logo-src"></div>
                 </div>
             </div>
             <div class="app-header__mobile-menu">
@@ -270,7 +268,9 @@
                                                                     <div class="widget-subheading opacity-8">Siswa SMKN 1 Probolinggo</div>
                                                                 </div>
                                                                 <div class="widget-content-right mr-2">
+                                                                    <a href="login-dosis-edit.html" >
                                                                     <button class="btn-pill btn-shadow btn-shine btn btn-focus">Logout</button>
+                                                                    </a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -298,7 +298,9 @@
                                                 <li class="nav-item-divider nav-item">
                                                 </li>
                                                 <li class="nav-item-btn text-center nav-item">
+                                                    <a href="edit-profil-dosis.html">
                                                     <button class="btn-wide btn btn-primary btn-sm"> Edit Profil </button>
+                                                    </a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -313,9 +315,7 @@
                     </div>
                 </div>
             </div>
-        </div>        
-        <div class="ui-theme-settings">
-        </div>        
+        </div>         
         <div class="app-main">
             <div class="app-sidebar sidebar-shadow">
                 <div class="app-header__logo">
@@ -351,25 +351,25 @@
                 <div class="scrollbar-sidebar">
                     <div class="app-sidebar__inner">
                         <ul class="vertical-nav-menu">
-                            <li  class="mm-active"      >
+                            <li  class="mm-active">
                                 <li>
-                                    <a href="beranda-dosis-setelah login.html" >
-                                        <i class="metismenu-icon pe-7s-graph"></i>Beranda
+                                    <a href="beranda-dosis-terbaru.html">
+                                        <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use home"></i></i>Beranda
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="peristiwa1.html" >
-                                        <i class="metismenu-icon pe-7s-graph"></i>Donasi
+                                    <a href="donasi.html" >
+                                        <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use handshake-o"></i></i>Donasi
                                     </a>
                                 </li>
                                 <li>
                                     <a href="kategori-dosis.html" >
-                                        <i class="metismenu-icon pe-7s-graph"></i>Kategori
+                                        <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use bars"></i></i>Kategori
                                     </a>
                                 </li>
                                 <li>
                                     <a href="konfirmasi.html" >
-                                        <i class="metismenu-icon pe-7s-graph"></i>Konfirmasi
+                                        <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use check-circle"></i></i>Konfirmasi
                                     </a>
                                 </li>
                             </li>
@@ -377,8 +377,8 @@
                                    >
                             </li>
                             <li>
-                                <a href="widgets-chart-boxes.html" >
-                                    <i class="metismenu-icon pe-7s-graph"></i>Edit
+                                <a href="laporan-donasi" >
+                                    <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use edit"></i></i>Laporan
                                 </a>
                             </li>
                             <li     
@@ -387,79 +387,66 @@
                                   
                                   >
                                 <a href="#">
-                                    <i class="metismenu-icon pe-7s-car"></i> Report
+                                    <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use file-text"></i></i> Report
                                     <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                 </a>
                                 <ul                
                                       >
                                     <li>
-                                        <a href="components-tabs.html" >
+                                        <a href="report-user.html" >
                                             <i class="metismenu-icon"></i>Report User
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="components-accordions.html" >
+                                        <a href="report-postingan.html" >
                                             <i class="metismenu-icon"></i>Report Postingan
                                         </a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">
-                                    <i class="metismenu-icon pe-7s-car"></i> History
-                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                <a href="history-donasi-dosis.html">
+                                    <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use history"></i></i></i> History
                                 </a>
-                                <ul>
-                                    <li>
-                                        <a href="components-tabs.html" >
-                                            <i class="metismenu-icon"></i>History Pembayaran
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="components-accordions.html" >
-                                            <i class="metismenu-icon"></i>History Donasi
-                                        </a>
-                                    </li>
-                                </ul>
                             </li>
                             <li>
                                 <a href="profil-admin.html" >
-                                    <i class="metismenu-icon pe-7s-graph"></i>Profil Admin
+                                    <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use user-circle"></i></i>Profil Admin
                                 </a>
                             </li>
                             <li>
                                 <a href="profil-user.html" >
-                                    <i class="metismenu-icon pe-7s-graph"></i>Profil User
+                                    <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use users"></i></i>Profil User
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <i class="metismenu-icon pe-7s-car"></i> Pengaturan
+                                    <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use gear"></i></i> Pengaturan
                                     <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                 </a>
                                 <ul>
                                     <li>
-                                        <a href="components-tabs.html" >
+                                        <a href="edit-profil-dosis.html" >
                                             <i class="metismenu-icon"></i>Edit profil
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="components-accordions.html" >
+                                        <a href="pusat_bantuan.html" >
                                             <i class="metismenu-icon"></i>Bantuan (Faq)
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="components-accordions.html" >
+                                        <a href="email-dosis.html" >
                                             <i class="metismenu-icon"></i>Email & Contact
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="components-accordions.html" >
+                                        <a href="tentang_kami.html" >
                                             <i class="metismenu-icon"></i>Tentang Kami
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="components-accordions.html" >
+                                        <a href="login-dosis-edit.html" >
                                             <i class="metismenu-icon"></i>Logout
                                         </a>
                                     </li>
@@ -468,7 +455,8 @@
                         </ul>
                     </div>
                 </div>
-            </div><div class="app-main__outer">
+            </div>
+            <div class="app-main__outer">
                 <div class="app-main__inner">
                     <div class="text-center">
                         <h2>Pusat Bantuan</h2></br>
@@ -666,8 +654,8 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
-    </div>
     <div class="app-drawer-wrapper">
         <div class="drawer-nav-btn">
             <button type="button" class="hamburger hamburger--elastic is-active">
