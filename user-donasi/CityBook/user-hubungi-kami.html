@@ -187,8 +187,21 @@
                                             <div id="singleMap" data-latitude="40.7427837" data-longitude="-73.11445617675781"></div>
                                         </div>
                                         
-                                        <label>Latitude:<i class="fa fa-map-marker"></i></label>
-                                        <input type="text" id="lat" placeholder="" value="">                                                 
+                                            <form class="custom-form" action="http://citybook.kwst.net/php/contact.php" name="contactform" id="contactform">
+                                                <fieldset>
+                                                    <div class="col-md-6">
+                                                        <label><i class="fa fa-map-marker"></i></label>
+                                                        <input type="text" name="name" id="name" placeholder="Latitude *" value="">
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label><i class="fa fa-map-marker"></i>  </label>
+                                                        <input type="text" name="email" id="email" placeholder="Longitude *" value="">
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+
+                                        <span class="fw-separator"></span>                       
                                         
                                         <div class="list-single-main-item-title fl-wrap">
                                             <h3>Kirim Pesan</h3>
