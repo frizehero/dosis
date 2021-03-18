@@ -5,7 +5,7 @@
 <head>
         <!--=============== basic  ===============-->
         <meta charset="UTF-8">
-        <title>Donatur</title>
+        <title>Detail Galang Dana</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta name="robots" content="index, follow"/>
         <meta name="keywords" content=""/>
@@ -16,7 +16,7 @@
         <link type="text/css" rel="stylesheet" href="css/style.css">
         <link type="text/css" rel="stylesheet" href="css/color.css">
         <!--=============== favicons ===============-->
-        <link rel="shortcut icon" href="images/dosis.ico">
+        <link rel="shortcut icon" href="images/favicon.ico">
     </head>
     <body>
         <!-- loader -->
@@ -31,7 +31,7 @@
             <header class="main-header dark-header fs-header sticky">
                 <div class="header-inner">
                     <div class="logo-holder">
-                        <a href="user-beranda-login.html"><img src="images/logo.png" alt=""></a>
+                        <a href="index.html"><img src="images/logo.png" alt=""></a>
                     </div>
                     <div class="header-search vis-header-search">
                         <div class="header-search-input-item">
@@ -39,27 +39,16 @@
                         </div>
                         <button class="header-search-button" onclick="window.location.href='listing.html'">Cari</button>
                     </div>
-                    <div class="show-search-button"><i class="fa fa-search"></i> <span>Cari</span></div>
-                    <a href="user-form-galang-dana.html" class="add-list">Galang Dana <span><i class="fa fa-plus"></i></span></a>
-                    <div class="header-user-menu">
-                        <div class="header-user-name">
-                            <span><img src="images/avatar/4.jpg" alt=""></span>
-                            Abdul Hasan
-                        </div>
-                        <ul>
-                            <li><a href="user-history2.html"> Dashboard</a></li>
-                            <li><a href="#"> Edit Profil</a></li>
-                            <li><a href="user-beranda-new.html">Log Out</a></li>
-                        </ul>
-                    </div>
-                    <!-- nav-button-wrap--> 
+                    <div class="show-search-button"><i class="fa fa-search"></i> <span>Search</span></div>
+                    <a href="dashboard-add-listing.html" class="add-list">Galang Dana <span><i class="fa fa-plus"></i></span></a>
+                    <!-- nav-button-wrap-->
                     <div class="nav-button-wrap color-bg">
                         <div class="nav-button">
-                            
+                            <span></span><span></span><span></span>
                         </div>
                     </div>
                     <!-- nav-button-wrap end-->
-                    <!--  navigation --> 
+                    <!--  navigation -->
                     <div class="nav-holder main-menu">
                         <nav>
                             <ul>
@@ -88,32 +77,29 @@
                                     </ul>
                                     <!--second level end-->
                                 </li>
+                                <li>
+                                    <a href="user-login.html"><i class="fa fa-sign-in"></i> MASUK</a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
                     <!-- navigation  end -->
                 </div>
-            </header>        <!--  header end -->	
+            </header>            <!--  header end -->	
             <!-- wrapper -->	
             <div id="wrapper">
                 <!--content -->  
                 <div class="content">
-                    <section class="parallax-section" data-scrollax-parent="true" id="sec1">
-                        <div class="bg par-elem " data-bg="images/bg/24.jpg" data-scrollax="properties: { translateY: '30%' }" style="background-image: url(&quot;images/bg/24.jpg&quot;); transform: translateZ(0px) translateY(-4.79042%);"></div>
-                        <div class="overlay"></div>
-                        <div class="container">
-                            <div class="section-title center-align">
-                                <h2><span>Info Pembayaran Terbaru</span></h2>
-                            </div>
-                        </div>
-                    </section>
                     <!--section --> 
-                   
+                    <section>
                         <!-- container -->
                         <div class="container">
+                            <div class="section-title">
+                                <h2>Info Pembayaran Terbaru</h2>
+                                <span class="section-separator"></span>
+                            </div>
 
-
-                            <a href="user-pembayaran-offline.html" class="add-list" style="margin-bottom:40px; margin-right:10px;">Donasi Offline <span><i class="fa fa-plus"></i></span></a>
+                            <a href="user-pembayaran-offline.html" class="add-list" style="margin-bottom:30px; margin-right:10px;">Donasi Offline <span><i class="fa fa-plus"></i></span></a>
                             <div class="dashboard-list-box fl-wrap">
                                             <div class="dashboard-header fl-wrap">
                                                 <h3>Donatur</h3>
@@ -217,9 +203,8 @@
                                         </div>
 
                         </div>
-                        <div> <br></div>
                         <!--container end -->
-                    
+                    </section>
                     <!-- section end -->
                     <div class="limit-box fl-wrap"></div>
                 </div>
@@ -304,8 +289,8 @@
                                     <p>Temukan jawabanmu disini </p>
                                     <ul  class="footer-contacts fl-wrap">
                                         <li><a href="#">Syarat dan Ketentuan</a></li>
-                                        <li><a href="#">Tentang Kami</a></li>
-                                        <li><a href="#">Hubungi Kami</a></li>
+                                        <li><a href="user-tentang-kami.html">Tentang Kami</a></li>
+                                        <li><a href="user-hubungi-kami.html">Hubungi Kami</a></li>
                                         <li><a href="#">FAQ</a></li>
                                     </ul>
                                 </div>
@@ -329,6 +314,8 @@
                                     <ul>
                                         <li><a href="#" target="_blank" ><i class="fa fa-facebook-official"></i></a></li>
                                         <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#" target="_blank" ><i class="fa fa-chrome"></i></a></li>
+                                        <li><a href="#" target="_blank" ><i class="fa fa-vk"></i></a></li>
                                         <li><a href="#" target="_blank" ><i class="fa fa-whatsapp"></i></a></li>
                                     </ul>
                                 </div>
@@ -336,8 +323,7 @@
                         </div>
                     </div>
                 </div>
-            </footer>
-            <!--footer end  -->
+            </footer>            <!--footer end  -->
             <a class="to-top"><i class="fa fa-angle-up"></i></a>
         </div>
         <!-- Main end -->
