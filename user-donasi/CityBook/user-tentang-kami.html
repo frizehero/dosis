@@ -31,24 +31,35 @@
             <header class="main-header dark-header fs-header sticky">
                 <div class="header-inner">
                     <div class="logo-holder">
-                        <a href="index.html"><img src="images/logo.png" alt=""></a>
+                        <a href="user-beranda-login.html"><img src="images/logo.png" alt=""></a>
                     </div>
                     <div class="header-search vis-header-search">
                         <div class="header-search-input-item">
-                            <input type="text" placeholder="Ketik Disini" value="">
+                            <input type="text" placeholder="Ketik Disini" value=""/>
                         </div>
                         <button class="header-search-button" onclick="window.location.href='listing.html'">Cari</button>
                     </div>
-                    <div class="show-search-button"><i class="fa fa-search"></i> <span>Search</span></div>
-                    <a href="dashboard-add-listing.html" class="add-list">Galang Dana <span><i class="fa fa-plus"></i></span></a>
-                    <!-- nav-button-wrap-->
+                    <div class="show-search-button"><i class="fa fa-search"></i> <span>Cari</span></div>
+                    <a href="user-form-galang-dana.html" class="add-list">Galang Dana <span><i class="fa fa-plus"></i></span></a>
+                    <div class="header-user-menu">
+                        <div class="header-user-name">
+                            <span><img src="images/avatar/4.jpg" alt=""></span>
+                            Abdul Hasan
+                        </div>
+                        <ul>
+                            <li><a href="user-history2.html"> Dashboard</a></li>
+                            <li><a href="#"> Edit Profil</a></li>
+                            <li><a href="user-beranda-new.html">Log Out</a></li>
+                        </ul>
+                    </div>
+                    <!-- nav-button-wrap--> 
                     <div class="nav-button-wrap color-bg">
                         <div class="nav-button">
-                            <span></span><span></span><span></span>
+                            
                         </div>
                     </div>
                     <!-- nav-button-wrap end-->
-                    <!--  navigation -->
+                    <!--  navigation --> 
                     <div class="nav-holder main-menu">
                         <nav>
                             <ul>
@@ -62,7 +73,7 @@
                                         <li><a href="#">Pembangunan</a></li>
                                         <li><a href="#">Kebakaran</a></li>
                                         <li><a href="#">Banjir</a></li>
-                                        <li><a href="#">Tanah Longsor</a></li>
+										<li><a href="#">Tanah Longsor</a></li>
                                     </ul>
                                     <!--second level end-->
                                 </li>
@@ -73,12 +84,9 @@
                                         <li><a href="#">Donasi Siswa.com</a></li>
                                         <li><a href="#">Blog</a></li>
                                             <!--third  level end-->
-                                        
+                                        </li>
                                     </ul>
                                     <!--second level end-->
-                                </li>
-                                <li>
-                                    <a href="user-login.html"><i class="fa fa-sign-in"></i> MASUK</a>
                                 </li>
                             </ul>
                         </nav>
@@ -257,8 +265,7 @@
             </div>
             <!-- wrapper end -->
             <!--footer -->
-
-                <footer class="main-footer dark-footer  ">
+            <footer class="main-footer dark-footer  ">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3">
@@ -266,7 +273,7 @@
                                 <h3>DOSIS.com</h3>
                                 <div class="footer-contacts-widget fl-wrap">
                                     <p>Sebuah gerakan donasi di lingkungan sekolah yang dilakukan untuk membantu siswa yang sedang terkena bencana maupun siswa yang tidak mampu dan tidak bisa sekolah.</p>
-                                    <ul class="footer-contacts fl-wrap">
+                                    <ul  class="footer-contacts fl-wrap">
                                         <li><span><i class="fa fa-envelope-o"></i> Email :</span><a href="#" target="_blank">Dosis@domain.com</a></li>
                                         <li> <span><i class="fa fa-map-marker"></i> Lokasi :</span><a href="#" target="_blank">Malang - Probolinggo</a></li>
                                         <li><span><i class="fa fa-phone"></i> Phone :</span><a href="#">081234567890</a></li>
@@ -280,21 +287,21 @@
                                 <div class="widget-posts fl-wrap">
                                     <ul>
                                         <li class="clearfix">
-                                            <a href="#" class="widget-posts-img"><img src="images/all/1.jpg" class="respimg" alt=""></a>
+                                            <a href="#"  class="widget-posts-img"><img src="images/all/1.jpg" class="respimg" alt=""></a>
                                             <div class="widget-posts-descr">
                                                 <a href="#" title="">Vivamus dapibus rutrum</a>
                                                 <span class="widget-posts-date"> 21 Mar 09.05 </span>
                                             </div>
                                         </li>
                                         <li class="clearfix">
-                                            <a href="#" class="widget-posts-img"><img src="images/all/2.jpg" class="respimg" alt=""></a>
+                                            <a href="#"  class="widget-posts-img"><img src="images/all/2.jpg" class="respimg" alt=""></a>
                                             <div class="widget-posts-descr">
                                                 <a href="#" title=""> In hac habitasse platea</a>
                                                 <span class="widget-posts-date"> 7 Mar 18.21 </span>
                                             </div>
                                         </li>
                                         <li class="clearfix">
-                                            <a href="#" class="widget-posts-img"><img src="images/all/3.jpg" class="respimg" alt=""></a>
+                                            <a href="#"  class="widget-posts-img"><img src="images/all/3.jpg" class="respimg" alt=""></a>
                                             <div class="widget-posts-descr">
                                                 <a href="#" title="">Tortor tempor in porta</a>
                                                 <span class="widget-posts-date"> 7 Mar 16.42 </span>
@@ -310,8 +317,8 @@
                                 <div class="subscribe-widget fl-wrap">
                                     <p>Ingin mendapatkan info terupdate dari DOSIS.com, jangan lupa Subscribe. </p>
                                     <div class="subcribe-form">
-                                        <form id="subscribe" novalidate="true">
-                                            <input class="enteremail" name="EMAIL" id="subscribe-email" placeholder="Email" spellcheck="false" type="text">
+                                        <form id="subscribe">
+                                            <input class="enteremail" name="email" id="subscribe-email" placeholder="Email" spellcheck="false" type="text">
                                             <button type="submit" id="subscribe-button" class="subscribe-button"><i class="fa fa-rss"></i> Subscribe</button>
                                             <label for="subscribe-email" class="subscribe-message"></label>
                                         </form>
@@ -320,10 +327,10 @@
                                 <div class="footer-widget fl-wrap">
                                     <div class="footer-menu fl-wrap">
                                         <ul>
-                                            <li><a href="#">Home </a></li>
+                                            <li><a href="user-beranda-login.html">Home </a></li>
                                             <li><a href="#">Profil</a></li>
                                             <li><a href="#">Blog</a></li>
-                                            <li><a href="#">Keluar</a></li>
+                                            <li><a href="user-beranda-new.html">Log out</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -334,11 +341,11 @@
                                 <h3>Tentang</h3>
                                 <div class="footer-contacts-widget fl-wrap">
                                     <p>Temukan jawabanmu disini </p>
-                                    <ul class="footer-contacts fl-wrap">
+                                    <ul  class="footer-contacts fl-wrap">
                                         <li><a href="#">Syarat dan Ketentuan</a></li>
-                                        <li><a href="#">Tentang Kami</a></li>
-                                        <li><a href="#">Hubungi Kami</a></li>
-                                        <li><a href="#">FAQ</a></li>
+                                        <li><a href="user-tentang-kami.html">Tentang Kami</a></li>
+                                        <li><a href="user-hubungi-kami.html">Hubungi Kami</a></li>
+                                        <li><a href="pusat-bantuan-user.html">FAQ</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -354,16 +361,14 @@
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="copyright"> © Dosis.com 2021 .  All rights reserved.</div>
+                                <div class="copyright"> &#169; Dosis.com 2021 .  All rights reserved.</div>
                             </div>
                             <div class="col-md-4">
                                 <div class="footer-social">
                                     <ul>
-                                        <li><a href="#" target="_blank"><i class="fa fa-facebook-official"></i></a></li>
+                                        <li><a href="#" target="_blank" ><i class="fa fa-facebook-official"></i></a></li>
                                         <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#" target="_blank"><i class="fa fa-chrome"></i></a></li>
-                                        <li><a href="#" target="_blank"><i class="fa fa-vk"></i></a></li>
-                                        <li><a href="#" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                                        <li><a href="#" target="_blank" ><i class="fa fa-whatsapp"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
