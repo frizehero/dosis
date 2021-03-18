@@ -5,7 +5,7 @@
 <head>
         <!--=============== basic  ===============-->
         <meta charset="UTF-8">
-        <title>History</title>
+        <title>Dashboard</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta name="robots" content="index, follow"/>
         <meta name="keywords" content=""/>
@@ -35,7 +35,7 @@
                     </div>
                     <div class="header-search vis-header-search">
                         <div class="header-search-input-item">
-                            <input type="text" placeholder="Ketik Disini" value="">
+                            <input type="text" placeholder="Ketik Disini" value=""/>
                         </div>
                         <button class="header-search-button" onclick="window.location.href='listing.html'">Cari</button>
                     </div>
@@ -46,9 +46,8 @@
                             <span><img src="images/avatar/4.jpg" alt=""></span>
                             Abdul Hasan
                         </div>
-                        <ul class="">
+                        <ul>
                             <li><a href="user-history2.html"> Dashboard</a></li>
-                            <li><a href="#"> Edit Profil</a></li>
                             <li><a href="user-beranda-new.html">Log Out</a></li>
                         </ul>
                     </div>
@@ -73,7 +72,7 @@
                                         <li><a href="#">Pembangunan</a></li>
                                         <li><a href="#">Kebakaran</a></li>
                                         <li><a href="#">Banjir</a></li>
-                                        <li><a href="#">Tanah Longsor</a></li>
+										<li><a href="#">Tanah Longsor</a></li>
                                     </ul>
                                     <!--second level end-->
                                 </li>
@@ -84,7 +83,7 @@
                                         <li><a href="#">Donasi Siswa.com</a></li>
                                         <li><a href="#">Blog</a></li>
                                             <!--third  level end-->
-                                        
+                                        </li>
                                     </ul>
                                     <!--second level end-->
                                 </li>
@@ -93,21 +92,32 @@
                     </div>
                     <!-- navigation  end -->
                 </div>
-            </header>           <!--  header end -->	
+            </header>
+            <!--  header end -->	
             <!-- wrapper -->	
             <div id="wrapper">
                 <!--content -->  
                 <div class="content">
                     <!--section --> 
-                    <section id="sec1">
+                    <section class="parallax-section small-par color-bg">
+                        <div class="shapes-bg-big" style="margin-top: -30px;"></div>
+                        <div class="container">
+                            <div class="section-title center-align">
+                                <h2><span>Abdul Hasan</span></h2>
+                                <div class="user-profile-avatar"><img src="images/avatar/4.jpg" alt=""></div>
+                                <div class="user-profile-rating clearfix">
+                                    <div class="listing-rating card-popup-rainingvis" data-starrating2="5">
+                                        <span>(37 reviews)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="sec1" style="padding-top: 25px;">
                         <!-- container -->
                         <div class="container">
                             <!-- profile-edit-wrap -->
-                            <div class="profile-edit-wrap">
-                                <div class="profile-edit-page-header">
-                                    <h2>Dashboard</h2>
-                                    <div class="breadcrumbs"><a href="#">Home</a><span>Dasboard</span></div>
-                                </div>
+                            <div class="profile-edit-wrap" >
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div class="fixed-bar fl-wrap">
@@ -116,14 +126,11 @@
                                                 <div class="user-profile-menu">
                                                     <h3>Menu</h3>
                                                     <ul>
-                                                    	<li><a href="dashboard.html" class="user-profile-act"><i class="fa fa-gears"></i>History</a></li>
-                                                        <li><a href="user-edit-profil.html"><i class="fa fa-user-o"></i> Edit profile</a></li>
-                                                        <li><a href="dashboard-password.html"><i class="fa fa-unlock-alt"></i>Edit Password</a></li>
+                                                    	<li><a href="user-dashboard.html" class="user-profile-act"><i class="fa fa-gears"></i>Dashboard</a></li>
+                                                        <li><a href="#"><i class="fa fa-user-o"></i> Edit profile</a></li>
+                                                        <li><a href="#"><i class="fa fa-unlock-alt"></i>Edit Password</a></li>
                                                     </ul>
                                                 </div>
-                                                <!-- user-profile-menu end-->
-                                                <!-- user-profile-menu-->
-                                                
                                                 <!-- user-profile-menu end-->                                        
                                                 <a href="#" class="log-out-btn">Log Out</a>
                                             </div>
@@ -146,7 +153,8 @@
                                                 <div class="statistic-item gradient-bg fl-wrap">
                                                     <i class="fa fa fa-eye"></i>
                                                     <div class="statistic-item-numder">RP 30.000</div>
-                                                    <h5>Total Donasi</h5>
+                                                    <nav class="scroll-nav">
+                                                    <h5><a href="#sec2" class="act-scrlink">Total Donasi</a></h5>
                                                 </div>
                                                 </div>
                                             <!-- statistic-item-wrap end-->                                             
@@ -155,7 +163,7 @@
                                                 <div class="statistic-item gradient-bg fl-wrap">
                                                     <i class="fa fa-heart-o"></i>
                                                     <div class="statistic-item-numder">1</div>
-                                                    <h5>Total Komentar</h5>
+                                                    <h5><a href="user-pembayaran-offline.html" class="user-profile-act"><span>Galang Dana</span></a></h5>
                                                 </div>
                                                 </div>
                                             <!-- statistic-item-wrap end-->                                            
@@ -262,6 +270,7 @@
                                                 <div class="dashboard-message">
                                                     <div class="dashboard-message-text">
                                                         <p><i class="fa fa-heart"></i>Pembukaan Galang Dana-mu Untuk Peristiwa <a href="#">Berbagi Sembako Untuk Sekolah Korban Banjir di Dringu,Kabupaten Probolinggo</a>     Sedang di Evaluasi Oleh Admin <span>Dosis.com</span> ,Tunggu Pemberitahuan Lebih Lanjut Tentang Persetujuan Pembukaan Galang Dana-mu </p>
+                                                         <p><a href="form-galangdana.html" class="log-out-btn">Form Galang Dana</a></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -281,7 +290,7 @@
                                                         <p><i class="fa fa-comments-o"></i> Waktu Mulai : 23 Maret 2020</p>
                                                         <p><i class="fa fa-check"></i> Waktu Berakhir : 5 Mei 2020</p>
                                                         <p><i class="fa fa-gears"></i> Jumlah Nominal : RP 128.000.000</p>
-                                                        <p><a href="user-galang-dana.html" class="log-out-btn">Detail Galang Dana</a></p>
+                                                        <p><a href="user-detail-galangdana.html" class="log-out-btn">Detail Galang Dana</a></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -355,7 +364,23 @@
                     <!-- section end -->
                     <div class="limit-box fl-wrap"></div>
                     <!--section -->
-                                        <!-- section end -->
+                    <section class="gradient-bg">
+                        <div class="cirle-bg">
+                            <div class="bg" data-bg="images/bg/circle.png"></div>
+                        </div>
+                        <div class="container">
+                            <div class="join-wrap fl-wrap">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h3>Do You Have Questions ?</h3>
+                                        <p>Lorem ipsum dolor sit amet, harum dolor nec in, usu molestiae at no.</p>
+                                    </div>
+                                    <div class="col-md-4"><a href="contacts.html" class="join-wrap-btn">Get In Touch <i class="fa fa-envelope-o"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- section end -->
                 </div>
             </div>
             <!-- wrapper end -->
@@ -422,10 +447,10 @@
                                 <div class="footer-widget fl-wrap">
                                     <div class="footer-menu fl-wrap">
                                         <ul>
-                                            <li><a href="#">Home </a></li>
+                                            <li><a href="user-beranda-login.html">Home </a></li>
                                             <li><a href="#">Profil</a></li>
                                             <li><a href="#">Blog</a></li>
-                                            <li><a href="#">Keluar</a></li>
+                                            <li><a href="user-beranda-new.html">Log out</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -438,9 +463,9 @@
                                     <p>Temukan jawabanmu disini </p>
                                     <ul  class="footer-contacts fl-wrap">
                                         <li><a href="#">Syarat dan Ketentuan</a></li>
-                                        <li><a href="#">Tentang Kami</a></li>
-                                        <li><a href="#">Hubungi Kami</a></li>
-                                        <li><a href="#">FAQ</a></li>
+                                        <li><a href="user-tentang-kami.html">Tentang Kami</a></li>
+                                        <li><a href="user-hubungi-kami.html">Hubungi Kami</a></li>
+                                        <li><a href="pusat-bantuan-user.html">FAQ</a></li>
                                     </ul>
                                 </div>
                             </div>
