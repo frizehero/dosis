@@ -113,28 +113,32 @@
                             </div>
                         </div>
                     </section>
-                    <section id="sec1" style="padding-top: 25px;">
+                    <section id="sec1">
                         <!-- container -->
                         <div class="container">
                             <!-- profile-edit-wrap -->
-                            <div class="profile-edit-wrap" >
+                            <div class="profile-edit-wrap">
+    
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <div class="fixed-bar fl-wrap">
+                                        <div class="fixed-bar fl-wrap" style="z-index: auto; position: relative; top: 0px;">
                                             <div class="user-profile-menu-wrap fl-wrap">
                                                 <!-- user-profile-menu-->
                                                 <div class="user-profile-menu">
                                                     <h3>Menu</h3>
                                                     <ul>
-                                                    	<li><a href="user-dashboard.html" class="user-profile-act"><i class="fa fa-gears"></i>Dashboard</a></li>
+                                                        <li><a href="dashboard.html" class="user-profile-act"><i class="fa fa-gears"></i>History</a></li>
                                                         <li><a href="user-edit-profil.html"><i class="fa fa-user-o"></i> Edit profile</a></li>
                                                         <li><a href="user-password.html"><i class="fa fa-unlock-alt"></i>Edit Password</a></li>
                                                     </ul>
                                                 </div>
+                                                <!-- user-profile-menu end-->
+                                                <!-- user-profile-menu-->
+                                                
                                                 <!-- user-profile-menu end-->                                        
                                                 <a href="#" class="log-out-btn">Log Out</a>
                                             </div>
-                                        </div>
+                                        </div><div style="display: none; width: 284px; height: 261px; float: none;"></div>
                                     </div>
                                     <div class="col-md-9">
                                         <!-- profile-edit-container--> 
@@ -153,8 +157,8 @@
                                                 <div class="statistic-item gradient-bg fl-wrap">
                                                     <i class="fa fa fa-eye"></i>
                                                     <div class="statistic-item-numder">RP 30.000</div>
-                                                    <nav class="scroll-nav">
-                                                    <h5><a href="#sec2" class="act-scrlink">Total Donasi</a></h5>
+                                                    <a href="#sec1" class="" style="float:left;">Total Donasi</a>
+                                                    
                                                 </div>
                                                 </div>
                                             <!-- statistic-item-wrap end-->                                             
@@ -163,7 +167,7 @@
                                                 <div class="statistic-item gradient-bg fl-wrap">
                                                     <i class="fa fa-heart-o"></i>
                                                     <div class="statistic-item-numder">1</div>
-                                                    <h5><a href="user-pembayaran-offline.html" class="user-profile-act"><span>Galang Dana</span></a></h5>
+                                                    <a href="#sec2" class="" style="float:left;">Galang Dana</a>
                                                 </div>
                                                 </div>
                                             <!-- statistic-item-wrap end-->                                            
@@ -172,18 +176,18 @@
                                                 <div class="statistic-item gradient-bg fl-wrap">
                                                     <i class="fa fa-comments-o"></i>
                                                     <div class="statistic-item-numder">15</div>
-                                                    <h5>Total Komentar</h5>
+                                                    <a href="#sec3" class="" style="float:left;">Komentar</a>                                                
                                                 </div>
                                                 </div>
                                             <!-- statistic-item-wrap end-->  
                                             </div>
-         									<!-- statistic-container end--> 
+                                            <!-- statistic-container end--> 
                                         </div>
                                         <!-- profile-edit-container end-->  
                                         
                                         <div class="dashboard-list-box fl-wrap activities">
-                                            <div class="dashboard-header fl-wrap">
-                                                <h3>Riwayat Aktivitas Donasi-mu dalam 30 Hari Terakhir</h3>
+                                            <div class="dashboard-header fl-wrap" id="sec1">
+                                                <h3>Riwayat Aktivitas Donasi-mu dalam 30 Hari Terakhir </h3>
                                             </div>
                                                         <!-- dashboard-list end-->       
                                             <div class="dashboard-list">
@@ -262,7 +266,7 @@
                                         </div> 
 
                                         <div class="dashboard-list-box fl-wrap activities" style="margin-top:40px;">
-                                            <div class="dashboard-header fl-wrap">
+                                            <div class="dashboard-header fl-wrap" id="sec2">
                                                 <h3>Riwayat Aktivitas Galang Dana-mu dalam 30 Hari Terakhir</h3>
                                             </div>
                                                         <!-- dashboard-list end-->    
@@ -270,7 +274,6 @@
                                                 <div class="dashboard-message">
                                                     <div class="dashboard-message-text">
                                                         <p><i class="fa fa-heart"></i>Pembukaan Galang Dana-mu Untuk Peristiwa <a href="#">Berbagi Sembako Untuk Sekolah Korban Banjir di Dringu,Kabupaten Probolinggo</a>     Sedang di Evaluasi Oleh Admin <span>Dosis.com</span> ,Tunggu Pemberitahuan Lebih Lanjut Tentang Persetujuan Pembukaan Galang Dana-mu </p>
-                                                         <p><a href="form-galangdana.html" class="log-out-btn">Form Galang Dana</a></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -290,7 +293,7 @@
                                                         <p><i class="fa fa-comments-o"></i> Waktu Mulai : 23 Maret 2020</p>
                                                         <p><i class="fa fa-check"></i> Waktu Berakhir : 5 Mei 2020</p>
                                                         <p><i class="fa fa-gears"></i> Jumlah Nominal : RP 128.000.000</p>
-                                                        <p><a href="user-detail-galangdana.html" class="log-out-btn">Detail Galang Dana</a></p>
+                                                        <p><a href="user-galang-dana.html" class="log-out-btn">Detail Galang Dana</a></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -309,7 +312,7 @@
                                         </div>
 
                                         <div class="dashboard-list-box fl-wrap activities" style="margin-top: 40px;">
-                                            <div class="dashboard-header fl-wrap">
+                                            <div class="dashboard-header fl-wrap" id="sec3">
                                                 <h3>Riwayat Aktivitas Komentar-mu dalam 30 Hari Terakhir</h3>
                                             </div>
                                                         <!-- dashboard-list end-->    
@@ -364,22 +367,7 @@
                     <!-- section end -->
                     <div class="limit-box fl-wrap"></div>
                     <!--section -->
-                    <section class="gradient-bg">
-                        <div class="cirle-bg">
-                            <div class="bg" data-bg="images/bg/circle.png"></div>
-                        </div>
-                        <div class="container">
-                            <div class="join-wrap fl-wrap">
-                                <div class="row">
-                                    <div class="col-md-8">
-                                        <h3>Do You Have Questions ?</h3>
-                                        <p>Lorem ipsum dolor sit amet, harum dolor nec in, usu molestiae at no.</p>
-                                    </div>
-                                    <div class="col-md-4"><a href="contacts.html" class="join-wrap-btn">Get In Touch <i class="fa fa-envelope-o"></i></a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                    
                     <!-- section end -->
                 </div>
             </div>
