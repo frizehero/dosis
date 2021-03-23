@@ -5,7 +5,7 @@
 <head>
         <!--=============== basic  ===============-->
         <meta charset="UTF-8">
-        <title>Citybook -Directory Listing Template</title>
+        <title>Dashboard - Inbox</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta name="robots" content="index, follow"/>
         <meta name="keywords" content=""/>
@@ -31,43 +31,30 @@
             <header class="main-header dark-header fs-header sticky">
                 <div class="header-inner">
                     <div class="logo-holder">
-                        <a href="index.html"><img src="images/logo.png" alt=""></a>
+                        <a href="user-beranda-login.html"><img src="images/logo.png" alt=""></a>
                     </div>
                     <div class="header-search vis-header-search">
                         <div class="header-search-input-item">
-                            <input type="text" placeholder="Keywords" value=""/>
+                            <input type="text" placeholder="Ketik Disini" value="">
                         </div>
-                        <div class="header-search-select-item">
-                            <select data-placeholder="All Categories" class="chosen-select" >
-                                <option>All Categories</option>
-                                <option>Shops</option>
-                                <option>Hotels</option>
-                                <option>Restaurants</option>
-                                <option>Fitness</option>
-                                <option>Events</option>
-                            </select>
-                        </div>
-                        <button class="header-search-button" onclick="window.location.href='listing.html'">Search</button>
+                        <button class="header-search-button" onclick="window.location.href='listing.html'">Cari</button>
                     </div>
-                    <div class="show-search-button"><i class="fa fa-search"></i> <span>Search</span></div>
-                    <a href="dashboard-add-listing.html" class="add-list">Add Listing <span><i class="fa fa-plus"></i></span></a>
+                    <div class="show-search-button"><i class="fa fa-search"></i> <span>Cari</span></div>
+                    <a href="form-galangdana.html" class="add-list">Galang Dana <span><i class="fa fa-plus"></i></span></a>
                     <div class="header-user-menu">
                         <div class="header-user-name">
                             <span><img src="images/avatar/4.jpg" alt=""></span>
-                            Hello , Alisa
+                            Abdul Hasan
                         </div>
                         <ul>
-                            <li><a href="dashboard-myprofile.html"> Edit profile</a></li>
-                            <li><a href="dashboard-add-listing.html"> Add Listing</a></li>
-                            <li><a href="dashboard-bookings.html">  Bookings  </a></li>
-                            <li><a href="dashboard-review.html"> Reviews </a></li>
-                            <li><a href="#">Log Out</a></li>
+                            <li><a href="user-dashboard.html"> Dashboard</a></li>
+                            <li><a href="user-beranda-new.html">Log Out</a></li>
                         </ul>
                     </div>
                     <!-- nav-button-wrap--> 
                     <div class="nav-button-wrap color-bg">
                         <div class="nav-button">
-                            <span></span><span></span><span></span>
+                            
                         </div>
                     </div>
                     <!-- nav-button-wrap end-->
@@ -76,63 +63,33 @@
                         <nav>
                             <ul>
                                 <li>
-                                    <a href="#">Home <i class="fa fa-caret-down"></i></a>
-                                    <!--second level -->   
-                                    <ul>
-                                        <li><a href="index.html">Parallax Image</a></li>
-                                        <li><a href="index2.html">Video</a></li>
-                                        <li><a href="index3.html">Map</a></li>
-                                        <li><a href="index4.html">Slideshow</a></li>
-                                        <li><a href="index5.html">Slider</a></li>
-										<li><a href="index6.html">Fullscreen Slider</a></li>
-                                    </ul>
-                                    <!--second level end-->
+                                    <a href="user-beranda-login.html">BERANDA</a>
                                 </li>
                                 <li>
-                                    <a href="#">Listings <i class="fa fa-caret-down"></i></a>
+                                    <a href="#">KATEGORI <i class="fa fa-caret-down"></i></a>
                                     <!--second level -->
                                     <ul>
-                                        <li><a href="listing.html">Column map</a></li>
-                                        <li><a href="listing2.html">Column map 2</a></li>
-                                        <li><a href="listing3.html">Fullwidth Map</a></li>
-                                        <li><a href="listing4.html">Fullwidth Map 2</a></li>
-                                        <li><a href="listing5.html">Without Map</a></li>
-                                        <li><a href="listing6.html">Without Map 2</a></li>
-                                        <li>
-                                            <a href="#">Single <i class="fa fa-caret-down"></i></a>
-                                            <!--third  level  -->
-                                            <ul>
-                                                <li><a href="listing-single.html">Style 1</a></li>
-                                                <li><a href="listing-single2.html">Style 2</a></li>
-                                                <li><a href="listing-single3.html">Style 3</a></li>
-												<li><a href="listing-single4.html">Style 4</a></li>
-                                            </ul>
-                                            <!--third  level end-->
-                                        </li>
+                                        <li><a href="kategori-putus-sekolah.html">Siswa Putus Sekolah</a></li>
+                                        <li><a href="kategori-tidak-mampu.html">Siswa Tidak Mampu</a></li>
+                                        <li><a href="kategori-kecelakaan-sakit.html">Kecelakaan / Sakit</a></li>
+                                        <li><a href="kategori-pembangunan.html">Pembangunan</a></li>
+                                        <li><a href="kategori-kebakaran.html">Kebakaran</a></li>
+                                        <li><a href="kategori-banjir.html">Banjir</a></li>
+										<li><a href="kategori-tanah-longsor.html">Tanah Longsor</a></li>
+                                        <li><a href="kategori-kabeh.html">Lainnya &gt;</a></li>
                                     </ul>
                                     <!--second level end-->
                                 </li>
                                 <li>
-                                    <a href="blog.html">News</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="act-link">Pages <i class="fa fa-caret-down"></i></a>
-                                    <!--second level -->   
+                                    <a href="#">TENTANG KAMI <i class="fa fa-caret-down"></i></a>
+                                    <!--second level -->
                                     <ul>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="contacts.html">Contacts</a></li>
-                                        <li><a href="author-single.html">User single</a></li>
-                                        <li><a href="how-itworks.html">How it Works</a></li>
-                                        <li><a href="pricing-tables.html">Pricing</a></li>
-                                        <li><a href="dashboard-myprofile.html">User Dasboard</a></li>
-                                        <li><a href="blog-single.html">Blog Single</a></li>
-                                        <li><a href="dashboard-add-listing.html">Add Listing</a></li>
-                                        <li><a href="404.html">404</a></li>
-                                        <li><a href="coming-soon.html">Coming Soon</a></li>
-                                        <li><a href="header2.html">Header 2</a></li>
-                                        <li><a href="footer-fixed.html">Footer Fixed</a></li>
+                                        <li><a href="#">Donasi Siswa.com</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                            <!--third  level end-->
+                                        
                                     </ul>
-                                    <!--second level end-->                                
+                                    <!--second level end-->
                                 </li>
                             </ul>
                         </nav>
@@ -163,10 +120,10 @@
                                                 <div class="user-profile-menu">
                                                     <h3>Dashboard</h3>
                                                     <ul>
-                                                        <li><a href="user-dashboard-donasi.html" class="user-profile-act"><i class="fa fa-user-o"></i> Donasi Saya</a></li>
+                                                        <li><a href="user-dashboard-donasi.html" ><i class="fa fa-user-o"></i> Donasi Saya</a></li>
                                                         <li><a href="user-dashboard-galangdana.html"><i class="fa fa-user-o"></i> Galang Dana Saya</a></li>
                                                         <li><a href="user-dashboard-komentar.html"><i class="fa fa-user-o"></i> Komentar</a></li>
-                                                        <li><a href="user-inbox.html"><i class="fa fa-user-o"></i> Inbox</a></li>
+                                                        <li><a href="user-inbox.html" class="user-profile-act"><i class="fa fa-user-o"></i> Inbox</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="user-profile-menu">
@@ -181,162 +138,234 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-md-3">
+                                        <div class="chat-widget_wrap" style="display: table; width: 312px; height: 760px; position: unset ; box-shadow: none;">
+                                            <div class="chat-widget_header color-bg">
+                                                <h3>Message<a href="author-single.html"> </a></h3>
+                                            </div>
+                                            <div class="chat-body">
+                                                <!-- message-->
+                                                <div class="list-single-header-item-opt fl-wrap" style="margin-left:-10px; margin-top:-25px; text-align:left;">
+                                                    <div class="list-single-header-cat fl-wrap">
+                                                        <a href="#" style="width: 295px;"> 
+                                                            <div class="dashboard-message-avatar">
+                                                                <img src="images/avatar/4.jpg" alt="">
+                                                            </div>
+                                                            <div class="user-profile" style="padding-left:60px; padding-top:12px;">
+                                                                <h3><b>Jamet Kuproy</b></h3>
+                                                                <p style="color:white; float:right; margin-top:-40px; margin-right:-15px;">7.51 PM</p>
+                                                                <p style="color:white;">wahyudi,aku udah transfer 5k ya </p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="list-single-header-item-opt fl-wrap" style="margin-left:-10px; margin-top:-25px; text-align:left;">
+                                                    <div class="list-single-header-cat fl-wrap">
+                                                        <a href="#" style="width: 295px;"> 
+                                                            <div class="dashboard-message-avatar">
+                                                                <img src="images/avatar/14.jpg" alt="">
+                                                            </div>
+                                                            <div class="user-profile" style="padding-left:60px; padding-top:12px;">
+                                                                <h3><b>Hasan Jamet</b></h3>
+                                                                <p style="color:white; float:right; margin-top:-40px; margin-right:-15px;">7.51 PM</p>
+                                                                <p style="color:white;">Nanti sore aku transfer duitnya </p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="list-single-header-item-opt fl-wrap" style="margin-left:-10px; margin-top:-25px; text-align:left;">
+                                                    <div class="list-single-header-cat fl-wrap">
+                                                        <a href="#" style="width: 295px;"> 
+                                                            <div class="dashboard-message-avatar">
+                                                                <img src="images/avatar/3.jpg" alt="">
+                                                            </div>
+                                                            <div class="user-profile" style="padding-left:60px; padding-top:12px;">
+                                                                <h3><b>Wahyudi Gans</b></h3>
+                                                                <p style="color:white; float:right; margin-top:-40px; margin-right:-15px;">7.51 PM</p>
+                                                                <p style="color:white;">Ini galang dana abal-abal apa... </p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="list-single-header-item-opt fl-wrap" style="margin-left:-10px; margin-top:-25px; text-align:left;">
+                                                    <div class="list-single-header-cat fl-wrap">
+                                                        <a href="#" style="width: 295px;"> 
+                                                            <div class="dashboard-message-avatar">
+                                                                <img src="images/avatar/18.jpg" alt="">
+                                                            </div>
+                                                            <div class="user-profile" style="padding-left:60px; padding-top:12px;">
+                                                                <h3><b>Sandra Gelay</b></h3>
+                                                                <p style="color:white; float:right; margin-top:-40px; margin-right:-15px;">7.51 PM</p>
+                                                                <p style="color:white;">Saya mau tanya terkait galang... </p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="list-single-header-item-opt fl-wrap" style="margin-left:-10px; margin-top:-25px; text-align:left;">
+                                                    <div class="list-single-header-cat fl-wrap">
+                                                        <a href="#" style="width: 295px;"> 
+                                                            <div class="dashboard-message-avatar">
+                                                                <img src="images/avatar/23.jpg" alt="">
+                                                            </div>
+                                                            <div class="user-profile" style="padding-left:60px; padding-top:12px;">
+                                                                <h3><b>Indah unch unch</b></h3>
+                                                                <p style="color:white; float:right; margin-top:-40px; margin-right:-15px;">7.51 PM</p>
+                                                                <p style="color:white;">Saya mau transfer 2jt karena... </p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="list-single-header-item-opt fl-wrap" style="margin-left:-10px; margin-top:-25px; text-align:left;">
+                                                    <div class="list-single-header-cat fl-wrap">
+                                                        <a href="#" style="width: 295px;"> 
+                                                            <div class="dashboard-message-avatar">
+                                                                <img src="images/avatar/20.jpg" alt="">
+                                                            </div>
+                                                            <div class="user-profile" style="padding-left:60px; padding-top:12px;">
+                                                                <h3><b>Khusnulszzz</b></h3>
+                                                                <p style="color:white; float:right; margin-top:-40px; margin-right:-15px;">7.51 PM</p>
+                                                                <p style="color:white;">Nanti uangnya saya transfer,... </p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="list-single-header-item-opt fl-wrap" style="margin-left:-10px; margin-top:-25px; text-align:left;">
+                                                    <div class="list-single-header-cat fl-wrap">
+                                                        <a href="#" style="width: 295px;"> 
+                                                            <div class="dashboard-message-avatar">
+                                                                <img src="images/avatar/17.jpg" alt="">
+                                                            </div>
+                                                            <div class="user-profile" style="padding-left:60px; padding-top:12px;">
+                                                                <h3><b>Farhan Jamet</b></h3>
+                                                                <p style="color:white; float:right; margin-top:-40px; margin-right:-15px;">7.51 PM</p>
+                                                                <p style="color:white;">P...Assalamualaikum paket</p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="list-single-header-item-opt fl-wrap" style="margin-left:-10px; margin-top:-25px; text-align:left;">
+                                                    <div class="list-single-header-cat fl-wrap">
+                                                        <a href="#" style="width: 295px;"> 
+                                                            <div class="dashboard-message-avatar">
+                                                                <img src="images/avatar/5.jpg" alt="">
+                                                            </div>
+                                                            <div class="user-profile" style="padding-left:60px; padding-top:12px;">
+                                                                <h3><b>Dhinda Mak</b></h3>
+                                                                <p style="color:white; float:right; margin-top:-40px; margin-right:-15px;">7.51 PM</p>
+                                                                <p style="color:white;">Saya mau transfer nanti</p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="list-single-header-item-opt fl-wrap" style="margin-left:-10px; margin-top:-25px; text-align:left;">
+                                                    <div class="list-single-header-cat fl-wrap">
+                                                        <a href="#" style="width: 295px;"> 
+                                                            <div class="dashboard-message-avatar">
+                                                                <img src="images/avatar/25.jpg" alt="">
+                                                            </div>
+                                                            <div class="user-profile" style="padding-left:60px; padding-top:12px;">
+                                                                <h3><b>Ari Irham</b></h3>
+                                                                <p style="color:white; float:right; margin-top:-40px; margin-right:-15px;">7.51 PM</p>
+                                                                <p style="color:white;">Nanti uangnya saya transfer,... </p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                            
+                                                <!-- message end-->
+                                                <!-- message-->
+                                             
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="col-md-6">
-                                        <class class="dashboard-list-box fl-wrap">
-                                            <div class="dashboard-header fl-wrap">
-                                                <h3>Inbox</h3>
+                                        <div class="chat-widget_wrap" style="display: table; width: 600px; height: 710px; position: unset ; box-shadow: none;">
+                                            <div class="chat-widget_header color-bg">
+                                                <div class="dashboard-message-avatar">
+                                                    <img src="images/avatar/4.jpg" alt="">
+                                                </div>
+                                                <h3><a href="author-single.html"> Jamet Kuproy</a></h3>
+                                                <div class="status st_online"><span></span>Online</div>
                                             </div>
-                                            <!-- dashboard-list end-->    
-                                            <div class="dashboard-list">
-                                                <div class="dashboard-message">
+                                            <div class="chat-body">
+                                                <!-- message-->
+                                                <div class="chat-message chat-message_guest fl-wrap">
                                                     <div class="dashboard-message-avatar">
-                                                        <img src="images/avatar/3.jpg" alt="">
+                                                        <img src="images/avatar/4.jpg" alt="">
                                                     </div>
-                                                    <div class="dashboard-message-text">
-                                                        <h4>Andy Smith - <span>7.51 PM</span></h4>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere convallis purus non cursus. Cras metus neque, gravida sodales massa ut. </p>
-                                                    </div>
+                                                    <span class="chat-message-user-name"></span>
+                                                    <span class="massage-date">25 may 2018  <span>7.51 PM</span></span>
+                                                    <p>Vivamus lobortis vel nibh nec maximus. Donec dolor erat, rutrum ut feugiat sed, ornare vitae nunc. </p>
                                                 </div>
-                                            </div>
-                                            <!-- dashboard-list end-->    
-                                            <!-- dashboard-list end-->    
-                                            <div class="dashboard-list">
-                                                <div class="dashboard-message">
-                                                    <div class="dashboard-message-avatar" style="float: right;">
-                                                        <img src="images/avatar/avatar-bg.png" alt="">
-                                                    </div>
-                                                    <div class="dashboard-message-text" style="text-align: right; margin-right: 30px; padding-right: 50px;">
-                                                        <h4><span>7.51 PM</span> - Sandra </h4>
-                                                        <p>Nulla eget erat consequat quam feugiat dapibus eget sed mauris.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- dashboard-list end-->                                            
-                                            <!-- dashboard-list end-->    
-                                            <div class="dashboard-list">
-                                                <div class="dashboard-message">
+                                                <!-- message end-->
+                                                <!-- message-->
+                                                <div class="chat-message chat-message_user fl-wrap">
                                                     <div class="dashboard-message-avatar">
-                                                        <img src="images/avatar/3.jpg" alt="">
+                                                        <img src="images/avatar/1.jpg" alt="">
                                                     </div>
-                                                    <div class="dashboard-message-text">
-                                                        <h4>Andy Smith - <span>7.51 PM</span></h4>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere convallis purus non cursus. Cras metus neque, gravida sodales massa ut. </p>
-                                                    </div>
+                                                    <span class="chat-message-user-name"></span>
+                                                    <span class="massage-date">25 may 2018  <span>7.51 PM</span></span>
+                                                    <p>Nulla eget erat consequat quam feugiat dapibus eget sed mauris.</p>
                                                 </div>
-                                            </div>
-                                            <!-- dashboard-list end-->                                             
-                                            <!-- dashboard-list end-->    
-                                            <div class="dashboard-list">
-                                                <div class="dashboard-message">
-                                                    <div class="dashboard-message-avatar" style="float: right;">
-                                                        <img src="images/avatar/avatar-bg.png" alt="">
-                                                    </div>
-                                                    <div class="dashboard-message-text" style="text-align: right; margin-right: 30px; padding-right: 50px;">
-                                                        <h4><span>7.51 PM</span> - Sandra </h4>
-                                                        <p>Nulla eget erat consequat quam feugiat dapibus eget sed mauris.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- dashboard-list end-->                                            
-                                            <!-- dashboard-list end-->    
-                                            <div class="dashboard-list">
-                                                <div class="dashboard-message">
+                                                <!-- message end-->
+                                                <!-- message-->
+                                                <div class="chat-message chat-message_guest fl-wrap">
                                                     <div class="dashboard-message-avatar">
-                                                        <img src="images/avatar/3.jpg" alt="">
+                                                        <img src="images/avatar/4.jpg" alt="">
                                                     </div>
-                                                    <div class="dashboard-message-text">
-                                                        <h4>Andy Smith - <span>7.51 PM</span></h4>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere convallis purus non cursus. Cras metus neque, gravida sodales massa ut. </p>
+                                                    <span class="chat-message-user-name"></span>
+                                                    <span class="massage-date">25 may 2018  <span>7.51 PM</span></span>
+                                                    <p>Sed non neque faucibus, condimentum lectus at, accumsan enim. Fusce pretium egestas cursus..</p>
+                                                </div>
+                                                <!-- message end-->
+                                                <div class="chat-message chat-message_user fl-wrap">
+                                                    <div class="dashboard-message-avatar">
+                                                        <img src="images/avatar/1.jpg" alt="">
                                                     </div>
+                                                    <span class="chat-message-user-name"></span>
+                                                    <span class="massage-date">25 may 2018  <span>7.51 PM</span></span>
+                                                    <p>Nulla eget erat consequat quam feugiat dapibus eget sed mauris.</p>
+                                                </div>
+
+                                                <div class="chat-message chat-message_guest fl-wrap">
+                                                    <div class="dashboard-message-avatar">
+                                                        <img src="images/avatar/4.jpg" alt="">
+                                                    </div>
+                                                    <span class="chat-message-user-name"></span>
+                                                    <span class="massage-date">25 may 2018  <span>7.51 PM</span></span>
+                                                    <p>Sed non neque faucibus, condimentum lectus at, accumsan enim. Fusce pretium egestas cursus..</p>
+                                                </div>
+
+                                                <div class="chat-message chat-message_user fl-wrap">
+                                                    <div class="dashboard-message-avatar">
+                                                        <img src="images/avatar/1.jpg" alt="">
+                                                    </div>
+                                                    <span class="chat-message-user-name"></span>
+                                                    <span class="massage-date">25 may 2018  <span>7.51 PM</span></span>
+                                                    <p>Nulla eget erat consequat quam feugiat dapibus eget sed mauris.</p>
+                                                </div>
+
+                                                <div class="chat-message chat-message_guest fl-wrap">
+                                                    <div class="dashboard-message-avatar">
+                                                        <img src="images/avatar/4.jpg" alt="">
+                                                    </div>
+                                                    <span class="chat-message-user-name"></span>
+                                                    <span class="massage-date">25 may 2018  <span>7.51 PM</span></span>
+                                                    <p>Sed non neque faucibus, condimentum lectus at, accumsan enim. Fusce pretium egestas cursus..</p>
                                                 </div>
                                             </div>
-                                             <!-- dashboard-list end--> 
-                                            <!-- dashboard-list end--> 
-                                            <div class="chat-widget_input fl-wrap" style="height: max-content;">
-                                                <textarea placeholder="Type Message" style="padding-top: 20px;"></textarea>                                   
+                                            <div class="chat-widget_input fl-wrap">
+                                                <textarea placeholder="Type Message" style="background: #4db7fe;"></textarea>
                                                 <button type="submit"><i class="fa fa-paper-plane-o"></i></button>
                                             </div>
-                                        </class>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="dashboard-list-box fl-wrap">
-                                            <div class="dashboard-header fl-wrap">
-                                                <h3>Contacts</h3>
-                                            </div>
-                                            <!-- dashboard-list end-->    
-                                            <div class="dashboard-list">
-                                                <div class="dashboard-message">
-                                                    <div class="dashboard-message-avatar">
-                                                        <img src="images/avatar/3.jpg" alt="">
-                                                    </div>
-                                                    <div class="dashboard-message-text">
-                                                        <h4>Andy Smith - <span>Hari Ini</span></h4>
-                                                        <div class="booking-details fl-wrap">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- dashboard-list end-->    
-                                            <!-- dashboard-list end-->    
-                                            <div class="dashboard-list">
-                                                <div class="dashboard-message">
-                                                    <div class="dashboard-message-avatar">
-                                                        <img src="images/avatar/2.jpg" alt="">
-                                                    </div>
-                                                    <div class="dashboard-message-text">
-                                                        <h4>Tiara - <span>Hari Ini</span></h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- dashboard-list end-->                                             
-                                            <!-- dashboard-list end-->    
-                                            <div class="dashboard-list">
-                                                <div class="dashboard-message">
-                                                    <div class="dashboard-message-avatar">
-                                                        <img src="images/avatar/avatar-bg.png" alt="">
-                                                    </div>
-                                                    <div class="dashboard-message-text">
-                                                        <h4>Indah- <span>Kemarin</span></h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- dashboard-list end-->      
-                                            <!-- dashboard-list end-->    
-                                            <div class="dashboard-list">
-                                                <div class="dashboard-message">
-                                                    <div class="dashboard-message-avatar">
-                                                        <img src="images/avatar/avatar-bg.png" alt="">
-                                                    </div>
-                                                    <div class="dashboard-message-text">
-                                                        <h4>Dhinda- <span>Kemarin</span></h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- dashboard-list end-->  
-                                            <!-- dashboard-list end-->    
-                                            <div class="dashboard-list">
-                                                <div class="dashboard-message">
-                                                    <div class="dashboard-message-avatar">
-                                                        <img src="images/avatar/avatar-bg.png" alt="">
-                                                    </div>
-                                                    <div class="dashboard-message-text">
-                                                        <h4>Hasan - <span>27 December 2018</span></h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- dashboard-list end-->    
-                                            <!-- dashboard-list end-->    
-                                            <div class="dashboard-list">
-                                                <div class="dashboard-message">
-                                                    <div class="dashboard-message-avatar">
-                                                        <img src="images/avatar/avatar-bg.png" alt="">
-                                                    </div>
-                                                    <div class="dashboard-message-text">
-                                                        <h4>Farhan - <span>27 December 2018</span></h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- dashboard-list end-->                                            
                                         </div>
                                     </div>
                                 </div>
