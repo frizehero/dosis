@@ -7,7 +7,7 @@ class Donasi extends MX_Controller {
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('m_donasi');
+		 $this->load->model('M_donasi');
 		 $this->load->model('admin_login/m_session');
 	}
 
