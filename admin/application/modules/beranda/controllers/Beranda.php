@@ -8,7 +8,7 @@ class Beranda extends MX_Controller {
 		parent::__construct();
 		// model
 		 $this->load->model('m_beranda');
-		 $this->load->model('login/m_session');
+		 $this->load->model('admin_login/m_session');
 	}
 
 	

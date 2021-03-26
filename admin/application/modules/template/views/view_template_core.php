@@ -515,7 +515,7 @@ $menu = $uri_segments[2];
                                                                     <div class="widget-subheading opacity-8">Administrator Website</div>
                                                                 </div>
                                                                 <div class="widget-content-right mr-2">
-                                                                    <a href="<?php echo base_url('login/logoutApp'); ?>"  class="btn-pill btn-shadow btn-shine btn btn-focus">Logout</a>
+                                                                    <a href="<?php echo base_url('admin_login/logoutApp'); ?>"  class="btn-pill btn-shadow btn-shine btn btn-focus">Logout</a>
                                                                     <!-- <button class="btn-pill btn-shadow btn-shine btn btn-focus"></button> -->
                                                                 </div>
                                                             </div>
@@ -830,41 +830,133 @@ $menu = $uri_segments[2];
                 </div>    <div class="scrollbar-sidebar">
                     <div class="app-sidebar__inner">
                         <ul class="vertical-nav-menu">
-                            <li class="app-sidebar__heading">Menu <?php echo "string".  $this->session->flashdata('msg');
-?></li>
                            
 
-                             <?php if ($menu=="beranda"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                            <?php if ($menu=="beranda"){?><li class="mm-active"><?php }else{?><li><?php }?>
                                        <a href="<?php echo base_url('beranda'); ?>">
-                                           <i class="metismenu-icon pe-7s-rocket"></i>Dashboard
+                                       <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use home"></i></i>Beranda
+                                        </a>
+                                    </li>
+
+                            <?php if ($menu=="beranda"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('beranda'); ?>">
+                                       <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use handshake-o"></i></i>Donasi
+                                        </a>
+                                    </li>
+
+                            <?php if ($menu=="beranda"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('beranda'); ?>">
+                                       <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use bars"></i></i>Kategori
+                                        </a>
+                                    </li>
+
+                            <?php if ($menu=="beranda"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('beranda'); ?>">
+                                       <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use check-circle"></i></i>Konfirmasi
+                                        </a>
+                                    </li>
+
+                            <?php if ($menu=="beranda"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('beranda'); ?>">
+                                       <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use edit"></i></i>Laporan
                                         </a>
                                     </li>
 
 
                             <li >
                                 <a href="#" >
-                                    <i class="metismenu-icon pe-7s-browser"></i>Inventaris
+                                <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use file-text"></i></i>Report
                                     <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                 </a>
                                 <ul class="mm-collapse mm-show">
 
                                      <?php if ($menu=="inventory_peralatan"){?><li class="mm-active"><?php }else{?><li><?php }?>
                                        <a href="<?php echo base_url('inventory_peralatan'); ?>">
-                                           <i class="metismenu-icon"></i>Peralatan & Mesin
+                                           <i class="metismenu-icon"></i>Report User
+                                        </a>
+                                    </li>
+
+                                    <?php if ($menu=="inventory_peralatan"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('inventory_peralatan'); ?>">
+                                           <i class="metismenu-icon"></i>Report Postingan
                                         </a>
                                     </li>
 
                                   
                                 </ul>
                             </li>
-							
-                             <li class="app-sidebar__heading">Data</li>
 
-                             <?php if ($menu=="inventory_room"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('inventory_room'); ?>">
-                                           <i class="metismenu-icon pe-7s-airplay"></i>Ruangan
+                            <li >
+                                <a href="#" >
+                                <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use history"></i></i>History
+                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                </a>
+                                <ul class="mm-collapse mm-show">
+
+                                     <?php if ($menu=="inventory_peralatan"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('inventory_peralatan'); ?>">
+                                           <i class="metismenu-icon"></i>History Donasi
                                         </a>
                                     </li>
+
+                                    <?php if ($menu=="inventory_peralatan"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('inventory_peralatan'); ?>">
+                                           <i class="metismenu-icon"></i>History Pembayaran
+                                        </a>
+                                    </li>
+
+                                  
+                                </ul>
+                            </li>
+						
+
+                            <?php if ($menu=="inventory_room"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('inventory_room'); ?>">
+                                       <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use user-circle"></i></i>Profil Admin
+                                        </a>
+                                    </li>
+
+                            <?php if ($menu=="inventory_room"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('inventory_room'); ?>">
+                                       <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use users"></i></i>Profil User
+                                        </a>
+                                    </li>
+
+
+                            <li >
+                                <a href="#" >
+                                <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use gear"></i></i>Pengaturan
+                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                </a>
+                                <ul class="mm-collapse mm-show">
+
+                                     <?php if ($menu=="inventory_peralatan"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('inventory_peralatan'); ?>">
+                                           <i class="metismenu-icon"></i>Edit Profil
+                                        </a>
+                                    </li>
+
+                                    <?php if ($menu=="inventory_peralatan"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('inventory_peralatan'); ?>">
+                                           <i class="metismenu-icon"></i>Bantuan (Faq)
+                                        </a>
+                                    </li>
+
+                                    <?php if ($menu=="inventory_peralatan"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('inventory_peralatan'); ?>">
+                                           <i class="metismenu-icon"></i>Tentang Kami
+                                        </a>
+                                    </li>
+
+                                    <?php if ($menu=="inventory_peralatan"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('inventory_peralatan'); ?>">
+                                           <i class="metismenu-icon"></i>Log Out
+                                        </a>
+                                    </li>
+
+                                  
+                                </ul>
+                            </li>
                              
                            
                         </ul>
