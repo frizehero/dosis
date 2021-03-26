@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Login extends MX_Controller {
+class Admin_login extends MX_Controller {
 
 
 	function __construct()
@@ -27,11 +27,11 @@ class Login extends MX_Controller {
 				'cekAdmin' => $this->M_master_userid->cekAdmin(),
 				
 			);
-			$this->load->view('v_login',$data);
+			$this->load->view('v_admin_login',$data);
 		} else {
 
 			// sudah login
-			redirect('admin_beranda');
+			redirect('beranda');
 		}
 	}
 
@@ -53,7 +53,7 @@ class Login extends MX_Controller {
 			// flashdata
 			$this->session->set_flashdata('msg', 'greeting');
 
-			redirect('admin_login');
+			redirect('beranda');
 		} else { // gagal login
 
 			$this->session->set_flashdata('msg', 'loginError');
@@ -70,7 +70,7 @@ class Login extends MX_Controller {
 
 		$this->session->set_flashdata('msg', 'logoutAplikasi');
 		// redirect
-		redirect('login');
+		redirect('admin_login');
 	}
 
 	function register(){
