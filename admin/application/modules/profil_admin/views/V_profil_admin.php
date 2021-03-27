@@ -18,7 +18,8 @@
                                                     <h6 class="menu-header-subtitle">Admin 1</h6>
                                                 </div>
                                                 <div class="menu-header-btn-pane">
-                                                <a href="<?php echo base_url('edit_profil'); ?>"  class="btn btn-focus">Lihat</a>
+                                                <a href="<?php echo base_url('edit_profil'); ?>">
+                                                    <button class="btn btn-success">Lihat</button></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -42,7 +43,8 @@
                                                     <h6 class="menu-header-subtitle">Admin 2</h6>
                                                 </div>
                                                 <div class="menu-header-btn-pane">
-                                                    <button class="btn btn-success">Lihat</button>
+                                                <a href="<?php echo base_url('edit_profil'); ?>">
+                                                    <button class="btn btn-success">Lihat</button></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -66,7 +68,8 @@
                                                     <h6 class="menu-header-subtitle">Admin 3</h6>
                                                 </div>
                                                 <div class="menu-header-btn-pane">
-                                                    <button class="btn btn-success">Lihat</button>
+                                                <a href="<?php echo base_url('edit_profil'); ?>">
+                                                    <button class="btn btn-success">Lihat</button></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -90,7 +93,8 @@
                                                     <h6 class="menu-header-subtitle">Admin 4</h6>
                                                 </div>
                                                 <div class="menu-header-btn-pane">
-                                                    <button class="btn btn-success">Lihat</button>
+                                                <a href="<?php echo base_url('edit_profil'); ?>">
+                                                    <button class="btn btn-success">Lihat</button></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -114,7 +118,8 @@
                                                     <h6 class="menu-header-subtitle">Admin 5</h6>
                                                 </div>
                                                 <div class="menu-header-btn-pane">
-                                                    <button class="btn btn-success">Lihat</button>
+                                                <a href="<?php echo base_url('edit_profil'); ?>">
+                                                    <button class="btn btn-success">Lihat</button></a>
                                                 </div>
                                             </div>
                                         </div>
