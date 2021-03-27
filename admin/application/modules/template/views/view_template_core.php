@@ -716,7 +716,7 @@ $menu = $uri_segments[2];
                                     </li>
 
                                     <?php if ($menu=="tentang_kami"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('tentang kami'); ?>">
+                                       <a href="<?php echo base_url('tentang_kami'); ?>">
                                            <i class="metismenu-icon"></i>Tentang Kami
                                         </a>
                                     </li>
