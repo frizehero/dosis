@@ -58,6 +58,18 @@ $menu = $uri_segments[2];
     ?>
     <div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
         <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
             <div class="app-header__mobile-menu">
                 <div>
                     <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
@@ -77,11 +89,6 @@ $menu = $uri_segments[2];
                 </span>
             </div>    
             <div class="app-header__content">
-                <div>
-                    <a href="<?php echo base_url('beranda'); ?>">
-                        <img src="assets/images/logo-dosis.png" style="width: 150px;">
-                    </a>
-                </div>
                 <div class="app-header-left">
                </div>
                 <div class="app-header-right">
