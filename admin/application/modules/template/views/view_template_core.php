@@ -709,14 +709,14 @@ $menu = $uri_segments[2];
                                         </a>
                                     </li>
 
-                                    <?php if ($menu=="inventory_peralatan"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('inventory_peralatan'); ?>">
+                                    <?php if ($menu=="bantuan_faq"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('bantuan_faq'); ?>">
                                            <i class="metismenu-icon"></i>Bantuan (Faq)
                                         </a>
                                     </li>
 
-                                    <?php if ($menu=="inventory_peralatan"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('inventory_peralatan'); ?>">
+                                    <?php if ($menu=="tentang_kami"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('tentang kami'); ?>">
                                            <i class="metismenu-icon"></i>Tentang Kami
                                         </a>
                                     </li>
