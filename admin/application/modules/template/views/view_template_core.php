@@ -649,8 +649,8 @@ $menu = $uri_segments[2];
                                         </a>
                                     </li>
 
-                                    <?php if ($menu=="inventory_peralatan"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('inventory_peralatan'); ?>">
+                                    <?php if ($menu=="report_postingan"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('report_postingan'); ?>">
                                            <i class="metismenu-icon"></i>Report Postingan
                                         </a>
                                     </li>
@@ -666,8 +666,8 @@ $menu = $uri_segments[2];
                                 </a>
                                 <ul class="mm-collapse mm-show">
 
-                                     <?php if ($menu=="inventory_peralatan"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('inventory_peralatan'); ?>">
+                                     <?php if ($menu=="history_donasi"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('history_donasi'); ?>">
                                            <i class="metismenu-icon"></i>History Donasi
                                         </a>
                                     </li>
