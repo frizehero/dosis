@@ -17,6 +17,7 @@
     <meta name="msapplication-tap-highlight" content="no">
 
 <link href="<?php echo base_url() ?>main.css" rel="stylesheet"></head>
+<link rel="shortcut icon" href="assets/images/dosis.ico">
 
 <style type="text/css">
     .modal {
@@ -57,18 +58,6 @@ $menu = $uri_segments[2];
     ?>
     <div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
         <div class="app-header header-shadow">
-            <div class="app-header__logo">
-                <div class="logo-src"></div>
-                <div class="header__pane ml-auto">
-                    <div>
-                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
-                            <span class="hamburger-box">
-                                <span class="hamburger-inner"></span>
-                            </span>
-                        </button>
-                    </div>
-                </div>
-            </div>
             <div class="app-header__mobile-menu">
                 <div>
                     <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
@@ -88,6 +77,11 @@ $menu = $uri_segments[2];
                 </span>
             </div>    
             <div class="app-header__content">
+                <div>
+                    <a href="<?php echo base_url('beranda'); ?>">
+                        <img src="assets/images/logo-dosis.png" style="width: 150px;">
+                    </a>
+                </div>
                 <div class="app-header-left">
                </div>
                 <div class="app-header-right">
@@ -305,39 +299,31 @@ $menu = $uri_segments[2];
                                                 </div>
                                             </div>
                                             <div class="grid-menu grid-menu-2col">
-                                                <div class="no-gutters row">
-                                                    <div class="col-sm-6">
-                                                        <button class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-success">
-                                                            <i class="pe-7s-user icon-gradient bg-amy-crisp btn-icon-wrapper mb-2"></i> Edit Profil
-                                                        </button>
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <button class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-link">
-                                                            <i class="pe-7s-unlock icon-gradient bg-love-kiss btn-icon-wrapper mb-2"></i>
-                                                            <b>Status</b>
-                                                        </button>
-                                                    </div>
+                                                <div class="scrollbar-container ps">
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item">
+                                                            <a href="javascript:void(0);" class="nav-link">Chat
+                                                                <div class="ml-auto badge badge-pill badge-info">8</div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="javascript:void(0);" class="nav-link">Status</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="javascript:void(0);" class="nav-link">Aktivitas</a>
+                                                        </li>
+                                                    </ul>
                                                 </div>
+                                                <ul class="nav flex-column">
+                                                    <li class="nav-item-divider nav-item">
+                                                    </li>
+                                                    <li class="nav-item-btn text-center nav-item" style="width: 150px; margin-left: 100px">
+                                                        <a href="<?php echo base_url('edit_profil'); ?>">
+                                                        <button class="btn-wide btn btn-primary btn-sm"> Edit Profil </button>
+                                                        </a>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                            <ul class="nav flex-column">
-                                                <li class="nav-item-divider mb-0 nav-item"></li>
-                                            </ul>
-                                            <div class="grid-menu grid-menu-2col">
-                                                <div class="no-gutters row">
-                                                    <div class="col-sm-6">
-                                                        <button class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-warning">
-                                                            <i class="pe-7s-chat icon-gradient bg-amy-crisp btn-icon-wrapper mb-2"></i> Message Inbox
-                                                        </button>
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <button class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
-                                                            <i class="pe-7s-ticket icon-gradient bg-love-kiss btn-icon-wrapper mb-2"></i>
-                                                            <b>Aktivitas</b>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                           
                                         </div>
                                     </div>
                                 </div>
