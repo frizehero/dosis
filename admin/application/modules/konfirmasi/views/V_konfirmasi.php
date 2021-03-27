@@ -5,7 +5,7 @@
                                 <div class="page-title-icon">
                                     <i class="pe-7s-car icon-gradient bg-mean-fruit"></i>
                                 </div>
-                                <div>Halaman Donasi
+                                <div>Halaman konfirmasi
                                     <div class="page-title-subheading">Terdapat beberapa option untuk melihat keterangan</div>
                                 </div>
                             </div>

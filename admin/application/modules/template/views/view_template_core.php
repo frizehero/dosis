@@ -266,12 +266,6 @@ $menu = $uri_segments[2];
                                         </div>
                                     </div>
                                 </div>
-                                <ul class="nav flex-column">
-                                    <li class="nav-item-divider nav-item"></li>
-                                    <li class="nav-item-btn text-center nav-item">
-                                        <button class="btn-shadow btn-wide btn-pill btn btn-focus btn-sm">View Latest Changes</button>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
                       
@@ -314,13 +308,13 @@ $menu = $uri_segments[2];
                                                 <div class="no-gutters row">
                                                     <div class="col-sm-6">
                                                         <button class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-success">
-                                                            <i class="pe-7s-user icon-gradient bg-amy-crisp btn-icon-wrapper mb-2"></i> Profil User
+                                                            <i class="pe-7s-user icon-gradient bg-amy-crisp btn-icon-wrapper mb-2"></i> Edit Profil
                                                         </button>
                                                     </div>
                                                     <div class="col-sm-6">
                                                         <button class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-link">
                                                             <i class="pe-7s-unlock icon-gradient bg-love-kiss btn-icon-wrapper mb-2"></i>
-                                                            <b>Change Password</b>
+                                                            <b>Status</b>
                                                         </button>
                                                     </div>
                                                 </div>
@@ -338,7 +332,7 @@ $menu = $uri_segments[2];
                                                     <div class="col-sm-6">
                                                         <button class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
                                                             <i class="pe-7s-ticket icon-gradient bg-love-kiss btn-icon-wrapper mb-2"></i>
-                                                            <b>Log User</b>
+                                                            <b>Aktivitas</b>
                                                         </button>
                                                     </div>
                                                 </div>
@@ -623,20 +617,20 @@ $menu = $uri_segments[2];
                                         </a>
                                     </li>
 
-                            <?php if ($menu=="beranda"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('beranda'); ?>">
+                            <?php if ($menu=="kategori"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('kategori'); ?>">
                                        <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use bars"></i></i>Kategori
                                         </a>
                                     </li>
 
-                            <?php if ($menu=="beranda"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('beranda'); ?>">
+                            <?php if ($menu=="konfirmasi"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('konfirmasi'); ?>">
                                        <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use check-circle"></i></i>Konfirmasi
                                         </a>
                                     </li>
 
-                            <?php if ($menu=="beranda"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('beranda'); ?>">
+                            <?php if ($menu=="laporan"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('laporan'); ?>">
                                        <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use edit"></i></i>Laporan
                                         </a>
                                     </li>
@@ -649,8 +643,8 @@ $menu = $uri_segments[2];
                                 </a>
                                 <ul class="mm-collapse mm-show">
 
-                                     <?php if ($menu=="inventory_peralatan"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('inventory_peralatan'); ?>">
+                                     <?php if ($menu=="report_user"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('report_user'); ?>">
                                            <i class="metismenu-icon"></i>Report User
                                         </a>
                                     </li>
