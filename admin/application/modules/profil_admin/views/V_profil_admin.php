@@ -5,7 +5,7 @@
                                 <div class="page-title-icon">
                                     <i class="pe-7s-car icon-gradient bg-mean-fruit"></i>
                                 </div>
-                                <div>Halaman laporan
+                                <div>Halaman profil admin
                                     <div class="page-title-subheading">Terdapat beberapa option untuk melihat keterangan</div>
                                 </div>
                             </div>

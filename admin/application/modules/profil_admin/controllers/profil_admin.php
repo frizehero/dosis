@@ -7,7 +7,7 @@ class Profil_admin extends MX_Controller {
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('M_laporan');
+		 $this->load->model('M_profil_admin');
 		 $this->load->model('admin_login/m_session');
 	}
 
@@ -23,8 +23,8 @@ class Profil_admin extends MX_Controller {
 		} else {
 
 			$data = array(
-			'namamodule' 	=> "laporan",
-			'namafileview' 	=> "V_laporan",
+			'namamodule' 	=> "profil_admin",
+			'namafileview' 	=> "V_profil_admin",
 		);
 		echo Modules::run('template/tampilCore', $data);
 		}

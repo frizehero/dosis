@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class M_laporan extends CI_Model {
+class M_profil_admin extends CI_Model {
 
 	function tampil()
 	{
