@@ -721,8 +721,8 @@ $menu = $uri_segments[2];
                                         </a>
                                     </li>
 
-                                    <?php if ($menu=="inventory_peralatan"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('inventory_peralatan'); ?>">
+                                    <?php if ($menu=="admin_login"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                    <a href="<?php echo base_url('admin_login/logoutApp'); ?>">
                                            <i class="metismenu-icon"></i>Log Out
                                         </a>
                                     </li>

@@ -18,9 +18,7 @@
                                                     <h6 class="menu-header-subtitle">Admin 1</h6>
                                                 </div>
                                                 <div class="menu-header-btn-pane">
-                                                    <a href="edit-profil-dosis.html">
-                                                    <button class="btn btn-success">Lihat</button>
-                                                    </a>
+                                                <a href="<?php echo base_url('edit_profil'); ?>"  class="btn btn-focus">Lihat</a>
                                                 </div>
                                             </div>
                                         </div>
