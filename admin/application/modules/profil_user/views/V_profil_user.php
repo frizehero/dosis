@@ -18,9 +18,8 @@
                                                     <h6 class="menu-header-subtitle">SMKN 1 PROBOLINGGO</h6>
                                                 </div>
                                                 <div class="menu-header-btn-pane">
-                                                    <a href="edit-profil-dosis.html">
-                                                    <button class="btn btn-success">Lihat</button>
-                                                    </a>
+                                                <a href="<?php echo base_url('edit_profil'); ?>">
+                                                    <button class="btn btn-success">Lihat</button></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -72,7 +71,8 @@
                                                     <h6 class="menu-header-subtitle">SMKN 3 PROBOLINGGO</h6>
                                                 </div>
                                                 <div class="menu-header-btn-pane">
-                                                    <button class="btn btn-success">Lihat</button>
+                                                <a href="<?php echo base_url('edit_profil'); ?>">
+                                                    <button class="btn btn-success">Lihat</button></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -120,7 +120,8 @@
                                                     <h6 class="menu-header-subtitle">SMKN 1 MALANG</h6>
                                                 </div>
                                                 <div class="menu-header-btn-pane">
-                                                    <button class="btn btn-success">Lihat</button>
+                                                <a href="<?php echo base_url('edit_profil'); ?>">
+                                                    <button class="btn btn-success">Lihat</button></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -168,7 +169,8 @@
                                                     <h6 class="menu-header-subtitle">SMKN 10 JEMBER</h6>
                                                 </div>
                                                 <div class="menu-header-btn-pane">
-                                                    <button class="btn btn-success">Lihat</button>
+                                                <a href="<?php echo base_url('edit_profil'); ?>">
+                                                    <button class="btn btn-success">Lihat</button></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -216,7 +218,8 @@
                                                     <h6 class="menu-header-subtitle">SMKN 1 JAKARTA</h6>
                                                 </div>
                                                 <div class="menu-header-btn-pane">
-                                                    <button class="btn btn-success">Lihat</button>
+                                                <a href="<?php echo base_url('edit_profil'); ?>">
+                                                    <button class="btn btn-success">Lihat</button></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -264,7 +267,8 @@
                                                     <h6 class="menu-header-subtitle">SMKN 1 PROBOLINGGO</h6>
                                                 </div>
                                                 <div class="menu-header-btn-pane">
-                                                    <button class="btn btn-success">Lihat</button>
+                                                <a href="<?php echo base_url('edit_profil'); ?>">
+                                                    <button class="btn btn-success">Lihat</button></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -312,7 +316,8 @@
                                                     <h6 class="menu-header-subtitle">SMKN 8 MALANG</h6>
                                                 </div>
                                                 <div class="menu-header-btn-pane">
-                                                    <button class="btn btn-success">Lihat</button>
+                                                <a href="<?php echo base_url('edit_profil'); ?>">
+                                                    <button class="btn btn-success">Lihat</button></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -360,7 +365,8 @@
                                                     <h6 class="menu-header-subtitle">SMKN 12 MALANG</h6>
                                                 </div>
                                                 <div class="menu-header-btn-pane">
-                                                    <button class="btn btn-success">Lihat</button>
+                                                <a href="<?php echo base_url('edit_profil'); ?>">
+                                                    <button class="btn btn-success">Lihat</button></a>
                                                 </div>
                                             </div>
                                         </div>
