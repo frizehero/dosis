@@ -672,8 +672,8 @@ $menu = $uri_segments[2];
                                         </a>
                                     </li>
 
-                                    <?php if ($menu=="inventory_peralatan"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('inventory_peralatan'); ?>">
+                                    <?php if ($menu=="history_pembayaran"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('history_pembayaran'); ?>">
                                            <i class="metismenu-icon"></i>History Pembayaran
                                         </a>
                                     </li>

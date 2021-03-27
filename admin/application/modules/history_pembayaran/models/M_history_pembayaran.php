@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class M_report_user extends CI_Model {
+class M_history_pembayaran extends CI_Model {
 
 	function tampil()
 	{

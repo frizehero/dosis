@@ -1,13 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Report_user extends MX_Controller {
+class History_pembayaran extends MX_Controller {
 
 	function __construct()
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('M_report_user');
+		 $this->load->model('M_history_pembayaran');
 		 $this->load->model('admin_login/m_session');
 	}
 
@@ -23,8 +23,8 @@ class Report_user extends MX_Controller {
 		} else {
 
 			$data = array(
-			'namamodule' 	=> "report_user",
-			'namafileview' 	=> "V_report_user",
+			'namamodule' 	=> "history_pembayaran",
+			'namafileview' 	=> "V_history_pembayaran",
 		);
 		echo Modules::run('template/tampilCore', $data);
 		}
