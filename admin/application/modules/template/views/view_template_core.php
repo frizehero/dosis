@@ -683,14 +683,14 @@ $menu = $uri_segments[2];
                             </li>
 						
 
-                            <?php if ($menu=="inventory_room"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('inventory_room'); ?>">
+                            <?php if ($menu=="profil_admin"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('profil_admin'); ?>">
                                        <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use user-circle"></i></i>Profil Admin
                                         </a>
                                     </li>
 
-                            <?php if ($menu=="inventory_room"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('inventory_room'); ?>">
+                            <?php if ($menu=="profil_user"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('profil_user'); ?>">
                                        <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use users"></i></i>Profil User
                                         </a>
                                     </li>
