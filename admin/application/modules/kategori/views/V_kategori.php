@@ -7,8 +7,9 @@
                                 </div>
                                 <div>Kategori Donasi
                             </div>
-                             </div>
-                    </div>        <ul class="body-tabs body-tabs-layout tabs-animated body-tabs-animated nav">
+                        </div>
+                    </div>        
+                        <ul class="body-tabs body-tabs-layout tabs-animated body-tabs-animated nav">
                         <li class="nav-item">
                             <a role="tab" class="nav-link active" id="tab-0" data-toggle="tab" href="#tab-content-0">
                                 <span>Siswa Putus Sekolah</span>
@@ -55,7 +56,7 @@
                                                 <div class="widget-content-outer">
                                                     <div class="widget-content-wrapper">
                                                         <div class="widget-content-left">
-                                                                <div class="widget-numbers text-dark"></div>
+                                                            <div class="widget-numbers text-dark"></div>
                                                         </div>
                                                     </div>
                                                     <div class="widget-progress-wrapper mt-1">
