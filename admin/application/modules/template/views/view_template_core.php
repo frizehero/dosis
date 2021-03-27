@@ -703,8 +703,8 @@ $menu = $uri_segments[2];
                                 </a>
                                 <ul class="mm-collapse mm-show">
 
-                                     <?php if ($menu=="inventory_peralatan"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('inventory_peralatan'); ?>">
+                                     <?php if ($menu=="edit_profil"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('edit_profil'); ?>">
                                            <i class="metismenu-icon"></i>Edit Profil
                                         </a>
                                     </li>
