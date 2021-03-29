@@ -32,11 +32,29 @@ class Donasi extends MX_Controller {
 
 	}
 
+	function detailview()
+	{
+		$data = array(
+			'namamodule' 	=> "donasi",
+			'namafileview' 	=> "V_detail_donasi",
+		);
+		echo Modules::run('template/tampilCore', $data);
+	}
+
 	function tambah()
 	{
 		$this->m_data_sekolah->tambah();
 		redirect('data_sekolah');
 	}
+
+	
+	function detail()
+	{
+		$this->m_data_sekolah->detail();
+		redirect('data_sekolah');
+	}
+
+
 
 	function edit()
 	{
