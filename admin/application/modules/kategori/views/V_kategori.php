@@ -97,12 +97,7 @@
                                                                                     <div> 465 Orang telah Berdonasi</div>
                                                                                 </div></li>
                                                                                 <div class="card-body">
-                                                                                <div class="br-wrapper br-theme-css-stars"><select id="css-stars" style="display: none;">
-                                                                                    <option value="1">1</option>
-                                                                                    <option value="2">2</option>
-                                                                                    <option value="3">3</option>
-                                                                                    <option value="4">4</option>
-                                                                                    <option value="5">5</option>
+                                                                                <div class="br-wrapper br-theme-css-stars">
                                                                                 </select><div class="br-widget"><a href="#" data-rating-value="1" data-rating-text="1" class="br-selected br-current"></a><a href="#" data-rating-value="2" data-rating-text="2"></a><a href="#" data-rating-value="3" data-rating-text="3"></a><a href="#" data-rating-value="4" data-rating-text="4"></a><a href="#" data-rating-value="5" data-rating-text="5"></a><div class="br-current-rating">1</div></div></div><div class="br-widget"><a href="#" data-rating-value="1" data-rating-text="1" class="br-selected br-current"></a><a href="#" data-rating-value="2" data-rating-text="2"></a><a href="#" data-rating-value="3" data-rating-text="3"></a><a href="#" data-rating-value="4" data-rating-text="4"></a><a href="#" data-rating-value="5" data-rating-text="5"></a></div>
                                                                             </div>
                                                                             </ul>
@@ -180,12 +175,7 @@
                                                                                     <div> 465 Orang telah Berdonasi</div>
                                                                                 </div></li>
                                                                                 <div class="card-body">
-                                                                                <div class="br-wrapper br-theme-css-stars"><select id="css-stars" style="display: none;">
-                                                                                    <option value="1">1</option>
-                                                                                    <option value="2">2</option>
-                                                                                    <option value="3">3</option>
-                                                                                    <option value="4">4</option>
-                                                                                    <option value="5">5</option>
+                                                                                <div class="br-wrapper br-theme-css-stars">
                                                                                 </select><div class="br-widget"><a href="#" data-rating-value="1" data-rating-text="1" class="br-selected br-current"></a><a href="#" data-rating-value="2" data-rating-text="2" class=""></a><a href="#" data-rating-value="3" data-rating-text="3"></a><a href="#" data-rating-value="4" data-rating-text="4"></a><a href="#" data-rating-value="5" data-rating-text="5"></a><div class="br-current-rating">1</div></div></div>
                                                                             </div>
 
@@ -284,12 +274,7 @@
                                                                                     <div> 465 Orang telah Berdonasi</div>
                                                                                 </li>
                                                                                 <div class="card-body">
-                                                                                <div class="br-wrapper br-theme-css-stars"><select id="css-stars" style="display: none;">
-                                                                                    <option value="1">1</option>
-                                                                                    <option value="2">2</option>
-                                                                                    <option value="3">3</option>
-                                                                                    <option value="4">4</option>
-                                                                                    <option value="5">5</option>
+                                                                                <div class="br-wrapper br-theme-css-stars">
                                                                                 </select><div class="br-widget"><a href="#" data-rating-value="1" data-rating-text="1" class="br-selected br-current"></a><a href="#" data-rating-value="2" data-rating-text="2" class=""></a><a href="#" data-rating-value="3" data-rating-text="3"></a><a href="#" data-rating-value="4" data-rating-text="4"></a><a href="#" data-rating-value="5" data-rating-text="5"></a><div class="br-current-rating">1</div></div></div>
                                                                             </div>
 

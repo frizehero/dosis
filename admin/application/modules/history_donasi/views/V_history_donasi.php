@@ -230,7 +230,7 @@
                                                         <h6 class="menu-header-title">Bedah Sekolah dari kardus di pelosok Desa Probolinggo</h6>
                                                     </div>
                                                     <div class="menu-header-btn-pane">
-                                                        <a href="detail-donasi.html">
+                                                        <a href="<?php echo base_url('detail_donasi'); ?>">
                                                         <button type="button" class="btn-wide btn-shadow btn-pill btn btn-light">View Details</button>
                                                         </a>
                                                     </div>
