@@ -101,9 +101,9 @@
                                                     </div>
                                                 </div>
                                                 <div class="text-center d-block card-footer">
-                                                    <a href="detail-report-post.html">
+                                                    <a href="<?php echo base_url('detail_report_postingan'); ?>">
                                                     <button class="btn-shadow-primary btn btn-primary btn-lg" data-dismiss="Modal title" data-target="exampleModalLongTitle">Detail Report</button>
-                                                    <a href="detail_peristiwa.html">
+                                                    <a href="#">
                                                     <button class="btn-shadow-primary btn btn-primary btn-lg">Delete</button>
                                                     </a>
                                                 </div>
@@ -179,9 +179,9 @@
                                                 </div>
                                             </div>
                                             <div class="text-center d-block card-footer">
-                                                <a href="detail-report-post.html">
+                                                <a href="<?php echo base_url('detail_report_postingan'); ?>">
                                                 <button class="btn-shadow-primary btn btn-primary btn-lg" data-dismiss="Modal title" data-target="exampleModalLongTitle">Detail Report</button>
-                                                <a href="detail_peristiwa.html">
+                                                <a href="#">
                                                 <button class="btn-shadow-primary btn btn-primary btn-lg">Delete</button>
                                                 </a>
                                             </div>
@@ -258,9 +258,9 @@
                                                 </div>
                                             </div>
                                             <div class="text-center d-block card-footer">
-                                                <a href="detail-report-post.html">
+                                                <a href="<?php echo base_url('detail_report_postingan'); ?>">
                                                 <button class="btn-shadow-primary btn btn-primary btn-lg" data-dismiss="Modal title" data-target="exampleModalLongTitle">Detail Report</button>
-                                                <a href="detail_peristiwa.html">
+                                                <a href="#">
                                                 <button class="btn-shadow-primary btn btn-primary btn-lg">Delete</button>
                                                 </a>
                                             </div>
@@ -337,9 +337,9 @@
                                                 </div>
                                             </div>
                                             <div class="text-center d-block card-footer">
-                                                <a href="detail-report-post.html">
+                                                <a href="<?php echo base_url('detail_report_postingan'); ?>">
                                                 <button class="btn-shadow-primary btn btn-primary btn-lg" data-dismiss="Modal title" data-target="exampleModalLongTitle">Detail Report</button>
-                                                <a href="detail_peristiwa.html">
+                                                <a href="#">
                                                 <button class="btn-shadow-primary btn btn-primary btn-lg">Delete</button>
                                                 </a>
                                             </div>

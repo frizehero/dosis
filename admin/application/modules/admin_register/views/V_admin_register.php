@@ -2,14 +2,14 @@
 <html lang="en">
 
 
-<!-- Mirrored from demo.dashboardpack.com/architectui-html-pro/pages-register.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 Feb 2021 08:03:41 GMT -->
+<!-- Mirrored from demo.dashboardpack.com/architectui-html-pro/pages-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 Feb 2021 08:03:38 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Register-dosis</title>
+    <title>Registrasi</title>
     <meta name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
     <meta name="description" content="ArchitectUI HTML Bootstrap 4 Dashboard Template">
@@ -17,16 +17,49 @@
     <!-- Disable tap highlight on IE -->
     <meta name="msapplication-tap-highlight" content="no">
 
-<link href="main.d810cf0ae7f39f28f336.css" rel="stylesheet"></head>
+<link href="<?php echo base_url() ?>main.css" rel="stylesheet"></head>
 
 <body>
     <div class="app-container app-theme-white body-tabs-shadow">
         <div class="app-container">
             <div class="h-100">
                 <div class="h-100 no-gutters row">
-                    <div class="h-100 d-md-flex d-sm-block bg-white justify-content-center align-items-center col-md-12 col-lg-7">
-                        <div class="mx-auto app-login-box col-md-8">
-                            <div class="modal-dialog w-100">
+                    <div class="d-none d-lg-block col-lg-4">
+                        <div class="slider-light">
+                            <div class="slick-slider">
+                                <div>
+                                    <div class="position-relative h-100 d-flex justify-content-center align-items-center bg-plum-plate" tabindex="-1">
+                                        <div class="slide-img-bg" style="background-image: url('assets/images/originals/city.jpg');"></div>
+                                        <div class="slider-content">
+                                            <h3>Mari saling berbagi</h3>
+                                            <p>Berbagi hal positif kepada orang itu sangatlah sederhana. Cukup dengan memperlihatkan senyuman indah dari bibirmu, itu sudah hal yang menyenangka.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="position-relative h-100 d-flex justify-content-center align-items-center bg-premium-dark" tabindex="-1">
+                                        <div class="slide-img-bg" style="background-image: url('assets/images/originals/citynights.jpg');"></div>
+                                        <div class="slider-content">
+                                            <h3>Berbagi itu indah</h3>
+                                            <p>"Berbagi bukan tentang seberapa besar dan seberapa berharganya hal yang kau beri, namun seberapa tulus dan ikhlasnya apa yang ingin kau beri."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="position-relative h-100 d-flex justify-content-center align-items-center bg-sunny-morning" tabindex="-1">
+                                        <div class="slide-img-bg" style="background-image: url('assets/images/originals/citydark.jpg');"></div>
+                                        <div class="slider-content">
+                                            <h3>Jangan lupa bersyukur</h3>
+                                            <p>"Punya harta dan ilmu jika hanya dinikmati sendiri, tidak banyak berarti. Berbagi adalah cara bersyukur tertinggi atas nikmat yang diberi-NYA.".</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-100 d-flex bg-white justify-content-center align-items-center col-md-12 col-lg-8">
+                        <div class="mx-auto app-login-box col-sm-12 col-md-10 col-lg-9">
+                            <div class="modal-dialog w-170 mx-auto">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <h5 class="modal-title">
@@ -76,30 +109,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-lg-flex d-xs-none col-lg-5">
-                        <div class="slider-light">
-                            <div class="slick-slider slick-initialized">
-                                <div>
-                                    <div class="position-relative h-100 d-flex justify-content-center align-items-center bg-premium-dark"
-                                        tabindex="-1">
-                                        <div class="slide-img-bg"
-                                            style="background-image: url('assets/images/originals/citynights.jpg');"></div>
-                                        <div class="slider-content">
-                                            <h3>Mulai donasi disini</h3>
-                                            <p>Jangan menunggu kaya dulu untuk rela berbagi kepada orang. Memberikan kebahagiaan kepada orang lain, rasa bahagia itu akan kembali pada kamu nantinya.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
-<script type="text/javascript" src="assets/scripts/main.d810cf0ae7f39f28f336.js"></script></body>
+<script type="text/javascript" src="<?php echo base_url('assets/') ?>scripts/main.js"></script></body>
 
 
-<!-- Mirrored from demo.dashboardpack.com/architectui-html-pro/pages-register.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 Feb 2021 08:03:41 GMT -->
+<!-- Mirrored from demo.dashboardpack.com/architectui-html-pro/pages-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 Feb 2021 08:03:40 GMT -->
 </html>

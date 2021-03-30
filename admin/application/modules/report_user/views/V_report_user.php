@@ -64,7 +64,7 @@
                                         </td>
                                         <td class="text-center">
                                             <div role="group" class="btn-group-sm btn-group">
-                                                <a href="detail-report-user.html">
+                                                <a href="<?php echo base_url('detail_report_user'); ?>">
                                                     <button class="btn-shadow btn btn-primary">Detail Report</button>&nbsp;
                                                 </a> 
                                                 <a>
@@ -92,7 +92,7 @@
                                         </td>
                                         <td class="text-center">
                                             <div role="group" class="btn-group-sm btn-group">
-                                                <a href="detail-report-user.html">
+                                                <a href="<?php echo base_url('detail_report_user'); ?>">
                                                     <button class="btn-shadow btn btn-primary">Detail Report</button>&nbsp;
                                                 </a> 
                                                 <a>
@@ -120,7 +120,7 @@
                                         </td>
                                         <td class="text-center">
                                             <div role="group" class="btn-group-sm btn-group">
-                                                <a href="detail-report-user.html">
+                                                <a href="<?php echo base_url('detail_report_user'); ?>">
                                                     <button class="btn-shadow btn btn-primary">Detail Report</button>&nbsp;
                                                 </a> 
                                                 <a>
@@ -148,7 +148,7 @@
                                         </td>
                                         <td class="text-center">
                                             <div role="group" class="btn-group-sm btn-group">
-                                                <a href="detail-report-user.html">
+                                                <a href="<?php echo base_url('detail_report_user'); ?>">
                                                     <button class="btn-shadow btn btn-primary">Detail Report</button>&nbsp;
                                                 </a> 
                                                 <a>
@@ -176,7 +176,7 @@
                                         </td>
                                         <td class="text-center">
                                             <div role="group" class="btn-group-sm btn-group">
-                                                <a href="detail-report-user.html">
+                                                <a href="<?php echo base_url('detail_report_user'); ?>">
                                                     <button class="btn-shadow btn btn-primary">Detail Report</button>&nbsp;
                                                 </a> 
                                                 <a>
@@ -204,7 +204,7 @@
                                         </td>
                                         <td class="text-center">
                                             <div role="group" class="btn-group-sm btn-group">
-                                                <a href="detail-report-user.html">
+                                                <a href="<?php echo base_url('detail_report_user'); ?>">
                                                     <button class="btn-shadow btn btn-primary">Detail Report</button>&nbsp;
                                                 </a> 
                                                 <a>

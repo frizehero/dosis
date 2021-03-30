@@ -89,7 +89,7 @@
                                                     <label for="exampleCheck" class="form-check-label">Ingat saya</label>
                                                 </div>
                                                 <div class="divider"></div>
-                                                <h6 class="mb-0">Tidak memiliki akun? <a href="javascript:void(0);" class="text-primary"><a href="Registrasi-dosis.html"> Daftar sekarang</a></a></h6>
+                                                <h6 class="mb-0">Tidak memiliki akun? <a href="javascript:void(0);" class="text-primary"><a href="<?php echo base_url('admin_register'); ?>"> Daftar sekarang</a></a></h6>
                                                 <div class="divider row"></div>
                                                 <div class="d-flex align-items-center">
                                                     <div class="ml-auto">

@@ -1,5 +1,5 @@
 <div class="app-main__inner">
-                    
+
                     <ul class="body-tabs body-tabs-layout tabs-animated body-tabs-animated nav">
                             <li class="nav-item">
                                 <a role="tab" class="nav-link active" id="tab-0" data-toggle="tab" href="#tab-content-0">
@@ -28,7 +28,7 @@
                                                 <div class="tab-content">
                                                     <div class="dropdown-menu-header">
                                                         <div class="wrapper rounded"></div>
-                                                        <img src="assets/images/Peristiwa/1.jpg" style="width: 314px; height:210px;">   
+                                                        <img src="assets/images/Peristiwa/1.jpg" style="width: 277px; height:210px;">   
                                                     </div>
                                                 </div>
                                             </div>
@@ -51,7 +51,7 @@
                                                 <div class="tab-content">
                                                     <div class="dropdown-menu-header">
                                                         <div class="wrapper rounded"></div>
-                                                        <img src="assets/images/Peristiwa/2.jpg" style="width: 314px; height:210px;">   
+                                                        <img src="assets/images/Peristiwa/2.jpg" style="width: 277px; height:210px;">   
                                                     </div>
                                                 </div>
                                             </div>
@@ -74,7 +74,7 @@
                                                 <div class="tab-content">
                                                     <div class="dropdown-menu-header">
                                                         <div class="wrapper rounded"></div>
-                                                        <img src="assets/images/donasi/1.jpg" style="width: 314px; height:210px;">   
+                                                        <img src="assets/images/Peristiwa/1.jpg" style="width: 277px; height:210px;">   
                                                     </div>
                                                 </div>
                                             </div>
@@ -97,7 +97,7 @@
                                                 <div class="tab-content">
                                                     <div class="dropdown-menu-header">
                                                         <div class="wrapper rounded"></div>
-                                                        <img src="assets/images/donasi/2.jpg" style="width: 314px; height:210px;">   
+                                                        <img src="assets/images/Peristiwa/1.jpg" style="width: 277px; height:210px;">   
                                                     </div>
                                                 </div>
                                             </div>
@@ -120,7 +120,7 @@
                                                 <div class="tab-content">
                                                     <div class="dropdown-menu-header">
                                                         <div class="wrapper rounded"></div>
-                                                        <img src="assets/images/Peristiwa/3.jpg" style="width: 314px; height:210px;">   
+                                                        <img src="assets/images/Peristiwa/3.jpg" style="width: 277px; height:210px;">   
                                                     </div>
                                                 </div>
                                             </div>
@@ -165,7 +165,7 @@
                                                 <div class="tab-content">
                                                     <div class="dropdown-menu-header">
                                                         <div class="wrapper rounded"></div>
-                                                        <img src="assets/images/donasi/5.jpg" style="width: 314px; height:210px;">   
+                                                        <img src="assets/images/Peristiwa/1.jpg" style="width: 277px; height:210px;">   
                                                     </div>
                                                 </div>
                                             </div>
