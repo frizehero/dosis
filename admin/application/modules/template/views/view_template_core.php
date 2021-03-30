@@ -595,7 +595,7 @@ $menu = $uri_segments[2];
                     </span>
                 </div>    <div class="scrollbar-sidebar">
                     <div class="app-sidebar__inner">
-                        <ul class="vertical-nav-menu">
+                        <ul class="vertical-nav-menu metismenu">
                            
 
                             <?php if ($menu=="beranda"){?><li class="mm-active"><?php }else{?><li><?php }?>
@@ -605,10 +605,11 @@ $menu = $uri_segments[2];
                                     </li>
 
                             <?php if ($menu=="donasi"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('donasi'); ?>">
-                                       <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use handshake-o"></i></i>Donasi
-                                        </a>
-                                    </li>
+                                    <a href="<?php echo base_url('donasi'); ?>">
+                                    <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use handshake-o"></i></i>Donasi
+                                    </a>
+
+
 
                             <?php if ($menu=="kategori"){?><li class="mm-active"><?php }else{?><li><?php }?>
                                        <a href="<?php echo base_url('kategori'); ?>">
