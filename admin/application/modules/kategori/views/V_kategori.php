@@ -121,7 +121,7 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="text-center d-block card-footer">
-                                                                    <a href="V_detail_donasi.php">
+                                                                    <a href="<?php echo base_url('detail_donasi'); ?>">
                                                                     <button class="btn-shadow-primary btn btn-primary btn-lg">Detail</button>
                                                                     </a>
                                                                     <button type="button" class="btn-shadow-primary btn btn-primary btn-lg" data-toggle="modal" data-target=".bd-example-modal-sm">Bagikan</button>
@@ -205,7 +205,7 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="text-center d-block card-footer">
-                                                                    <a href="detail-donasi.html">
+                                                                    <a href="<?php echo base_url('detail_donasi'); ?>">
                                                                     <button class="btn-shadow-primary btn btn-primary btn-lg">Detail</button>
                                                                     </a>
                                                                     <button type="button" class="btn-shadow-primary btn btn-primary btn-lg" data-toggle="modal" data-target=".bd-example-modal-sm">Bagikan</button>
@@ -309,7 +309,7 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="text-center d-block card-footer">
-                                                                    <a href="detail-donasi.html">
+                                                                    <a href="<?php echo base_url('detail_donasi'); ?>">
                                                                     <button class="btn-shadow-primary btn btn-primary btn-lg">Detail</button>
                                                                     </a>
                                                                     <button type="button" class="btn-shadow-primary btn btn-primary btn-lg" data-toggle="modal" data-target=".bd-example-modal-sm">Bagikan</button>
