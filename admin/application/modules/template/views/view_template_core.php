@@ -606,7 +606,7 @@ $menu = $uri_segments[2];
 
                             <?php if ($menu=="donasi"){?><li class="mm-active"><?php }else{?><li><?php }?>
                                     <a href="<?php echo base_url('donasi'); ?>">
-                                    <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use handshake-o"></i></i>Donasi
+                                    <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use handshake-o"></i></i>Donasi
                                     </a>
 
 
