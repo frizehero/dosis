@@ -1,5 +1,15 @@
 <div class="app-main__inner">
-
+                    <div class="app-page-title">
+                        <div class="page-title-wrapper">
+                            <div class="page-title-heading">
+                                <div class="page-title-icon">
+                                    <i class="pe-7s-star icon-gradient bg-ripe-malin"></i>
+                                </div>
+                                <div>History Pembayaran
+                            </div>
+                        </div>
+                    </div>
+                    </br>
                     <class class="tab-content">                          
                             <div class="tab-pane tabs-animation nav-item active" id="tab-content-1" role="tabpanel">
                                 <div class="row">
