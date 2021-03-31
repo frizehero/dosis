@@ -689,6 +689,12 @@ $menu = $uri_segments[2];
                                        <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use users"></i></i>Profil User
                                         </a>
                                     </li>
+                            
+                            <?php if ($menu=="galangdana_room"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('galangdana_room'); ?>">
+                                       <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use user-circle"></i></i>Galang Dana
+                                        </a>
+                                    </li>
 
 
                             <li >
