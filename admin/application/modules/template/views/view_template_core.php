@@ -676,7 +676,6 @@ $menu = $uri_segments[2];
                                   
                                 </ul>
                             </li>
-						
 
                             <?php if ($menu=="profil_admin"){?><li class="mm-active"><?php }else{?><li><?php }?>
                                        <a href="<?php echo base_url('profil_admin'); ?>">

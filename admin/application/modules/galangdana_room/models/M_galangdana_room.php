@@ -21,7 +21,7 @@ class M_galangdana_room extends CI_Model {
 					'pj_room'		=> $pj,
 					'ket_room'		=> $keterangan,
 				);
-				$this->db->insert('inventory_room', $data);
+				$this->db->insert('galangdana_room', $data);
 				$this->session->set_flashdata('msg', 'suksestambah');
 			
 	}
@@ -30,7 +30,7 @@ class M_galangdana_room extends CI_Model {
 	{
 		$idnya=decrypt_url($id);
 		$this->db->where('id_inv_room',$idnya);
-    	return $this->db->get('inventory_room')->row_array();
+    	return $this->db->get('galangdana_room')->row_array();
 	}
 
 
