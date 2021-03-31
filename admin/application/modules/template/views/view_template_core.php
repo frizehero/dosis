@@ -354,15 +354,15 @@ $menu = $uri_segments[2];
                     <div class="theme-settings__options-wrapper">
             
                         <h3 class="themeoptions-heading">
-                            <div> Header Options </div>
+                            <div> Pengaturan Header </div>
                             <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
-                                Restore Default
+                                Reset
                             </button>
                         </h3>
                         <div class="p-3">
                             <ul class="list-group">
                                 <li class="list-group-item">
-                                    <h5 class="pb-2">Choose Color Scheme</h5>
+                                    <h5 class="pb-2">Pilih Warna yang kamu sukai</h5>
                                     <div class="theme-settings-swatches">
                                         <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light"></div>
                                         <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light"></div>
@@ -406,9 +406,9 @@ $menu = $uri_segments[2];
                             </ul>
                         </div>
                         <h3 class="themeoptions-heading">
-                            <div>Sidebar Options</div>
+                            <div> pengaturan Sidebar </div>
                             <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
-                                Restore Default
+                                Reset
                             </button>
                         </h3>
                         <div class="p-3">
@@ -433,7 +433,7 @@ $menu = $uri_segments[2];
                                     </div>
                                 </li>-->
                                 <li class="list-group-item">
-                                    <h5 class="pb-2">Choose Color Scheme</h5>
+                                    <h5 class="pb-2">Pilih Warna yang kamu sukai</h5>
                                     <div class="theme-settings-swatches">
                                         <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light"></div>
                                         <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light"></div>
@@ -562,7 +562,8 @@ $menu = $uri_segments[2];
                     </div>
                 </div>
             </div>
-        </div>        <div class="app-main">
+        </div>        
+        <div class="app-main">
             <div class="app-sidebar sidebar-shadow">
                 <div class="app-header__logo">
                     <div class="logo-src"></div>
