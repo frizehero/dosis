@@ -33,7 +33,7 @@
                                                 <div class="mt-2">
                                                     Perkenalkan ini Seyan Arka Seta. Umurnya baru 3 tahun anak dari pasangan Pak Dodi Cahyadi (40) dan Ibu Nia Ernawati (36) warga Rancabali, Kab. Bandung.Balita yang akrab disapa Seyan ini menderita penyakit Leukimia.
                                                 </div>
-                                                
+                                                </br>
                                                 <div> 
                                                     <img width="300" height="200" class="dashboard-sparkline-carousel-4-pop" src="assets/images/Peristiwa/1.jpg" alt=""> 
                                                     &nbsp;

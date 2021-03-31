@@ -1,8 +1,10 @@
 <div class="app-main__inner">
 
+                    <div class="text-center">
+                        <h1>Tentang Kami</h1></br>
+                    </div>
                     <div class="mb-3 card">
                         <div class="text-center block">
-                            <h1>Tentang Kami</h1></br>
                         </div>
                         <div class="text-left block">
                             <div class="card-body">
