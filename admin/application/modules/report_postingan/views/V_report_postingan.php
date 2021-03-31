@@ -22,8 +22,8 @@
                     </div>        
                     <ul class="body-tabs body-tabs-layout tabs-animated body-tabs-animated nav">
                         <div class="tabs-animation">
-                            <div class="row">
-                                <div class="col-md-12 col-lg-6">
+                            <div class="mt-3 row">
+                                <div class="col-md-12 col-lg-4">
                                     <div class="card-shadow-primary card-border mb-3 profile-responsive-sm card">
                                         <div class="dropdown-menu-header">
                                             <div class="dropdown-menu-header-inner bg-vicious-stance">
@@ -44,7 +44,7 @@
                                             <div class="card-hover-shadow profile-responsive card-border border-success mb-3 card">
                                                 <div class="dropdown-menu-header">
                                                     <div class="wrapper rounded">
-                                                    <img src="assets/images/peristiwa/4.jpg" style="width: 485px; height:210px;">
+                                                    <img src="assets/images/peristiwa/4.jpg" style="width: 314px; height:210px;">
                                                     </div>
                                                 </div>
                                                 <div class="p-0 card-body">
@@ -110,7 +110,7 @@
                                             </div>
                                     </div>
                                 </div>
-                                <div class="col-md-12 col-lg-6">
+                                <div class="col-md-12 col-lg-4">
                                     <div class="card-shadow-primary card-border mb-3 profile-responsive-sm card">
                                         <div class="dropdown-menu-header">
                                             <div class="dropdown-menu-header-inner bg-vicious-stance">
@@ -131,7 +131,7 @@
                                         <div class="card-hover-shadow profile-responsive card-border border-success mb-3 card">
                                             <div class="dropdown-menu-header">
                                                 <div class="wrapper rounded">
-                                                <img src="assets/images/peristiwa/1.jpg" style="width: 485px; height:210px;">
+                                                <img src="assets/images/peristiwa/1.jpg" style="width: 314px; height:210px;">
                                                 </div>
                                             </div>
                                             <div class="p-0 card-body">
@@ -188,7 +188,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-12 col-lg-6">
+                                <div class="col-md-12 col-lg-4">
                                     <div class="card-shadow-primary card-border mb-3 profile-responsive-sm card">
                                         <div class="dropdown-menu-header">
                                             <div class="dropdown-menu-header-inner bg-vicious-stance">
@@ -209,7 +209,7 @@
                                         <div class="card-hover-shadow profile-responsive card-border border-success mb-3 card">
                                             <div class="dropdown-menu-header">
                                                 <div class="wrapper rounded">
-                                                <img src="assets/images/peristiwa/6.jpg" style="width: 485px; height:210px;">
+                                                <img src="assets/images/peristiwa/6.jpg" style="width: 313px; height:210px;">
                                                 </div>
                                             </div>
                                             <div class="p-0 card-body">
@@ -267,7 +267,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-12 col-lg-6">
+                                <div class="col-md-12 col-lg-4">
                                     <div class="card-shadow-primary card-border mb-3 profile-responsive-sm card">
                                         <div class="dropdown-menu-header">
                                             <div class="dropdown-menu-header-inner bg-vicious-stance">
@@ -288,7 +288,7 @@
                                         <div class="card-hover-shadow profile-responsive card-border border-success mb-3 card">
                                             <div class="dropdown-menu-header">
                                                 <div class="wrapper rounded">
-                                                <img src="assets/images/peristiwa/5.jpg" style="width: 485px; height:210px;">
+                                                <img src="assets/images/peristiwa/5.jpg" style="width: 313px; height:210px;">
                                                 </div>
                                             </div>
                                             <div class="p-0 card-body">
