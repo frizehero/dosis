@@ -68,7 +68,7 @@
                                                     <button class="btn-shadow btn btn-primary">Detail Report</button>&nbsp;
                                                 </a> 
                                                 <a>
-                                                   <button class="btn-shadow btn btn-primary">Delete</button>
+                                                   <button class="btn-shadow btn btn-primary" >Delete</button>
                                                 </a>
                                             </div>
                                         </td>

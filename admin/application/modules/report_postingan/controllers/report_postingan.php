@@ -46,8 +46,8 @@ class Report_postingan extends MX_Controller {
 
 	function hapus($id)
 	{
-		$this->m_data_sekolah->hapus($id);
-		redirect('data_sekolah');
+		$this->M_report_postingan->hapus($id);
+		redirect('report_postingan');
 	}
 
 	function cari()

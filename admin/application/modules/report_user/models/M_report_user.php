@@ -97,6 +97,7 @@ class M_report_user extends CI_Model {
 		$this->db->where('id_sekolah', $id)->delete('sekolah');
 	}
 
+
 	function cari()
 	{
 		$cari 		= $this->input->post('cari');

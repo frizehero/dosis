@@ -73,6 +73,11 @@
                                                                             <ul class="list-group list-group-flush">
                                                                                 <li class="list-group-item">
                                                                                     <div class="h5 modal-title">
+                                                                                        <div class="text-right">
+                                                                                            <h6>
+                                                                                                10/10/2020
+                                                                                            </h6>
+                                                                                        </div>
                                                                                         <h5 class="menu-header-title">
                                                                                             <div>Terdampak Corona. Bantu Wahyudi Siswa Yang Putus Sekolah</div>
                                                                                         </h5>
@@ -88,7 +93,6 @@
                                                                                     </div>
                                                                                     </div>
                                                                                     <div> <br> </div>
-                                                                                    <div> Diposting Tanggal : 20 Maret 2020
                                                                                     <div> Sisa Waktu : 0 Hari</div>
                                                                                     <div> 465 Orang telah Berdonasi</div>
                                                                                 </li>
@@ -155,6 +159,11 @@
                                                                             <ul class="list-group list-group-flush">
                                                                                 <li class="list-group-item">
                                                                                     <div class="h5 modal-title">
+                                                                                        <div class="text-right">
+                                                                                            <h6>
+                                                                                                10/10/2020
+                                                                                            </h6>
+                                                                                        </div>
                                                                                         <h5 class="menu-header-title">
                                                                                             <div>Amal Jariyah untuk Siswa Siswi Yatim Piatu di SMKN 13 Malang</div>
                                                                                         </h5>
@@ -170,7 +179,6 @@
                                                                                     </div>
                                                                                     </div>
                                                                                     <div> <br> </div>
-                                                                                    <div> Diposting Tanggal : 20 Maret 2020
                                                                                     <div> Sisa Waktu : 0 Hari</div>
                                                                                     <div> 465 Orang telah Berdonasi</div>
                                                                                 </li>
@@ -257,6 +265,11 @@
                                                                             <ul class="list-group list-group-flush">
                                                                                 <li class="list-group-item">
                                                                                     <div class="h5 modal-title">
+                                                                                        <div class="text-right">
+                                                                                            <h6>
+                                                                                                10/10/2020
+                                                                                            </h6>
+                                                                                        </div>
                                                                                         <h5 class="menu-header-title">
                                                                                             <div>Bedah Sekolah dari kardus di pelosok Desa Kabupaten Probolinggo</div>
                                                                                         </h5>
@@ -272,7 +285,6 @@
                                                                                     </div>
                                                                                     </div>
                                                                                     <div> <br> </div>
-                                                                                    <div> Diposting Tanggal : 1 September 2020</div>
                                                                                     <div> Sisa Waktu : 0 Hari</div>
                                                                                     <div> 465 Orang telah Berdonasi</div>
                                                                                 </li>

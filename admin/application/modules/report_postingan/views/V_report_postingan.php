@@ -24,7 +24,7 @@
                         <div class="tabs-animation">
                             <div class="mt-3 row">
                                 <div class="col-md-12 col-lg-4">
-                                    <div class="card-shadow-primary card-border mb-3 profile-responsive-sm card">
+                                    <div class="card-shadow-primary card-border mb-3 profile-responsive-sm card" >
                                         <div class="dropdown-menu-header">
                                             <div class="dropdown-menu-header-inner bg-vicious-stance">
                                                 <div class="menu-header-image opacity-1" style="background-image: url('assets/images/dropdown-header/abstract1.jpg');"></div>
