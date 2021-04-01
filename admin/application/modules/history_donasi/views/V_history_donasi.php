@@ -81,7 +81,7 @@
                                         <class class="main-card mb-3 card">
                                             <div class="card-header"><i class="header-icon lnr-license icon-gradient bg-plum-plate"> </i>Postingan
                                                 <div class="btn-actions-pane-right">
-                                                    <a href="detail-donasi.html">
+                                                    <a href="<?php echo base_url('detail_donasi'); ?>">
                                                     <button class="mr-2 text-danger btn btn-link btn-sm">Views</button>    
                                                     </a>
                                                 </div>
@@ -135,7 +135,7 @@
                                         <div class="main-card mb-3 card">
                                             <div class="card-header"><i class="header-icon lnr-license icon-gradient bg-plum-plate"> </i>Postingan
                                                 <div class="btn-actions-pane-right">
-                                                    <a href="detail-donasi.html">
+                                                    <a href="<?php echo base_url('detail_donasi'); ?>">
                                                     <button class="mr-2 text-danger btn btn-link btn-sm">Views</button>
                                                     </a>
                                                 </div>
@@ -277,7 +277,7 @@
                                                         <h6 class="menu-header-title">Amal Jariyah untuk Siswa Siswi Yatim Piatu di SMKN 13 Malang</h6>
                                                     </div>
                                                     <div class="menu-header-btn-pane">
-                                                        <a href="detail-donasi.html">
+                                                        <a href="<?php echo base_url('detail_donasi'); ?>">
                                                         <button type="button" class="btn-wide btn-shadow btn-pill btn btn-light">View Details</button>
                                                         </a>
                                                     </div>
@@ -324,7 +324,7 @@
                                                         <h6 class="menu-header-title">Bedah Sekolah dari kardus di pelosok Desa Probolinggo</h6>
                                                     </div>
                                                     <div class="menu-header-btn-pane">
-                                                        <a href="detail-donasi.html">
+                                                        <a href="<?php echo base_url('detail_donasi'); ?>">
                                                         <button type="button" class="btn-wide btn-shadow btn-pill btn btn-light">View Details</button>
                                                         </a>
                                                     </div>
@@ -372,7 +372,7 @@
                                                         <h6 class="menu-header-title">Bedah Sekolah dari kardus di pelosok Desa Probolinggo</h6>
                                                     </div>
                                                     <div class="menu-header-btn-pane">
-                                                        <a href="detail-donasi.html">
+                                                        <a href="<?php echo base_url('detail_donasi'); ?>">
                                                         <button type="button" class="btn-wide btn-shadow btn-pill btn btn-light">View Details</button>
                                                         </a>
                                                     </div>
@@ -419,7 +419,7 @@
                                                         <h6 class="menu-header-title">Bedah Sekolah dari kardus di pelosok Desa Probolinggo</h6>
                                                     </div>
                                                     <div class="menu-header-btn-pane">
-                                                        <a href="detail-donasi.html">
+                                                        <a href="<?php echo base_url('detail_donasi'); ?>">
                                                         <button type="button" class="btn-wide btn-shadow btn-pill btn btn-light">View Details</button>
                                                         </a>
                                                     </div>
@@ -466,7 +466,7 @@
                                                         <h6 class="menu-header-title">Bedah Sekolah dari kardus di pelosok Desa Probolinggo</h6>
                                                     </div>
                                                     <div class="menu-header-btn-pane">
-                                                        <a href="detail-donasi.html">
+                                                        <a href="<?php echo base_url('detail_donasi'); ?>">
                                                         <button type="button" class="btn-wide btn-shadow btn-pill btn btn-light">View Details</button>
                                                         </a>
                                                     </div>
