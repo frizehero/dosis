@@ -7,7 +7,7 @@ class Galangdana_room extends MX_Controller {
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('M_igalangdana_room');
+		 $this->load->model('M_galangdana_room');
 		 $this->load->model('login/m_session');
 	}
 
@@ -28,7 +28,7 @@ class Galangdana_room extends MX_Controller {
 	{
 		$data = array(
 			'namamodule' 	=> "galangdana_room",
-			'namafileview' 	=> "V_dana_tambah",
+			'namafileview' 	=> "V_galang_tambah",
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}

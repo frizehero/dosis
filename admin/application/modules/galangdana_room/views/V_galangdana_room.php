@@ -11,7 +11,7 @@
                                 </div>
                                 <div class="page-title-actions">
 
-                                <a href="<?php echo base_url('inventory_peralatan/tambahview'); ?>" class="mb-2 mr-2 btn btn-shadow btn-warning">Halaman Input</a>
+                                <a href="<?php echo base_url('galangdana_room/tambahview'); ?>" class="mb-2 mr-2 btn btn-shadow btn-warning">Halaman Input</a>
                                   
                                   <a href="<?php echo base_url('galangdana_room/tambahview'); ?>" class="mb-2 mr-2 btn btn-shadow btn-success">Tambah Data</a>
 
@@ -27,12 +27,11 @@
                                 <table style="width: 100%;" id="example"  class="table table-hover table-striped table-bordered">
                                     <thead>
                                     <tr>
-                                        <th>Detail</th>
                                         <th>No</th>
-                                        <th width="20%">Kode Ruangan</th>
-                                        <th width="20%">Nama Ruangan</th>
-                                        <th>Penanggung Jawab</th>
-                                        <th>Keterangan</th>
+                                        <th width="20%">Nama</th>
+                                        <th width="20%">Nama Galang Dana</th>
+                                        <th>Jumlah Nominal</th>
+                                        <th>Deskripsi</th>
                                         <th>Opsi</th>
                                        
                                     </tr>
@@ -44,16 +43,13 @@
                                            
                                     foreach ($tampil AS $rowP ) { ?>
                                     <tr>
-                                        <td><button type="button" class="btn btn-warning">
-                                            <i class="fa fa-search fa-w-16 fa-spin "></i>
-                                            </button></td>
                                         <td><?php echo $no;?></td>
-                                        <td><?php echo $rowP->kode_room;?></td>
                                         <td><?php echo $rowP->nama_room;?></td>
-                                        <td><?php echo $rowP->pj_room;?></td>
-                                        <td><?php echo $rowP->ket_room;?></td>
+                                        <td><?php echo $rowP->galangdana;?></td>
+                                        <td><?php echo $rowP->jumlah_room;?></td>
+                                        <td><?php echo $rowP->deskripsi_room;?></td>
                                         <td>
-                                            <a href="<?php echo base_url('inventory_room/editview/'. encrypt_url($rowP->id_inv_room)); ?>" class="btn btn-primary">
+                                            <a href="<?php echo base_url('galangdana_room/editview/'. encrypt_url($rowP->id_gld_room)); ?>" class="btn btn-primary">
                                             <i class="fa fa-pen fa-w-16"></i>
                                             </a>
 
@@ -65,33 +61,33 @@
                                     </tr>
 
                                        <!-- Modal HAPUS -->
-                    <div class="modal fade" id="hapus<?php echo $no ?>"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Hapus Data?</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
+                                    <div class="modal fade" id="hapus<?php echo $no ?>"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                      <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Hapus Data?</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                          </div>
 
-                          <form action="<?php echo base_url('inventory_room/hapus') ?>" method="POST" enctype="multipart/form-data">
-                          <div class="modal-body">
-                             <!--Modal body-->
-                                <p class="text-semibold text-main"></p>
-                                <p>Anda Yakin Ingin Menghapus <b><?php echo $rowP->nama_room ?></b> ? </p>
+                                          <form action="<?php echo base_url('galangdana_room/hapus') ?>" method="POST" enctype="multipart/form-data">
+                                          <div class="modal-body">
+                                            <!--Modal body-->
+                                                <p class="text-semibold text-main"></p>
+                                                <p>Anda Yakin Ingin Menghapus <b><?php echo $rowP->nama_room ?></b> ? </p>
 
-                                <input name="id"  type="hidden" value="<?php echo $rowP->id_inv_room ?>" class="form-control">
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">tutup</button>
-                            <button class="btn btn-primary" type="submit" >Hapus</button>
-                          </div>
-                          </form>
+                                                <input name="id"  type="hidden" value="<?php echo $rowP->id_gld_room ?>" class="form-control">
+                                          </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">tutup</button>
+                                            <button class="btn btn-primary" type="submit" >Hapus</button>
+                                          </div>
+                                          </form>
 
-                        </div>
-                      </div>
-                    </div>
+                                        </div>
+                                      </div>
+                                    </div>
 
 
 

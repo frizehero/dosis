@@ -11,13 +11,13 @@
                                 </div>
                                 <div class="page-title-actions">
                                   
-                                 <a href="<?php echo base_url('inventory_room'); ?>" class="mb-2 mr-2 btn btn-shadow btn-success">Kembali</a>
+                                 <a href="<?php echo base_url('galangdana_room'); ?>" class="mb-2 mr-2 btn btn-shadow btn-success">Kembali</a>
                                 </div>    </div>
                         </div>   
                         <div class="col-md-6">
                         <div class="main-card mb-3 card">
 
-                            <form action="<?php echo base_url('inventory_room/tambah') ?>" method="POST" enctype="multipart/form-data">
+                            <form action="<?php echo base_url('galangdana/tambah') ?>" method="POST" enctype="multipart/form-data">
                                 <div class="card-body">
                                     <h5 class="card-title"></h5>
                                     <form class="">
@@ -25,30 +25,30 @@
 
                                             <div class="col-md-12">
                                                 <div class="position-relative form-group">
-                                                    <label class="">Kode Ruangan</label>
-                                                    <input name="kode"  type="text" class="form-control">
+                                                    <label class="">Nama</label>
+                                                    <input name="nama"  type="text" class="form-control">
                                                 </div>
                                             </div>
                                             
                                             <div class="col-md-12">
                                                 <div class="position-relative form-group">
-                                                    <label class="">Nama Ruangan</label>
-                                                    <input name="nama"  type="text" class="form-control">
+                                                    <label class="">Nama Galang Dana</label>
+                                                    <input name="galangdana"  type="text" class="form-control">
                                                 </div>
                                             </div>
 
                                             <div class="col-md-12">
                                                 <div class="position-relative form-group">
-                                                    <label class="">Penanggung Jawab</label>
-                                                    <input name="pj"  type="text" class="form-control">
+                                                    <label class="">Jumlah Nominal</label>
+                                                    <input name="jumlah"  type="number" class="form-control">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-row">
                                             <div class="col-md-12">
                                                 <div class="position-relative form-group">
-                                                    <label class="">Keterangan</label>
-                                                     <textarea name="ket" class="form-control"></textarea>
+                                                    <label class="">Deskripsi</label>
+                                                     <textarea name="deskripsi" class="form-control"></textarea>
                                                 </div>
                                             </div>
                                             

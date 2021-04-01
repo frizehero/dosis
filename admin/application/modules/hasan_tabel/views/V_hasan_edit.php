@@ -5,51 +5,51 @@
                                     <div class="page-title-icon">
                                         <i class="pe-7s-medal icon-gradient bg-tempting-azure"></i>
                                     </div>
-                                    <div>Ubah Data galang dana
-                                        <div class="page-title-subheading">Ubah Data Galang dana, Silahkan Isi semua form di bawah ini dengan lengkap...</div>
+                                    <div>Ubah Data Ruangan
+                                        <div class="page-title-subheading">Ubah Data Ruangan, Silahkan Isi semua form di bawah ini dengan lengkap...</div>
                                     </div>
                                 </div>
                                 <div class="page-title-actions">
                                   
-                                 <a href="<?php echo base_url('galangdana_room'); ?>" class="mb-2 mr-2 btn btn-shadow btn-success">Kembali</a>
+                                 <a href="<?php echo base_url('hasan_tabel'); ?>" class="mb-2 mr-2 btn btn-shadow btn-success">Kembali</a>
                                 </div>    </div>
                         </div>   
                         <div class="col-md-6">
                         <div class="main-card mb-3 card">
 
-                            <form action="<?php echo base_url('galangdana_room/edit') ?>" method="POST" enctype="multipart/form-data">
+                            <form action="<?php echo base_url('hasan_tabel/edit') ?>" method="POST" enctype="multipart/form-data">
                                 <div class="card-body">
                                     <h5 class="card-title"></h5>
                                     <form class="">
                                         <div class="form-row">
-                                            <input name="id" value="<?php echo $tampil['id_gld_room']?>" type="hidden" class="form-control">
+                                            <input name="id" value="<?php echo $tampil['id_hsn_tabel']?>" type="hidden" class="form-control">
 
                                              <div class="col-md-12">
                                                 <div class="position-relative form-group">
-                                                    <label class="">Nama</label>
-                                                    <input name="nama" value="<?php echo $tampil['nama_room']?>" type="text" class="form-control">
+                                                    <label class="">Kode Ruangan</label>
+                                                    <input name="kode" value="<?php echo $tampil['kode_tabel']?>" type="text" class="form-control">
                                                 </div>
                                             </div>
                                             
                                             <div class="col-md-12">
                                                 <div class="position-relative form-group">
-                                                    <label class="">Nama Galang Dana</label>
-                                                    <input name="galangdana" value="<?php echo $tampil['galangdana']?>" type="text" class="form-control">
+                                                    <label class="">Nama Ruangan</label>
+                                                    <input name="nama" value="<?php echo $tampil['nama_tabel']?>" type="text" class="form-control">
                                                 </div>
                                             </div>
 
                                             <div class="col-md-12">
                                                 <div class="position-relative form-group">
-                                                    <label class="">Jumlah Nominal</label>
-                                                    <input name="jumlah" value="<?php echo $tampil['jumlah_room']?>" type="number" class="form-control">
+                                                    <label class="">Penanggung Jawab</label>
+                                                    <input name="pj" value="<?php echo $tampil['pj_tabel']?>" type="text" class="form-control">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-row">
                                             <div class="col-md-12">
                                                 <div class="position-relative form-group">
-                                                    <label class="">deskripsi</label>
-                                                     <textarea name="deskripsi" class="form-control"><?php echo $tampil['deskripsi_room']?></textarea>
+                                                    <label class="">Keterangan</label>
+                                                     <textarea name="ket" class="form-control"><?php echo $tampil['ket_tabel']?></textarea>
                                                 </div>
                                             </div>
                                             

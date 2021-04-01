@@ -695,6 +695,12 @@ $menu = $uri_segments[2];
                                         </a>
                                     </li>
 
+                            <?php if ($menu=="hasan_tabel"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('hasan_tabel'); ?>">
+                                       <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use home"></i></i>Coba
+                                        </a>
+                                    </li>
+
 
                             <li >
                                 <a href="#" >
