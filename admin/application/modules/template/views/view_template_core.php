@@ -53,7 +53,8 @@
 $uri_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $uri_segments = explode('/', $uri_path);
 
-$menu = $uri_segments[2];
+$menu = $uri_segments[3];
+
 
     ?>
     <div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
@@ -597,7 +598,6 @@ $menu = $uri_segments[2];
                 </div>    <div class="scrollbar-sidebar">
                     <div class="app-sidebar__inner">
                         <ul class="vertical-nav-menu metismenu">
-                           
 
                             <?php if ($menu=="beranda"){?><li class="mm-active"><?php }else{?><li><?php }?>
                                        <a href="<?php echo base_url('beranda'); ?>">
