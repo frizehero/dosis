@@ -58,7 +58,8 @@
                                                                                 10/10/2020
                                                                             </h6>
                                                                         </div>
-                                                                        <h4 class="mt-2">
+                                                                        <div class="h5 modal-title">
+                                                                        <h5 class="menu-header-title">
                                                                             <div>Ditinggal kedua orang tua meninggal dunia wildan hidup sebatang kara.Wildan tidak dapat melanjutkan,Mari bantu wildan agar kembali bersekolah</div>
                                                                         </h4>
                                                                     </div>
@@ -145,9 +146,9 @@
                                                                     </h6>
                                                                 </div>
                                                                 <div class="h5 modal-title">
-                                                                    <h4 class="mt-2">
+                                                                <h5 class="menu-header-title">
                                                                         <div>Korban tanah longsor tempat tinggal andi dan keluarga ambruk.Mari bantu andi sisih kan uang kalian sedikit saja </div>
-                                                                    </h4>
+                                                                    </h5>
                                                                 </div>
                                                                 <h6>
                                                                     Diposting oleh @Zaraakila
@@ -217,15 +218,15 @@
                                                     <div class="tab-pane active show" id="tab-2-eg1">
                                                         <ul class="list-group list-group-flush">
                                                             <li class="list-group-item">
-                                                                <div class="h5 modal-title">
                                                                     <div class="text-right">
                                                                         <h6>
                                                                             15/05/2020
                                                                         </h6>
                                                                     </div>
-                                                                    <h4 class="mt-2">
+                                                                    <div class="h5 modal-title">
+                                                                    <h5 class="menu-header-title">
                                                                         <div>Terdampak Corona. Bantu Wahyudi Siswa yang Putus Sekolah</div>
-                                                                    </h4>
+                                                                    </h5>
                                                                 </div>
                                                                 <h6>
                                                                     Diposting oleh @Alfaroby
@@ -302,7 +303,8 @@
                                                                             13/01/2021
                                                                         </h6>
                                                                     </div>
-                                                                    <h5 class="mt-2">
+                                                                    <div class="h5 modal-title">
+                                                                    <h5 class="menu-header-title">
                                                                         <div>Amal Jariyah untuk Siswa Siswi Yatim Piatu di SMKN 13 Malang</div>
                                                                     </h5>
                                                                 </div>
