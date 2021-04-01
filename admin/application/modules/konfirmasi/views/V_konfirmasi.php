@@ -156,7 +156,7 @@
                                         <div class="main-card mb-3 card">
                                             <div class="card-header"><i class="header-icon lnr-license icon-gradient bg-plum-plate"> </i>Postingan
                                                 <div class="btn-actions-pane-right">
-                                                    <a href="<?php echo base_url('detail_donasi'); ?>">
+                                                    <a href="donasi.html">
                                                     <button class="mr-2 text-danger btn btn-link btn-sm">Views</button>
                                                     </a>
                                                 </div>
