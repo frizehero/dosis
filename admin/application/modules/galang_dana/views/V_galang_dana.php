@@ -75,9 +75,6 @@
                                                                 <div class="widget-heading">Total Nilai Aset</div>
                                                                 <div class="widget-subheading">Keseluruhan Data</div>
                                                             </div>
-                                                            <div class="widget-content-right">
-                                                                <div class="widget-numbers text-success"><?php echo $totalnilaiaset?></div>
-                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -89,9 +86,6 @@
                                                             <div class="widget-content-left">
                                                                 <div class="widget-heading">Total Aset</div>
                                                                 <div class="widget-subheading">Keseluruhan Data</div>
-                                                            </div>
-                                                            <div class="widget-content-right">
-                                                                <div class="widget-numbers text-primary"><?php echo $totalaset?></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -109,9 +103,6 @@
                                                                 <div class="widget-heading">Total Nilai Aset Rusak</div>
                                                                 <div class="widget-subheading">Keseluruhan Data</div>
                                                             </div>
-                                                            <div class="widget-content-right">
-                                                                <div class="widget-numbers text-danger"><?php echo $totalnilaiasetrusak?></div>
-                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -123,9 +114,6 @@
                                                             <div class="widget-content-left">
                                                                 <div class="widget-heading">Total Aset Rusak</div>
                                                                 <div class="widget-subheading">Keseluruhan Data</div>
-                                                            </div>
-                                                            <div class="widget-content-right">
-                                                                <div class="widget-numbers text-warning"><?php echo $totalasetrusak?></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -157,9 +145,6 @@
                                                             <div class="widget-content-left">
                                                                 <div class="widget-heading">Total Kondisi</div>
                                                                 <div class="widget-subheading">Keseluruhan kondisi tidak Baik</div>
-                                                            </div>
-                                                            <div class="widget-content-right">
-                                                                <div class="widget-numbers text-primary"><?php echo $totalasetkurangbaik?></div>
                                                             </div>
                                                         </div>
                                                     </div>

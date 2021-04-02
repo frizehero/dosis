@@ -67,9 +67,9 @@
                                                                     <label for="exampleEmail11" class="">Status</label>
                                                                     <select name="merk" class="multiselect-dropdown form-control">
 
-                                                                        <?php foreach($getmerk as $res) { ?>
+                                                                        <?php foreach($getstatus as $res) { ?>
 
-                                                                            <option value="<?php echo $res->id_merk?>"><?php echo $res->nama_merk?></option>
+                                                                            <option value="<?php echo $res->id_status_pembuka?>"><?php echo $res->jenis_status_pembuka?></option>
 
                                                                         <?php } ?>
 
@@ -453,7 +453,7 @@
                                             <div class="clearfix">
                                                 <button type="button" id="reset-btn" class="btn-shadow float-left btn btn-link">Reset</button>
                                                 <button type="button" id="next-btn" class="btn-shadow btn-wide float-right btn-pill btn-hover-shine btn btn-primary">Next</button>
-                                                <button type="button" id="prev-btn" class="btn-shadow float-right btn-wide btn-pill mr-3 btn btn-outline-secondary">Previous</button>
+                                                <button type="button" id="prev-btn" class="btn-shadow float-right btn-wide btn-pill mr-3 btn btn-outline-secondary">Sebelumnya</button>
                                             </div>
                                         </div>
                                     </div>

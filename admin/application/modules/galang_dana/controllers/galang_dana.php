@@ -20,12 +20,6 @@ class Galang_dana extends MX_Controller {
 			'namamodule' 	=> "galang_dana",
 			'namafileview' 	=> "V_galang_dana",
 			'tampil'		=> $this->m_galang_dana->tampil(),
-			'totalaset'		=> $this->m_galang_dana->totalaset(),
-			'totalasetrusak'	=> $this->m_galang_dana->totalasetrusak(),
-			'totalasetkurangbaik'		=> $this->m_galang_dana->totalasetkurangbaik(),
-
-			'totalnilaiaset'		=> $this->m_galang_dana->totalnilaiaset(),
-			'totalnilaiasetrusak'		=> $this->m_galang_dana->totalnilaiasetrusak(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
@@ -38,8 +32,6 @@ class Galang_dana extends MX_Controller {
 		$data = array(
 			'namamodule' 	=> "galang_dana",
 			'namafileview' 	=> "V_galang_dana_tambah",
-			'getmerk'		=> $this->m_galang_dana->getmerk(),
-			'getruang'		=> $this->m_galang_dana->getruang(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
@@ -59,8 +51,6 @@ class Galang_dana extends MX_Controller {
 			'namamodule' 	=> "galang_dana",
 			'namafileview' 	=> "V_galang_dana_edit",
 			'tampil'		=> $this->m_galang_dana->tampiledit($id),
-			'getmerk'		=> $this->m_galang_dana->getmerk(),
-			'getruang'		=> $this->m_galang_dana->getruang(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}

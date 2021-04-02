@@ -7,9 +7,7 @@ class M_galang_dana extends CI_Model {
 	{
 
 		$this->db->select('*');
-		$this->db->from('inv_peralatan');
-		$this->db->join('merk', 'inv_peralatan.merk = merk.id_merk');
-		$this->db->join('inventory_room', 'inv_peralatan.ruang = inventory_room.id_inv_room');
+		$this->db->from('galang_dana');
 		$query = $this->db->get();
 
 
@@ -24,10 +22,8 @@ class M_galang_dana extends CI_Model {
 		$idnya=decrypt_url($id);
 
 		$this->db->select('*');
-		$this->db->from('inv_peralatan');
-		$this->db->join('merk', 'inv_peralatan.merk = merk.id_merk');
-		$this->db->join('inventory_room', 'inv_peralatan.ruang = inventory_room.id_inv_room');
-		$this->db->where('id_inv_peralatan',$idnya);
+		$this->db->from('galang_dana');
+		$this->db->where('id_galangdana',$idnya);
 		$query = $this->db->get();
 
 
@@ -38,46 +34,49 @@ class M_galang_dana extends CI_Model {
 
 
 
-	function getmerk()
-	{
-		return $this->db->get('merk')->result();
-	}
-
-	function getruang()
-	{
-		return $this->db->get('inventory_room')->result();
-	}
-
 	function tambah()
 	{
 
 
-		$kode 		= $this->input->post('kode');
-		$kategori 		= $this->input->post('kategori');
-		$merk 		= $this->input->post('merk');
-		$tipe 		= $this->input->post('tipe');
-		$ukuran 		= $this->input->post('ukuran');
-		$bahan 		= $this->input->post('bahan');
-		$nopabrik 		= $this->input->post('nopabrik');
-		$norangka 		= $this->input->post('norangka');
-		$nomesin 		= $this->input->post('nomesin');
-		$nopolisi 		= $this->input->post('nopolisi');
-		$nobpkb 		= $this->input->post('nobpkb');
-		$kondisi 		= $this->input->post('kondisi');
-		$ruang 		= $this->input->post('ruang');
-		$tgl_oleh 		= $this->input->post('tgl_oleh');
-		$tgl_buku 		= $this->input->post('tgl_buku');
-		$asal 		= $this->input->post('asal');
-		$keterangan 		= $this->input->post('keterangan');
-		$nilai 		= $this->input->post('nilai');
-		$nilaitambah 		= $this->input->post('nilaitambah');
-		$beban 		= $this->input->post('beban');
-		$akumulasi 		= $this->input->post('akumulasi');
-		$nilaibuku 		= $this->input->post('nilaibuku');
-		$sisausia 		= $this->input->post('sisausia');
+		$nama_pembuka 				= $this->input->post('nama_pembuka');
+		$status_pembuka 			= $this->input->post('status_pembuka');
+		$jenjang_pembuka 			= $this->input->post('jenjang_pembuka');
+		$sekolah_pembuka 			= $this->input->post('sekolah_pembuka');
+		$kelas_pembuka				= $this->input->post('kelas_pembuka');
+		$telepon_pembuka			= $this->input->post('telepon_pembuka');
+		$wa_pembuka 				= $this->input->post('wa_pembuka');
+		$email_pembuka 				= $this->input->post('email_pembuka');
+		$identitas_pembuka 			= $this->input->post('identitas_pembuka');
+		$provinsi_pembuka 			= $this->input->post('provinsi_pembuka');
+		$kabupaten_pembuka 			= $this->input->post('kabupaten_pembuka');
+		$kecamatan_pembuka 			= $this->input->post('kecamatan_pembuka');
+		$desa_pembuka 				= $this->input->post('desa_pembuka');
+		$kode_pos_pembuka 			= $this->input->post('kode_pos_pembuka');
+		$alamat_lengkap_pembuka 	= $this->input->post('alamat_lengkap_pembuka ');
+		$nama_penerima 				= $this->input->post('nama_penerima');
+		$status_penerima 			= $this->input->post('status_penerima');
+		$jenjang_penerima 			= $this->input->post('jenjang_penerima');
+		$sekolah_penerima 			= $this->input->post('sekolah_penerima');
+		$kelas_penerima 			= $this->input->post('kelas_penerima');
+		$telepon_penerima 			= $this->input->post('telepon_penerima');
+		$wa_penerima 				= $this->input->post('wa_penerima');
+		$email_penerima 			= $this->input->post('email_penerima');
+		$identitas_penerima 		= $this->input->post('identitas_penerima');
+		$deskripsi_penerima			= $this->input->post('deskripsi_penerima');
+		$dokumentasi_penerima		= $this->input->post('dokumentasi_penerima');
+		$tgl_awal 					= $this->input->post('tgl_awal');
+		$tgl_akhir 					= $this->input->post('tgl_akhir');
+		$jml_donasi 				= $this->input->post('jml_donasi');
+		$provinsi_pembuka 			= $this->input->post('provinsi_pembuka');
+		$kabupaten_pembuka 			= $this->input->post('kabupaten_pembuka');
+		$kecamatan_pembuka 			= $this->input->post('kecamatan_pembuka');
+		$desa_pembuka 				= $this->input->post('desa_pembuka');
+		$kode_pos_pembuka 			= $this->input->post('kode_pos_pembuka');
+		$alamat_lengkap_pembuka 	= $this->input->post('alamat_lengkap_pembuka');
+		$tgl_dibuat					= $this->input->post('tgl_dibuat');
 
-		$insert_oleh = date( 'Y-m-d', strtotime($tgl_oleh));
-		$insert_buku = date( 'Y-m-d', strtotime($tgl_buku));
+		$insert_awal = date( 'Y-m-d', strtotime($tgl_awal));
+		$insert_akhir = date( 'Y-m-d', strtotime($tgl_akhir));
 
 
 
@@ -98,66 +97,86 @@ class M_galang_dana extends CI_Model {
             {
 				$gbr = $this->upload->data();
 				$data = array(
-					'kode_barang'		=> $kode,
-					'kategori'		=> $kategori,
-					'merk'		=> $merk,
-					'tipe'		=> $tipe,
-					'ukuran'		=> $ukuran,
-					'bahan'		=> $bahan,
-					'nopabrik'		=> $nopabrik,
-					'norangka'		=> $norangka,
-					'nomesin'		=> $nomesin,
-					'nopolisi'		=> $nopolisi,
-					'nobpkb'		=> $nobpkb,
-					'kondisi'		=> $kondisi,
-					'ruang'		=> $ruang,
-					'tgl_oleh'		=> $insert_oleh,
-					'tgl_buku'		=> $insert_buku,
-					'asal'		=> $asal,
-					'keterangan'		=> $keterangan,
-					'nilai'		=> $nilai,
-					'nilaitambah'		=> $nilaitambah,
-					'beban'		=> $beban,
-					'akumulasi'		=> $akumulasi,
-					'nilaibuku'		=> $nilaibuku,
-					'sisausia'		=> $sisausia,
-					'dokumen' 				=> $gbr['file_name'],
+					'nama_pembuka'				=> $nama_pembuka,
+					'status_pembuka'			=> $status_pembuka,
+					'jenjang_pembuka'			=> $jenjang_pembuka,
+					'sekolah_pembuka'			=> $sekolah_pembuka,
+					'kelas_pembuka'				=> $kelas_pembuka,
+					'telepon_pembuka'			=> $telepon_pembuka,
+					'wa_pembuka'				=> $wa_pembuka,
+					'email_pembuka'				=> $email_pembuka,
+					'identitas_pembuka' 		=> $gbr['file_name'],
+					'provinsi_pembuka'			=> $provinsi_pembuka,
+					'kabupaten_pembuka'			=> $kabupaten_pembuka,
+					'kecamatan_pembuka'			=> $kecamatan_pembuka,
+					'desa_pembuka'				=> $desa_pembuka,
+					'alamat_lengkap_pembuka'	=> $alamat_lengkap_pembuka,
+					'nama_penerima'				=> $nama_penerima,
+					'status_penerima'			=> $status_penerima,
+					'jenjang_penerima'			=> $jenjang_penerima,
+					'sekolah_penerima'			=> $sekolah_penerima,
+					'kelas_penerima'			=> $kelas_penerima,
+					'telepon_penerima'			=> $telepon_penerima,
+					'wa_penerima'				=> $wa_penerima,
+					'email_penerima'			=> $email_penerima,
+					'identitas_penerima' 		=> $gbr['file_name'],
+					'deskripsi_penerima'		=> $deskripsi_penerima,
+					'dokumentasi_penerima' 		=> $gbr['file_name'],
+					'tgl_awal'					=> $tgl_awal,
+					'tgl_akhir'					=> $tgl_akhir,
+					'jml_donasi'				=> $jml_donasi,
+					'provinsi_penerima'			=> $provinsi_penerima,
+					'kabupaten_penerima'		=> $kabupaten_penerima,
+					'kecamatan_penerima'		=> $kecamatan_penerima,
+					'desa_penerima'				=> $desa_penerima,
+					'alamat_lengkap_penerima'	=> $alamat_lengkap_penerima,
+					
 					
 					
 				);
-				$this->db->insert('inv_peralatan', $data);
+				$this->db->insert('galang_dana', $data);
 				$this->session->set_flashdata('msg', 'suksestambah');
 			
 			}	 
 		}
 		else{
 				$data = array(
-					'kode_barang'		=> $kode,
-					'kategori'		=> $kategori,
-					'merk'		=> $merk,
-					'tipe'		=> $tipe,
-					'ukuran'		=> $ukuran,
-					'bahan'		=> $bahan,
-					'nopabrik'		=> $nopabrik,
-					'norangka'		=> $norangka,
-					'nomesin'		=> $nomesin,
-					'nopolisi'		=> $nopolisi,
-					'nobpkb'		=> $nobpkb,
-					'kondisi'		=> $kondisi,
-					'ruang'		=> $ruang,
-					'tgl_oleh'		=> $insert_oleh,
-					'tgl_buku'		=> $insert_buku,
-					'asal'		=> $asal,
-					'keterangan'		=> $keterangan,
-					'nilai'		=> $nilai,
-					'nilaitambah'		=> $nilaitambah,
-					'beban'		=> $beban,
-					'akumulasi'		=> $akumulasi,
-					'nilaibuku'		=> $nilaibuku,
-					'sisausia'		=> $sisausia,
-					'dokumen' 				=> 'kosong1.png',
+					'nama_pembuka'				=> $nama_pembuka,
+					'status_pembuka'			=> $status_pembuka,
+					'jenjang_pembuka'			=> $jenjang_pembuka,
+					'sekolah_pembuka'			=> $sekolah_pembuka,
+					'kelas_pembuka'				=> $kelas_pembuka,
+					'telepon_pembuka'			=> $telepon_pembuka,
+					'wa_pembuka'				=> $wa_pembuka,
+					'email_pembuka'				=> $email_pembuka,
+					'identitas_pembuka' 		=> 'kosong1.png',
+					'provinsi_pembuka'			=> $provinsi_pembuka,
+					'kabupaten_pembuka'			=> $kabupaten_pembuka,
+					'kecamatan_pembuka'			=> $kecamatan_pembuka,
+					'desa_pembuka'				=> $desa_pembuka,
+					'alamat_lengkap_pembuka'	=> $alamat_lengkap_pembuka,
+					'nama_penerima'				=> $nama_penerima,
+					'status_penerima'			=> $status_penerima,
+					'jenjang_penerima'			=> $jenjang_penerima,
+					'sekolah_penerima'			=> $sekolah_penerima,
+					'kelas_penerima'			=> $kelas_penerima,
+					'telepon_penerima'			=> $telepon_penerima,
+					'wa_penerima'				=> $wa_penerima,
+					'email_penerima'			=> $email_penerima,
+					'identitas_penerima' 		=> 'kosong1.png',
+					'deskripsi_penerima'		=> $deskripsi_penerima,
+					'dokumentasi_penerima' 		=> 'kosong1.png',
+					'tgl_awal'					=> $tgl_awal,
+					'tgl_akhir'					=> $tgl_akhir,
+					'jml_donasi'				=> $jml_donasi,
+					'provinsi_penerima'			=> $provinsi_penerima,
+					'kabupaten_penerima'		=> $kabupaten_penerima,
+					'kecamatan_penerima'		=> $kecamatan_penerima,
+					'desa_penerima'				=> $desa_penerima,
+					'alamat_lengkap_penerima'	=> $alamat_lengkap_penerima,
+
 				);
-				$this->db->insert('inv_peralatan', $data);
+				$this->db->insert('galang_dana', $data);
 				$this->session->set_flashdata('msg', 'suksestambah');
 			}
 	}
@@ -166,32 +185,45 @@ class M_galang_dana extends CI_Model {
 	{
 		$id = $this->input->post('id');
 
-		$kode 		= $this->input->post('kode');
-		$kategori 		= $this->input->post('kategori');
-		$merk 		= $this->input->post('merk');
-		$tipe 		= $this->input->post('tipe');
-		$ukuran 		= $this->input->post('ukuran');
-		$bahan 		= $this->input->post('bahan');
-		$nopabrik 		= $this->input->post('nopabrik');
-		$norangka 		= $this->input->post('norangka');
-		$nomesin 		= $this->input->post('nomesin');
-		$nopolisi 		= $this->input->post('nopolisi');
-		$nobpkb 		= $this->input->post('nobpkb');
-		$kondisi 		= $this->input->post('kondisi');
-		$ruang 		= $this->input->post('ruang');
-		$tgl_oleh 		= $this->input->post('tgl_oleh');
-		$tgl_buku 		= $this->input->post('tgl_buku');
-		$asal 		= $this->input->post('asal');
-		$keterangan 		= $this->input->post('keterangan');
-		$nilai 		= $this->input->post('nilai');
-		$nilaitambah 		= $this->input->post('nilaitambah');
-		$beban 		= $this->input->post('beban');
-		$akumulasi 		= $this->input->post('akumulasi');
-		$nilaibuku 		= $this->input->post('nilaibuku');
-		$sisausia 		= $this->input->post('sisausia');
+		$nama_pembuka 				= $this->input->post('nama_pembuka');
+		$status_pembuka 			= $this->input->post('status_pembuka');
+		$jenjang_pembuka 			= $this->input->post('jenjang_pembuka');
+		$sekolah_pembuka 			= $this->input->post('sekolah_pembuka');
+		$kelas_pembuka				= $this->input->post('kelas_pembuka');
+		$telepon_pembuka			= $this->input->post('telepon_pembuka');
+		$wa_pembuka 				= $this->input->post('wa_pembuka');
+		$email_pembuka 				= $this->input->post('email_pembuka');
+		$identitas_pembuka 			= $this->input->post('identitas_pembuka');
+		$provinsi_pembuka 			= $this->input->post('provinsi_pembuka');
+		$kabupaten_pembuka 			= $this->input->post('kabupaten_pembuka');
+		$kecamatan_pembuka 			= $this->input->post('kecamatan_pembuka');
+		$desa_pembuka 				= $this->input->post('desa_pembuka');
+		$kode_pos_pembuka 			= $this->input->post('kode_pos_pembuka');
+		$alamat_lengkap_pembuka 	= $this->input->post('alamat_lengkap_pembuka');
+		$nama_penerima 				= $this->input->post('nama_penerima');
+		$status_penerima 			= $this->input->post('status_penerima');
+		$jenjang_penerima 			= $this->input->post('jenjang_penerima');
+		$sekolah_penerima 			= $this->input->post('sekolah_penerima');
+		$kelas_penerima 			= $this->input->post('kelas_penerima');
+		$telepon_penerima 			= $this->input->post('telepon_penerima');
+		$wa_penerima 				= $this->input->post('wa_penerima ');
+		$email_penerima 			= $this->input->post('email_penerima');
+		$identitas_penerima 		= $this->input->post('identitas_penerima');
+		$deskripsi_penerima			= $this->input->post('deskripsi_penerima');
+		$dokumentasi_penerima		= $this->input->post('dokumentasi_penerima');
+		$tgl_awal 					= $this->input->post('tgl_awal');
+		$tgl_akhir 					= $this->input->post('tgl_akhir');
+		$jml_donasi 				= $this->input->post('jml_donasi');
+		$provinsi_pembuka 			= $this->input->post('provinsi_pembuka');
+		$kabupaten_pembuka 			= $this->input->post('kabupaten_pembuka');
+		$kecamatan_pembuka 			= $this->input->post('kecamatan_pembuka');
+		$desa_pembuka 				= $this->input->post('desa_pembuka');
+		$kode_pos_pembuka 			= $this->input->post('kode_pos_pembuka');
+		$alamat_lengkap_pembuka 	= $this->input->post('alamat_lengkap_pembuka ');
+		$tgl_dibuat					= $this->input->post('tgl_dibuat');
 
-		$insert_oleh = date( 'Y-m-d', strtotime($tgl_oleh));
-		$insert_buku = date( 'Y-m-d', strtotime($tgl_buku));
+		$insert_awal = date( 'Y-m-d', strtotime($tgl_awal));
+		$insert_akhir = date( 'Y-m-d', strtotime($tgl_akhir));
 
 
 
@@ -212,59 +244,79 @@ class M_galang_dana extends CI_Model {
             {
 				$gbr = $this->upload->data();
 				$data = array(
-					'merk'		=> $merk,
-					'tipe'		=> $tipe,
-					'ukuran'		=> $ukuran,
-					'bahan'		=> $bahan,
-					'nopabrik'		=> $nopabrik,
-					'norangka'		=> $norangka,
-					'nomesin'		=> $nomesin,
-					'nopolisi'		=> $nopolisi,
-					'nobpkb'		=> $nobpkb,
-					'kondisi'		=> $kondisi,
-					'ruang'		=> $ruang,
-					'tgl_oleh'		=> $insert_oleh,
-					'tgl_buku'		=> $insert_buku,
-					'asal'		=> $asal,
-					'keterangan'		=> $keterangan,
-					'nilai'		=> $nilai,
-					'nilaitambah'		=> $nilaitambah,
-					'beban'		=> $beban,
-					'akumulasi'		=> $akumulasi,
-					'nilaibuku'		=> $nilaibuku,
-					'sisausia'		=> $sisausia,
-					'dokumen' 				=> $gbr['file_name'],
+					'nama_pembuka'				=> $nama_pembuka,
+					'status_pembuka'			=> $status_pembuka,
+					'jenjang_pembuka'			=> $jenjang_pembuka,
+					'sekolah_pembuka'			=> $sekolah_pembuka,
+					'kelas_pembuka'				=> $kelas_pembuka,
+					'telepon_pembuka'			=> $telepon_pembuka,
+					'wa_pembuka'				=> $wa_pembuka,
+					'email_pembuka'				=> $email_pembuka,
+					'identitas_pembuka' 		=> $gbr['file_name'],
+					'provinsi_pembuka'			=> $provinsi_pembuka,
+					'kabupaten_pembuka'			=> $kabupaten_pembuka,
+					'kecamatan_pembuka'			=> $kecamatan_pembuka,
+					'desa_pembuka'				=> $desa_pembuka,
+					'alamat_lengkap_pembuka'	=> $alamat_lengkap_pembuka,
+					'nama_penerima'				=> $nama_penerima,
+					'status_penerima'			=> $status_penerima,
+					'jenjang_penerima'			=> $jenjang_penerima,
+					'sekolah_penerima'			=> $sekolah_penerima,
+					'kelas_penerima'			=> $kelas_penerima,
+					'telepon_penerima'			=> $telepon_penerima,
+					'wa_penerima'				=> $wa_penerima,
+					'email_penerima'			=> $email_penerima,
+					'identitas_penerima' 		=> $gbr['file_name'],
+					'deskripsi_penerima'		=> $deskripsi_penerima,
+					'dokumentasi_penerima' 		=> $gbr['file_name'],
+					'tgl_awal'					=> $tgl_awal,
+					'tgl_akhir'					=> $tgl_akhir,
+					'jml_donasi'				=> $jml_donasi,
+					'provinsi_penerima'			=> $provinsi_penerima,
+					'kabupaten_penerima'		=> $kabupaten_penerima,
+					'kecamatan_penerima'		=> $kecamatan_penerima,
+					'desa_penerima'				=> $desa_penerima,
+					'alamat_lengkap_penerima'	=> $alamat_lengkap_penerima,
 				);
-				$this->db->where('id_inv_peralatan',$id)->update('inv_peralatan', $data);
+				$this->db->where('id_galangdana',$id)->update('galang_dana', $data);
 				$this->session->set_flashdata('msg', 'suksesedit');
 			
 			}	 
 		}
 		else{
 				$data = array(
-					'merk'		=> $merk,
-					'tipe'		=> $tipe,
-					'ukuran'		=> $ukuran,
-					'bahan'		=> $bahan,
-					'nopabrik'		=> $nopabrik,
-					'norangka'		=> $norangka,
-					'nomesin'		=> $nomesin,
-					'nopolisi'		=> $nopolisi,
-					'nobpkb'		=> $nobpkb,
-					'kondisi'		=> $kondisi,
-					'ruang'		=> $ruang,
-					'tgl_oleh'		=> $insert_oleh,
-					'tgl_buku'		=> $insert_buku,
-					'asal'		=> $asal,
-					'keterangan'		=> $keterangan,
-					'nilai'		=> $nilai,
-					'nilaitambah'		=> $nilaitambah,
-					'beban'		=> $beban,
-					'akumulasi'		=> $akumulasi,
-					'nilaibuku'		=> $nilaibuku,
-					'sisausia'		=> $sisausia,
+					'nama_pembuka'				=> $nama_pembuka,
+					'status_pembuka'			=> $status_pembuka,
+					'jenjang_pembuka'			=> $jenjang_pembuka,
+					'sekolah_pembuka'			=> $sekolah_pembuka,
+					'kelas_pembuka'				=> $kelas_pembuka,
+					'telepon_pembuka'			=> $telepon_pembuka,
+					'wa_pembuka'				=> $wa_pembuka,
+					'email_pembuka'				=> $email_pembuka,
+					'provinsi_pembuka'			=> $provinsi_pembuka,
+					'kabupaten_pembuka'			=> $kabupaten_pembuka,
+					'kecamatan_pembuka'			=> $kecamatan_pembuka,
+					'desa_pembuka'				=> $desa_pembuka,
+					'alamat_lengkap_pembuka'	=> $alamat_lengkap_pembuka,
+					'nama_penerima'				=> $nama_penerima,
+					'status_penerima'			=> $status_penerima,
+					'jenjang_penerima'			=> $jenjang_penerima,
+					'sekolah_penerima'			=> $sekolah_penerima,
+					'kelas_penerima'			=> $kelas_penerima,
+					'telepon_penerima'			=> $telepon_penerima,
+					'wa_penerima'				=> $wa_penerima,
+					'email_penerima'			=> $email_penerima,
+					'deskripsi_penerima'		=> $deskripsi_penerima,
+					'tgl_awal'					=> $tgl_awal,
+					'tgl_akhir'					=> $tgl_akhir,
+					'jml_donasi'				=> $jml_donasi,
+					'provinsi_penerima'			=> $provinsi_penerima,
+					'kabupaten_penerima'		=> $kabupaten_penerima,
+					'kecamatan_penerima'		=> $kecamatan_penerima,
+					'desa_penerima'				=> $desa_penerima,
+					'alamat_lengkap_penerima'	=> $alamat_lengkap_penerima,
 				);
-				$this->db->where('id_inv_peralatan',$id)->update('inv_peralatan', $data);
+				$this->db->where('id_galangdana',$id)->update('galang_dana', $data);
 				$this->session->set_flashdata('msg', 'suksesedit');
 			}
 	}
@@ -272,73 +324,8 @@ class M_galang_dana extends CI_Model {
 	function hapus()
 	{
 		$id = $this->input->post('id');
-		$this->db->where('id_inv_peralatan', $id)->delete('inv_peralatan');
+		$this->db->where('id_galangdana', $id)->delete('galang_dana');
 		$this->session->set_flashdata('msg', 'sukseshapus');
 	}
-
-
-
-
-	function fetch_data($query)
-	 {
-	  $this->db->select("*");
-	  $this->db->from("kategori_inventory");
-	  if($query != '')
-	  {
-	   $this->db->like('kode_kat_inventory', $query);
-	   $this->db->or_like('nama_kat_inventory', $query);
-	  }
-	  $this->db->order_by('nama_kat_inventory', 'DESC');
-	  return $this->db->get();
-	 }
-
-
-	function totalaset()
-	{
-		return $this->db->get('inv_peralatan')->num_rows();
-	}
-	
-	function totalasetrusak()
-	{
-		$this->db->select('*');
-		$this->db->from('inv_peralatan');
-		$this->db->where('kondisi','Rusak');
-		$query = $this->db->get();
-		
-    	return $query->num_rows();
-	}
-
-	function totalasetkurangbaik()
-	{
-		$this->db->select('*');
-		$this->db->from('inv_peralatan');
-		$this->db->where('kondisi','Kurang Baik');
-		$query = $this->db->get();
-		
-    	return $query->num_rows();
-	}
-
-	function totalnilaiaset()
-	{
-		$this->db->select_sum('nilai');
-		$result = $this->db->get('inv_peralatan')->row();  
-		return $result->nilai;
-	}
-
-	function totalnilaiasetrusak()
-	{
-		$this->db->select_sum('nilai');
-		$this->db->where('kondisi','Rusak');
-		$result = $this->db->get('inv_peralatan')->row();  
-
-		if($result->nilai==""){
-			return 0;
-		}else{
-			return $result->nilai;
-		}
-
-		
-	}
-
 
 }
