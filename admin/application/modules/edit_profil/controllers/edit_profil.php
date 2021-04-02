@@ -16,48 +16,38 @@ class Edit_profil extends MX_Controller {
 	function index()
 	{
 
-		if ( empty( $this->session->userdata('session_id') ) )
-		{
-			redirect('login');
-
-		} else {
-
 			$data = array(
+			'namamodule' 	=> "edit_profil",
+			'namafileview' 	=> "V_edit_profil",
+			'tampil'     	=> $this->M_edit_profil->tampil(),
+		);
+		echo Modules::run('template/tampilCore', $data);
+	}
+
+		// halaman tambah
+	function tambah()
+	{
+		$data = array(
 			'namamodule' 	=> "edit_profil",
 			'namafileview' 	=> "V_edit_profil",
 		);
 		echo Modules::run('template/tampilCore', $data);
-		}
-
-
 	}
 
-	function tambah()
-	{
-		$this->m_data_sekolah->tambah();
-		redirect('data_sekolah');
-	}
-
-	function edit()
-	{
-		$this->m_data_sekolah->edit();
-		redirect('data_sekolah');
-	}
-
-	function hapus($id)
-	{
-		$this->m_data_sekolah->hapus($id);
-		redirect('data_sekolah');
-	}
-
-	function cari()
+	function editview($id)
 	{
 		$data = array(
-			'namamodule' 	=> "data_sekolah",
-			'namafileview' 	=> "V_data_sekolah",
-			'tampil'		=> $this->m_data_sekolah->cari(),
+			'namamodule' 	=> "edit_profil",
+			'namafileview' 	=> "V_edit_profil",
+			'tampil'     	=> $this->M_edit_profil->tampiedit($id),
 		);
 		echo Modules::run('template/tampilCore', $data);
+	}
+
+	function hapus()
+	{
+		$this->M_edit_profil->hapus();
+		redirect('edit_profil');
 	}
 	
 }

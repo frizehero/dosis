@@ -5,7 +5,7 @@ class M_edit_profil extends CI_Model {
 
 	function tampil()
 	{
-		return $this->db->get('sekolah')->result();
+		return $this->db->get('edit_profil')->result();
 	}
 
 	function tambah()
@@ -81,10 +81,22 @@ class M_edit_profil extends CI_Model {
 
 
 				$data = array(
-					''		=> $kode,
-					'nama_room'		=> $nama,
-					'pj_room'		=> $pj,
-					'ket_room'		=> $keterangan,
+					'id_edit_profil'=> $id,
+					'nama_lengkap'	=> $nama,
+					'username'		=> $username,
+					'email'			=> $email,
+					'jenis_kelamin'	=> $jenis,
+					'provinsi'		=> $provinsi,
+					'kota'			=> $kota,
+					'kecamatan'		=> $kecamatan,
+					'desa'			=> $desa,
+					'alamat'		=> $alamat,
+					'kode_pos'		=> $kode,
+					'no_wa'			=> $no_wa,
+					'no_telepon'	=> $no_telepon,
+					'instagram'		=> $instagram,
+					'facebook'		=> $facebook,
+					'twitter'		=> $twitter,
 				);
 				$this->db->where('id_edit_profil',$id)->update('edit_profil', $data);
 				$this->session->set_flashdata('msg', 'suksesedit');

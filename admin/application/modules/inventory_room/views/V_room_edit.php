@@ -16,7 +16,6 @@
                         </div>   
                         <div class="col-md-6">
                         <div class="main-card mb-3 card">
-
                             <form action="<?php echo base_url('inventory_room/edit') ?>" method="POST" enctype="multipart/form-data">
                                 <div class="card-body">
                                     <h5 class="card-title"></h5>
