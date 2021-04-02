@@ -10,7 +10,7 @@ class M_edit_profil extends CI_Model {
 
 	function tambah()
 	{
-		$nama 		= $this->input->post('nama_sekolah');
+		$nama 		= $this->input->post('edit_profil');
 		$keterangan	= $this->input->post('keterangan');
 
 
