@@ -152,7 +152,13 @@
                                                             <div class="col-md-4">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleEmail11" class="">Kota/Kabupaten</label>
-                                                                        <select name="kabupaten_pembuka" class="multiselect-dropdown form-control">
+                                                                        <select name="regencies" class="multiselect-dropdown form-control">
+
+                                                                            <?php foreach($getregencies as $res) { ?>
+
+                                                                                <option value="<?php echo $res->id_kabupaten?>"><?php echo $res->name?></option>
+
+                                                                            <?php } ?>
 
                                                                         </select>
                                                                 </div>
@@ -160,7 +166,13 @@
                                                             <div class="col-md-4">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleEmail11" class="">Kecamatan</label>
-                                                                        <select name="kecamatan_pembuka" class="multiselect-dropdown form-control">
+                                                                        <select name="districts" class="multiselect-dropdown form-control">
+
+                                                                            <?php foreach($getdistricts as $res) { ?>
+
+                                                                                <option value="<?php echo $res->id_kecamatan?>"><?php echo $res->name?></option>
+
+                                                                            <?php } ?>
 
                                                                         </select>
                                                                 </div>
@@ -168,7 +180,13 @@
                                                             <div class="col-md-4">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleEmail11" class="">Desa/Kelurahan</label>
-                                                                        <select name="desa_pembuka" class="multiselect-dropdown form-control">
+                                                                        <select name="villages" class="multiselect-dropdown form-control">
+
+                                                                            <?php foreach($getvillages as $res) { ?>
+
+                                                                                <option value="<?php echo $res->id_desa?>"><?php echo $res->name?></option>
+
+                                                                            <?php } ?>
 
                                                                         </select>
                                                                 </div>

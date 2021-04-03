@@ -33,6 +33,9 @@ class Galang_dana extends MX_Controller {
 			'namamodule' 	=> "galang_dana",
 			'namafileview' 	=> "V_galang_dana_tambah",
       'getprovinces'		=> $this->M_galang_dana->getprovinces(),
+      'getregencies'		=> $this->M_galang_dana->getregencies(),
+      'getdistricts'		=> $this->M_galang_dana->getdistricts(),
+      'getvillages'		  => $this->M_galang_dana->getvillages(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
