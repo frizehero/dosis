@@ -138,7 +138,13 @@
                                                             <div class="col-md-4">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleEmail11" class="">Provinsi</label>
-                                                                        <select name="peovinsi_pembuka" class="multiselect-dropdown form-control">
+                                                                        <select name="provinces" class="multiselect-dropdown form-control">
+
+                                                                            <?php foreach($getprovinces as $res) { ?>
+
+                                                                                <option value="<?php echo $res->id_provinsi?>"><?php echo $res->name?></option>
+
+                                                                            <?php } ?>
 
                                                                         </select>
                                                                 </div>

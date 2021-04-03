@@ -8,6 +8,7 @@ class M_galang_dana extends CI_Model {
 
 		$this->db->select('*');
 		$this->db->from('galang_dana');
+		$this->db->join('provinces', 'galang_dana.provinces = provinces.id_provinsi');
 		$query = $this->db->get();
 
 
@@ -31,7 +32,10 @@ class M_galang_dana extends CI_Model {
     	return $query->row_array();
 	}
 
-
+	function getprovinces()
+	{
+		return $this->db->get('provinces')->result();
+	}
 
 
 	function tambah()
@@ -47,7 +51,7 @@ class M_galang_dana extends CI_Model {
 		$wa_pembuka 				= $this->input->post('wa_pembuka');
 		$email_pembuka 				= $this->input->post('email_pembuka');
 		$identitas_pembuka 			= $this->input->post('identitas_pembuka');
-		$provinsi_pembuka 			= $this->input->post('provinsi_pembuka');
+		$provinces		 			= $this->input->post('provinces');
 		$kabupaten_pembuka 			= $this->input->post('kabupaten_pembuka');
 		$kecamatan_pembuka 			= $this->input->post('kecamatan_pembuka');
 		$desa_pembuka 				= $this->input->post('desa_pembuka');
@@ -67,12 +71,12 @@ class M_galang_dana extends CI_Model {
 		$tgl_awal 					= $this->input->post('tgl_awal');
 		$tgl_akhir 					= $this->input->post('tgl_akhir');
 		$jml_donasi 				= $this->input->post('jml_donasi');
-		$provinsi_pembuka 			= $this->input->post('provinsi_pembuka');
-		$kabupaten_pembuka 			= $this->input->post('kabupaten_pembuka');
-		$kecamatan_pembuka 			= $this->input->post('kecamatan_pembuka');
-		$desa_pembuka 				= $this->input->post('desa_pembuka');
-		$kode_pos_pembuka 			= $this->input->post('kode_pos_pembuka');
-		$alamat_lengkap_pembuka 	= $this->input->post('alamat_lengkap_pembuka');
+		$provinsi_penerima 			= $this->input->post('provinsi_penerima');
+		$kabupaten_penerima 		= $this->input->post('kabupaten_penerima');
+		$kecamatan_penerima 		= $this->input->post('kecamatan_penerima');
+		$desa_penerima 				= $this->input->post('desa_penerima');
+		$kode_pos_penerima 			= $this->input->post('kode_pos_penerima');
+		$alamat_lengkap_penerima 	= $this->input->post('alamat_lengkap_penerima');
 		$tgl_dibuat					= $this->input->post('tgl_dibuat');
 
 		$insert_awal = date( 'Y-m-d', strtotime($tgl_awal));
@@ -106,7 +110,7 @@ class M_galang_dana extends CI_Model {
 					'wa_pembuka'				=> $wa_pembuka,
 					'email_pembuka'				=> $email_pembuka,
 					'identitas_pembuka' 		=> $gbr['file_name'],
-					'provinsi_pembuka'			=> $provinsi_pembuka,
+					'provinces'					=> $provinces,
 					'kabupaten_pembuka'			=> $kabupaten_pembuka,
 					'kecamatan_pembuka'			=> $kecamatan_pembuka,
 					'desa_pembuka'				=> $desa_pembuka,
@@ -150,7 +154,7 @@ class M_galang_dana extends CI_Model {
 					'wa_pembuka'				=> $wa_pembuka,
 					'email_pembuka'				=> $email_pembuka,
 					'identitas_pembuka' 		=> 'kosong1.png',
-					'provinsi_pembuka'			=> $provinsi_pembuka,
+					'provinces'					=> $provinces,
 					'kabupaten_pembuka'			=> $kabupaten_pembuka,
 					'kecamatan_pembuka'			=> $kecamatan_pembuka,
 					'desa_pembuka'				=> $desa_pembuka,
@@ -194,7 +198,7 @@ class M_galang_dana extends CI_Model {
 		$wa_pembuka 				= $this->input->post('wa_pembuka');
 		$email_pembuka 				= $this->input->post('email_pembuka');
 		$identitas_pembuka 			= $this->input->post('identitas_pembuka');
-		$provinsi_pembuka 			= $this->input->post('provinsi_pembuka');
+		$provinces 					= $this->input->post('provinces');
 		$kabupaten_pembuka 			= $this->input->post('kabupaten_pembuka');
 		$kecamatan_pembuka 			= $this->input->post('kecamatan_pembuka');
 		$desa_pembuka 				= $this->input->post('desa_pembuka');
@@ -214,12 +218,12 @@ class M_galang_dana extends CI_Model {
 		$tgl_awal 					= $this->input->post('tgl_awal');
 		$tgl_akhir 					= $this->input->post('tgl_akhir');
 		$jml_donasi 				= $this->input->post('jml_donasi');
-		$provinsi_pembuka 			= $this->input->post('provinsi_pembuka');
-		$kabupaten_pembuka 			= $this->input->post('kabupaten_pembuka');
-		$kecamatan_pembuka 			= $this->input->post('kecamatan_pembuka');
-		$desa_pembuka 				= $this->input->post('desa_pembuka');
-		$kode_pos_pembuka 			= $this->input->post('kode_pos_pembuka');
-		$alamat_lengkap_pembuka 	= $this->input->post('alamat_lengkap_pembuka ');
+		$provinsi_penerima 			= $this->input->post('provinsi_penerima');
+		$kabupaten_penerima 			= $this->input->post('kabupaten_penerima');
+		$kecamatan_penerima 			= $this->input->post('kecamatan_penerima');
+		$desa_penerima 				= $this->input->post('desa_penerima');
+		$kode_pos_penerima 			= $this->input->post('kode_pos_penerima');
+		$alamat_lengkap_penerima 	= $this->input->post('alamat_lengkap_penerima ');
 		$tgl_dibuat					= $this->input->post('tgl_dibuat');
 
 		$insert_awal = date( 'Y-m-d', strtotime($tgl_awal));
@@ -253,7 +257,7 @@ class M_galang_dana extends CI_Model {
 					'wa_pembuka'				=> $wa_pembuka,
 					'email_pembuka'				=> $email_pembuka,
 					'identitas_pembuka' 		=> $gbr['file_name'],
-					'provinsi_pembuka'			=> $provinsi_pembuka,
+					'provinces'					=> $provinces,
 					'kabupaten_pembuka'			=> $kabupaten_pembuka,
 					'kecamatan_pembuka'			=> $kecamatan_pembuka,
 					'desa_pembuka'				=> $desa_pembuka,
@@ -293,7 +297,7 @@ class M_galang_dana extends CI_Model {
 					'telepon_pembuka'			=> $telepon_pembuka,
 					'wa_pembuka'				=> $wa_pembuka,
 					'email_pembuka'				=> $email_pembuka,
-					'provinsi_pembuka'			=> $provinsi_pembuka,
+					'provinces'					=> $provinces,
 					'kabupaten_pembuka'			=> $kabupaten_pembuka,
 					'kecamatan_pembuka'			=> $kecamatan_pembuka,
 					'desa_pembuka'				=> $desa_pembuka,
