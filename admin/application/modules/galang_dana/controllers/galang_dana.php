@@ -19,7 +19,7 @@ class Galang_dana extends MX_Controller {
 		$data = array(
 			'namamodule' 	=> "galang_dana",
 			'namafileview' 	=> "V_galang_dana",
-			'tampil'		=> $this->m_galang_dana->tampil(),
+			'tampil'		=> $this->M_galang_dana->tampil(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
