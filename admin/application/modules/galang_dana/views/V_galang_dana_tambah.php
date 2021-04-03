@@ -59,13 +59,13 @@
                                                             <div class="col-md-6">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleAddress">Nama</label>
-                                                                    <input name="tipe" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                    <input name="nama_pembuka" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleEmail11" class="">Status</label>
-                                                                    <select name="merk" class="multiselect-dropdown form-control">
+                                                                    <select name="status_pembuka" class="multiselect-dropdown form-control">
 
                                                                         <?php foreach($getstatus as $res) { ?>
 
@@ -81,13 +81,7 @@
                                                             <div class="col-md-4">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleEmail11" class="">Jenjang</label>
-                                                                    <select name="merk" class="multiselect-dropdown form-control">
-
-                                                                        <?php foreach($getmerk as $res) { ?>
-
-                                                                            <option value="<?php echo $res->id_merk?>"><?php echo $res->nama_merk?></option>
-
-                                                                        <?php } ?>
+                                                                    <select name="jenjang_pembuka" class="multiselect-dropdown form-control">
 
                                                                     </select>
                                                                 </div>
@@ -95,13 +89,13 @@
                                                             <div class="col-md-4">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleAddress">Asal Sekolah</label>
-                                                                    <input name="nomesin" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                    <input name="sekolah_pembuka" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleAddress">Kelas</label>
-                                                                    <input name="nomesin" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                    <input name="kelas_pembuka" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                 </div>
                                                             </div>                     
                                                         </div>
@@ -109,19 +103,19 @@
                                                             <div class="col-md-4">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleAddress">No Telepon</label>
-                                                                    <input name="norangka" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                    <input name="telepon_pembuka" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                 </div>
                                                             </div>  
                                                             <div class="col-md-4">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleAddress">Whatsapp</label>
-                                                                    <input name="nomesin" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                    <input name="wa_pembuka" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleAddress">Email</label>
-                                                                    <input name="nomesin" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                    <input name="email_pembuka" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -132,7 +126,7 @@
                                                                     <div class="card mb-3 bg-primary widget-content">
                                                                         <div class="widget-content-wrapper">
                                                                             <div class="widget-content-left">
-                                                                                <input name="gambar" id="exampleFile" type="file" class="form-control-file">
+                                                                                <input name="identitas_pembuka" id="exampleFile" type="file" class="form-control-file">
                                                                                 <small class="form-text text-light">Gunakan File format PNG/JPG Max 10 MB</small>
                                                                             </div>
                                                                         </div>
@@ -144,72 +138,47 @@
                                                             <div class="col-md-4">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleEmail11" class="">Provinsi</label>
-                                                                        <select name="ruang" class="multiselect-dropdown form-control">
+                                                                        <select name="peovinsi_pembuka" class="multiselect-dropdown form-control">
 
-                                                                                <?php foreach($getruang as $res2) { ?>
-
-                                                                                    <option value="<?php echo $res2->id_inv_room?>"><?php echo $res2->nama_room?></option>
-
-                                                                                <?php } ?>
                                                                         </select>
                                                                 </div>
                                                             </div> 
                                                             <div class="col-md-4">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleEmail11" class="">Kota/Kabupaten</label>
-                                                                        <select name="ruang" class="multiselect-dropdown form-control">
+                                                                        <select name="kabupaten_pembuka" class="multiselect-dropdown form-control">
 
-                                                                                <?php foreach($getruang as $res2) { ?>
-
-                                                                                    <option value="<?php echo $res2->id_inv_room?>"><?php echo $res2->nama_room?></option>
-
-                                                                                <?php } ?>
                                                                         </select>
                                                                 </div>
                                                             </div> 
                                                             <div class="col-md-4">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleEmail11" class="">Kecamatan</label>
-                                                                        <select name="ruang" class="multiselect-dropdown form-control">
+                                                                        <select name="kecamatan_pembuka" class="multiselect-dropdown form-control">
 
-                                                                                <?php foreach($getruang as $res2) { ?>
-
-                                                                                    <option value="<?php echo $res2->id_inv_room?>"><?php echo $res2->nama_room?></option>
-
-                                                                                <?php } ?>
                                                                         </select>
                                                                 </div>
                                                             </div> 
                                                             <div class="col-md-4">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleEmail11" class="">Desa/Kelurahan</label>
-                                                                        <select name="ruang" class="multiselect-dropdown form-control">
+                                                                        <select name="desa_pembuka" class="multiselect-dropdown form-control">
 
-                                                                                <?php foreach($getruang as $res2) { ?>
-
-                                                                                    <option value="<?php echo $res2->id_inv_room?>"><?php echo $res2->nama_room?></option>
-
-                                                                                <?php } ?>
                                                                         </select>
                                                                 </div>
                                                             </div> 
                                                             <div class="col-md-4">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleEmail11" class="">Kode POS</label>
-                                                                        <select name="ruang" class="multiselect-dropdown form-control">
+                                                                        <select name="kode_pos_pembuka" class="multiselect-dropdown form-control">
 
-                                                                                <?php foreach($getruang as $res2) { ?>
-
-                                                                                    <option value="<?php echo $res2->id_inv_room?>"><?php echo $res2->nama_room?></option>
-
-                                                                                <?php } ?>
                                                                         </select>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleAddress">Alamat Lengkap</label>
-                                                                    <textarea rows="1" name="keterangan" class="form-control autosize-input" style="height: 35px;"></textarea>
+                                                                    <textarea rows="1" name="alamat_lengkap_pembuka" class="form-control autosize-input" style="height: 35px;"></textarea>
                                                                 </div>
                                                             </div>                                                                                                                
                                                         </div>                                                                                     
@@ -225,19 +194,13 @@
                                                                             <div class="col-md-6">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Nama</label>
-                                                                                    <input name="tipe" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                                    <input name="nama_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-6">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleEmail11" class="">Status</label>
-                                                                                    <select name="merk" class="multiselect-dropdown form-control">
-
-                                                                                        <?php foreach($getmerk as $res) { ?>
-
-                                                                                            <option value="<?php echo $res->id_merk?>"><?php echo $res->nama_merk?></option>
-
-                                                                                        <?php } ?>
+                                                                                    <select name="status_penerima" class="multiselect-dropdown form-control">
 
                                                                                     </select>
                                                                                 </div>
@@ -247,13 +210,7 @@
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleEmail11" class="">Jenjang</label>
-                                                                                    <select name="merk" class="multiselect-dropdown form-control">
-
-                                                                                        <?php foreach($getmerk as $res) { ?>
-
-                                                                                            <option value="<?php echo $res->id_merk?>"><?php echo $res->nama_merk?></option>
-
-                                                                                        <?php } ?>
+                                                                                    <select name="jenjang_penerima" class="multiselect-dropdown form-control">
 
                                                                                     </select>
                                                                                 </div>
@@ -261,13 +218,13 @@
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Asal Sekolah</label>
-                                                                                    <input name="nomesin" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                                    <input name="sekolah_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Kelas</label>
-                                                                                    <input name="nomesin" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                                    <input name="kelas_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                                 </div>
                                                                             </div>                     
                                                                         </div>
@@ -275,19 +232,19 @@
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">No Telepon</label>
-                                                                                    <input name="norangka" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                                    <input name="telepon_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                                 </div>
                                                                             </div>  
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Whatsapp</label>
-                                                                                    <input name="nomesin" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                                    <input name="wa_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Email</label>
-                                                                                    <input name="nomesin" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                                    <input name="email_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -298,7 +255,7 @@
                                                                                     <div class="card mb-3 bg-primary widget-content">
                                                                                         <div class="widget-content-wrapper">
                                                                                             <div class="widget-content-left">
-                                                                                                <input name="gambar" id="exampleFile" type="file" class="form-control-file">
+                                                                                                <input name="identitas_penerima" id="exampleFile" type="file" class="form-control-file">
                                                                                                 <small class="form-text text-light">Gunakan File format PNG/JPG Max 10 MB</small>
                                                                                             </div>
                                                                                         </div>
@@ -310,7 +267,7 @@
                                                                             <div class="col-md-12">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Deskripsi Donasi</label>
-                                                                                    <textarea rows="1" name="keterangan" class="form-control autosize-input" style="height: 60px;"></textarea>
+                                                                                    <textarea rows="1" name="deskripsi_penerima" class="form-control autosize-input" style="height: 60px;"></textarea>
                                                                                 </div>
                                                                             </div> 
                                                                         </div>  
@@ -321,7 +278,7 @@
                                                                                     <div class="card mb-3 bg-primary widget-content">
                                                                                         <div class="widget-content-wrapper">
                                                                                             <div class="widget-content-left">
-                                                                                                <input name="gambar" id="exampleFile" type="file" class="form-control-file">
+                                                                                                <input name="dokumentasi_penerima" id="exampleFile" type="file" class="form-control-file">
                                                                                                 <small class="form-text text-light">Gunakan File format PNG/JPG Max 10 MB</small>
                                                                                             </div>
                                                                                         </div>
@@ -333,19 +290,19 @@
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Tanggal Awal</label>
-                                                                                    <input type="text" class="form-control" name="tgl_oleh" data-toggle="datepicker"/>
+                                                                                    <input type="text" class="form-control" name="tgl_awal" data-toggle="datepicker"/>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Tanggal Akhir</label>
-                                                                                    <input type="text" class="form-control" name="tgl_buku" data-toggle="datepicker"/>
+                                                                                    <input type="text" class="form-control" name="tgl_akhir" data-toggle="datepicker"/>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Jumlah Dana</label>
-                                                                                    <input name="asal" id="exampleAddress" placeholder="Pembelian" type="text" class="form-control">
+                                                                                    <input name="jml_donasi" id="exampleAddress" placeholder="Pembelian" type="text" class="form-control">
                                                                                 </div>
                                                                             </div> 
                                                                         </div>
@@ -354,72 +311,47 @@
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleEmail11" class="">Provinsi</label>
-                                                                                        <select name="ruang" class="multiselect-dropdown form-control">
+                                                                                        <select name="provinsi_penerima" class="multiselect-dropdown form-control">
 
-                                                                                                <?php foreach($getruang as $res2) { ?>
-
-                                                                                                    <option value="<?php echo $res2->id_inv_room?>"><?php echo $res2->nama_room?></option>
-
-                                                                                                <?php } ?>
                                                                                         </select>
                                                                                 </div>
                                                                             </div> 
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleEmail11" class="">Kota/Kabupaten</label>
-                                                                                        <select name="ruang" class="multiselect-dropdown form-control">
+                                                                                        <select name="kabupaten_penerima" class="multiselect-dropdown form-control">
 
-                                                                                                <?php foreach($getruang as $res2) { ?>
-
-                                                                                                    <option value="<?php echo $res2->id_inv_room?>"><?php echo $res2->nama_room?></option>
-
-                                                                                                <?php } ?>
                                                                                         </select>
                                                                                 </div>
                                                                             </div> 
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleEmail11" class="">Kecamatan</label>
-                                                                                        <select name="ruang" class="multiselect-dropdown form-control">
+                                                                                        <select name="kecamatan_penerima" class="multiselect-dropdown form-control">
 
-                                                                                                <?php foreach($getruang as $res2) { ?>
-
-                                                                                                    <option value="<?php echo $res2->id_inv_room?>"><?php echo $res2->nama_room?></option>
-
-                                                                                                <?php } ?>
                                                                                         </select>
                                                                                 </div>
                                                                             </div> 
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleEmail11" class="">Desa/Kelurahan</label>
-                                                                                        <select name="ruang" class="multiselect-dropdown form-control">
+                                                                                        <select name="desa_penerima" class="multiselect-dropdown form-control">
 
-                                                                                                <?php foreach($getruang as $res2) { ?>
-
-                                                                                                    <option value="<?php echo $res2->id_inv_room?>"><?php echo $res2->nama_room?></option>
-
-                                                                                                <?php } ?>
                                                                                         </select>
                                                                                 </div>
                                                                             </div> 
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleEmail11" class="">Kode POS</label>
-                                                                                        <select name="ruang" class="multiselect-dropdown form-control">
+                                                                                        <select name="kode_pos_penerima" class="multiselect-dropdown form-control">
 
-                                                                                                <?php foreach($getruang as $res2) { ?>
-
-                                                                                                    <option value="<?php echo $res2->id_inv_room?>"><?php echo $res2->nama_room?></option>
-
-                                                                                                <?php } ?>
                                                                                         </select>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Alamat Lengkap</label>
-                                                                                    <textarea rows="1" name="keterangan" class="form-control autosize-input" style="height: 35px;"></textarea>
+                                                                                    <textarea rows="1" name="alamat_lengkap_penerima" class="form-control autosize-input" style="height: 35px;"></textarea>
                                                                                 </div>
                                                                             </div>                                                                                                                
                                                                         </div>
