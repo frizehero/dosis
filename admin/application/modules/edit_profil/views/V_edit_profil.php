@@ -52,57 +52,72 @@
                             </div>
                             </div>
                             <div class="row">
-                            <div class="col-md-6">
-                            <div class="position-relative row form-group">
-                                <label for="exampleEmail" class="col-sm-3 col-form-label">Provinsi</label>
-                                <div class="col-sm-9">
-                                    <select name="select" id="exampleSelect" class="form-control">
-                                        <option>Aceh</option>
-                                        <option>Sumatera Utara</option>
-                                        <option>Sumatera Barat</option>
-                                        <option>Riau</option>
-                                        <option>Kepulauan Riau</option>
-                                        <option>Jambi</option>
-                                        <option>Sumatera Selatan</option>
-                                        <option>Kepulauan Bangka Belitun</option>
-                                        <option>Bengkulu</option>
-                                        <option>Lampung</option>
-                                        <option>DKI Jakarta</option>
-                                        <option>Banten</option>
-                                        <option>Jawa Barat</option>
-                                        <option>Jawa Tengah</option>
-                                        <option>DI Yogyakartn</option>
-                                        <option>Jawa Timur</option>
-                                    </select>
+                                <div class="col-md-6">
+                                    <div class="position-relative row form-group">
+                                        <label for="exampleEmail" class="col-sm-3 col-form-label">Provinsi</label>
+                                        <div class="col-sm-9">
+                                            <select name="provinces" class="multiselect-dropdown form-control">
+
+                                                <?php foreach($getprovinces as $res) { ?>
+
+                                                    <option value="<?php echo $res->id_provinsi?>"><?php echo $res->name?></option>
+
+                                                <?php } ?>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="col-md-6">
+                                    <div class="position-relative row form-group">
+                                        <label for="exampleEmail" class="col-sm-3 col-form-label">KOTA/KAB.</label>
+                                        <div class="col-sm-9">
+                                            <select name="regencies" class="multiselect-dropdown form-control">
+
+                                                <?php foreach($getregencies as $res) { ?>
+
+                                                    <option value="<?php echo $res->id_kabupaten?>"><?php echo $res->name?></option>
+
+                                                <?php } ?>
+
+                                            </select>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            </div>
-                            <div class="col-md-6">
-                            <div class="position-relative row form-group">
-                                <label for="exampleEmail" class="col-sm-3 col-form-label">KOTA/KAB.</label>
-                                <div class="col-sm-9">
-                                    <input name="Kota/Kabupaten" value="Kota Probolinggo" type="text" class="form-control">
-                                </div>
-                            </div>
-                            </div>
                             </div>
                             <div class="row">
-                            <div class="col-md-6">
-                            <div class="position-relative row form-group">
-                                <label for="exampleEmail" class="col-sm-3 col-form-label">Kecamatan</label>
-                                <div class="col-sm-9">
-                                    <input name="Kecamatan" value="Mayangan" type="text" class="form-control">
+                                <div class="col-md-6">
+                                    <div class="position-relative row form-group">
+                                        <label for="exampleEmail" class="col-sm-3 col-form-label">Kecamatan</label>
+                                        <div class="col-sm-9">
+                                            <select name="districts" class="multiselect-dropdown form-control">
+
+                                                <?php foreach($getdistricts as $res) { ?>
+
+                                                    <option value="<?php echo $res->id_kecamatan?>"><?php echo $res->name?></option>
+
+                                                <?php } ?>
+
+                                            </select>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            </div>
-                            <div class="col-md-6">
-                            <div class="position-relative row form-group">
-                                <label for="exampleEmail" class="col-sm-3 col-form-label">Desa</label>
-                                <div class="col-sm-9">
-                                    <input name="Desa" value="Mayangan" type="text" class="form-control">
+                                <div class="col-md-6">
+                                    <div class="position-relative row form-group">
+                                        <label for="exampleEmail" class="col-sm-3 col-form-label">Kel./Desa</label>
+                                        <div class="col-sm-9">
+                                            <select name="villages" class="multiselect-dropdown form-control">
+
+                                                <?php foreach($getvillages as $res) { ?>
+
+                                                    <option value="<?php echo $res->id_desa?>"><?php echo $res->name?></option>
+
+                                                <?php } ?>
+
+                                            </select>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            </div>
                             </div>
                             <div class="row">
                             <div class="col-md-6">

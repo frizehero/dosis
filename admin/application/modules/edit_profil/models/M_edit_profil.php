@@ -6,6 +6,27 @@ class M_edit_profil extends CI_Model {
 	function tampil()
 	{
 		return $this->db->get('edit_profil')->result();
+		$this->db->join('provinces', 'edit_profi.provinces = provinces.id_provinsi');
+	}
+
+	function getprovinces()
+	{
+		return $this->db->get('provinces')->result();
+	}
+
+	function getregencies()
+	{
+		return $this->db->get('regencies')->result();
+	}
+
+	function getdistricts()
+	{
+		return $this->db->get('districts')->result();
+	}
+
+	function getvillages()
+	{
+		return $this->db->get('villages')->result();
 	}
 
 	function tambah()
@@ -67,7 +88,7 @@ class M_edit_profil extends CI_Model {
 		$username 	= $this->input->post('username');
 		$email		= $this->input->post('email');
 		$jenis		= $this->input->post('jenis');
-		$provinsi	= $this->input->post('provinsi');
+		$provinces	= $this->input->post('provinces');
 		$kota		= $this->input->post('kota');
 		$kecamatan	= $this->input->post('kecamatan');
 		$desa		= $this->input->post('desa');
@@ -86,7 +107,7 @@ class M_edit_profil extends CI_Model {
 					'username'		=> $username,
 					'email'			=> $email,
 					'jenis_kelamin'	=> $jenis,
-					'provinsi'		=> $provinsi,
+					'provinces'		=> $provinces,
 					'kota'			=> $kota,
 					'kecamatan'		=> $kecamatan,
 					'desa'			=> $desa,
