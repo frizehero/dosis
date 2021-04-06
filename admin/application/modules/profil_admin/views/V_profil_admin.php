@@ -19,7 +19,7 @@
                                                 </div>
                                                 <div class="menu-header-btn-pane">
                                                 <a href="<?php echo base_url('edit_profil'); ?>">
-                                                    <button class="btn btn-success">Lihat</button></a>
+                                                    <button class="btn btn-success">Edit</button></a>
                                                 </div>
                                             </div>
                                         </div>

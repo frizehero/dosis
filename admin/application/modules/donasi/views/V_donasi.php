@@ -343,8 +343,7 @@
             </div>
             <div class="modal-body">
                 <button class="card-title mb-2 mr-2 btn-icon btn btn-primary btn-block"><i class="lnr-paperclip btn-icon-wrapper"> </i>Salin Link</button>
-
-                <button class="card-title mb-2 mr-2 btn-icon btn btn-primary btn-block"><i class="btn-icon-wrapper"></i>Facebook</button>
+                <button class="card-title mb-2 mr-2 btn-icon btn btn-primary btn-block"><i class="btn-icon-wrapper"></i> Facebook</button>
 
                 <button class="card-title mb-2 mr-2 btn-icon btn btn-primary btn-block"><i class="btn-icon-wrapper"> </i>Instagram</button>
 

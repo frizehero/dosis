@@ -1,6 +1,3 @@
-
-
-
 <div class="app-main__inner">
                         <div class="app-page-title">
                             <div class="page-title-wrapper">
@@ -46,7 +43,7 @@
                                                     </li>
                                                     <li>
                                                         <a href="#step-3">
-                                                            <em>4</em><span>Selesai</span>
+                                                            <em>3</em><span>Selesai</span>
                                                         </a>
                                                     </li>
                                                 </ul>
