@@ -9,7 +9,7 @@
                             <center><img width="100" class="rounded-circle" src="assets/images/avatars/14.jpg" alt=""></center>
                         </div></br>
                         <div class="d-block text-center ">
-                            <button class="btn-shadow-primary btn btn-primary btn-lg">Ganti Foto Profil</button>
+                            <button class="btn-shadow-primary btn btn-primary btn-lg" >Ganti Foto Profil</button>
                         </div>
                         <div class="card-body">
                             <div class="row">
@@ -56,11 +56,12 @@
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">Provinsi</label>
                                         <div class="col-sm-9">
-                                            <select name="provinces" class="multiselect-dropdown form-control">
+                                            <select name="wilayah_provinsi" class="multiselect-dropdown form-control">
 
-                                                <?php foreach($getprovinces as $res) { ?>
+                                                <?php foreach($getwilayah_provinsi as $res) { ?>
+                                                
 
-                                                    <option value="<?php echo $res->id_provinsi?>"><?php echo $res->name?></option>
+                                                    <option value="<?php echo $res->id_prov?>"><?php echo $res->nama?></option>
 
                                                 <?php } ?>
 
@@ -72,11 +73,11 @@
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">KOTA/KAB.</label>
                                         <div class="col-sm-9">
-                                            <select name="regencies" class="multiselect-dropdown form-control">
+                                            <select name="wilayah_kabupaten" class="multiselect-dropdown form-control">
 
-                                                <?php foreach($getregencies as $res) { ?>
+                                                <?php foreach($getwilayah_kabupaten as $res) { ?>
 
-                                                    <option value="<?php echo $res->id_kabupaten?>"><?php echo $res->name?></option>
+                                                    <option value="<?php echo $res->id_kab?>"><?php echo $res->nama?></option>
 
                                                 <?php } ?>
 

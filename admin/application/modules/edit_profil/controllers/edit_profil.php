@@ -20,8 +20,8 @@ class Edit_profil extends MX_Controller {
 			'namamodule' 	=> "edit_profil",
 			'namafileview' 	=> "V_edit_profil",
 			'tampil'     	=> $this->M_edit_profil->tampil(),
-			'getprovinces'		=> $this->M_edit_profil->getprovinces(),
-			'getregencies'		=> $this->M_edit_profil->getregencies(),
+			'getwilayah_provinsi'		=> $this->M_edit_profil->getwilayah_provinsi(),
+			'getwilayah_kabupaten'		=> $this->M_edit_profil->getwilayah_kabupaten(),
 			'getdistricts'		=> $this->M_edit_profil->getdistricts(),
 			'getvillages'		=> $this->M_edit_profil->getvillages(),
 		);

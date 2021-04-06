@@ -6,17 +6,17 @@ class M_edit_profil extends CI_Model {
 	function tampil()
 	{
 		return $this->db->get('edit_profil')->result();
-		$this->db->join('provinces', 'edit_profi.provinces = provinces.id_provinsi');
+		$this->db->join('wilayah_provinsi', 'edit_profi.wilayah_provinsi = wilayah_provinsi.id_prov');
 	}
 
-	function getprovinces()
+	function getwilayah_provinsi()
 	{
-		return $this->db->get('provinces')->result();
+		return $this->db->get('wilayah_provinsi')->result();
 	}
 
-	function getregencies()
+	function getwilayah_kabupaten()
 	{
-		return $this->db->get('regencies')->result();
+		return $this->db->get('wilayah_kabupaten')->result();
 	}
 
 	function getdistricts()
@@ -88,8 +88,8 @@ class M_edit_profil extends CI_Model {
 		$username 	= $this->input->post('username');
 		$email		= $this->input->post('email');
 		$jenis		= $this->input->post('jenis');
-		$provinces	= $this->input->post('provinces');
-		$kota		= $this->input->post('kota');
+		$wilayah_provinsi	= $this->input->post('prov');
+		$wilayah_kabupaten		= $this->input->post('kab');
 		$kecamatan	= $this->input->post('kecamatan');
 		$desa		= $this->input->post('desa');
 		$alamat		= $this->input->post('alamat');
@@ -107,8 +107,8 @@ class M_edit_profil extends CI_Model {
 					'username'		=> $username,
 					'email'			=> $email,
 					'jenis_kelamin'	=> $jenis,
-					'provinces'		=> $provinces,
-					'kota'			=> $kota,
+					'wilayah_provinsi'		=> $prov,
+					'wilayah_kabupaten'			=> $kab,
 					'kecamatan'		=> $kecamatan,
 					'desa'			=> $desa,
 					'alamat'		=> $alamat,
