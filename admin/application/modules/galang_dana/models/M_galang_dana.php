@@ -109,7 +109,7 @@ class M_galang_dana extends CI_Model {
 
 		$this->load->library('upload');
 		$nmfile = "file_".time();
-		$config['upload_path']		= 'assets/dokumen/peralatan/';
+		$config['upload_path']		= 'assets/images/peristiwa/';
 		$config['allowed_types']	= 'gif|jpg|png|jpeg';
 		$config['max_size']			= 5120;
 		$config['max_width']		= 4300;
@@ -176,7 +176,7 @@ class M_galang_dana extends CI_Model {
 					'telepon_pembuka'			=> $telepon_pembuka,
 					'wa_pembuka'				=> $wa_pembuka,
 					'email_pembuka'				=> $email_pembuka,
-					'identitas_pembuka' 		=> 'kosong1.png',
+					'identitas_pembuka' 		=> $gbr['file_name'],
 					'provinces'					=> $provinces,
 					'regencies'					=> $regencies,
 					'districts'					=> $districts,
@@ -190,9 +190,9 @@ class M_galang_dana extends CI_Model {
 					'telepon_penerima'			=> $telepon_penerima,
 					'wa_penerima'				=> $wa_penerima,
 					'email_penerima'			=> $email_penerima,
-					'identitas_penerima' 		=> 'kosong1.png',
+					'identitas_penerima' 		=> $gbr['file_name'],
 					'deskripsi_penerima'		=> $deskripsi_penerima,
-					'dokumentasi_penerima' 		=> 'kosong1.png',
+					'dokumentasi_penerima' 		=> $gbr['file_name'],
 					'tgl_awal'					=> $tgl_awal,
 					'tgl_akhir'					=> $tgl_akhir,
 					'jml_donasi'				=> $jml_donasi,
@@ -256,7 +256,7 @@ class M_galang_dana extends CI_Model {
 
 		$this->load->library('upload');
 		$nmfile = "file_".time();
-		$config['upload_path']		= 'assets/img/';
+		$config['upload_path']		= 'assets/images/peristiwa';
 		$config['allowed_types']	= 'gif|jpg|png|jpeg';
 		$config['max_size']			= 5120;
 		$config['max_width']		= 4300;

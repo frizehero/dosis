@@ -125,6 +125,8 @@
                                                                             <div class="widget-content-left">
                                                                                 <input name="identitas_pembuka" id="exampleFile" type="file" class="form-control-file">
                                                                                 <small class="form-text text-light">Gunakan File format PNG/JPG Max 10 MB</small>
+
+                                                                                
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -223,6 +225,7 @@
                                                                                     <label for="exampleEmail11" class="">Status</label>
                                                                                     <select name="status_penerima" class="multiselect-dropdown form-control">
 
+
                                                                                     </select>
                                                                                 </div>
                                                                             </div>
@@ -245,8 +248,7 @@
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <slabel for="exampleAddress">Nama Sekolah</label>
-                                                                                    <select name="sekolah_penerima" class="multiselect-dropdown form-control">
-                                                                                    </select>
+                                                                                    <input name="sekolah_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-4">
@@ -330,7 +332,7 @@
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Jumlah Dana</label>
-                                                                                    <input name="jml_donasi" id="exampleAddress" placeholder="Pembelian" type="text" class="form-control">
+                                                                                    <input name="jml_donasi" id="exampleAddress" placeholder="RP20.000.000,00" type="text" class="form-control">
                                                                                 </div>
                                                                             </div> 
                                                                         </div>
