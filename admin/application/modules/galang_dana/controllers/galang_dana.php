@@ -30,12 +30,13 @@ class Galang_dana extends MX_Controller {
 
 	
 		$data = array(
-			'namamodule' 	=> "galang_dana",
-			'namafileview' 	=> "V_galang_dana_tambah",
-      'getprovinces'		=> $this->M_galang_dana->getprovinces(),
-      'getregencies'		=> $this->M_galang_dana->getregencies(),
-      'getdistricts'		=> $this->M_galang_dana->getdistricts(),
-      'getvillages'		  => $this->M_galang_dana->getvillages(),
+			'namamodule' 	         => "galang_dana",
+			'namafileview' 	       => "V_galang_dana_tambah",
+      'getprovinces'		     => $this->M_galang_dana->getprovinces(),
+      'getregencies'		     => $this->M_galang_dana->getregencies(),
+      'getdistricts'		     => $this->M_galang_dana->getdistricts(),
+      'getvillages'		       => $this->M_galang_dana->getvillages(),
+      'getjenjang_penerima'  => $this->M_galang_dana->getjenjang_penerima(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}

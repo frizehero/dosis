@@ -233,13 +233,20 @@
                                                                                     <label for="exampleEmail11" class="">Jenjang</label>
                                                                                     <select name="jenjang_penerima" class="multiselect-dropdown form-control">
 
+                                                                                        <?php foreach($getjenjang_penerima as $res) { ?>
+
+                                                                                            <option value="<?php echo $res->id_jenjang_penerima?>"><?php echo $res->name?></option>
+
+                                                                                        <?php } ?>
+
                                                                                     </select>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
-                                                                                    <label for="exampleAddress">Asal Sekolah</label>
-                                                                                    <input name="sekolah_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                                    <slabel for="exampleAddress">Nama Sekolah</label>
+                                                                                    <select name="sekolah_penerima" class="multiselect-dropdown form-control">
+                                                                                    </select>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-4">

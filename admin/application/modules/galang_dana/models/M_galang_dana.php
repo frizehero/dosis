@@ -8,7 +8,7 @@ class M_galang_dana extends CI_Model {
 
 		$this->db->select('*');
 		$this->db->from('galang_dana');
-		$this->db->join('provinces', 'galang_dana.provinces = provinces.id_provinsi');
+		$this->db->join('jenjang_penerima', 'galang_dana.jenjang_penerima = jenjang_penerima.id_jenjang_penerima');
 		$this->db->join('regencies', 'galang_dana.regencies = regencies.id_kabupaten');
 		$this->db->join('districts', 'galang_dana.districts = districts.id_kecamatan');
 		$this->db->join('villages', 'galang_dana.villages = villages.id_desa');
@@ -53,6 +53,11 @@ class M_galang_dana extends CI_Model {
 	function getvillages()
 	{
 		return $this->db->get('villages')->result();
+	}
+
+	function getjenjang_penerima()
+	{
+		return $this->db->get('jenjang_penerima')->result();
 	}
 
 
