@@ -37,7 +37,7 @@
                                                 <div class="tab-content">
                                                     <div class="dropdown-menu-header">
                                                         <div class="wrapper rounded"></div>
-                                                        <img src="assets/images/Peristiwa/1.jpg" style="width: 275px; height:210px;">   
+                                                        <img src="assets/images/Peristiwa/3.jpg" style="width: 275px; height:210px;">   
                                                     </div>
                                                     <li class="list-group-item">
                                                         <div class="h5 modal-title">
@@ -144,7 +144,7 @@
                                                 <div class="tab-content">
                                                     <div class="dropdown-menu-header">
                                                         <div class="wrapper rounded"></div>
-                                                        <img src="assets/images/Peristiwa/1.jpg" style="width: 275px; height:210px;">   
+                                                        <img src="assets/images/Peristiwa/2.jpg" style="width: 275px; height:210px;">   
                                                     </div>
                                             </div>
                                             <li class="list-group-item">
@@ -257,7 +257,7 @@
                                             </li>
                                         </ul>
                                         <div class="d-block text-center card-footer">
-                                            <a href="javascript:void(0);" class="btn-wide btn btn-warning">Repost</a>
+                                            <a href="<?php echo base_url('donasi'); ?>" class="btn-wide btn btn-warning">Repost</a>
                                         </div>
                                     </div>
                                 </div>
@@ -304,7 +304,7 @@
                                             </li>
                                         </ul>
                                         <div class="d-block text-center card-footer">
-                                            <a href="javascript:void(0);" class="btn-wide btn btn-warning">Repost</a>
+                                            <a href="<?php echo base_url('donasi'); ?>" class="btn-wide btn btn-warning">Repost</a>
                                         </div>
                                     </div>
                                 </div>
@@ -352,7 +352,7 @@
                                             </li>
                                         </ul>
                                         <div class="d-block text-center card-footer">
-                                            <a href="javascript:void(0);" class="btn-wide btn btn-warning">Repost</a>
+                                            <a href="<?php echo base_url('donasi'); ?>" class="btn-wide btn btn-warning">Repost</a>
                                         </div>
                                     </div>
                                 </div>
@@ -399,7 +399,7 @@
                                             </li>
                                         </ul>
                                         <div class="d-block text-center card-footer">
-                                            <a href="javascript:void(0);" class="btn-wide btn btn-warning">Repost</a>
+                                            <a href="<?php echo base_url('donasi'); ?>" class="btn-wide btn btn-warning">Repost</a>
                                         </div>
                                     </div>
                                 </div>
@@ -446,7 +446,7 @@
                                             </li>
                                         </ul>
                                         <div class="d-block text-center card-footer">
-                                            <a href="javascript:void(0);" class="btn-wide btn btn-warning">Repost</a>
+                                            <a href="<?php echo base_url('donasi'); ?>" class="btn-wide btn btn-warning">Repost</a>
                                         </div>
                                     </div>
                                 </div>
@@ -493,7 +493,7 @@
                                             </li>
                                         </ul>
                                         <div class="d-block text-center card-footer">
-                                            <a href="javascript:void(0);" class="btn-wide btn btn-warning">Repost</a>
+                                            <a href="<?php echo base_url('donasi'); ?>" class="btn-wide btn btn-warning">Repost</a>
                                         </div>
                                     </div>
                                 </div>
