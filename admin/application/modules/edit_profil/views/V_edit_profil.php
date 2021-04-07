@@ -93,9 +93,9 @@
                                         <div class="col-sm-9">
                                             <select name="districts" class="multiselect-dropdown form-control">
 
-                                                <?php foreach($getdistricts as $res) { ?>
+                                                <?php foreach($getwilayah_kecamatan as $res) { ?>
 
-                                                    <option value="<?php echo $res->id_kecamatan?>"><?php echo $res->name?></option>
+                                                    <option value="<?php echo $res->id_kec?>"><?php echo $res->nama?></option>
 
                                                 <?php } ?>
 
@@ -107,11 +107,11 @@
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">Kel./Desa</label>
                                         <div class="col-sm-9">
-                                            <select name="villages" class="multiselect-dropdown form-control">
+                                            <select name="wilayah_desa" class="multiselect-dropdown form-control">
 
-                                                <?php foreach($getvillages as $res) { ?>
+                                                <?php foreach($getwilayah_desa as $res) { ?>
 
-                                                    <option value="<?php echo $res->id_desa?>"><?php echo $res->name?></option>
+                                                    <option value="<?php echo $res->id_desa?>"><?php echo $res->nama?></option>
 
                                                 <?php } ?>
 

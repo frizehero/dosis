@@ -22,8 +22,8 @@ class Edit_profil extends MX_Controller {
 			'tampil'     	=> $this->M_edit_profil->tampil(),
 			'getwilayah_provinsi'		=> $this->M_edit_profil->getwilayah_provinsi(),
 			'getwilayah_kabupaten'		=> $this->M_edit_profil->getwilayah_kabupaten(),
-			'getdistricts'		=> $this->M_edit_profil->getdistricts(),
-			'getvillages'		=> $this->M_edit_profil->getvillages(),
+			'getwilayah_kecamatan'		=> $this->M_edit_profil->getwilayah_kecamatan(),
+			'getwilayah_desa'		=> $this->M_edit_profil->getwilayah_desa(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}

@@ -19,14 +19,14 @@ class M_edit_profil extends CI_Model {
 		return $this->db->get('wilayah_kabupaten')->result();
 	}
 
-	function getdistricts()
+	function getwilayah_kecamatan()
 	{
-		return $this->db->get('districts')->result();
+		return $this->db->get('wilayah_kecamatan')->result();
 	}
 
-	function getvillages()
+	function getwilayah_desa()
 	{
-		return $this->db->get('villages')->result();
+		return $this->db->get('wilayah_desa')->result();
 	}
 
 	function tambah()
@@ -90,8 +90,8 @@ class M_edit_profil extends CI_Model {
 		$jenis		= $this->input->post('jenis');
 		$wilayah_provinsi	= $this->input->post('prov');
 		$wilayah_kabupaten		= $this->input->post('kab');
-		$kecamatan	= $this->input->post('kecamatan');
-		$desa		= $this->input->post('desa');
+		$wilayah_kecamatan	= $this->input->post('kec');
+		$wilayah_desa		= $this->input->post('desa');
 		$alamat		= $this->input->post('alamat');
 		$kode		= $this->input->post('kode');
 		$no_wa		= $this->input->post('no_wa');
@@ -109,8 +109,8 @@ class M_edit_profil extends CI_Model {
 					'jenis_kelamin'	=> $jenis,
 					'wilayah_provinsi'		=> $prov,
 					'wilayah_kabupaten'			=> $kab,
-					'kecamatan'		=> $kecamatan,
-					'desa'			=> $desa,
+					'wilayah_kecamatan'		=> $kec,
+					'wilayah_desa'			=> $desa,
 					'alamat'		=> $alamat,
 					'kode_pos'		=> $kode,
 					'no_wa'			=> $no_wa,
