@@ -1,3 +1,6 @@
+
+
+
 <div class="app-main__inner">
                         <div class="app-page-title">
                             <div class="page-title-wrapper">
@@ -13,15 +16,10 @@
                                   
                                  <a href="<?php echo base_url('galang_dana'); ?>" class="mb-2 mr-2 btn btn-shadow btn-success">Kembali</a>
                                 </div>    </div>
-                        </div>   
+                        </div> 
 
-
-
-
-                    
 
  <?php tampilnotif()?>
-
  <form action="<?php echo base_url('galang_dana/tambah') ?>" method="POST" enctype="multipart/form-data">
                         <div class="tab-content">
                         <div class="tab-pane tabs-animation fade show active" id="tab-content-0" role="tabpanel">
@@ -80,6 +78,13 @@
                                                                     <label for="exampleEmail11" class="">Jenjang</label>
                                                                     <select name="jenjang_pembuka" class="multiselect-dropdown form-control">
 
+                                                                        <?php foreach($getjenjang_pembuka as $res) { ?>
+
+                                                                            <option value="<?php echo $res->id_jenjang_pembuka?>"><?php echo $res->name?></option>
+
+                                                                        <?php } ?>
+
+
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -123,7 +128,7 @@
                                                                     <div class="card mb-3 bg-primary widget-content">
                                                                         <div class="widget-content-wrapper">
                                                                             <div class="widget-content-left">
-                                                                                <input name="identitas_pembuka" id="exampleFile" type="file" class="form-control-file">
+                                                                                <input name="gambar" id="exampleFile" type="file" class="form-control-file">
                                                                                 <small class="form-text text-light">Gunakan File format PNG/JPG Max 10 MB</small>
 
                                                                                 
@@ -141,7 +146,7 @@
 
                                                                             <?php foreach($getprovinces as $res) { ?>
 
-                                                                                <option value="<?php echo $res->id_provinsi?>"><?php echo $res->name?></option>
+                                                                                <option value="<?php echo $res->id_provinces?>"><?php echo $res->name?></option>
 
                                                                             <?php } ?>
 
@@ -285,7 +290,7 @@
                                                                                     <div class="card mb-3 bg-primary widget-content">
                                                                                         <div class="widget-content-wrapper">
                                                                                             <div class="widget-content-left">
-                                                                                                <input name="identitas_penerima" id="exampleFile" type="file" class="form-control-file">
+                                                                                                <input name="gambar" id="exampleFile" type="file" class="form-control-file">
                                                                                                 <small class="form-text text-light">Gunakan File format PNG/JPG Max 10 MB</small>
                                                                                             </div>
                                                                                         </div>
@@ -308,7 +313,7 @@
                                                                                     <div class="card mb-3 bg-primary widget-content">
                                                                                         <div class="widget-content-wrapper">
                                                                                             <div class="widget-content-left">
-                                                                                                <input name="dokumentasi_penerima" id="exampleFile" type="file" class="form-control-file">
+                                                                                                <input name="gambar" id="exampleFile" type="file" class="form-control-file">
                                                                                                 <small class="form-text text-light">Gunakan File format PNG/JPG Max 10 MB</small>
                                                                                             </div>
                                                                                         </div>
@@ -404,7 +409,7 @@
                                                             <div class="mt-3 mb-3"></div>
                                                             <div class="text-center">
 
-                                                                     <button class="btn-wide btn btn-success"  type="submit" >Simpan Data</button>
+                                                            <button class="btn-wide btn btn-success"  type="submit" >Simpan Data</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -440,38 +445,6 @@
 
 
   <!-- Modal Load Kode -->
-                    <div class="modal fade" id="Modalkode"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Pilih Barang</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-
-                          <div class="modal-body">
-                             <!--Modal body-->
-                               <div class="input-group">
-                                   <div class="input-group-prepend">
-                                         <span class="input-group-text"><i class="fa fa-search fa-w-16"></i></span>
-                                    </div>
-                                       <input placeholder="Tulis Kode Barang" name="search_text" id="search_text"  type="text" class="form-control" onkeydown="return (event.keyCode!=13);">
-                                </div>
-
-                                <input placeholder="Tulis Kode Barang" name="search_text" id="myInput"  type="hidden" class="form-control">
-
-
-                                <div id="result"></div>
-                                <div style="clear:both"></div>
-
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">tutup</button>
-                          </div>
-
-                        </div>
-                      </div>
-                    </div>
+                  
 
 

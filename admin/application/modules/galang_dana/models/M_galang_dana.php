@@ -73,7 +73,7 @@ class M_galang_dana extends CI_Model {
 		$telepon_pembuka			= $this->input->post('telepon_pembuka');
 		$wa_pembuka 				= $this->input->post('wa_pembuka');
 		$email_pembuka 				= $this->input->post('email_pembuka');
-		$identitas_pembuka 			= $this->input->post('identitas_pembuka');
+		$identitas 					= $this->input->post('identitas');
 		$provinces		 			= $this->input->post('provinces');
 		$regencies 					= $this->input->post('regencies');
 		$districts 					= $this->input->post('districts');
@@ -109,7 +109,7 @@ class M_galang_dana extends CI_Model {
 
 		$this->load->library('upload');
 		$nmfile = "file_".time();
-		$config['upload_path']		= 'assets/images/peristiwa/';
+		$config['upload_path']		= 'assets/identitas/pembuka/';
 		$config['allowed_types']	= 'gif|jpg|png|jpeg';
 		$config['max_size']			= 5120;
 		$config['max_width']		= 4300;
@@ -132,7 +132,7 @@ class M_galang_dana extends CI_Model {
 					'telepon_pembuka'			=> $telepon_pembuka,
 					'wa_pembuka'				=> $wa_pembuka,
 					'email_pembuka'				=> $email_pembuka,
-					'identitas_pembuka' 		=> $gbr['file_name'],
+					'identitas' 				=> $gbr['file_name'],
 					'provinces'					=> $provinces,
 					'regencies'					=> $regencies,
 					'districts'					=> $districts,
@@ -146,9 +146,9 @@ class M_galang_dana extends CI_Model {
 					'telepon_penerima'			=> $telepon_penerima,
 					'wa_penerima'				=> $wa_penerima,
 					'email_penerima'			=> $email_penerima,
-					'identitas_penerima' 		=> $gbr['file_name'],
+					'identitas_penerima' 		=> $identitas_penerima,
 					'deskripsi_penerima'		=> $deskripsi_penerima,
-					'dokumentasi_penerima' 		=> $gbr['file_name'],
+					'dokumentasi_penerima' 		=> $dokumentasi_penerima,
 					'tgl_awal'					=> $tgl_awal,
 					'tgl_akhir'					=> $tgl_akhir,
 					'jml_donasi'				=> $jml_donasi,
@@ -176,7 +176,7 @@ class M_galang_dana extends CI_Model {
 					'telepon_pembuka'			=> $telepon_pembuka,
 					'wa_pembuka'				=> $wa_pembuka,
 					'email_pembuka'				=> $email_pembuka,
-					'identitas_pembuka' 		=> $gbr['file_name'],
+					'identitas' 				=> 'kosong1.png',
 					'provinces'					=> $provinces,
 					'regencies'					=> $regencies,
 					'districts'					=> $districts,
@@ -190,9 +190,9 @@ class M_galang_dana extends CI_Model {
 					'telepon_penerima'			=> $telepon_penerima,
 					'wa_penerima'				=> $wa_penerima,
 					'email_penerima'			=> $email_penerima,
-					'identitas_penerima' 		=> $gbr['file_name'],
+					'identitas_penerima' 		=> $identitas_penerima,
 					'deskripsi_penerima'		=> $deskripsi_penerima,
-					'dokumentasi_penerima' 		=> $gbr['file_name'],
+					'dokumentasi_penerima' 		=> $dokumentasi_penerima,
 					'tgl_awal'					=> $tgl_awal,
 					'tgl_akhir'					=> $tgl_akhir,
 					'jml_donasi'				=> $jml_donasi,
@@ -220,7 +220,7 @@ class M_galang_dana extends CI_Model {
 		$telepon_pembuka			= $this->input->post('telepon_pembuka');
 		$wa_pembuka 				= $this->input->post('wa_pembuka');
 		$email_pembuka 				= $this->input->post('email_pembuka');
-		$identitas_pembuka 			= $this->input->post('identitas_pembuka');
+		$identitas	                = $this->input->post('identitas');
 		$provinces 					= $this->input->post('provinces');
 		$regencies		 			= $this->input->post('regencies');
 		$districts		 			= $this->input->post('districts');
@@ -256,7 +256,7 @@ class M_galang_dana extends CI_Model {
 
 		$this->load->library('upload');
 		$nmfile = "file_".time();
-		$config['upload_path']		= 'assets/images/peristiwa';
+		$config['upload_path']		= 'assets/identitas/pembuka';
 		$config['allowed_types']	= 'gif|jpg|png|jpeg';
 		$config['max_size']			= 5120;
 		$config['max_width']		= 4300;
@@ -279,7 +279,7 @@ class M_galang_dana extends CI_Model {
 					'telepon_pembuka'			=> $telepon_pembuka,
 					'wa_pembuka'				=> $wa_pembuka,
 					'email_pembuka'				=> $email_pembuka,
-					'identitas_pembuka' 		=> $gbr['file_name'],
+					'identitas'			 		=> $gbr['file_name'],
 					'provinces'					=> $provinces,
 					'regencies'					=> $regencies,
 					'districts'					=> $districts,
@@ -293,9 +293,9 @@ class M_galang_dana extends CI_Model {
 					'telepon_penerima'			=> $telepon_penerima,
 					'wa_penerima'				=> $wa_penerima,
 					'email_penerima'			=> $email_penerima,
-					'identitas_penerima' 		=> $gbr['file_name'],
+					'identitas_penerima' 		=> $identitas_penerima,
 					'deskripsi_penerima'		=> $deskripsi_penerima,
-					'dokumentasi_penerima' 		=> $gbr['file_name'],
+					'dokumentasi_penerima' 		=> $dokumentasi_penerima,
 					'tgl_awal'					=> $tgl_awal,
 					'tgl_akhir'					=> $tgl_akhir,
 					'jml_donasi'				=> $jml_donasi,
@@ -305,7 +305,7 @@ class M_galang_dana extends CI_Model {
 					'desa_penerima'				=> $desa_penerima,
 					'alamat_lengkap_penerima'	=> $alamat_lengkap_penerima,
 				);
-				$this->db->where('id_galangdana',$id)->update('galang_dana', $data);
+				$this->db->where('id_galang_dana',$id)->update('galang_dana', $data);
 				$this->session->set_flashdata('msg', 'suksesedit');
 			
 			}	 
@@ -351,7 +351,7 @@ class M_galang_dana extends CI_Model {
 	function hapus()
 	{
 		$id = $this->input->post('id');
-		$this->db->where('id_galangdana', $id)->delete('galang_dana');
+		$this->db->where('id_galang_dana', $id)->delete('galang_dana');
 		$this->session->set_flashdata('msg', 'sukseshapus');
 	}
 
