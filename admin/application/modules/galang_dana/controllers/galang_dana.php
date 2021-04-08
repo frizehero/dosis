@@ -7,7 +7,7 @@ class Galang_dana extends MX_Controller {
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('m_galang_dana');
+		 $this->load->model('M_galang_dana');
 		 $this->load->model('login/m_session');
 	}
 
@@ -19,7 +19,7 @@ class Galang_dana extends MX_Controller {
 		$data = array(
 			'namamodule' 	=> "galang_dana",
 			'namafileview' 	=> "V_galang_dana",
-			'tampil'		=> $this->m_galang_dana->tampil(),
+			'tampil'		=> $this->M_galang_dana->tampil(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
@@ -55,7 +55,7 @@ class Galang_dana extends MX_Controller {
 		$data = array(
 			'namamodule' 	=> "galang_dana",
 			'namafileview' 	=> "V_galang_dana_edit",
-			'tampil'		=> $this->m_galang_dana->tampiledit($id),
+			'tampil'		=> $this->M_galang_dana->tampiledit($id),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}

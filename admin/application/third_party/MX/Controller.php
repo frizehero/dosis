@@ -56,6 +56,6 @@ class MX_Controller
 	
 	public function __get($class) 
 	{
-		return CI::$M_galang_dana->$class;
+		return CI::$APP->$class;
 	}
 }
