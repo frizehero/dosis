@@ -38,12 +38,12 @@ class Edit_profil extends MX_Controller {
 		echo Modules::run('template/tampilCore', $data);
 	}
 
-	function editview($id)
+	function editview()
 	{
 		$data = array(
 			'namamodule' 	=> "edit_profil",
 			'namafileview' 	=> "V_edit_profil",
-			'tampil'     	=> $this->M_edit_profil->tampiedit($id),
+			'tampil'     	=> $this->M_edit_profil->tampiedit(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}

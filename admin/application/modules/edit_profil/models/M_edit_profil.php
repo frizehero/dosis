@@ -88,10 +88,10 @@ class M_edit_profil extends CI_Model {
 		$username 	= $this->input->post('username');
 		$email		= $this->input->post('email');
 		$jenis		= $this->input->post('jenis');
-		$wilayah_provinsi	= $this->input->post('prov');
-		$wilayah_kabupaten		= $this->input->post('kab');
-		$wilayah_kecamatan	= $this->input->post('kec');
-		$wilayah_desa		= $this->input->post('desa');
+		$wilayah_provinsi	= $this->input->post('wilayah_provinsi');
+		$wilayah_kabupaten		= $this->input->post('wilayah_kabupaten');
+		$wilayah_kecamatan	= $this->input->post('wilayah_kecamatan');
+		$wilayah_desa		= $this->input->post('wilayah_desa');
 		$alamat		= $this->input->post('alamat');
 		$kode		= $this->input->post('kode');
 		$no_wa		= $this->input->post('no_wa');
@@ -102,17 +102,17 @@ class M_edit_profil extends CI_Model {
 
 
 				$data = array(
-					'id_edit_profil'=> $id,
-					'nama_lengkap'	=> $nama,
+					'id_edit_profil'=> $id_edit_profil,
+					'nama_lengkap'	=> $nama_lengkap,
 					'username'		=> $username,
 					'email'			=> $email,
-					'jenis_kelamin'	=> $jenis,
-					'wilayah_provinsi'		=> $prov,
-					'wilayah_kabupaten'			=> $kab,
-					'wilayah_kecamatan'		=> $kec,
-					'wilayah_desa'			=> $desa,
+					'jenis_kelamin'	=> $jenis_kelamin,
+					'wilayah_provinsi'		=> $wilayah_provinsi,
+					'wilayah_kabupaten'		=> $wilayah_kabupaten,
+					'wilayah_kecamatan'		=> $wilayah_kecamatan,
+					'wilayah_desa'			=> $wilayah_desa,
 					'alamat'		=> $alamat,
-					'kode_pos'		=> $kode,
+					'kode_pos'		=> $kode_pos,
 					'no_wa'			=> $no_wa,
 					'no_telepon'	=> $no_telepon,
 					'instagram'		=> $instagram,

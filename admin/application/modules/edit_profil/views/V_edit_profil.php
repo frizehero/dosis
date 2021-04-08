@@ -9,7 +9,9 @@
                             <center><img width="100" class="rounded-circle" src="assets/images/avatars/14.jpg" alt=""></center>
                         </div></br>
                         <div class="d-block text-center ">
-                            <button class="btn-shadow-primary btn btn-primary btn-lg" >Ganti Foto Profil</button>
+                            <a href="<?php echo base_url('edit_profil/editview/'); ?>">
+                                <button class="btn-shadow-primary btn btn-primary btn-lg" >Ganti Foto Profil</button>
+                            </a>
                         </div>
                         <div class="card-body">
                             <div class="row">
