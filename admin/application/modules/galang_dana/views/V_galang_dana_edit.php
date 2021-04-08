@@ -12,7 +12,8 @@
                                 <div class="page-title-actions">
                                   
                                  <a href="<?php echo base_url('inventory_peralatan'); ?>" class="mb-2 mr-2 btn btn-shadow btn-success">Kembali</a>
-                                </div>    </div>
+                                </div>    
+                            </div>
                         </div>   
 
 

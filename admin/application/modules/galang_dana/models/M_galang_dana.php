@@ -3,15 +3,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class M_galang_dana extends CI_Model {
 
+	
+	function get_all_provinsi() {
+		$this->db->select('*');
+		$this->db->from('galang_dana');
+		$query = $this->db->get();
+		
+		return $query->result();
+	}
+
 	function tampil()
 	{
 
 		$this->db->select('*');
 		$this->db->from('galang_dana');
 		$this->db->join('jenjang_penerima', 'galang_dana.jenjang_penerima = jenjang_penerima.id_jenjang_penerima');
-		$this->db->join('regencies', 'galang_dana.regencies = regencies.id_kabupaten');
-		$this->db->join('districts', 'galang_dana.districts = districts.id_kecamatan');
-		$this->db->join('villages', 'galang_dana.villages = villages.id_desa');
+		$this->db->join('wilayah_provinsi', 'galang_dana.wilayah_provinsi = wilayah_provinsi.id_prov');
+		$this->db->join('wilayah_kabupaten', 'galang_dana.wilayah_kabupaten = wilayah_kabupaten.id_kab');
+		$this->db->join('wilayah_kecamatan', 'galang_dana.wilayah_kecamatan = wilayah_kecamatan.id_kec');
+		$this->db->join('wilayah_desa', 'galang_dana.wilayah_desa = wilayah_desa.id_desa');
 		$query = $this->db->get();
 
 
@@ -35,24 +45,24 @@ class M_galang_dana extends CI_Model {
     	return $query->row_array();
 	}
 
-	function getprovinces()
+	function getwilayah_provinsi()
 	{
-		return $this->db->get('provinces')->result();
+		return $this->db->get('wilayah_provinsi')->result();
 	}
 
-	function getregencies()
+	function getwilayah_kabupaten()
 	{
-		return $this->db->get('regencies')->result();
+		return $this->db->get('wilayah_kabupaten')->result();
 	}
 
-	function getdistricts()
+	function getwilayah_kecamatan()
 	{
-		return $this->db->get('districts')->result();
+		return $this->db->get('wilayah_kecamatan')->result();
 	}
 
-	function getvillages()
+	function getwilayah_desa()
 	{
-		return $this->db->get('villages')->result();
+		return $this->db->get('wilayah_desa')->result();
 	}
 
 	function getjenjang_penerima()
@@ -74,10 +84,10 @@ class M_galang_dana extends CI_Model {
 		$wa_pembuka 				= $this->input->post('wa_pembuka');
 		$email_pembuka 				= $this->input->post('email_pembuka');
 		$identitas 					= $this->input->post('identitas');
-		$provinces		 			= $this->input->post('provinces');
-		$regencies 					= $this->input->post('regencies');
-		$districts 					= $this->input->post('districts');
-		$villages	 				= $this->input->post('villages');
+		$wilayah_provinsi		 			= $this->input->post('wilayah_provinsi');
+		$wilayah_kabupaten 					= $this->input->post('wilayah_kabupaten');
+		$wilayah_kecamatan 					= $this->input->post('wilayah_kecamatan');
+		$wilayah_desa	 				= $this->input->post('wilayah_desa');
 		$kode_pos_pembuka 			= $this->input->post('kode_pos_pembuka');
 		$alamat_lengkap_pembuka 	= $this->input->post('alamat_lengkap_pembuka ');
 		$nama_penerima 				= $this->input->post('nama_penerima');
@@ -133,10 +143,10 @@ class M_galang_dana extends CI_Model {
 					'wa_pembuka'				=> $wa_pembuka,
 					'email_pembuka'				=> $email_pembuka,
 					'identitas' 				=> $gbr['file_name'],
-					'provinces'					=> $provinces,
-					'regencies'					=> $regencies,
-					'districts'					=> $districts,
-					'villages'					=> $villages,
+					'wilayah_provinsi'					=> $wilayah_provinsi,
+					'wilayah_kabupaten'					=> $wilayah_kabupaten,
+					'wilayah_kecamatan'					=> $wilayah_kecamatan,
+					'wilayah_desa'					=> $wilayah_desa,
 					'alamat_lengkap_pembuka'	=> $alamat_lengkap_pembuka,
 					'nama_penerima'				=> $nama_penerima,
 					'status_penerima'			=> $status_penerima,
@@ -177,10 +187,10 @@ class M_galang_dana extends CI_Model {
 					'wa_pembuka'				=> $wa_pembuka,
 					'email_pembuka'				=> $email_pembuka,
 					'identitas' 				=> 'kosong1.png',
-					'provinces'					=> $provinces,
-					'regencies'					=> $regencies,
-					'districts'					=> $districts,
-					'villages'					=> $villages,
+					'wilayah_provinsi'					=> $wilayah_provinsi,
+					'wilayah_kabupaten'					=> $wilayah_kabupaten,
+					'wilayah_kecamatan'					=> $wilayah_kecamatan,
+					'wilayah_desa'					=> $wilayah_desa,
 					'alamat_lengkap_pembuka'	=> $alamat_lengkap_pembuka,
 					'nama_penerima'				=> $nama_penerima,
 					'status_penerima'			=> $status_penerima,
@@ -221,10 +231,10 @@ class M_galang_dana extends CI_Model {
 		$wa_pembuka 				= $this->input->post('wa_pembuka');
 		$email_pembuka 				= $this->input->post('email_pembuka');
 		$identitas	                = $this->input->post('identitas');
-		$provinces 					= $this->input->post('provinces');
-		$regencies		 			= $this->input->post('regencies');
-		$districts		 			= $this->input->post('districts');
-		$villages	 				= $this->input->post('villages');
+		$wilayah_provinsi 					= $this->input->post('wilayah_provinsi');
+		$wilayah_kabupaten		 			= $this->input->post('wilayah_kabupaten');
+		$wilayah_kecamatan		 			= $this->input->post('wilayah_kecamatan');
+		$wilayah_desa	 				= $this->input->post('wilayah_desa');
 		$kode_pos_pembuka 			= $this->input->post('kode_pos_pembuka');
 		$alamat_lengkap_pembuka 	= $this->input->post('alamat_lengkap_pembuka');
 		$nama_penerima 				= $this->input->post('nama_penerima');
@@ -280,10 +290,10 @@ class M_galang_dana extends CI_Model {
 					'wa_pembuka'				=> $wa_pembuka,
 					'email_pembuka'				=> $email_pembuka,
 					'identitas'			 		=> $gbr['file_name'],
-					'provinces'					=> $provinces,
-					'regencies'					=> $regencies,
-					'districts'					=> $districts,
-					'villages'					=> $villages,
+					'wilayah_provinsi'					=> $wilayah_provinsi,
+					'wilayah_kabupaten'					=> $wilayah_kabupaten,
+					'wilayah_kecamatan'					=> $wilayah_kecamatan,
+					'wilayah_desa'					=> $wilayah_desa,
 					'alamat_lengkap_pembuka'	=> $alamat_lengkap_pembuka,
 					'nama_penerima'				=> $nama_penerima,
 					'status_penerima'			=> $status_penerima,
@@ -320,10 +330,10 @@ class M_galang_dana extends CI_Model {
 					'telepon_pembuka'			=> $telepon_pembuka,
 					'wa_pembuka'				=> $wa_pembuka,
 					'email_pembuka'				=> $email_pembuka,
-					'provinces'					=> $provinces,
-					'regencies'					=> $regencies,
-					'districts'					=> $districts,
-					'villages'					=> $villages,
+					'wilayah_provinsi'					=> $wilayah_provinsi,
+					'wilayah_kabupaten'					=> $wilayah_kabupaten,
+					'wilayah_kecamatan'					=> $wilayah_kecamatan,
+					'wilayah_desa'					=> $wilayah_desa,
 					'alamat_lengkap_pembuka'	=> $alamat_lengkap_pembuka,
 					'nama_penerima'				=> $nama_penerima,
 					'status_penerima'			=> $status_penerima,

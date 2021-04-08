@@ -7,22 +7,54 @@ class Galang_dana extends MX_Controller {
 	{
 		parent::__construct();
 		// model
+     $this->load->helper(array('url','html'));
 		 $this->load->model('M_galang_dana');
+     $this->load->database();
 		 $this->load->model('login/m_session');
 	}
 
-	
-	// index
-	function index()
-	{
-
-		$data = array(
+  function index() {
+    $data = array(
 			'namamodule' 	=> "galang_dana",
 			'namafileview' 	=> "V_galang_dana",
-			'tampil'		=> $this->M_galang_dana->tampil(),
 		);
-		echo Modules::run('template/tampilCore', $data);
-	}
+
+    $data['provinsi']=$this->M_galang_dana->get_all_provinsi();
+      
+    $data['path'] = base_url('assets');
+    
+    $this->load->view('V_galang_dana_tambah', $data);
+
+    echo Modules::run('template/tampilCore', $data);
+  }
+  
+  function add_ajax_kab($id_prov){
+      $query = $this->db->get_where('wilayah_kabupaten',array('provinsi_id'=>$id_prov));
+      $data = "<option value=''>- Select Kabupaten -</option>";
+      foreach ($query->result() as $value) {
+          $data .= "<option value='".$value->id_prov."'>".$value->nama."</option>";
+      }
+      echo $data;
+  }
+  
+  function add_ajax_kec($id_kab){
+      $query = $this->db->get_where('wilayah_kecamatan',array('kabupaten_id'=>$id_kab));
+      $data = "<option value=''> - Pilih Kecamatan - </option>";
+      foreach ($query->result() as $value) {
+          $data .= "<option value='".$value->id_kab."'>".$value->nama."</option>";
+      }
+      echo $data;
+  }
+  
+  function add_ajax_des($id_kec){
+      $query = $this->db->get_where('wilayah_desa',array('kecamatan_id'=>$id_kec));
+      $data = "<option value=''> - Pilih Desa - </option>";
+      foreach ($query->result() as $value) {
+          $data .= "<option value='".$value->id_kec."'>".$value->nama."</option>";
+      }
+      echo $data;
+  }
+	
 
 		// index
 	function tambahview()
@@ -32,10 +64,10 @@ class Galang_dana extends MX_Controller {
 		$data = array(
 			'namamodule' 	         => "galang_dana",
 			'namafileview' 	       => "V_galang_dana_tambah",
-      'getprovinces'		     => $this->M_galang_dana->getprovinces(),
-      'getregencies'		     => $this->M_galang_dana->getregencies(),
-      'getdistricts'		     => $this->M_galang_dana->getdistricts(),
-      'getvillages'		       => $this->M_galang_dana->getvillages(),
+      'getwilayah_provinsi'		     => $this->M_galang_dana->getwilayah_provinsi(),
+      'getwilayah_kabupaten'		     => $this->M_galang_dana->getwilayah_kabupaten(),
+      'getwilayah_kecamatan'		     => $this->M_galang_dana->getwilayah_kecamatan(),
+      'getwilayah_desa'		       => $this->M_galang_dana->getwilayah_desa(),
       'getjenjang_penerima'  => $this->M_galang_dana->getjenjang_penerima(),
 		);
 		echo Modules::run('template/tampilCore', $data);
