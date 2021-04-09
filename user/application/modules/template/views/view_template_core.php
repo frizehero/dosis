@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>CORE HMVC 3 </title>
+    <title>DOSIS.com </title>
     <meta name="viewport
         content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
     <meta name="description" content="Rumah Sakit Terbaik Di Pasuruan.">
@@ -160,52 +160,59 @@ $menu = $uri_segments[2];
                             </span>
                         </button>
                     </span>
-                </div>    <div class="scrollbar-sidebar">
-                    <div class="app-sidebar__inner">
-                        <ul class="vertical-nav-menu">
-                            <li class="app-sidebar__heading">Menu <?php echo "string".  $this->session->flashdata('msg');
-?></li>
-                           
-
-                             <?php if ($menu=="beranda"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('beranda'); ?>">
-                                           <i class="metismenu-icon pe-7s-rocket"></i>Dashboard
-                                        </a>
-                                    </li>
-
-
-                            <li >
-                                <a href="#" >
-                                    <i class="metismenu-icon pe-7s-browser"></i>Inventaris
-                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                                </a>
-                                <ul class="mm-collapse mm-show">
-
-                                     <?php if ($menu=="inventory_peralatan"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('inventory_peralatan'); ?>">
-                                           <i class="metismenu-icon"></i>Peralatan & Mesin
-                                        </a>
-                                    </li>
-
-                                  
+                </div>    
+                <div class="scrollbar-sidebar">
+                    <div class="fixed-bar fl-wrap" style="padding: 10px; margin-top: 20px;">
+                        <div class="user-profile-menu-wrap fl-wrap">
+                            <!-- user-profile-menu-->
+                            <div class="user-profile-menu">
+                                <h3>Dashboard</h3>
+                                <ul>
+                                    <?php if ($menu=="#"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                        <a href="<?php echo base_url('#'); ?>">
+                                            <i class="fa fa-th-list"></i> Donasi Saya
+                                            </a>
+                                        </li>
+                                    <?php if ($menu=="#"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                        <a href="<?php echo base_url('#'); ?>">
+                                            <i class="fa fa-calendar-check-o"></i> Galang Dana Saya
+                                            </a>
+                                        </li>
+                                    <?php if ($menu=="#"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                        <a href="<?php echo base_url('#'); ?>">
+                                            <i class="fa fa-comments-o"></i> Komentar
+                                            </a>
+                                        </li>
+                                    <?php if ($menu=="#"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                        <a href="<?php echo base_url('#'); ?>">
+                                            <i class="fa fa-envelope-o"></i> Inbox
+                                            </a>
+                                        </li>
                                 </ul>
-                            </li>
-							
-                             <li class="app-sidebar__heading">Data</li>
-
-                             <?php if ($menu=="inventory_room"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('inventory_room'); ?>">
-                                           <i class="metismenu-icon pe-7s-airplay"></i>Ruangan
-                                        </a>
-                                    </li>
-                             
-                           
-                        </ul>
+                            </div>
+                            <div class="user-profile-menu">
+                                <h3>Profile</h3>
+                                <ul>
+                                    <?php if ($menu=="#"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                        <a href="<?php echo base_url('#'); ?>">
+                                            <i class="fa fa-user-o"></i>Edit profile
+                                            </a>
+                                        </li>
+                                    <?php if ($menu=="#"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                        <a href="<?php echo base_url('#'); ?>">
+                                            <i class="fa fa-unlock-alt"></i>Edit Password
+                                            </a>
+                                        </li>
+                                </ul>
+                            </div>
+                            <!-- user-profile-menu end-->                                        
+                            <a href="#" class="log-out-btn">Log Out</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="app-main__outer">
-     <?php
+                <?php
                                   $this->load->view($namamodule .'/'.$namafileview);
                                 ?>           
 
@@ -226,6 +233,106 @@ $menu = $uri_segments[2];
 
             </div>
         </div>
+            <footer class="main-footer dark-footer  ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="footer-widget fl-wrap">
+                                <h3>DOSIS.com</h3>
+                                <div class="footer-contacts-widget fl-wrap">
+                                    <p>Sebuah gerakan donasi di lingkungan sekolah yang dilakukan untuk membantu siswa yang sedang terkena bencana maupun siswa yang tidak mampu dan tidak bisa sekolah.</p>
+                                    <ul  class="footer-contacts fl-wrap">
+                                        <li><span><i class="fa fa-envelope-o"></i> Email :</span><a href="#" target="_blank">Dosis@domain.com</a></li>
+                                        <li> <span><i class="fa fa-map-marker"></i> Lokasi :</span><a href="#" target="_blank">Malang - Probolinggo</a></li>
+                                        <li><span><i class="fa fa-phone"></i> Phone :</span><a href="#">081234567890</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-widget fl-wrap">
+                                <h3>Postingan Lainnya</h3>
+                                <div class="widget-posts fl-wrap">
+                                    <ul>
+                                        <li class="clearfix">
+                                            <a href="#"  class="widget-posts-img"><img src="images/all/1.jpg" class="respimg" alt=""></a>
+                                            <div class="widget-posts-descr">
+                                                <a href="#" title="">Vivamus dapibus rutrum</a>
+                                                <span class="widget-posts-date"> 21 Mar 09.05 </span>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a href="#"  class="widget-posts-img"><img src="images/all/2.jpg" class="respimg" alt=""></a>
+                                            <div class="widget-posts-descr">
+                                                <a href="#" title=""> In hac habitasse platea</a>
+                                                <span class="widget-posts-date"> 7 Mar 18.21 </span>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a href="#"  class="widget-posts-img"><img src="images/all/3.jpg" class="respimg" alt=""></a>
+                                            <div class="widget-posts-descr">
+                                                <a href="#" title="">Tortor tempor in porta</a>
+                                                <span class="widget-posts-date"> 7 Mar 16.42 </span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-widget fl-wrap">
+                                <h3>Subscribe</h3>
+                                <div class="subscribe-widget fl-wrap">
+                                    <p>Ingin mendapatkan info terupdate dari DOSIS.com, jangan lupa Subscribe. </p>
+                                    <div class="subcribe-form">
+                                        <form id="subscribe">
+                                            <input class="enteremail" name="email" id="subscribe-email" placeholder="Email" spellcheck="false" type="text">
+                                            <button type="submit" id="subscribe-button" class="subscribe-button"><i class="fa fa-rss"></i> Subscribe</button>
+                                            <label for="subscribe-email" class="subscribe-message"></label>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-widget fl-wrap">
+                                <h3>Tentang</h3>
+                                <div class="footer-contacts-widget fl-wrap">
+                                    <p>Temukan jawabanmu disini</p>
+                                    <ul  class="footer-contacts fl-wrap">
+                                        <li><a href="user-syarat-ketentuan.html">Syarat dan Ketentuan</a></li>
+                                        <li><a href="user-tentang-kami.html">Tentang Kami</a></li>
+                                        <li><a href="user-hubungi-kami.html">Hubungi Kami</a></li>
+                                        <li><a href="pusat-bantuan-user.html">FAQ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-footer fl-wrap">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                            </div>
+                            <div class="col-md-4">
+                                <div class="copyright"> &#169; Dosis.com 2021 .  All rights reserved.</div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="footer-social">
+                                    <ul>
+                                        <li><p>Share Dosis.com : </p></li>
+                                        <li><a href="#" target="_blank" ><i class="fa fa-whatsapp"></i></a></li>
+                                        <li><a href="#" target="_blank" ><i class="fa fa-facebook-official"></i></a></li>
+                                        <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#" target="_blank" ><i class="fa fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
     </div>
     <div class="app-drawer-wrapper">
         <div class="drawer-nav-btn">
