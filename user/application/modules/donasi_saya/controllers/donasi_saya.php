@@ -1,13 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Beranda extends MX_Controller {
+class Donasi_saya extends MX_Controller {
 
 	function __construct()
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('m_beranda');
+		 $this->load->model('m_donasi_saya');
 		 $this->load->model('login/m_session');
 	}
 
@@ -23,8 +23,8 @@ class Beranda extends MX_Controller {
 		} else {
 
 			$data = array(
-			'namamodule' 	=> "beranda",
-			'namafileview' 	=> "V_beranda",
+			'namamodule' 	=> "donasi_saya",
+			'namafileview' 	=> "V_donasi_saya",
 		);
 		echo Modules::run('template/tampilCore', $data);
 		}

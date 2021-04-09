@@ -56,7 +56,7 @@
 $uri_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $uri_segments = explode('/', $uri_path);
 
-$menu = $uri_segments[2];
+$menu = $uri_segments[3];
 
     ?>
     <div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
@@ -168,8 +168,8 @@ $menu = $uri_segments[2];
                             <div class="user-profile-menu">
                                 <h3>Dashboard</h3>
                                 <ul>
-                                    <?php if ($menu=="#"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                        <a href="<?php echo base_url('#'); ?>">
+                                    <?php if ($menu=="donasi_saya"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                        <a href="<?php echo base_url('donasi_saya'); ?>">
                                             <i class="fa fa-th-list"></i> Donasi Saya
                                             </a>
                                         </li>
@@ -218,122 +218,109 @@ $menu = $uri_segments[2];
 
 
 
-                <div class="app-wrapper-footer">
-                    <div class="app-footer">
-                        <div class="app-footer__inner">
-                            <div class="app-footer-left">
-                            
-                            </div>
-                            <div class="app-footer-right">
-                              
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
-            <footer class="main-footer dark-footer  ">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="footer-widget fl-wrap">
-                                <h3>DOSIS.com</h3>
-                                <div class="footer-contacts-widget fl-wrap">
-                                    <p>Sebuah gerakan donasi di lingkungan sekolah yang dilakukan untuk membantu siswa yang sedang terkena bencana maupun siswa yang tidak mampu dan tidak bisa sekolah.</p>
-                                    <ul  class="footer-contacts fl-wrap">
-                                        <li><span><i class="fa fa-envelope-o"></i> Email :</span><a href="#" target="_blank">Dosis@domain.com</a></li>
-                                        <li> <span><i class="fa fa-map-marker"></i> Lokasi :</span><a href="#" target="_blank">Malang - Probolinggo</a></li>
-                                        <li><span><i class="fa fa-phone"></i> Phone :</span><a href="#">081234567890</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="footer-widget fl-wrap">
-                                <h3>Postingan Lainnya</h3>
-                                <div class="widget-posts fl-wrap">
-                                    <ul>
-                                        <li class="clearfix">
-                                            <a href="#"  class="widget-posts-img"><img src="images/all/1.jpg" class="respimg" alt=""></a>
-                                            <div class="widget-posts-descr">
-                                                <a href="#" title="">Vivamus dapibus rutrum</a>
-                                                <span class="widget-posts-date"> 21 Mar 09.05 </span>
-                                            </div>
-                                        </li>
-                                        <li class="clearfix">
-                                            <a href="#"  class="widget-posts-img"><img src="images/all/2.jpg" class="respimg" alt=""></a>
-                                            <div class="widget-posts-descr">
-                                                <a href="#" title=""> In hac habitasse platea</a>
-                                                <span class="widget-posts-date"> 7 Mar 18.21 </span>
-                                            </div>
-                                        </li>
-                                        <li class="clearfix">
-                                            <a href="#"  class="widget-posts-img"><img src="images/all/3.jpg" class="respimg" alt=""></a>
-                                            <div class="widget-posts-descr">
-                                                <a href="#" title="">Tortor tempor in porta</a>
-                                                <span class="widget-posts-date"> 7 Mar 16.42 </span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="footer-widget fl-wrap">
-                                <h3>Subscribe</h3>
-                                <div class="subscribe-widget fl-wrap">
-                                    <p>Ingin mendapatkan info terupdate dari DOSIS.com, jangan lupa Subscribe. </p>
-                                    <div class="subcribe-form">
-                                        <form id="subscribe">
-                                            <input class="enteremail" name="email" id="subscribe-email" placeholder="Email" spellcheck="false" type="text">
-                                            <button type="submit" id="subscribe-button" class="subscribe-button"><i class="fa fa-rss"></i> Subscribe</button>
-                                            <label for="subscribe-email" class="subscribe-message"></label>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="footer-widget fl-wrap">
-                                <h3>Tentang</h3>
-                                <div class="footer-contacts-widget fl-wrap">
-                                    <p>Temukan jawabanmu disini</p>
-                                    <ul  class="footer-contacts fl-wrap">
-                                        <li><a href="user-syarat-ketentuan.html">Syarat dan Ketentuan</a></li>
-                                        <li><a href="user-tentang-kami.html">Tentang Kami</a></li>
-                                        <li><a href="user-hubungi-kami.html">Hubungi Kami</a></li>
-                                        <li><a href="pusat-bantuan-user.html">FAQ</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="sub-footer fl-wrap">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-4">
-                            </div>
-                            <div class="col-md-4">
-                                <div class="copyright"> &#169; Dosis.com 2021 .  All rights reserved.</div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="footer-social">
-                                    <ul>
-                                        <li><p>Share Dosis.com : </p></li>
-                                        <li><a href="#" target="_blank" ><i class="fa fa-whatsapp"></i></a></li>
-                                        <li><a href="#" target="_blank" ><i class="fa fa-facebook-official"></i></a></li>
-                                        <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#" target="_blank" ><i class="fa fa-instagram"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
     </div>
+    <footer class="main-footer dark-footer  ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-widget fl-wrap">
+                        <h3>DOSIS.com</h3>
+                        <div class="footer-contacts-widget fl-wrap">
+                            <p>Sebuah gerakan donasi di lingkungan sekolah yang dilakukan untuk membantu siswa yang sedang terkena bencana maupun siswa yang tidak mampu dan tidak bisa sekolah.</p>
+                            <ul  class="footer-contacts fl-wrap">
+                                <li><span><i class="fa fa-envelope-o"></i> Email :</span><a href="#" target="_blank">Dosis@domain.com</a></li>
+                                <li> <span><i class="fa fa-map-marker"></i> Lokasi :</span><a href="#" target="_blank">Malang - Probolinggo</a></li>
+                                <li><span><i class="fa fa-phone"></i> Phone :</span><a href="#">081234567890</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-widget fl-wrap">
+                        <h3>Postingan Lainnya</h3>
+                        <div class="widget-posts fl-wrap">
+                            <ul>
+                                <li class="clearfix">
+                                    <a href="#"  class="widget-posts-img"><img src="images/all/1.jpg" class="respimg" alt=""></a>
+                                    <div class="widget-posts-descr">
+                                        <a href="#" title="">Vivamus dapibus rutrum</a>
+                                        <span class="widget-posts-date"> 21 Mar 09.05 </span>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="#"  class="widget-posts-img"><img src="images/all/2.jpg" class="respimg" alt=""></a>
+                                    <div class="widget-posts-descr">
+                                        <a href="#" title=""> In hac habitasse platea</a>
+                                        <span class="widget-posts-date"> 7 Mar 18.21 </span>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="#"  class="widget-posts-img"><img src="images/all/3.jpg" class="respimg" alt=""></a>
+                                    <div class="widget-posts-descr">
+                                        <a href="#" title="">Tortor tempor in porta</a>
+                                        <span class="widget-posts-date"> 7 Mar 16.42 </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-widget fl-wrap">
+                        <h3>Subscribe</h3>
+                        <div class="subscribe-widget fl-wrap">
+                            <p>Ingin mendapatkan info terupdate dari DOSIS.com, jangan lupa Subscribe. </p>
+                            <div class="subcribe-form">
+                                <form id="subscribe">
+                                    <input class="enteremail" name="email" id="subscribe-email" placeholder="Email" spellcheck="false" type="text">
+                                    <button type="submit" id="subscribe-button" class="subscribe-button"><i class="fa fa-rss"></i> Subscribe</button>
+                                    <label for="subscribe-email" class="subscribe-message"></label>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-widget fl-wrap">
+                        <h3>Tentang</h3>
+                        <div class="footer-contacts-widget fl-wrap">
+                            <p>Temukan jawabanmu disini</p>
+                            <ul  class="footer-contacts fl-wrap">
+                                <li><a href="user-syarat-ketentuan.html">Syarat dan Ketentuan</a></li>
+                                <li><a href="user-tentang-kami.html">Tentang Kami</a></li>
+                                <li><a href="user-hubungi-kami.html">Hubungi Kami</a></li>
+                                <li><a href="pusat-bantuan-user.html">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sub-footer fl-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="copyright"> &#169; Dosis.com 2021 .  All rights reserved.</div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-social">
+                            <ul>
+                                <li><p>Share Dosis.com : </p></li>
+                                <li><a href="#" target="_blank" ><i class="fa fa-whatsapp"></i></a></li>
+                                <li><a href="#" target="_blank" ><i class="fa fa-facebook-official"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" target="_blank" ><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <div class="app-drawer-wrapper">
         <div class="drawer-nav-btn">
             <button type="button" class="hamburger hamburger--elastic is-active">
