@@ -6,9 +6,10 @@
                             <hr>
                         </div>
                         <div class="content-right ">
+                        </br>
                             <center><img width="100" class="rounded-circle" src="assets/images/avatars/14.jpg" alt=""></center>
                         </div></br>
-                        <div class="d-block text-center ">
+                        <div class="d-block text-center">
                             <a href="<?php echo base_url('edit_profil/editview/'); ?>">
                                 <button class="btn-shadow-primary btn btn-primary btn-lg" >Ganti Foto Profil</button>
                             </a>
