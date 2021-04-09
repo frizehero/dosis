@@ -17,6 +17,10 @@
     <meta name="msapplication-tap-highlight" content="no">
 
 <link href="<?php echo base_url() ?>main.css" rel="stylesheet"></head>
+<link href="<?php echo base_url() ?>reset.css" rel="stylesheet"></head>
+<link href="<?php echo base_url() ?>plugins.css" rel="stylesheet"></head>
+<link href="<?php echo base_url() ?>style.css" rel="stylesheet"></head>
+<link href="<?php echo base_url() ?>color.css" rel="stylesheet"></head>
 
 <style type="text/css">
     .modal {
