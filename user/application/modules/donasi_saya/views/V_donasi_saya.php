@@ -1,4 +1,4 @@
-<div class="app-main__inner" style="background-color:white;">
+<div class="app-main__inner" style="background-color: white;">
                     <div class="app-page-title">
                         <div class="profile-edit-container">
                             <div class="profile-edit-header fl-wrap" style="margin-top:30px">

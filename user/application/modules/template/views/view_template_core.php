@@ -132,7 +132,7 @@ $menu = $uri_segments[3];
             </div>
         </header>        
         <div class="app-main">
-            <div class="app-sidebar sidebar-shadow" style="background-color:white;">
+            <div class="app-sidebar sidebar-shadow">
                 <div class="app-header__logo">
                     <div class="logo-src"></div>
                     <div class="header__pane ml-auto">
@@ -163,7 +163,7 @@ $menu = $uri_segments[3];
                         </button>
                     </span>
                 </div>    
-                <div class="scrollbar-sidebar">
+                <div class="scrollbar-sidebar" style="background-color: #f5f6fa;">
                     <div class="fixed-bar fl-wrap" style="padding: 10px; margin-top: 20px;">
                         <div class="user-profile-menu-wrap fl-wrap">
                             <!-- user-profile-menu-->
