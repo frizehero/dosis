@@ -185,8 +185,8 @@ $menu = $uri_segments[3];
                                             <i class="fa fa-comments-o"></i> Komentar
                                             </a>
                                         </li>
-                                    <?php if ($menu=="#"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                        <a href="<?php echo base_url('#'); ?>">
+                                    <?php if ($menu=="inbox"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                        <a href="<?php echo base_url('inbox'); ?>">
                                             <i class="fa fa-envelope-o"></i> Inbox
                                             </a>
                                         </li>
