@@ -1,15 +1,5 @@
 <div class="content">
                     <!--section --> 
-                    <section class="parallax-section" data-scrollax-parent="true" id="sec1" style="height: 100px;">
-                        <div class="bg par-elem " data-bg="images/bg/kategori.jpg" data-scrollax="properties: { translateY: '30%' }" style="background-image: url(&quot;images/bg/kategori.jpg&quot;); transform: translateZ(0px) translateY(-4.78088%);"></div>
-                        <div class="overlay"></div>
-                        <div class="container">
-                            <div class="section-title center-align" style="margin-top: -95px;">
-                                 <div class="user-profile-avatar" style="width:115px; height:115px; margin-right:10px;"><img src="images/avatar/4.jpg" alt="" style="width:115px; height:115px;">
-                                 </div> <h2 style="font-size: 20px; color: white">Abdul Hasan</h2>
-                            </div>
-                        </div>
-                    </section>
                     <section id="sec1" style="padding-top: 25px;">
                         <!-- container -->
                         <div class="container">
@@ -20,7 +10,7 @@
                                         <!-- profile-edit-container--> 
                                         <div class="profile-edit-container">
                                             <div class="profile-edit-header fl-wrap" style="margin-top:30px">
-                                                <h4 style="margin-top:-28px;">Halo , <span>Jamet Kuproy</span></h4>
+                                                <h4 style="margin-top:-23px;">Halo , <span>Jamet Kuproy</span></h4>
                                             </div>
                                                                                        
                                                   <!-- statistic-container--> 
