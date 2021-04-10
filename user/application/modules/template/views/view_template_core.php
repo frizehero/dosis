@@ -195,13 +195,13 @@ $menu = $uri_segments[3];
                             <div class="user-profile-menu">
                                 <h3>Profile</h3>
                                 <ul>
-                                    <?php if ($menu=="#"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                        <a href="<?php echo base_url('#'); ?>">
+                                    <?php if ($menu=="edit_profile"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                        <a href="<?php echo base_url('edit_profile'); ?>">
                                             <i class="fa fa-user-o"></i>Edit profile
                                             </a>
                                         </li>
-                                    <?php if ($menu=="#"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                        <a href="<?php echo base_url('#'); ?>">
+                                    <?php if ($menu=="edit_password"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                        <a href="<?php echo base_url('edit_password'); ?>">
                                             <i class="fa fa-unlock-alt"></i>Edit Password
                                             </a>
                                         </li>
