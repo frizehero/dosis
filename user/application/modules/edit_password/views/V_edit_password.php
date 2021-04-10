@@ -26,18 +26,7 @@
                                             </div>
                                         </div>
                                         <!-- profile-edit-container end-->                                        
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="edit-profile-photo fl-wrap">
-                                            <img src="images/avatar/4.jpg" class="respimg" alt="">
-                                            <div class="change-photo-btn">
-                                                <div class="photoUpload">
-                                                    <span><i class="fa fa-upload"></i> Upload Photo</span>
-                                                    <input type="file" class="upload">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>     
+                                    </div>   
                                 </div>
                             </div>
                             <!--profile-edit-wrap end -->
