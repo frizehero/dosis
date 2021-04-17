@@ -28,4 +28,18 @@ class Template extends MX_Controller {
 		$this->load->view('view_template_core',$data);
 	}
 
+	// view beranda templating
+	public function index2()
+	{
+		
+		$this->load->view('view_template_beranda');
+	}
+
+	public function tampilBeranda($data)
+	{
+		$id = $this->session->userdata('session_id');
+		
+		$this->load->view('view_template_beranda',$data);
+	}
+
 }
