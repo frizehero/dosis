@@ -61,7 +61,7 @@ $uri_segments = explode('/', $uri_path);
 $menu = $uri_segments[3];
 
     ?>
-    <div class="app-container app-theme-white ">
+    <div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
         <header class="main-header dark-header fs-header sticky">
             <div class="header-inner">
                 <div class="logo-holder">
@@ -130,7 +130,12 @@ $menu = $uri_segments[3];
                 </div>
                 <!-- navigation  end -->
             </div>
-        </header>    
+        </header>        
+        <div class="app-main">
+                <?php
+                    $this->load->view($namamodule .'/'.$namafileview);
+                ?>      
+        </div>
     </div>
     <footer class="main-footer dark-footer  ">
         <div class="container">
