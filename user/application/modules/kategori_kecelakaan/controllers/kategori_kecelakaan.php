@@ -1,13 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Hubungi_kami extends MX_Controller {
+class kategori_kecelakaan extends MX_Controller {
 
 	function __construct()
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('m_hubungi_kami');
+		 $this->load->model('m_kategori_kecelakaan');
 		 $this->load->model('login/m_session');
 	}
 
@@ -23,8 +23,8 @@ class Hubungi_kami extends MX_Controller {
 		} else {
 
 			$data = array(
-			'namamodule' 	=> "hubungi_kami",
-			'namafileview' 	=> "V_hubungi_kami",
+			'namamodule' 	=> "kategori_kecelakaan",
+			'namafileview' 	=> "V_kategori_kecelakaan",
 		);
 		echo Modules::run('template/tampilBeranda', $data);
 		}
