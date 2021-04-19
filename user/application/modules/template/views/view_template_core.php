@@ -292,7 +292,7 @@ $menu = $uri_segments[3];
                             <ul  class="footer-contacts fl-wrap">
                                 <li><a href="user-syarat-ketentuan.html">Syarat dan Ketentuan</a></li>
                                 <li><a href="user-tentang-kami.html">Tentang Kami</a></li>
-                                <li><a href="user-hubungi-kami.html">Hubungi Kami</a></li>
+                                <li><a href="<?php echo base_url('hubungi_kami'); ?>">Hubungi Kami</a></li>
                                 <li><a href="pusat-bantuan-user.html">FAQ</a></li>
                             </ul>
                         </div>
