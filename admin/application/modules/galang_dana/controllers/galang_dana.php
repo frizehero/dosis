@@ -16,7 +16,7 @@ class Galang_dana extends MX_Controller {
   function index() {
     $data = array(
 			'namamodule' 	=> "galang_dana",
-			'namafileview' 	=> "V_galang_dana_tambah",
+			'namafileview' 	=> "V_galang_dana",
 		);
 
       
@@ -67,7 +67,6 @@ class Galang_dana extends MX_Controller {
       'getwilayah_kabupaten'		     => $this->M_galang_dana->getwilayah_kabupaten(),
       'getwilayah_kecamatan'		     => $this->M_galang_dana->getwilayah_kecamatan(),
       'getwilayah_desa'		       => $this->M_galang_dana->getwilayah_desa(),
-      'getjenjang_penerima'  => $this->M_galang_dana->getjenjang_penerima(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}

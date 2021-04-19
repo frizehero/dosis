@@ -1,6 +1,3 @@
-
-
-
 <div class="app-main__inner">
                         <div class="app-page-title">
                             <div class="page-title-wrapper">
@@ -8,465 +5,125 @@
                                     <div class="page-title-icon">
                                         <i class="pe-7s-medal icon-gradient bg-tempting-azure"></i>
                                     </div>
-                                    <div>Tambah Galang Dana
-                                        <div class="page-title-subheading">Tambah Galang Dana, Silahkan Isi semua form di bawah ini dengan lengkap...</div>
+                                    <div>Data Galang Dana
+                                        <div class="page-title-subheading">Data Peralatan Dan Mesin , silahkan gunakan menu di samping untuk menambahkan </div>
                                     </div>
                                 </div>
                                 <div class="page-title-actions">
                                   
-                                 <a href="<?php echo base_url('galang_dana'); ?>" class="mb-2 mr-2 btn btn-shadow btn-success">Kembali</a>
-                                </div>    </div>
-                        </div>   
-
-    <script>
-        $(document).ready(function(){
-            $("#provinsi").change(function (){
-                var url = "<?php echo site_url('wilayah/add_ajax_kab');?>/"+$(this).val();
-                $('#kabupaten').load(url);
-                return false;
-            })
-			
-			$("#kabupaten").change(function (){
-                var url = "<?php echo site_url('wilayah/add_ajax_kec');?>/"+$(this).val();
-                $('#kecamatan').load(url);
-                return false;
-            })
-			
-			$("#kecamatan").change(function (){
-                var url = "<?php echo site_url('wilayah/add_ajax_des');?>/"+$(this).val();
-                $('#desa').load(url);
-                return false;
-            })
-        });
-    </script>
-
-
-
-
+                                    <div class="d-inline-block dropdown">
+                                        <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-shadow dropdown-toggle btn btn-info">
+                                            <span class="btn-icon-wrapper pr-2 opacity-7">
+                                                <i class="fa fa-business-time fa-w-20"></i>
+                                            </span>
+                                            Menu
+                                        </button>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <ul class="nav flex-column">
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="galang_dana/tambahview">
+                                                        <i class="nav-link-icon lnr-inbox"></i>
+                                                        <span> Tambah Data</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div> 
                     
 
- <?php tampilnotif()?>
+            <?php tampilnotif()?>
+                <div class="tab-content">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4">
+                            <div class="widget-content p-0">
+                                <div class="widget-content-outer">
+                                    <div class="widget-content-wrapper">
+                                        <div class="widget-content-left">
+                                            <div class="widget-numbers text-dark"></div>
+                                        </div>
+                                    </div>
+                                    <div class="widget-progress-wrapper mt-1">
 
- <form action="<?php echo base_url('galang_dana/tambah') ?>" method="POST" enctype="multipart/form-data">
-                        <div class="tab-content">
-                        <div class="tab-pane tabs-animation fade show active" id="tab-content-0" role="tabpanel">
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12">
-                                    <div class="main-card mb-3 card">
-                                        <div class="card-body">
-                                            <div id="smartwizard">
-                                                <ul class="forms-wizard">
-                                                    <li>
-                                                        <a href="#step-1">
-                                                            <em>1</em><span>Data Diri Pembuka Galang Dana</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#step-2">
-                                                            <em>2</em><span>Data Diri Penerima</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#step-3">
-                                                            <em>4</em><span>Selesai</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-
-                                               
-
-                                                <div class="form-wizard-content">
-                                                    <div id="step-1">
-                                                        <div class="form-row">                                                            
-                                                            <div class="col-md-6">
-                                                                <div class="position-relative form-group">
-                                                                    <label for="exampleAddress">Nama</label>
-                                                                    <input name="nama_pembuka" id="exampleAddress" placeholder="" type="text" class="form-control">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="position-relative form-group">
-                                                                    <label for="exampleEmail11" class="">Status</label>
-                                                                    <select name="status_pembuka" class="multiselect-dropdown form-control">
-
-                                                                        <?php foreach($getstatus as $res) { ?>
-
-                                                                            <option value="<?php echo $res->id_status_pembuka?>"><?php echo $res->jenis_status_pembuka?></option>
-
-                                                                        <?php } ?>
-
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                        </div>                                                        
-                                                        <div class="form-row">
-                                                            <div class="col-md-4">
-                                                                <div class="position-relative form-group">
-                                                                    <label for="exampleEmail11" class="">Jenjang</label>
-                                                                    <select name="jenjang_pembuka" class="multiselect-dropdown form-control">
-
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-4">
-                                                                <div class="position-relative form-group">
-                                                                    <label for="exampleAddress">Asal Sekolah</label>
-                                                                    <input name="sekolah_pembuka" id="exampleAddress" placeholder="" type="text" class="form-control">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-4">
-                                                                <div class="position-relative form-group">
-                                                                    <label for="exampleAddress">Kelas</label>
-                                                                    <input name="kelas_pembuka" id="exampleAddress" placeholder="" type="text" class="form-control">
-                                                                </div>
-                                                            </div>                     
-                                                        </div>
-                                                        <div class="form-row">
-                                                            <div class="col-md-4">
-                                                                <div class="position-relative form-group">
-                                                                    <label for="exampleAddress">No Telepon</label>
-                                                                    <input name="telepon_pembuka" id="exampleAddress" placeholder="" type="text" class="form-control">
-                                                                </div>
-                                                            </div>  
-                                                            <div class="col-md-4">
-                                                                <div class="position-relative form-group">
-                                                                    <label for="exampleAddress">Whatsapp</label>
-                                                                    <input name="wa_pembuka" id="exampleAddress" placeholder="" type="text" class="form-control">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-4">
-                                                                <div class="position-relative form-group">
-                                                                    <label for="exampleAddress">Email</label>
-                                                                    <input name="email_pembuka" id="exampleAddress" placeholder="" type="text" class="form-control">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-row">
-                                                            <div class="col-md-12">
-                                                                <div class="position-relative form-group">
-                                                                    <label name="nobpkb" for="exampleFile" class="">Identitas( KTP/Kartu Pelajar )</label>
-                                                                    <div class="card mb-3 bg-primary widget-content">
-                                                                        <div class="widget-content-wrapper">
-                                                                            <div class="widget-content-left">
-                                                                                <input name="identitas_pembuka" id="exampleFile" type="file" class="form-control-file">
-                                                                                <small class="form-text text-light">Gunakan File format PNG/JPG Max 10 MB</small>
-                                                                            </div>
-                                                                        </div>
+                                        <div class="progress-sub-label">
+                                            <div class="sub-label-left font-size-md"></div>
+                                        </div>
+                                        <div>
+                                            <br>
+                                        </div>
+                                        
+                                        <div class="card-hover-shadow profile-responsive card-border border-success mb-3 card">
+                                            <div class="dropdown-menu-header">
+                                                <div class="wrapper rounded"></div>
+                                                <img src="assets/images/Peristiwa/4.jpg" style="width: 314px; height:210px;">   
+                                            </div>
+                                            <div class="p-0 card-body">
+                                                <div class="tab-content">
+                                                    <div class="tab-pane active show" id="tab-2-eg1">
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item">
+                                                                <div class="h5 modal-title">
+                                                                    <div class="text-right">
+                                                                        <h6>
+                                                                            05/07/2021
+                                                                        </h6>
                                                                     </div>
+                                                                    <h5 class="menu-header-title">
+                                                                        <div>Indah seorang anak yang hidup sebatang kara.bantu indah kembali sekolah</div>
+                                                                    </h5>
+                                                                    <h6>
+                                                                <div>Diposting oleh @boyabdulhasan</div>
+                                                                    </h6>
                                                                 </div>
-                                                            </div>
-                                                        </div>   
-                                                        <div class="form-row">
-                                                            <div class="col-md-4">
-                                                                <div class="position-relative form-group">
-                                                                    <label for="exampleEmail11" class="">Provinsi</label>
-                                                                        <select name="prov" class="form-control" id="provinsi">
-                                                                            <option>- Select Provinsi -</option>
-                                                                            <?php foreach($provinsi as $prov){
-                                                                                echo '<option value="'.$prov->id.'">'.$prov->nama.'</option>';
-                                                                            } ?>
-                                                                        </select>
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                Rp 0 Terkumpul dari Rp 15.000.000    
+                                                                <div class="progress-bar-xs progress-bar-animated-alt progress">
+                                                                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
                                                                 </div>
-                                                            </div> 
-                                                            <div class="col-md-4">
-                                                                <div class="position-relative form-group">
-                                                                    <label for="exampleEmail11" class="">Kota/Kabupaten</label>
-                                                                        <select name="kab" class="form-control" id="kabupaten">
-                                                                            <option value=''>Select Kabupaten</option>
-                                                                        </select>
                                                                 </div>
-                                                            </div> 
-                                                            <div class="col-md-4">
-                                                                <div class="position-relative form-group">
-                                                                    <label for="exampleEmail11" class="">Kecamatan</label>
-                                                                        <select name="kec" class="form-control" id="kecamatan">
-                                                                            <option>Select Kecamatan</option>
-                                                                        </select>
-                                                                </div>
-                                                            </div> 
-                                                            <div class="col-md-4">
-                                                                <div class="position-relative form-group">
-                                                                    <label for="exampleEmail11" class="">Kelurahan/Desa</label>
-                                                                        <select name="des" class="form-control" id="desa">
-                                                                            <option>Select Desa</option>
-                                                                        </select>
-                                                                </div>
-                                                            </div> 
-                                                            <div class="col-md-4">
-                                                                <div class="position-relative form-group">
-                                                                    <label for="exampleEmail11" class="">Kode POS</label>
-                                                                        <select name="kode_pos_pembuka" class="multiselect-dropdown form-control">
-
-                                                                        </select>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-4">
-                                                                <div class="position-relative form-group">
-                                                                    <label for="exampleAddress">Alamat Lengkap</label>
-                                                                    <textarea rows="1" name="alamat_lengkap_pembuka" class="form-control autosize-input" style="height: 35px;"></textarea>
-                                                                </div>
-                                                            </div>                                                                                                                
-                                                        </div>                                                                                     
-                                                    </div>
-                                                    <div id="step-2">
-                                                        <div id="accordion" class="accordion-wrapper mb-3">
-                                                            <div class="card">             
-                                                                <div data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne" class="collapse show">
-                                                                    <div class="card-body">                                                
-                                                                                                                                   
-                                                                        
-                                                                        <div class="form-row">                                                            
-                                                                            <div class="col-md-6">
-                                                                                <div class="position-relative form-group">
-                                                                                    <label for="exampleAddress">Nama</label>
-                                                                                    <input name="nama_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-6">
-                                                                                <div class="position-relative form-group">
-                                                                                    <label for="exampleEmail11" class="">Status</label>
-                                                                                    <select name="status_penerima" class="multiselect-dropdown form-control">
-
-                                                                                    </select>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>                                                        
-                                                                        <div class="form-row">
-                                                                            <div class="col-md-4">
-                                                                                <div class="position-relative form-group">
-                                                                                    <label for="exampleEmail11" class="">Jenjang</label>
-                                                                                    <select name="jenjang_penerima" class="multiselect-dropdown form-control">
-
-                                                                                    </select>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <div class="position-relative form-group">
-                                                                                    <label for="exampleAddress">Asal Sekolah</label>
-                                                                                    <input name="sekolah_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <div class="position-relative form-group">
-                                                                                    <label for="exampleAddress">Kelas</label>
-                                                                                    <input name="kelas_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
-                                                                                </div>
-                                                                            </div>                     
-                                                                        </div>
-                                                                        <div class="form-row">
-                                                                            <div class="col-md-4">
-                                                                                <div class="position-relative form-group">
-                                                                                    <label for="exampleAddress">No Telepon</label>
-                                                                                    <input name="telepon_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
-                                                                                </div>
-                                                                            </div>  
-                                                                            <div class="col-md-4">
-                                                                                <div class="position-relative form-group">
-                                                                                    <label for="exampleAddress">Whatsapp</label>
-                                                                                    <input name="wa_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <div class="position-relative form-group">
-                                                                                    <label for="exampleAddress">Email</label>
-                                                                                    <input name="email_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="form-row">
-                                                                            <div class="col-md-12">
-                                                                                <div class="position-relative form-group">
-                                                                                    <label name="nobpkb" for="exampleFile" class="">Identitas( KTP/Kartu Pelajar )</label>
-                                                                                    <div class="card mb-3 bg-primary widget-content">
-                                                                                        <div class="widget-content-wrapper">
-                                                                                            <div class="widget-content-left">
-                                                                                                <input name="identitas_penerima" id="exampleFile" type="file" class="form-control-file">
-                                                                                                <small class="form-text text-light">Gunakan File format PNG/JPG Max 10 MB</small>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div> 
-                                                                        <div class="form-row">
-                                                                            <div class="col-md-12">
-                                                                                <div class="position-relative form-group">
-                                                                                    <label for="exampleAddress">Deskripsi Donasi</label>
-                                                                                    <textarea rows="1" name="deskripsi_penerima" class="form-control autosize-input" style="height: 60px;"></textarea>
-                                                                                </div>
-                                                                            </div> 
-                                                                        </div>  
-                                                                        <div class="form-row">
-                                                                            <div class="col-md-12">
-                                                                                <div class="position-relative form-group">
-                                                                                    <label name="nobpkb" for="exampleFile" class="">Dokumentasi</label>
-                                                                                    <div class="card mb-3 bg-primary widget-content">
-                                                                                        <div class="widget-content-wrapper">
-                                                                                            <div class="widget-content-left">
-                                                                                                <input name="dokumentasi_penerima" id="exampleFile" type="file" class="form-control-file">
-                                                                                                <small class="form-text text-light">Gunakan File format PNG/JPG Max 10 MB</small>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="form-row">
-                                                                            <div class="col-md-4">
-                                                                                <div class="position-relative form-group">
-                                                                                    <label for="exampleAddress">Tanggal Awal</label>
-                                                                                    <input type="text" class="form-control" name="tgl_awal" data-toggle="datepicker"/>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <div class="position-relative form-group">
-                                                                                    <label for="exampleAddress">Tanggal Akhir</label>
-                                                                                    <input type="text" class="form-control" name="tgl_akhir" data-toggle="datepicker"/>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <div class="position-relative form-group">
-                                                                                    <label for="exampleAddress">Jumlah Dana</label>
-                                                                                    <input name="jml_donasi" id="exampleAddress" placeholder="Pembelian" type="text" class="form-control">
-                                                                                </div>
-                                                                            </div> 
-                                                                        </div>
-                                                                        </br>
-                                                                        <div class="form-row">
-                                                                            <div class="col-md-4">
-                                                                                <div class="position-relative form-group">
-                                                                                    <label for="exampleEmail11" class="">Provinsi</label>
-                                                                                        <select name="provinsi_penerima" class="multiselect-dropdown form-control">
-
-                                                                                        </select>
-                                                                                </div>
-                                                                            </div> 
-                                                                            <div class="col-md-4">
-                                                                                <div class="position-relative form-group">
-                                                                                    <label for="exampleEmail11" class="">Kota/Kabupaten</label>
-                                                                                        <select name="kabupaten_penerima" class="multiselect-dropdown form-control">
-
-                                                                                        </select>
-                                                                                </div>
-                                                                            </div> 
-                                                                            <div class="col-md-4">
-                                                                                <div class="position-relative form-group">
-                                                                                    <label for="exampleEmail11" class="">Kecamatan</label>
-                                                                                        <select name="kecamatan_penerima" class="multiselect-dropdown form-control">
-
-                                                                                        </select>
-                                                                                </div>
-                                                                            </div> 
-                                                                            <div class="col-md-4">
-                                                                                <div class="position-relative form-group">
-                                                                                    <label for="exampleEmail11" class="">Desa/Kelurahan</label>
-                                                                                        <select name="desa_penerima" class="multiselect-dropdown form-control">
-
-                                                                                        </select>
-                                                                                </div>
-                                                                            </div> 
-                                                                            <div class="col-md-4">
-                                                                                <div class="position-relative form-group">
-                                                                                    <label for="exampleEmail11" class="">Kode POS</label>
-                                                                                        <select name="kode_pos_penerima" class="multiselect-dropdown form-control">
-
-                                                                                        </select>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-4">
-                                                                                <div class="position-relative form-group">
-                                                                                    <label for="exampleAddress">Alamat Lengkap</label>
-                                                                                    <textarea rows="1" name="alamat_lengkap_penerima" class="form-control autosize-input" style="height: 35px;"></textarea>
-                                                                                </div>
-                                                                            </div>                                                                                                                
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                                <div> <br> </div>
+                                                                <div> Sisa Waktu : 0 Hari</div>
+                                                                <div> 465 Orang telah Berdonasi</div>
+                                                            </li>
+                                                            <div class="card-body">
+                                                            <div class="br-wrapper br-theme-css-stars"><select id="css-stars" style="display: none;">
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                            </select><div class="br-widget"><a href="#" data-rating-value="1" data-rating-text="1" class="br-selected br-current"></a><a href="#" data-rating-value="2" data-rating-text="2" class=""></a><a href="#" data-rating-value="3" data-rating-text="3"></a><a href="#" data-rating-value="4" data-rating-text="4"></a><a href="#" data-rating-value="5" data-rating-text="5"></a><div class="br-current-rating">1</div></div></div>
                                                         </div>
-                                                    </div>
-                                                    <div id="step-3">
-                                                        <div class="no-results">
-                                                            <div class="swal2-icon swal2-success swal2-animate-success-icon">
-                                                                <div class="swal2-success-circular-line-left" style="background-color: rgb(255, 255, 255);"></div>
-                                                                <span class="swal2-success-line-tip"></span>
-                                                                <span class="swal2-success-line-long"></span>
-                                                                <div class="swal2-success-ring"></div>
-                                                                <div class="swal2-success-fix" style="background-color: rgb(255, 255, 255);"></div>
-                                                                <div class="swal2-success-circular-line-right" style="background-color: rgb(255, 255, 255);"></div>
-                                                            </div>
-                                                            <div class="results-subtitle mt-4">Selesai! silahkan klik simpan di bwah ini!.</div>                                        
-                                                            <div class="mt-3 mb-3"></div>
-                                                            <div class="text-center">
 
-                                                                     <button class="btn-wide btn btn-success"  type="submit" >Simpan Data</button>
-                                                            </div>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-2-eg2">
+                                                        <ul class="list-group list-group-flush"><a href="javascript:void(0);" class="disabled list-group-item">Cras justo odio</a><a href="javascript:void(0);" class="list-group-item">Dapibus ac facilisis in</a><a href="javascript:void(0);" class="list-group-item">Morbi leo risus</a><a href="javascript:void(0);" class="list-group-item">Porta ac consectetur ac</a><a href="javascript:void(0);" class="list-group-item">Vestibulum at eros</a>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-2-eg3">
+                                                        <div class="p-3">
+                                                            <p>With supporting text below as a natural lead-in to additional content.</p>
+                                                            <p class="mb-0">Lorem Ipsum has been the industry's standard dummy text ever since
+                                                                the 1500s, when an unknown printer took a galley of type and scrambled.</p>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            
-                                            <div class="divider"></div>
-                                            <div class="clearfix">
-                                                <button type="button" id="reset-btn" class="btn-shadow float-left btn btn-link">Reset</button>
-                                                <button type="button" id="next-btn" class="btn-shadow btn-wide float-right btn-pill btn-hover-shine btn btn-primary">Next</button>
-                                                <button type="button" id="prev-btn" class="btn-shadow float-right btn-wide btn-pill mr-3 btn btn-outline-secondary">Sebelumnya</button>
+                                            <div class="text-center d-block card-footer">
+                                                <a href="<?php echo base_url('detail_donasi'); ?>" class="btn-shadow-primary btn btn-primary btn-lg">Detail</a>
+                                                <button type="button" class="btn-shadow-primary btn btn-primary btn-lg" data-toggle="modal" data-target=".bd-example-modal-sm">Bagikan</button>
                                             </div>
                                         </div>
                                     </div>
-                                </div> 
-
- </form>
-
-
-
-  <!--   <div class="form-group">
-    <div class="input-group">
-     <span class="input-group-addon">Search</span>
-     <input type="text" name="search_text" id="search_text" placeholder="Search by Customer Details" class="form-control" />
-    </div>
-   </div>
-   <br />
-   <div id="result"></div>
-  <div style="clear:both"></div> -->
-
-
-</div>
-
-
-  <!-- Modal Load Kode -->
-                    <div class="modal fade" id="Modalkode"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Pilih Barang</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-
-                          <div class="modal-body">
-                             <!--Modal body-->
-                               <div class="input-group">
-                                   <div class="input-group-prepend">
-                                         <span class="input-group-text"><i class="fa fa-search fa-w-16"></i></span>
-                                    </div>
-                                       <input placeholder="Tulis Kode Barang" name="search_text" id="search_text"  type="text" class="form-control" onkeydown="return (event.keyCode!=13);">
                                 </div>
-
-                                <input placeholder="Tulis Kode Barang" name="search_text" id="myInput"  type="hidden" class="form-control">
-
-
-                                <div id="result"></div>
-                                <div style="clear:both"></div>
-
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">tutup</button>
-                          </div>
-
+                            </div>
                         </div>
-                      </div>
                     </div>
-
+                </div>
+    </div> 
+</div>
 
