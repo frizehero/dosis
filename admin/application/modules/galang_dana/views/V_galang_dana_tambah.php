@@ -12,35 +12,16 @@
                                         <div class="page-title-subheading">Tambah Galang Dana, Silahkan Isi semua form di bawah ini dengan lengkap...</div>
                                     </div>
                                 </div>
-                                <div class="page-title-actions">
-                                 <a href="<?php echo base_url('galang_dana'); ?>" class="mb-2 mr-2 btn btn-shadow btn-success">Kembali</a>
-                                 <script>
-                                    $(document).ready(function(){
-                                        $("#wilayah_provinsi").change(function (){
-                                            var url = "<?php echo site_url('galang_dana/add_ajax_kab');?>/"+$(this).val();
-                                            $('#wilayah_kabupaten').load(url);
-                                            return false;
-                                        })
-                                        
-                                        $("#wilayah_kabupaten").change(function (){
-                                            var url = "<?php echo site_url('galang_dana/add_ajax_kec');?>/"+$(this).val();
-                                            $('#wilayah_kecamatan').load(url);
-                                            return false;
-                                        })
-                                        
-                                        $("#wilayah_kecamatan").change(function (){
-                                            var url = "<?php echo site_url('galang_dana/add_ajax_des');?>/"+$(this).val();
-                                            $('#wilayah_desa').load(url);
-                                            return false;
-                                        })
-                                    });
-                                </script>
-                                </div>    
                             </div>
-                        </div> 
+                        </div>   
 
+
+
+
+                    
 
  <?php tampilnotif()?>
+
  <form action="<?php echo base_url('galang_dana/tambah') ?>" method="POST" enctype="multipart/form-data">
                         <div class="tab-content">
                         <div class="tab-pane tabs-animation fade show active" id="tab-content-0" role="tabpanel">
@@ -62,7 +43,7 @@
                                                     </li>
                                                     <li>
                                                         <a href="#step-3">
-                                                            <em>3</em><span>Selesai</span>
+                                                            <em>4</em><span>Selesai</span>
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -98,13 +79,6 @@
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleEmail11" class="">Jenjang</label>
                                                                     <select name="jenjang_pembuka" class="multiselect-dropdown form-control">
-
-                                                                        <?php foreach($getjenjang_pembuka as $res) { ?>
-
-                                                                            <option value="<?php echo $res->id_jenjang_pembuka?>"><?php echo $res->name?></option>
-
-                                                                        <?php } ?>
-
 
                                                                     </select>
                                                                 </div>
@@ -149,10 +123,8 @@
                                                                     <div class="card mb-3 bg-primary widget-content">
                                                                         <div class="widget-content-wrapper">
                                                                             <div class="widget-content-left">
-                                                                                <input name="gambar" id="exampleFile" type="file" class="form-control-file">
+                                                                                <input name="identitas_pembuka" id="exampleFile" type="file" class="form-control-file">
                                                                                 <small class="form-text text-light">Gunakan File format PNG/JPG Max 10 MB</small>
-
-                                                                                
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -163,37 +135,34 @@
                                                             <div class="col-md-4">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleEmail11" class="">Provinsi</label>
-                                                                        <select name="wilayah_provinsi" class="multiselect-dropdown form-control" id="provinsi">
+                                                                        <select name="prov" class="form-control" id="provinsi">
                                                                             <option>- Select Provinsi -</option>
-                                                                            <?php foreach($getwilayah_provinsi as $res){ ?>
-                                                                                <option value=" <?php echo $res->id_prov?>"><?php echo $res->nama?></option>
-                                                                            <?php } ?>
+                                                                            <?php foreach($provinsi as $prov){
+                                                                                echo '<option value="'.$prov->id.'">'.$prov->nama.'</option>';
+                                                                            } ?>
                                                                         </select>
                                                                 </div>
                                                             </div> 
                                                             <div class="col-md-4">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleEmail11" class="">Kota/Kabupaten</label>
-                                                                        <select name="wilayah_kabupaten" class="multiselect-dropdown form-control" id="kabupaten">
+                                                                        <select name="kab" class="form-control" id="kabupaten">
                                                                             <option value=''>Select Kabupaten</option>
-                                                                            <?php foreach($getwilayah_kabupaten as $res){ ?>
-                                                                                <option value=" <?php echo $res->id_kab?>"><?php echo $res->nama?></option>
-                                                                            <?php } ?>
                                                                         </select>
                                                                 </div>
                                                             </div> 
                                                             <div class="col-md-4">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleEmail11" class="">Kecamatan</label>
-                                                                        <select name="wilayah_kecamatan" class="form-control" id="kecamatan">
+                                                                        <select name="kec" class="form-control" id="kecamatan">
                                                                             <option>Select Kecamatan</option>
                                                                         </select>
                                                                 </div>
                                                             </div> 
                                                             <div class="col-md-4">
                                                                 <div class="position-relative form-group">
-                                                                    <label for="exampleEmail11" class="">Desa/Kelurahan</label>
-                                                                        <select name="wilayah_desa" class="form-control" id="desa">
+                                                                    <label for="exampleEmail11" class="">Kelurahan/Desa</label>
+                                                                        <select name="des" class="form-control" id="desa">
                                                                             <option>Select Desa</option>
                                                                         </select>
                                                                 </div>
@@ -233,7 +202,6 @@
                                                                                     <label for="exampleEmail11" class="">Status</label>
                                                                                     <select name="status_penerima" class="multiselect-dropdown form-control">
 
-
                                                                                     </select>
                                                                                 </div>
                                                                             </div>
@@ -244,18 +212,12 @@
                                                                                     <label for="exampleEmail11" class="">Jenjang</label>
                                                                                     <select name="jenjang_penerima" class="multiselect-dropdown form-control">
 
-                                                                                        <?php foreach($getjenjang_penerima as $res) { ?>
-
-                                                                                            <option value="<?php echo $res->id_jenjang_penerima?>"><?php echo $res->name?></option>
-
-                                                                                        <?php } ?>
-
                                                                                     </select>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
-                                                                                    <slabel for="exampleAddress">Nama Sekolah</label>
+                                                                                    <label for="exampleAddress">Asal Sekolah</label>
                                                                                     <input name="sekolah_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                                 </div>
                                                                             </div>
@@ -293,7 +255,7 @@
                                                                                     <div class="card mb-3 bg-primary widget-content">
                                                                                         <div class="widget-content-wrapper">
                                                                                             <div class="widget-content-left">
-                                                                                                <input name="gambar" id="exampleFile" type="file" class="form-control-file">
+                                                                                                <input name="identitas_penerima" id="exampleFile" type="file" class="form-control-file">
                                                                                                 <small class="form-text text-light">Gunakan File format PNG/JPG Max 10 MB</small>
                                                                                             </div>
                                                                                         </div>
@@ -316,7 +278,7 @@
                                                                                     <div class="card mb-3 bg-primary widget-content">
                                                                                         <div class="widget-content-wrapper">
                                                                                             <div class="widget-content-left">
-                                                                                                <input name="gambar" id="exampleFile" type="file" class="form-control-file">
+                                                                                                <input name="dokumentasi_penerima" id="exampleFile" type="file" class="form-control-file">
                                                                                                 <small class="form-text text-light">Gunakan File format PNG/JPG Max 10 MB</small>
                                                                                             </div>
                                                                                         </div>
@@ -340,7 +302,7 @@
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Jumlah Dana</label>
-                                                                                    <input name="jml_donasi" id="exampleAddress" placeholder="RP20.000.000,00" type="text" class="form-control">
+                                                                                    <input name="jml_donasi" id="exampleAddress" placeholder="Pembelian" type="text" class="form-control">
                                                                                 </div>
                                                                             </div> 
                                                                         </div>
@@ -412,7 +374,7 @@
                                                             <div class="mt-3 mb-3"></div>
                                                             <div class="text-center">
 
-                                                            <button class="btn-wide btn btn-success"  type="submit" >Simpan Data</button>
+                                                                     <button class="btn-wide btn btn-success"  type="submit" >Simpan Data</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -448,6 +410,38 @@
 
 
   <!-- Modal Load Kode -->
-                  
+                    <div class="modal fade" id="Modalkode"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Pilih Barang</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+
+                          <div class="modal-body">
+                             <!--Modal body-->
+                               <div class="input-group">
+                                   <div class="input-group-prepend">
+                                         <span class="input-group-text"><i class="fa fa-search fa-w-16"></i></span>
+                                    </div>
+                                       <input placeholder="Tulis Kode Barang" name="search_text" id="search_text"  type="text" class="form-control" onkeydown="return (event.keyCode!=13);">
+                                </div>
+
+                                <input placeholder="Tulis Kode Barang" name="search_text" id="myInput"  type="hidden" class="form-control">
+
+
+                                <div id="result"></div>
+                                <div style="clear:both"></div>
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">tutup</button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
 
 
