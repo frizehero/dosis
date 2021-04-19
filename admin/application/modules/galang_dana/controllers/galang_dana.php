@@ -16,10 +16,9 @@ class Galang_dana extends MX_Controller {
   function index() {
     $data = array(
 			'namamodule' 	=> "galang_dana",
-			'namafileview' 	=> "V_galang_dana",
+			'namafileview' 	=> "V_galang_dana_tambah",
 		);
 
-    $data['provinsi']=$this->M_galang_dana->get_all_provinsi();
       
     $data['path'] = base_url('assets');
     
@@ -76,7 +75,7 @@ class Galang_dana extends MX_Controller {
 
 	function tambah()
 	{
-		$this->m_galang_dana->tambah();
+		$this->M_galang_dana->tambah();
 		redirect('galang_dana');
 	}
 
