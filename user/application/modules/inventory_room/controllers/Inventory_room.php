@@ -30,7 +30,7 @@ class Inventory_room extends MX_Controller {
 			'namamodule' 	=> "inventory_room",
 			'namafileview' 	=> "V_room_tambah",
 		);
-		echo Modules::run('template/tampilCore', $data);
+		echo Modules::run('template/tampilBeranda', $data);
 	}
 
 		// Halaman Edit

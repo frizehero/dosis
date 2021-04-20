@@ -1,69 +1,163 @@
-<div class="app-main__inner">
-                        <div class="app-page-title">
-                            <div class="page-title-wrapper">
-                                <div class="page-title-heading">
-                                    <div class="page-title-icon">
-                                        <i class="pe-7s-medal icon-gradient bg-tempting-azure"></i>
-                                    </div>
-                                    <div>Tambah Data Ruangan
-                                        <div class="page-title-subheading">Tambah Data Ruangan, Silahkan Isi semua form di bawah ini dengan lengkap...</div>
-                                    </div>
-                                </div>
-                                <div class="page-title-actions">
-                                  
-                                 <a href="<?php echo base_url('inventory_room'); ?>" class="mb-2 mr-2 btn btn-shadow btn-success">Kembali</a>
-                                </div>    </div>
-                        </div>   
-                        <div class="col-md-6">
-                        <div class="main-card mb-3 card">
-
-                            <form action="<?php echo base_url('inventory_room/tambah') ?>" method="POST" enctype="multipart/form-data">
-                                <div class="card-body">
-                                    <h5 class="card-title"></h5>
-                                    <form class="">
-                                        <div class="form-row">
-
-                                            <div class="col-md-12">
-                                                <div class="position-relative form-group">
-                                                    <label class="">Kode Ruangan</label>
-                                                    <input name="kode"  type="text" class="form-control">
+<div class="content">
+                    <!--section -->
+                    <section class="parallax-section" data-scrollax-parent="true" id="sec1" style="height: 100px;">
+                        <div class="bg par-elem " data-bg="images/bg/kategori.jpg" data-scrollax="properties: { translateY: '30%' }" style="background-image: url(&quot;images/bg/kategori.jpg&quot;); transform: translateZ(0px) translateY(-4.92813%);"></div>
+                        <div class="overlay"></div>
+                        <div class="container">
+                            <div class="section-title center-align" style="margin-top: -35px;"> 
+                                <h2><span><b>GALANG DANA</b></span></h2>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- section end -->
+                    <!--section --> 
+                    <section>
+                        <!-- container -->
+                        <div class="container">
+                            <div class="row">
+                                <div class="form-row">
+                                    <div class="col-md-12">
+                                        <!-- profile-edit-container--> 
+                                        <div class="profile-edit-container">
+                                            <div class="custom-form">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label><b>NAMA LENGKAP PENGGALANG DANA*</b> <i class="fa fa-user-o"></i></label>
+                                                        <input type="text" placeholder="Abdullah"value>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label><b>Status</b></label>
+                                                        <select data-placeholder="Status" class="chosen-select" style="display: none;">
+                                                            <option>Guru</option>
+                                                            <option>Siswa/Siswi</option>
+                                                            <option>Orang lain</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            
-                                            <div class="col-md-12">
-                                                <div class="position-relative form-group">
-                                                    <label class="">Nama Ruangan</label>
-                                                    <input name="nama"  type="text" class="form-control">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <label><b>NO.TELEPON</b><i class="fa fa-phone"></i>  </label>
+                                                        <input type="text" placeholder="085859057437"value>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label><b>NO.WHATSAPP</b><i class="fa fa-whatsapp"></i>  </label>
+                                                        <input type="text" placeholder="085859057437"value>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label><b>NO.REKENING</b><i class="fa fa-whatsapp"></i>  </label>
+                                                        <input type="text" placeholder="5321234*****"value>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label><b>Instagram</b><i class="fa fa-instagram"></i></label>
+                                                        <input type="text" placeholder="@indahnr_15" value="">  
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label><b>Facebook</b><i class="fa fa-facebook"></i></label>
+                                                        <input type="text" placeholder="indah novita" value="">  
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label><b>Twitter</b><i class="fa fa-twitter"></i></label>
+                                                        <input type="text" placeholder="@indahnov" value="">  
+                                                    </div>
                                                 </div>
-                                            </div>
-
-                                            <div class="col-md-12">
-                                                <div class="position-relative form-group">
-                                                    <label class="">Penanggung Jawab</label>
-                                                    <input name="pj"  type="text" class="form-control">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label><b>ALAMAT LENGKAP</b><i class="fa fa-map-marker"></i>  </label></label>                                              
+                                                        <textarea cols="40" rows="3" placeholder="Perumahan griya permata alam ngijo blok ED-22 karangploso malang"value></textarea>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label><b>Identitas(KTP/Kartu pelajar)*</b></label>
+                                                        <div class="add-list-media-wrap">
+                                                            <form class="fuzone">
+                                                                <div class="fu-text">
+                                                                    <span><i class="fa fa-picture-o"></i> Pilih salah satu foto untuk identitas diri</span>
+                                                                </div>
+                                                                <input type="file" class="upload">
+                                                            </form>
+                                                        </div>
+                                                    </div>  
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-row">
-                                            <div class="col-md-12">
-                                                <div class="position-relative form-group">
-                                                    <label class="">Keterangan</label>
-                                                     <textarea name="ket" class="form-control"></textarea>
+                                        <!-- profile-edit-container end--> 
+                                        <!-- profile-edit-container--> 
+                                        <!-- profile-edit-container end-->                                          
+                                        <!-- profile-edit-container--> 
+                                        <div class="profile-edit-container">
+                                            <div class="custom-form">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label><b>PROVINSI</b> <i class="fa fa-map-marker"></i></label>
+                                                        <select data-placeholder="Provinsi" class="chosen-select" style="display: none;">
+                                                            <option>Aceh</option>
+                                                            <option>Sumatera Utara</option>
+                                                            <option>Sumatera Barat</option>
+                                                            <option>Riau</option>
+                                                            <option>Kepulauan Riau</option>
+                                                            <option>Jambi</option>
+                                                            <option>Sumatera Selatan</option>
+                                                            <option>Kepulauan Bangka Belitun</option>
+                                                            <option>Bengkulu</option>
+                                                            <option>Lampung</option>
+                                                            <option>DKI Jakarta</option>
+                                                            <option>Banten</option>
+                                                            <option>Jawa Barat</option>
+                                                            <option>Jawa Tengah</option>
+                                                            <option>DI Yogyakartn</option>
+                                                            <option>Jawa Timur</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label><b>Kota/Kabupaten</b></label>
+                                                        <select data-placeholder="All Categories" class="chosen-select" style="display: none;">
+                                                            <option>KOTA MALANG</option>
+                                                            <option>KOTA SURABAYA</option>
+                                                            <option>KOTA PROBOLINGGO</option>
+                                                            <option>KOTA BLITAR</option>
+                                                            <option>KOTA PASURUAN</option>
+                                                            <option>KOTA MOJOKERTO</option>
+                                                            <option>KOTA SURAKARTA</option>
+                                                            <option>KOTA MAGELANG</option>
+                                                            <option>KOTA SEMARANG</option>
+                                                            <option>KAB.TEGAL</option>
+                                                            <option>KAB.REMBANG</option>
+                                                            <option>KAB.BEKASI</option>           
+                                                            <option>KAB.BANDUNG</option>
+                                                            <option>KAB.CIREBON</option>
+                                                            <option>KAB.BANYUWANGI</option>
+                                                            <option>KAB.BONDOWOSO</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label><b>KECAMATAN</b><i class="fa fa-map-marker"></i>  </label>
+                                                        <input type="text" placeholder="Karangploso">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label><b>KELURAHAN/DESA</b><i class="fa fa-map-marker"></i>  </label>
+                                                        <input type="text" placeholder="Ngijo">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label><b>Nama Jalan,Gedung,No.Rumah</b><i class="fa fa-map-marker"></i></label>
+                                                        <input type="text" id="long" placeholder="Jalan kalimas No.6" value="">                                                    
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label><b>KODE POS</b><i class="fa fa-map-marker"></i>  </label>
+                                                        <input type="text" placeholder="654576"value>
+                                                    </div>
+                                                    <div class="map-container">
+                                                        <div id="singleMap" data-latitude="40.7427837" data-longitude="-73.11445617675781" style="position: relative; overflow: hidden;"><div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);"><div class="gm-err-container"><div class="gm-err-content"><div class="gm-err-icon"><img src="http://maps.gstatic.com/mapfiles/api-3/images/icon_error.png" draggable="false" style="user-select: none;"></div><div class="gm-err-title">Ups! Ada sesuatu yang salah.</div><div class="gm-err-message">Halaman ini tidak memuat Google Maps dengan benar. Lihat konsol JavaScript untuk mengetahui detail teknisnya.</div></div></div></div></div>
+                                                    </div>
                                                 </div>
+                                                <a href="form-galangdana2.html"><button class="btn  big-btn  color-bg flat-btn">SELANJUTNYA<i class="fa fa-angle-right"></i></button>
                                             </div>
-                                            
                                         </div>
-
-                                        <button class="mt-2 btn btn-primary"  type="submit" >Simpan Data</button>
-                                    </form>
-                                </div>
-
-                                </form>
-
+                                        <!-- profile-edit-container end-->                                        
+                                    </div>
                                 </div>
                             </div>
-
-
-
-
-</div>
+                        </div>
+                        <!--container end -->
+                    </section>
+                    <!-- section end -->
+                    <div class="limit-box fl-wrap"></div>
+                </div>

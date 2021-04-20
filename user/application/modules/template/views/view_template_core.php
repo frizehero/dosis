@@ -336,8 +336,11 @@ $menu = $uri_segments[3];
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="<?php echo base_url('assets/') ?>scripts/jquery-3.2.1.min.js" ></script>
     <script src="<?php echo base_url('assets/') ?>scripts/popper.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwJSRi0zFjDemECmFl9JtRj1FY7TiTRRo&amp;libraries=places&amp;callback=initAutocomplete"></script>
 
-    
 
     <!-- data table -->
     <script src="<?php echo base_url('assets/') ?>scripts/jquery.dataTables.min.js" type="text/javascript"></script>
