@@ -171,125 +171,125 @@
                             </div>
                         </div>
  <?php tampilnotif()?>
- <div class="main-card mb-3 card">
-                            <div class="card-body">
-    <div class="container">
-      <table id="myTable" class="display nowrap table table-bordered table-condensed table-hover">
-        <thead>
-                                    <tr>
-                                        <th>Detail</th>
-                                        <th>Kode Barang</th>
-                                        <th>Kategori</th>
-                                        <th>Merk</th>
-                                        <th>Tipe</th>
-                                        <th>Ukuran/CC</th>
-                                        <th>Bahan</th>
-                                        <th>No.Pabrik</th>
-                                        <th >No.Rangka</th>
-                                        <th >No.Mesin</th>
-                                        <th >No.Polisi</th>
-                                        <th >No.BPKB</th>
-                                        <th >Tgl. Perolehan</th>
-                                        <th >Tgl. Pembukuan</th>
-                                        <th >Asal Usul</th>
-                                        <th >Kondisi</th>
-                                        <th >Keterangan</th>
-                                        <th >Nilai</th>
-                                        <th >Ruang</th>
-                                        <th >Beban</th>
-                                        <th >Akumulasi</th>
-                                        <th >Nilai Buku</th>
-                                        <th >Sisa Usia Manfaat</th>
-                                        <th >Status Kalibrasi</th>
-                                        <th >Terakhir Kalibrasi</th>
-                                        <th >Tanggal Kalibrasi</th>
+    <div class="main-card mb-3 card">
+        <div class="card-body">
+            <div class="container">
+                <table id="myTable" class="display nowrap table table-bordered table-condensed table-hover">
+                    <thead>
+                                                <tr>
+                                                    <th>Detail</th>
+                                                    <th>Kode Barang</th>
+                                                    <th>Kategori</th>
+                                                    <th>Merk</th>
+                                                    <th>Tipe</th>
+                                                    <th>Ukuran/CC</th>
+                                                    <th>Bahan</th>
+                                                    <th>No.Pabrik</th>
+                                                    <th >No.Rangka</th>
+                                                    <th >No.Mesin</th>
+                                                    <th >No.Polisi</th>
+                                                    <th >No.BPKB</th>
+                                                    <th >Tgl. Perolehan</th>
+                                                    <th >Tgl. Pembukuan</th>
+                                                    <th >Asal Usul</th>
+                                                    <th >Kondisi</th>
+                                                    <th >Keterangan</th>
+                                                    <th >Nilai</th>
+                                                    <th >Ruang</th>
+                                                    <th >Beban</th>
+                                                    <th >Akumulasi</th>
+                                                    <th >Nilai Buku</th>
+                                                    <th >Sisa Usia Manfaat</th>
+                                                    <th >Status Kalibrasi</th>
+                                                    <th >Terakhir Kalibrasi</th>
+                                                    <th >Tanggal Kalibrasi</th>
 
-                                    </tr>
-                                    </thead>
-                                    <tbody>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
 
-                                         <?php 
-                                         $no=1;
-                                         foreach($tampil as $res) { ?>
+                                                    <?php 
+                                                    $no=1;
+                                                    foreach($tampil as $res) { ?>
 
-                                    <tr>
-                                        <td>
-                                        <button type="button" class="btn btn-warning">
-                                            <i class="fa fa-search fa-w-16 "></i>
+                                                <tr>
+                                                    <td>
+                                                    <button type="button" class="btn btn-warning">
+                                                        <i class="fa fa-search fa-w-16 "></i>
+                                                    </button>
+                                                    <a href="<?php echo base_url('inventory_peralatan/editview/'. encrypt_url($res->id_inv_peralatan)); ?>" type="button" class="btn btn-primary">
+                                                        <i class="fa fa-pen fa-w-16  "></i>
+                                                    </a>
+                                                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#hapus<?php echo $no ?>">
+                                                        <i class="fa fa-trash fa-w-16 "></i>
+                                                    </button></td>
+                                                    <td><?php echo $res->kode_barang?></td>
+                                                    <td><?php echo $res->kategori?></td>
+                                                    <td><?php echo $res->nama_merk?></td>
+                                                    <td><?php echo $res->tipe?></td>
+                                                    <td><?php echo $res->ukuran?></td>
+                                                    <td><?php echo $res->bahan?></td>
+                                                    <td><?php echo $res->nopabrik?></td>
+                                                    <td><?php echo $res->norangka?></td>
+                                                    <td><?php echo $res->nomesin?></td>
+                                                    <td><?php echo $res->nopolisi?></td>
+                                                    <td><?php echo $res->nobpkb?></td>
+                                                    <td><?php echo $res->tgl_oleh?></td>
+                                                    <td><?php echo $res->tgl_buku?></td>
+                                                    <td><?php echo $res->asal?></td>
+                                                    <td><?php echo $res->kondisi?></td>
+                                                    <td><?php echo $res->keterangan?></td>
+                                                    <td><?php echo $res->nilai?></td>
+                                                    <td><?php echo $res->nama_room?></td>
+                                                    <td><?php echo $res->beban?></td>
+                                                    <td><?php echo $res->akumulasi?></td>
+                                                    <td><?php echo $res->nilaibuku?></td>
+                                                    <td><?php echo $res->sisausia?></td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+
+                                                </tr>
+
+
+
+                                                <!-- Modal HAPUS -->
+                                <div class="modal fade" id="hapus<?php echo $no ?>"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Hapus Data?</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
                                         </button>
-                                        <a href="<?php echo base_url('inventory_peralatan/editview/'. encrypt_url($res->id_inv_peralatan)); ?>" type="button" class="btn btn-primary">
-                                            <i class="fa fa-pen fa-w-16  "></i>
-                                        </a>
-                                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#hapus<?php echo $no ?>">
-                                            <i class="fa fa-trash fa-w-16 "></i>
-                                        </button></td>
-                                        <td><?php echo $res->kode_barang?></td>
-                                        <td><?php echo $res->kategori?></td>
-                                        <td><?php echo $res->nama_merk?></td>
-                                        <td><?php echo $res->tipe?></td>
-                                        <td><?php echo $res->ukuran?></td>
-                                        <td><?php echo $res->bahan?></td>
-                                        <td><?php echo $res->nopabrik?></td>
-                                        <td><?php echo $res->norangka?></td>
-                                        <td><?php echo $res->nomesin?></td>
-                                        <td><?php echo $res->nopolisi?></td>
-                                        <td><?php echo $res->nobpkb?></td>
-                                        <td><?php echo $res->tgl_oleh?></td>
-                                        <td><?php echo $res->tgl_buku?></td>
-                                        <td><?php echo $res->asal?></td>
-                                        <td><?php echo $res->kondisi?></td>
-                                        <td><?php echo $res->keterangan?></td>
-                                        <td><?php echo $res->nilai?></td>
-                                        <td><?php echo $res->nama_room?></td>
-                                        <td><?php echo $res->beban?></td>
-                                        <td><?php echo $res->akumulasi?></td>
-                                        <td><?php echo $res->nilaibuku?></td>
-                                        <td><?php echo $res->sisausia?></td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>-</td>
+                                    </div>
 
-                                    </tr>
+                                    <form action="<?php echo base_url('inventory_peralatan/hapus') ?>" method="POST" enctype="multipart/form-data">
+                                    <div class="modal-body">
+                                        <!--Modal body-->
+                                            <p class="text-semibold text-main"></p>
+                                            <p>Anda Yakin Ingin Menghapus <b><?php echo $res->kategori ?></b> ? </p>
+
+                                            <input name="id"  type="hidden" value="<?php echo $res->id_inv_peralatan ?>" class="form-control">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">tutup</button>
+                                        <button class="btn btn-primary" type="submit" >Hapus</button>
+                                    </div>
+                                    </form>
+
+                                    </div>
+                                </div>
+                                </div>
 
 
+                                                    <?php $no++;} ?>
 
-                                       <!-- Modal HAPUS -->
-                    <div class="modal fade" id="hapus<?php echo $no ?>"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Hapus Data?</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-
-                          <form action="<?php echo base_url('inventory_peralatan/hapus') ?>" method="POST" enctype="multipart/form-data">
-                          <div class="modal-body">
-                             <!--Modal body-->
-                                <p class="text-semibold text-main"></p>
-                                <p>Anda Yakin Ingin Menghapus <b><?php echo $res->kategori ?></b> ? </p>
-
-                                <input name="id"  type="hidden" value="<?php echo $res->id_inv_peralatan ?>" class="form-control">
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">tutup</button>
-                            <button class="btn btn-primary" type="submit" >Hapus</button>
-                          </div>
-                          </form>
-
-                        </div>
-                      </div>
-                    </div>
-
-
-                                         <?php $no++;} ?>
-
-                                    
-                                    
-                                    
-                                    </tbody>
-      </table>
+                                                
+                                                
+                                                
+                                                </tbody>
+                </table>
             </div>
         </div>
     </div>

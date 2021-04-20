@@ -74,7 +74,7 @@ $menu = $uri_segments[3];
                     <button class="header-search-button" onclick="window.location.href='#'"><i class="fa fa-search"></i></button>
                 </div>
                 <div class="show-search-button"><i class="fa fa-search"></i> <span>Cari</span></div>
-                <a href="<?php echo base_url('galang_dana'); ?>" class="add-list">Galang Dana <span><i class="fa fa-plus"></i></span></a>
+                <a href="<?php echo base_url('inventory_room/tambahview'); ?>" class="add-list">Galang Dana <span><i class="fa fa-plus"></i></span></a>
                 <div class="header-user-menu">
                     <div class="header-user-name">
                         <span><img src="images/avatar/4.jpg" alt=""></span>
@@ -203,6 +203,11 @@ $menu = $uri_segments[3];
                                     <?php if ($menu=="edit_password"){?><li class="mm-active"><?php }else{?><li><?php }?>
                                         <a href="<?php echo base_url('edit_password'); ?>">
                                             <i class="fa fa-unlock-alt"></i>Edit Password
+                                            </a>
+                                        </li>
+                                    <?php if ($menu=="inventory_room"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                        <a href="<?php echo base_url('inventory_room'); ?>">
+                                            <i class="fa fa-unlock-alt"></i>Coba Galang Dana
                                             </a>
                                         </li>
                                 </ul>
