@@ -36,7 +36,6 @@
                                                 <a href="javascript:void(0);" class="btn-wide btn btn-success">Terima</a>
                                                 <a href="javascript:void(0);" class="btn-wide btn-shadow btn btn-danger">Hapus</a>
                                             </div>
-                                            "btn-wide btn-shadow btn btn-danger"
                                         </div>
                                     </div>
                                     <div class="col-md-4">
@@ -307,7 +306,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>            
+                                </div> 
                             </div>
                         </div>
             </div>
