@@ -74,7 +74,7 @@
                                                 <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/5.jpg" alt=""></a>
                                                     <span class="avatar-tooltip">Posting oleh  <strong>Dhinda</strong></span>
                                                 </div>
-                                                <h3><a href="user-detail-donasi.html">Bantu Doni kembali sekolah lagi</a></h3>
+                                                <h3><a href="<?php echo base_url('detail_donasi'); ?>">Bantu Doni kembali sekolah lagi</a></h3>
                                                 <p><b>120</b> <i> hari tersisa</i>  </p>
                                                 <div class="distance-title"> 
                                                     <b>Rp 4.580,000</b> Terkumpul   <span style="padding-left: 60px;">1</span> %
@@ -106,7 +106,7 @@
                                                 <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/5.jpg" alt=""></a>
                                                     <span class="avatar-tooltip">Posting oleh  <strong>Farhan</strong></span>
                                                 </div>
-                                                <h3><a href="user-detail-donasi.html">kecalakaan menyebabkan patah tulang siswa smp 8</a></h3>
+                                                <h3><a href="<?php echo base_url('detail_donasi'); ?>">kecalakaan menyebabkan patah tulang siswa smp 8</a></h3>
                                                 <p><b>30</b> <i> hari tersisa</i>  </p>
                                                 <div class="distance-title"> 
                                                     <b>Rp 6.100,000</b> Terkumpul   <span style="padding-left: 60px;">30</span> %
@@ -138,7 +138,7 @@
                                                 <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/5.jpg" alt=""></a>
                                                     <span class="avatar-tooltip">Posting oleh  <strong>Indah</strong></span>
                                                 </div>
-                                                <h3><a href="user-detail-donasi.html">Rumah rendi terbakar karena terkena ledekan listrik PLN</a></h3>
+                                                <h3><a href="<?php echo base_url('detail_donasi'); ?>">Rumah rendi terbakar karena terkena ledekan listrik PLN</a></h3>
                                                 <p><b>16</b> <i> hari tersisa</i>  </p>
                                                 <div class="distance-title"> 
                                                     <b>Rp 12.790,000</b> Terkumpul   <span style="padding-left: 60px;">1</span> %
@@ -170,7 +170,7 @@
                                                 <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/5.jpg" alt=""></a>
                                                     <span class="avatar-tooltip">Posting oleh  <strong>Yulia</strong></span>
                                                 </div>
-                                                <h3><a href="user-detail-donasi.html">Rumah dika terkena longsor tidak dapat sekolah lagi</a></h3>
+                                                <h3><a href="<?php echo base_url('detail_donasi'); ?>">Rumah dika terkena longsor tidak dapat sekolah lagi</a></h3>
                                                 <p><b>61</b> <i> hari tersisa</i>  </p>
                                                 <div class="distance-title"> 
                                                     <b>Rp 8.190,000</b> Terkumpul   <span style="padding-left: 60px;">1</span> %
@@ -202,7 +202,7 @@
                                                 <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/5.jpg" alt=""></a>
                                                     <span class="avatar-tooltip">Posting oleh  <strong>Hasan</strong></span>
                                                 </div>
-                                                <h3><a href="user-detail-donasi.html">Sebagian rumah siswa SMKN 2 terendam banjir selama 3 hari </a></h3>
+                                                <h3><a href="<?php echo base_url('detail_donasi'); ?>">Sebagian rumah siswa SMKN 2 terendam banjir selama 3 hari </a></h3>
                                                 <p><b>59</b> <i> hari tersisa</i>  </p>
                                                 <div class="distance-title"> 
                                                     <b>Rp 12.820,000</b> Terkumpul   <span style="padding-left: 60px;">1</span> %
@@ -234,7 +234,7 @@
                                                 <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/5.jpg" alt=""></a>
                                                     <span class="avatar-tooltip">Posting oleh  <strong>Tiara</strong></span>
                                                 </div>
-                                                <h3><a href="user-detail-donasi.html">Bantu kami untuk kembali sekolah lagi</a></h3>
+                                                <h3><a href="<?php echo base_url('detail_donasi'); ?>">Bantu kami untuk kembali sekolah lagi</a></h3>
                                                 <p><b>80</b> <i> hari tersisa</i>  </p>
                                                 <div class="distance-title"> 
                                                     <b>Rp 9.120,000</b> Terkumpul   <span style="padding-left: 60px;">1</span> %

@@ -74,15 +74,15 @@ $menu = $uri_segments[3];
                     <button class="header-search-button" onclick="window.location.href='#'"><i class="fa fa-search"></i></button>
                 </div>
                 <div class="show-search-button"><i class="fa fa-search"></i> <span>Cari</span></div>
-                <a href="form-galangdana.html" class="add-list">Galang Dana <span><i class="fa fa-plus"></i></span></a>
+                <a href="<?php echo base_url('galang_dana'); ?>" class="add-list">Galang Dana <span><i class="fa fa-plus"></i></span></a>
                 <div class="header-user-menu">
                     <div class="header-user-name">
                         <span><img src="images/avatar/4.jpg" alt=""></span>
                         Abdul Hasan
                     </div>
                     <ul>
-                        <li><a href="user-dashboard-donasi.html"> Dashboard</a></li>
-                        <li><a href="user-beranda-awal.html">Log Out</a></li>
+                        <li><a href="<?php echo base_url('donasi_saya'); ?>"> Dashboard</a></li>
+                        <li><a href="<?php echo base_url('login'); ?>">Log Out</a></li>
                     </ul>
                 </div>
                 <!-- nav-button-wrap--> 
@@ -97,20 +97,20 @@ $menu = $uri_segments[3];
                     <nav>
                         <ul>
                             <li>
-                                <a href="user-beranda-login.html">BERANDA</a>
+                                <a href="<?php echo base_url('beranda'); ?>">BERANDA</a>
                             </li>
                             <li>
                                 <a href="#">KATEGORI <i class="fa fa-caret-down"></i></a>
                                 <!--second level -->
                                 <ul>
-                                    <li><a href="kategori-putus-sekolah.html">Siswa Putus Sekolah</a></li>
-                                    <li><a href="kategori-tidak-mampu.html">Siswa Tidak Mampu</a></li>
-                                    <li><a href="kategori-kecelakaan-sakit.html">Kecelakaan / Sakit</a></li>
-                                    <li><a href="kategori-pembangunan.html">Pembangunan</a></li>
-                                    <li><a href="kategori-kebakaran.html">Kebakaran</a></li>
-                                    <li><a href="kategori-banjir.html">Banjir</a></li>
-                                    <li><a href="kategori-tanah-longsor.html">Tanah Longsor</a></li>
-                                    <li><a href="kategori-kabeh.html">Lainnya ></a></li>
+                                    <li><a href="<?php echo base_url('kategori_siswa_putus_sekolah'); ?>">Siswa Putus Sekolah</a></li>
+                                    <li><a href="<?php echo base_url('kategori_tidak_mampu'); ?>">Siswa Tidak Mampu</a></li>
+                                    <li><a href="<?php echo base_url('kategori_kecelakaan'); ?>">Kecelakaan / Sakit</a></li>
+                                    <li><a href="<?php echo base_url('kategori_pembangunan'); ?>">Pembangunan</a></li>
+                                    <li><a href="<?php echo base_url('kategori_kebakaran'); ?>">Kebakaran</a></li>
+                                    <li><a href="<?php echo base_url('kategori_banjir'); ?>">Banjir</a></li>
+                                    <li><a href="<?php echo base_url('kategori_tanah_longsor'); ?>">Tanah Longsor</a></li>
+                                    <li><a href="<?php echo base_url('Kategori_lainnya'); ?>">Lainnya ></a></li>
                                 </ul>
                                 <!--second level end-->
                             </li>
@@ -290,10 +290,10 @@ $menu = $uri_segments[3];
                         <div class="footer-contacts-widget fl-wrap">
                             <p>Temukan jawabanmu disini</p>
                             <ul  class="footer-contacts fl-wrap">
-                                <li><a href="user-syarat-ketentuan.html">Syarat dan Ketentuan</a></li>
-                                <li><a href="user-tentang-kami.html">Tentang Kami</a></li>
+                                <li><a href="<?php echo base_url('syarat_ketentuan'); ?>">Syarat dan Ketentuan</a></li>
+                                <li><a href="<?php echo base_url('tentang_kami'); ?>">Tentang Kami</a></li>
                                 <li><a href="<?php echo base_url('hubungi_kami'); ?>">Hubungi Kami</a></li>
-                                <li><a href="pusat-bantuan-user.html">FAQ</a></li>
+                                <li><a href="<?php echo base_url('faq'); ?>">FAQ</a></li>
                             </ul>
                         </div>
                     </div>

@@ -224,7 +224,7 @@
                                                         </div>
                                                     </br>
                                                     <hr>
-                                                        <a class="trs-btn" href="user-pembayaran-donasi.html" style="padding: 15px 105px 15px 102px; margin-bottom: -100;"> Donasi Sekarang </a>
+                                                        <a class="trs-btn" href="<?php echo base_url('pembayaran'); ?>" style="padding: 15px 105px 15px 102px; margin-bottom: -100;">Donasi Sekarang </a>
                                                         <p style="margin-right: 240px; margin-top: 20px;"><b>20</b> <i> hari tersisa</i>  </p>
                                                         <div class="distance-title"> 
                                                             <b>Rp 12.820,000</b> Terkumpul   <span style="padding-left: 120px;">1</span> %
