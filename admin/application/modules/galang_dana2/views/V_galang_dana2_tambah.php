@@ -104,25 +104,46 @@
                                                         <div class="form-row">
                                                             <div class="col-md-4">
                                                                 <div class="position-relative form-group">
-                                                                    <label for="exampleAddress">No Telepon</label>
+                                                                    <label for="exampleAddress">No Rekening</label>
                                                                     <input name="telepon_pembuka" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                 </div>
                                                             </div>  
                                                             <div class="col-md-4">
                                                                 <div class="position-relative form-group">
-                                                                    <label for="exampleAddress">Whatsapp</label>
+                                                                    <label for="exampleAddress">No Telepon</label>
                                                                     <input name="wa_pembuka" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <div class="position-relative form-group">
-                                                                    <label for="exampleAddress">Email</label>
+                                                                    <label for="exampleAddress">No Whatsapp</label>
                                                                     <input name="email_pembuka" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="form-row">
-                                                            <div class="col-md-12">
+                                                            <div class="col-md-4">
+                                                                <div class="position-relative form-group">
+                                                                    <label for="exampleAddress">Instagram</label>
+                                                                    <input name="telepon_pembuka" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                </div>
+                                                            </div>  
+                                                            <div class="col-md-4">
+                                                                <div class="position-relative form-group">
+                                                                    <label for="exampleAddress">Facebook</label>
+                                                                    <input name="wa_pembuka" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="position-relative form-group">
+                                                                    <label for="exampleAddress">Twitter</label>
+                                                                    <input name="email_pembuka" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-row">
+                                                            <div class="col-md-6">
                                                                 <div class="position-relative form-group">
                                                                     <label name="nobpkb" for="exampleFile" class="">Identitas( KTP/Kartu Pelajar )</label>
                                                                     <div class="card mb-3 bg-primary widget-content">
@@ -135,6 +156,12 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="position-relative form-group">
+                                                                    <label for="exampleAddress">Alamat Lengkap</label>
+                                                                    <textarea rows="1" name="deskripsi_penerima" class="form-control autosize-input" style="height: 80px;"></textarea>
                                                                 </div>
                                                             </div>
                                                         </div>   
@@ -217,13 +244,9 @@
                                                                         </select>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-4">
-                                                                <div class="position-relative form-group">
-                                                                    <label for="exampleAddress">Alamat Lengkap</label>
-                                                                    <textarea rows="1" name="alamat_lengkap_pembuka" class="form-control autosize-input" style="height: 35px;"></textarea>
-                                                                </div>
-                                                            </div>                                                                                                                
-                                                        </div>                                                                                     
+                                                                                                                                                                           
+                                                        </div>
+                                                                                                                                              
                                                     </div>
                                                     <div id="step-2">
                                                         <div id="accordion" class="accordion-wrapper mb-3">
@@ -235,24 +258,21 @@
                                                                         <div class="form-row">                                                            
                                                                             <div class="col-md-6">
                                                                                 <div class="position-relative form-group">
-                                                                                    <label for="exampleAddress">Nama</label>
+                                                                                    <label for="exampleAddress">Nama Penerima</label>
                                                                                     <input name="nama_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-6">
                                                                                 <div class="position-relative form-group">
-                                                                                    <label for="exampleEmail11" class="">Status</label>
-                                                                                    <select name="status_penerima" class="multiselect-dropdown form-control">
-
-
-                                                                                    </select>
+                                                                                    <label for="exampleAddress">kosongan</label>
+                                                                                    <input name="nama_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                         </div>                                                        
                                                                         <div class="form-row">
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
-                                                                                    <label for="exampleEmail11" class="">Jenjang</label>
+                                                                                    <label for="exampleEmail11" class="">Jenjang Sekolah</label>
                                                                                     <select name="jenjang_penerima" class="multiselect-dropdown form-control">
 
                                                                                         <?php foreach($getjenjang_penerima as $res) { ?>
@@ -298,7 +318,28 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="form-row">
-                                                                            <div class="col-md-12">
+                                                                            <div class="col-md-4">
+                                                                                <div class="position-relative form-group">
+                                                                                    <label for="exampleAddress">Instagram</label>
+                                                                                    <input name="telepon_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                                </div>
+                                                                            </div>  
+                                                                            <div class="col-md-4">
+                                                                                <div class="position-relative form-group">
+                                                                                    <label for="exampleAddress">Facebook</label>
+                                                                                    <input name="wa_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <div class="position-relative form-group">
+                                                                                    <label for="exampleAddress">Twitter</label>
+                                                                                    <input name="email_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-row">
+                                                                            <div class="col-md-6">
                                                                                 <div class="position-relative form-group">
                                                                                     <label name="nobpkb" for="exampleFile" class="">Identitas( KTP/Kartu Pelajar )</label>
                                                                                     <div class="card mb-3 bg-primary widget-content">
@@ -311,46 +352,71 @@
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                        </div> 
-                                                                        <div class="form-row">
-                                                                            <div class="col-md-12">
+                                                                            <div class="col-md-6">
                                                                                 <div class="position-relative form-group">
-                                                                                    <label for="exampleAddress">Deskripsi Donasi</label>
-                                                                                    <textarea rows="1" name="deskripsi_penerima" class="form-control autosize-input" style="height: 60px;"></textarea>
+                                                                                    <label for="exampleAddress">Tentang Diri Kamu</label>
+                                                                                    <textarea rows="1" name="tentang_diri_kamu" class="form-control autosize-input" style="height: 80px;"></textarea>
                                                                                 </div>
                                                                             </div> 
-                                                                        </div>  
+                                                                        </div>
+                                                                           
                                                                         <div class="form-row">
                                                                             <div class="col-md-12">
                                                                                 <div class="position-relative form-group">
-                                                                                    <label name="nobpkb" for="exampleFile" class="">Dokumentasi</label>
-                                                                                    <div class="card mb-3 bg-primary widget-content">
-                                                                                        <div class="widget-content-wrapper">
-                                                                                            <div class="widget-content-left">
-                                                                                                <input name="gambar" id="exampleFile" type="file" class="form-control-file">
-                                                                                                <small class="form-text text-light">Gunakan File format PNG/JPG Max 10 MB</small>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
+                                                                                    <label for="exampleAddress">Judul Donasi</label>
+                                                                                    <input name="judul_donasi" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                         </div>
+
+                                                                        <div class="form-row">
+                                                                            <div class="col-md-6">    
+                                                                                <div class="position-relative form-group">
+                                                                                        <label for="exampleEmail11" class="">Kategori Donasi</label>
+                                                                                        <select name="jenjang_penerima" class="multiselect-dropdown form-control">
+
+                                                                                            <?php foreach($getjenjang_penerima as $res) { ?>
+
+                                                                                                <option value="<?php echo $res->id_jenjang_penerima?>"><?php echo $res->name?></option>
+
+                                                                                            <?php } ?>
+
+                                                                                        </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-6">    
+                                                                                <div class="position-relative form-group">
+                                                                                        <label for="exampleEmail11" class="">Batas Waktu Penggalangan Dana</label>
+                                                                                        <select name="jenjang_penerima" class="multiselect-dropdown form-control">
+
+                                                                                            <?php foreach($getjenjang_penerima as $res) { ?>
+
+                                                                                                <option value="<?php echo $res->id_jenjang_penerima?>"><?php echo $res->name?></option>
+
+                                                                                            <?php } ?>
+
+                                                                                        </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+
                                                                         <div class="form-row">
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
-                                                                                    <label for="exampleAddress">Tanggal Awal</label>
+                                                                                    <label for="exampleAddress">Tanggal Mulai</label>
                                                                                     <input type="text" class="form-control" name="tgl_awal" data-toggle="datepicker"/>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
-                                                                                    <label for="exampleAddress">Tanggal Akhir</label>
+                                                                                    <label for="exampleAddress">Tanggal Berakhir</label>
                                                                                     <input type="text" class="form-control" name="tgl_akhir" data-toggle="datepicker"/>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
-                                                                                    <label for="exampleAddress">Jumlah Dana</label>
+                                                                                    <label for="exampleAddress">Target Donasi</label>
                                                                                     <input name="jml_donasi" id="exampleAddress" placeholder="RP20.000.000,00" type="text" class="form-control">
                                                                                 </div>
                                                                             </div> 
@@ -383,7 +449,7 @@
                                                                             </div> 
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
-                                                                                    <label for="exampleEmail11" class="">Desa/Kelurahan</label>
+                                                                                    <label for="exampleEmail11" class="">Kelurahan</label>
                                                                                         <select name="desa_penerima" class="multiselect-dropdown form-control">
 
                                                                                         </select>
@@ -391,7 +457,7 @@
                                                                             </div> 
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
-                                                                                    <label for="exampleEmail11" class="">Kode POS</label>
+                                                                                    <label for="exampleEmail11" class="">Desa</label>
                                                                                         <select name="kode_pos_penerima" class="multiselect-dropdown form-control">
 
                                                                                         </select>
@@ -399,11 +465,72 @@
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
-                                                                                    <label for="exampleAddress">Alamat Lengkap</label>
-                                                                                    <textarea rows="1" name="alamat_lengkap_penerima" class="form-control autosize-input" style="height: 35px;"></textarea>
+                                                                                    <label for="exampleAddress">Kode Pos</label>
+                                                                                    <input name="judul_donasi" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                                 </div>
-                                                                            </div>                                                                                                                
+                                                                            </div>
+                                                                                                                    
                                                                         </div>
+                                                                        <div class="form-row">
+                                                                            <div class="col-md-12">
+                                                                                <div class="position-relative form-group">
+                                                                                    <label for="exampleAddress">Alamat Lengkap</label>
+                                                                                    <textarea rows="1" name="deskripsi_penerima" class="form-control autosize-input" style="height: 80px;"></textarea>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="form-row">
+                                                                            <div class="col-md-6">
+                                                                                <div class="position-relative form-group">
+                                                                                    <label for="exampleAddress">Deskripsi Donasi</label>
+                                                                                    <textarea rows="1" name="deskripsi_penerima" class="form-control autosize-input" style="height: 80px;"></textarea>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <div class="position-relative form-group">
+                                                                                    <label name="nobpkb" for="exampleFile" class="">Dokumentasi 1</label>
+                                                                                    <div class="card mb-3 bg-primary widget-content">
+                                                                                        <div class="widget-content-wrapper">
+                                                                                            <div class="widget-content-left">
+                                                                                                <input name="gambar" id="exampleFile" type="file" class="form-control-file">
+                                                                                                <small class="form-text text-light">Gunakan File format PNG/JPG Max 10 MB</small>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+ 
+                                                                        </div>
+                                                                        <div class="form-row">
+                                                                            <div class="col-md-6">
+                                                                                <div class="position-relative form-group">
+                                                                                    <label name="nobpkb" for="exampleFile" class="">Dokumentasi 2</label>
+                                                                                    <div class="card mb-3 bg-primary widget-content">
+                                                                                        <div class="widget-content-wrapper">
+                                                                                            <div class="widget-content-left">
+                                                                                                <input name="gambar" id="exampleFile" type="file" class="form-control-file">
+                                                                                                <small class="form-text text-light">Gunakan File format PNG/JPG Max 10 MB</small>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <div class="position-relative form-group">
+                                                                                    <label name="nobpkb" for="exampleFile" class="">Dokumentasi 3</label>
+                                                                                    <div class="card mb-3 bg-primary widget-content">
+                                                                                        <div class="widget-content-wrapper">
+                                                                                            <div class="widget-content-left">
+                                                                                                <input name="gambar" id="exampleFile" type="file" class="form-control-file">
+                                                                                                <small class="form-text text-light">Gunakan File format PNG/JPG Max 10 MB</small>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+ 
+                                                                        </div>  
                                                                     </div>
                                                                 </div>
                                                             </div>
