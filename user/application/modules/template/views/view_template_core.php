@@ -75,16 +75,16 @@ $menu = $uri_segments[3];
                 </div>
                 <div class="show-search-button"><i class="fa fa-search"></i> <span>Cari</span></div>
                 <a href="<?php echo base_url('inventory_room/tambahview'); ?>" class="add-list">Galang Dana <span><i class="fa fa-plus"></i></span></a>
-                <div class="header-user-menu">
-                    <div class="header-user-name">
-                        <span><img src="images/avatar/4.jpg" alt=""></span>
-                        Abdul Hasan
+                    <div class="header-user-menu">
+                        <div class="header-user-name">
+                            <span><img src="images/avatar/4.jpg" alt=""></span>
+                            Abdul Hasan
+                        </div>
+                        <ul>
+                            <li><a href="user-dashboard-donasi.html"> Dashboard</a></li>
+                            <li><a href="user-beranda-awal.html">Log Out</a></li>
+                        </ul>
                     </div>
-                    <ul>
-                        <li><a href="<?php echo base_url('donasi_saya'); ?>"> Dashboard</a></li>
-                        <li><a href="<?php echo base_url('login'); ?>">Log Out</a></li>
-                    </ul>
-                </div>
                 <!-- nav-button-wrap--> 
                 <div class="nav-button-wrap color-bg">
                     <div class="nav-button">
@@ -336,8 +336,11 @@ $menu = $uri_segments[3];
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="<?php echo base_url('assets/') ?>scripts/jquery-3.2.1.min.js" ></script>
     <script src="<?php echo base_url('assets/') ?>scripts/popper.min.js"></script>
+    <script src="<?php echo base_url('assets/') ?>scripts/jquery.min.js"></script>
+    <script src="<?php echo base_url('assets/') ?>scripts/plugins.js"></script>
+    <script src="<?php echo base_url('assets/') ?>scripts/scripts.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwJSRi0zFjDemECmFl9JtRj1FY7TiTRRo&amp;libraries=places&amp;callback=initAutocomplete"></script>
 
-    
 
     <!-- data table -->
     <script src="<?php echo base_url('assets/') ?>scripts/jquery.dataTables.min.js" type="text/javascript"></script>
