@@ -117,7 +117,7 @@
                                                             <div class="col-md-4">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleAddress">No Whatsapp</label>
-                                                                    <input name="email_pembuka" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                    <input name="no_wa" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -161,7 +161,7 @@
                                                             <div class="col-md-6">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleAddress">Alamat Lengkap</label>
-                                                                    <textarea rows="1" name="deskripsi_penerima" class="form-control autosize-input" style="height: 80px;"></textarea>
+                                                                    <textarea rows="1" name="alamat_pembuka" class="form-control autosize-input" style="height: 80px;"></textarea>
                                                                 </div>
                                                             </div>
                                                         </div>   
@@ -264,8 +264,8 @@
                                                                             </div>
                                                                             <div class="col-md-6">
                                                                                 <div class="position-relative form-group">
-                                                                                    <label for="exampleAddress">kosongan</label>
-                                                                                    <input name="nama_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                                    <label for="exampleAddress">Alamat Penerima</label>
+                                                                                    <input name="alamat_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                         </div>                                                        
@@ -313,7 +313,7 @@
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Email</label>
-                                                                                    <input name="email_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                                    <input name="email" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -368,7 +368,7 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-
+                                                                                                                                                    <
                                                                         <div class="form-row">
                                                                             <div class="col-md-6">    
                                                                                 <div class="position-relative form-group">
@@ -471,19 +471,21 @@
                                                                             </div>
                                                                                                                     
                                                                         </div>
+
                                                                         <div class="form-row">
                                                                             <div class="col-md-12">
                                                                                 <div class="position-relative form-group">
-                                                                                    <label for="exampleAddress">Alamat Lengkap</label>
+                                                                                    <label for="exampleAddress">Deskripsi Peristiwa</label>
                                                                                     <textarea rows="1" name="deskripsi_penerima" class="form-control autosize-input" style="height: 80px;"></textarea>
                                                                                 </div>
                                                                             </div>
-
+ 
                                                                         </div>
+
                                                                         <div class="form-row">
                                                                             <div class="col-md-6">
                                                                                 <div class="position-relative form-group">
-                                                                                    <label for="exampleAddress">Deskripsi Donasi</label>
+                                                                                    <label for="exampleAddress">Tujuan Membuka Galang Dana</label>
                                                                                     <textarea rows="1" name="deskripsi_penerima" class="form-control autosize-input" style="height: 80px;"></textarea>
                                                                                 </div>
                                                                             </div>

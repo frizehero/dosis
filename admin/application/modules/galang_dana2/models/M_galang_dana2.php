@@ -45,7 +45,6 @@ class M_galang_dana2 extends CI_Model {
 		$kelas_pembuka				= $this->input->post('kelas_pembuka');
 		$telepon_pembuka			= $this->input->post('telepon_pembuka');
 		$wa_pembuka 				= $this->input->post('wa_pembuka');
-		$email_pembuka 				= $this->input->post('email_pembuka');
 		$identitas_pembuka 			= $this->input->post('identitas_pembuka');
 		$provinsi		 			= $this->input->post('provinsi');
 		$kota 						= $this->input->post('kota');
@@ -55,7 +54,7 @@ class M_galang_dana2 extends CI_Model {
 		$kode_pos 					= $this->input->post('kode_pos');
 		$alamat_pembuka 			= $this->input->post('alamat_pembuka ');
 		$nama_penerima 				= $this->input->post('nama_penerima');
-		$status_penerima 			= $this->input->post('status_penerima');
+		$alamat_penerima			= $this->input->post('alamat_penerima');
 		$jenjang_penerima 			= $this->input->post('jenjang_penerima');
 		$sekolah_penerima 			= $this->input->post('sekolah_penerima');
 		$kelas_penerima 			= $this->input->post('kelas_penerima');
@@ -63,6 +62,7 @@ class M_galang_dana2 extends CI_Model {
 		$wa_penerima 				= $this->input->post('wa_penerima');
 		$email_penerima 			= $this->input->post('email_penerima');
 		$identitas_penerima 		= $this->input->post('identitas_penerima');
+		$judul_donasi		 		= $this->input->post('judul_donasi');
 		$deskripsi_peristiwa		= $this->input->post('deskripsi_peristiwa');
 		$dokumentasi_perisiwa		= $this->input->post('dokumentasi_peristiwa');
 		$tgl_awal 					= $this->input->post('tgl_awal');
@@ -73,7 +73,6 @@ class M_galang_dana2 extends CI_Model {
 		$kecamatan_penerima 		= $this->input->post('kecamatan_penerima');
 		$kelurahan_penerima 		= $this->input->post('kelurahan_penerima');
 		$kode_pos_penerima 			= $this->input->post('kode_pos_penerima');
-		$alamat_lengkap_penerima 	= $this->input->post('alamat_penerima');
 		$tgl_dibuat					= $this->input->post('tgl_dibuat');
 
 		$insert_awal = date( 'Y-m-d', strtotime($tgl_awal));
@@ -105,7 +104,6 @@ class M_galang_dana2 extends CI_Model {
 					'kelas_pembuka'				=> $kelas_pembuka,
 					'telepon_pembuka'			=> $telepon_pembuka,
 					'wa_pembuka'				=> $wa_pembuka,
-					'email_pembuka'				=> $email_pembuka,
 					'identitas_pembuka' 		=> $gbr['file_name'],
 					'provinsi'					=> $provinsi,
 					'kota'						=> $kota,
@@ -115,6 +113,7 @@ class M_galang_dana2 extends CI_Model {
 					'kode_pos'					=> $kode_pos,
 					'alamat_pembuka'			=> $alamat_pembuka,
 					'nama_penerima'				=> $nama_penerima,
+					'alamat_penerima'			=> $alamat_penerima,
 					'status_penerima'			=> $status_penerima,
 					'jenjang_penerima'			=> $jenjang_penerima,
 					'sekolah_penerima'			=> $sekolah_penerima,
@@ -123,6 +122,7 @@ class M_galang_dana2 extends CI_Model {
 					'wa_penerima'				=> $wa_penerima,
 					'email_penerima'			=> $email_penerima,
 					'identitas_penerima' 		=> $identitas_penerima,
+					'judul_donasi'		 		=> $judul_donasi,
 					'deskripsi_peristiwa'		=> $deskripsi_peristiwa,
 					'dokumentasi_peristiwa' 	=> $dokumentasi_peristiwa,
 					'tgl_awal'					=> $tgl_awal,
@@ -132,7 +132,6 @@ class M_galang_dana2 extends CI_Model {
 					'kabupaten_penerima'		=> $kabupaten_penerima,
 					'kecamatan_penerima'		=> $kecamatan_penerima,
 					'kelurahan_penerima'		=> $kelurahan_penerima,
-					'alamat_penerima'			=> $alamat_penerima,
 					
 					
 					
@@ -151,7 +150,6 @@ class M_galang_dana2 extends CI_Model {
 					'kelas_pembuka'				=> $kelas_pembuka,
 					'telepon_pembuka'			=> $telepon_pembuka,
 					'wa_pembuka'				=> $wa_pembuka,
-					'email_pembuka'				=> $email_pembuka,
 					'identitas_pembuka' 		=> 'kosong1.png',
 					'provinsi'					=> $provinsi,
 					'kota'						=> $kota,
@@ -161,7 +159,7 @@ class M_galang_dana2 extends CI_Model {
 					'kode_pos'					=> $kode_pos,
 					'alamat_pembuka'			=> $alamat_pembuka,
 					'nama_penerima'				=> $nama_penerima,
-					'status_penerima'			=> $status_penerima,
+					'alamat_penerima'			=> $alamat_penerima,
 					'jenjang_penerima'			=> $jenjang_penerima,
 					'sekolah_penerima'			=> $sekolah_penerima,
 					'kelas_penerima'			=> $kelas_penerima,
@@ -169,6 +167,7 @@ class M_galang_dana2 extends CI_Model {
 					'wa_penerima'				=> $wa_penerima,
 					'email_penerima'			=> $email_penerima,
 					'identitas_penerima' 		=> $identitas_penerima,
+					'judul_donasi' 				=> $judul_donasi,
 					'deskripsi_peristiwa'		=> $deskripsi_peristiwa,
 					'dokumentasi_peristiwa' 	=> $deskripsi_peristiwa,
 					'tgl_awal'					=> $tgl_awal,
@@ -177,8 +176,7 @@ class M_galang_dana2 extends CI_Model {
 					'provinsi_penerima'			=> $provinsi_penerima,
 					'kota_penerima'				=> $kota_penerima,
 					'kecamatan_penerima'		=> $kecamatan_penerima,
-					'alamat_penerima'			=> $alamat_penerima,
-
+					
 				);
 				$this->db->insert('galang_dana2', $data);
 				$this->session->set_flashdata('msg', 'suksestambah');
@@ -224,7 +222,7 @@ class M_galang_dana2 extends CI_Model {
 		$kecamatan_penerima 		= $this->input->post('kecamatan_penerima');
 		$desa_penerima 				= $this->input->post('desa_penerima');
 		$kode_pos_penerima 			= $this->input->post('kode_pos_penerima');
-		$alamat_lengkap_penerima 	= $this->input->post('alamat_lengkap_penerima ');
+		$alamat_penerima 			= $this->input->post('alamat_penerima ');
 		$tgl_dibuat					= $this->input->post('tgl_dibuat');
 
 		$insert_awal = date( 'Y-m-d', strtotime($tgl_awal));
@@ -281,7 +279,7 @@ class M_galang_dana2 extends CI_Model {
 					'kabupaten_penerima'		=> $kabupaten_penerima,
 					'kecamatan_penerima'		=> $kecamatan_penerima,
 					'desa_penerima'				=> $desa_penerima,
-					'alamat_lengkap_penerima'	=> $alamat_lengkap_penerima,
+					'alamat_penerima'			=> $alamat_penerima,
 				);
 				$this->db->where('id_galang_dana2',$id)->update('galang_dana2', $data);
 				$this->session->set_flashdata('msg', 'suksesedit');
@@ -319,7 +317,7 @@ class M_galang_dana2 extends CI_Model {
 					'kabupaten_penerima'		=> $kabupaten_penerima,
 					'kecamatan_penerima'		=> $kecamatan_penerima,
 					'desa_penerima'				=> $desa_penerima,
-					'alamat_lengkap_penerima'	=> $alamat_lengkap_penerima,
+					'alamat_penerima'			=> $alamat_penerima,
 				);
 				$this->db->where('id_galangdana2',$id)->update('galang_dana2', $data);
 				$this->session->set_flashdata('msg', 'suksesedit');
