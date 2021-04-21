@@ -205,8 +205,8 @@ $menu = $uri_segments[3];
                                             <i class="fa fa-unlock-alt"></i>Edit Password
                                             </a>
                                         </li>
-                                    <?php if ($menu=="inventory_room"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                        <a href="<?php echo base_url('inventory_room'); ?>">
+                                    <?php if ($menu=="hasan_tabel"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                        <a href="<?php echo base_url('hasan_tabel'); ?>">
                                             <i class="fa fa-unlock-alt"></i>Coba Galang Dana
                                             </a>
                                         </li>
