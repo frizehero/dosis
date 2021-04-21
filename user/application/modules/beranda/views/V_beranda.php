@@ -4,7 +4,7 @@
                         <div class="slideshow-container" data-scrollax="properties: { translateY: '200px' }" >
                             <!-- slideshow-item -->
                             <div class="slideshow-item">
-                                <div class="bg"  data-bg="images/bg/a.jpg"></div>
+                                <div class="bg"  data-bg="assets/images/bg/a.jpg"></div>
                             </div>
                             <!--  slideshow-item end  -->
                             <!-- slideshow-item -->
@@ -658,5 +658,9 @@
                         </div>
                         <!-- carousel end-->
                     </section>
+                        <script type="text/javascript" src="js/jquery.min.js"></script>
+                        <script type="text/javascript" src="js/plugins.js"></script>
+                        <script type="text/javascript" src="js/scripts.js"></script>
+                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwJSRi0zFjDemECmFl9JtRj1FY7TiTRRo&amp;libraries=places&amp;callback=initAutocomplete"></script>
                     <!-- section end -->
                 </div>
