@@ -65,7 +65,7 @@ $menu = $uri_segments[3];
         <header class="main-header dark-header fs-header sticky">
             <div class="header-inner">
                 <div class="logo-holder">
-                    <a href="user-beranda-login.html"><img src="images/logo.png" alt=""></a>
+                    <a href="<?php echo base_url('beranda'); ?>"><img src="images/logo.png" alt=""></a>
                 </div>
                 <div class="header-search vis-header-search">
                     <div class="header-search-input-item">
@@ -81,8 +81,8 @@ $menu = $uri_segments[3];
                             Abdul Hasan
                         </div>
                         <ul>
-                            <li><a href="user-dashboard-donasi.html"> Dashboard</a></li>
-                            <li><a href="user-beranda-awal.html">Log Out</a></li>
+                            <li><a href="<?php echo base_url('donasi_saya'); ?>"> Dashboard</a></li>
+                            <li><a href="<?php echo base_url('login'); ?>">Log Out</a></li>
                         </ul>
                     </div>
                 <!-- nav-button-wrap--> 
