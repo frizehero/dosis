@@ -1,5 +1,29 @@
-<div class="app-main__inner" style="background-color: white;">
+  
+                <div class="content">
+                    <!--section --> 
                     
+                    <section class="parallax-section" data-scrollax-parent="true" id="sec1" style="height: 100px;">
+                        <div class="bg par-elem " data-bg="images/bg/kategori.jpg" data-scrollax="properties: { translateY: '30%' }" style="background-image: url(&quot;images/bg/kategori.jpg&quot;); transform: translateZ(0px) translateY(-4.92813%);"></div>
+                        <div class="overlay"></div>
+                        <div class="container">
+                            <div class="section-title center-align" style="margin-top: -100px;">
+                                <h2 style="font-size: 20px; color: white">Abdul Hasan</h2>
+                                 <div class="user-profile-avatar" style="width:115px; height:115px; margin-right:10px;"><img src="images/avatar/4.jpg" alt="" style="width:115px; height:115px;"></div> 
+                                 <div class="user-profile-rating clearfix">
+                                    <div class="listing-rating card-popup-rainingvis" data-starrating2="5">
+                                        <span>(37 reviews)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="sec1" style="padding-top: 25px;">
+                        <!-- container -->
+                        <div class="container">
+                            <!-- profile-edit-wrap -->
+                            <div class="profile-edit-wrap" >
+                                <div class="row">
+                                    </div>
                                     <div class="col-md-9">
                                         <!-- profile-edit-container--> 
                                         <div class="profile-edit-container">
@@ -93,18 +117,3 @@
                     <!-- section end -->
                 </div>
             </div>
-            <!-- wrapper end -->
-            <!--footer -->
-            <!--footer end  -->
-            <a class="to-top"><i class="fa fa-angle-up"></i></a>
-        </div>
-        <!-- Main end -->
-        <!--=============== scripts  ===============-->
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="js/plugins.js"></script>
-        <script type="text/javascript" src="js/scripts.js"></script>   
-    </body>
-
-<!-- Mirrored from citybook.kwst.net/dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Mar 2021 07:31:49 GMT -->
-</html>
-                </div>
