@@ -9,7 +9,7 @@ class Galang_dana extends MX_Controller {
 		// model
      $this->load->helper(array('url','html'));
 		 $this->load->model('M_galang_dana');
-     $this->load->database();
+     $this->load->database('galang_dana');
 		 $this->load->model('login/m_session');
 	}
 

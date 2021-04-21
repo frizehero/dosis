@@ -9,6 +9,7 @@ class Inventory_room extends MX_Controller {
 		// model
 		 $this->load->model('M_inventory_room');
 		 $this->load->model('login/m_session');
+
 	}
 
 	
@@ -18,7 +19,8 @@ class Inventory_room extends MX_Controller {
 		$data = array(
 			'namamodule' 	=> "inventory_room",
 			'namafileview' 	=> "V_inventory_room",
-			'tampil'		=> $this->M_inventory_room->tampil(),
+			'tampil'		=> $this->donasi_saya->tampil(),
+
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
@@ -68,4 +70,5 @@ class Inventory_room extends MX_Controller {
 	}
 	
 }
+
  

@@ -7,7 +7,7 @@ class Pembayaran extends MX_Controller {
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('m_pembayaran');
+		 $this->load->model('M_pembayaran');
 		 $this->load->model('login/m_session');
 	}
 
@@ -34,19 +34,19 @@ class Pembayaran extends MX_Controller {
 
 	function tambah()
 	{
-		$this->m_pembayaran->tambah();
+		$this->M_pembayaran->tambah();
 		redirect('pembayaran');
 	}
 
 	function edit()
 	{
-		$this->m_pembayaran->edit();
+		$this->M_pembayaran->edit();
 		redirect('pembayaran');
 	}
 
 	function hapus($id)
 	{
-		$this->m_pembayaran->hapus($id);
+		$this->M_pembayaran->hapus($id);
 		redirect('pembayaran');
 	}
 
@@ -55,7 +55,7 @@ class Pembayaran extends MX_Controller {
 		$data = array(
 			'namamodule' 	=> "pembayaran",
 			'namafileview' 	=> "V_pembayaran",
-			'tampil'		=> $this->m_pembayaran->cari(),
+			'tampil'		=> $this->M_pembayaran->cari(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}

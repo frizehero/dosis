@@ -1,8 +1,4 @@
 <div class="content">
-                    
-            <div id="wrapper">
-                <!-- content -->
-                <div class="content">
                     <!--section -->
                     <!-- section end -->
                     <!--section -->   
@@ -224,7 +220,7 @@
                                                         </div>
                                                     </br>
                                                     <hr>
-                                                        <a class="trs-btn" href="<?php echo base_url('pembayaran'); ?>" style="padding: 15px 105px 15px 102px; margin-bottom: -100;">Donasi Sekarang </a>
+                                                        <a class="trs-btn" href="user-pembayaran-donasi.html" style="padding: 15px 105px 15px 102px; margin-bottom: -100;"> Donasi Sekarang </a>
                                                         <p style="margin-right: 240px; margin-top: 20px;"><b>20</b> <i> hari tersisa</i>  </p>
                                                         <div class="distance-title"> 
                                                             <b>Rp 12.820,000</b> Terkumpul   <span style="padding-left: 120px;">1</span> %
@@ -299,30 +295,3 @@
                     <div class="limit-box fl-wrap"></div>
                     <!-- section end -->
                 </div>
-                <!-- content end -->
-            </div>
-            <!-- wrapper end -->
-            <!--footer -->
-            <!--footer end  -->
-            <!--register form -->
-            <div class="main-register-wrap modal">
-                <div class="main-overlay"></div>
-                <div class="main-register-holder">
-                    <div class="main-register fl-wrap">
-                        <div class="close-reg"><i class="fa fa-times"></i></div>
-                        <div id="tabs-container">
-                            <div class="tab">
-                                <div id="tab-1" class="tab-content">
-                                    <div class="custom-form">
-                                        <form method="post"  name="registerform">
-                                            <label>Alasan Mereport Postingan Ini   </label>
-                                            <input name="email" type="text"   onClick="this.select()" value=""> 
-                                            <button type="submit"  class="log-submit-btn"><span>Kirim</span></button> 
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
