@@ -31,7 +31,7 @@ class Login extends MX_Controller {
 		} else {
 
 			// sudah login
-			redirect('donasi_saya');
+			redirect('beranda');
 		}
 	}
 
@@ -53,7 +53,7 @@ class Login extends MX_Controller {
 			// flashdata
 			$this->session->set_flashdata('msg', 'greeting');
 
-			redirect('donasi_saya');
+			redirect('beranda');
 		} else { // gagal login
 
 			$this->session->set_flashdata('msg', 'loginError');
