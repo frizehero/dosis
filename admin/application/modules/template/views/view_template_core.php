@@ -689,8 +689,8 @@ $menu = $uri_segments[3];
                                         </a>
                                     </li>
                             
-                            <?php if ($menu=="galang_dana"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('galang_dana'); ?>">
+                            <?php if ($menu=="galang_dana2"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('galang_dana2'); ?>">
                                        <i class="metismenu-icon fa fa-fw"><i class="fa fa-fw" aria-hidden="true" title="Copy to use user-circle"></i></i>Galang Dana
                                         </a>
                                     </li>

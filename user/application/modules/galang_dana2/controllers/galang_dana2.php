@@ -1,13 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Form_donasi extends MX_Controller {
+class galang_dana2 extends MX_Controller {
 
 	function __construct()
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('m_form_donasi');
+		 $this->load->model('M_galang_dana2');
 		 $this->load->model('login/m_session');
 	}
 
@@ -17,15 +17,9 @@ class Form_donasi extends MX_Controller {
 	{
 
 		$data = array(
-			'namamodule' 	=> "form_donasi",
-			'namafileview' 	=> "V_form_donasi",
-			'tampil'		=> $this->m_form_donasi->tampil(),
-			'totalaset'		=> $this->m_form_donasi->totalaset(),
-			'totalasetrusak'	=> $this->m_form_donasi->totalasetrusak(),
-			'totalasetkurangbaik'		=> $this->m_form_donasi->totalasetkurangbaik(),
-
-			'totalnilaiaset'		=> $this->m_form_donasi->totalnilaiaset(),
-			'totalnilaiasetrusak'		=> $this->m_form_donasi->totalnilaiasetrusak(),
+			'namamodule' 	=> "galang_dana2",
+			'namafileview' 	=> "V_galang_dana2",
+			'tampil'		=> $this->M_galang_dana2->tampil(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
@@ -36,10 +30,8 @@ class Form_donasi extends MX_Controller {
 
 	
 		$data = array(
-			'namamodule' 	=> "form_donasi",
-			'namafileview' 	=> "V_form_donasi_tambah",
-			'getmerk'		=> $this->m_form_donasi->getmerk(),
-			'getruang'		=> $this->m_form_donasi->getruang(),
+			'namamodule' 	         => "galang_dana2",
+			'namafileview' 	       => "V_galang_dana2_tambah",
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
@@ -47,8 +39,8 @@ class Form_donasi extends MX_Controller {
 
 	function tambah()
 	{
-		$this->m_form_donasi->tambah();
-		redirect('form_donasi');
+		$this->M_galang_dana2->tambah();
+		redirect('galang_dana2');
 	}
 
 		// Halaman Edit
@@ -56,11 +48,9 @@ class Form_donasi extends MX_Controller {
 	{
 
 		$data = array(
-			'namamodule' 	=> "form_donasi",
-			'namafileview' 	=> "V_form_donasi",
-			'tampil'		=> $this->m_form_donasi->tampiledit($id),
-			'getmerk'		=> $this->m_form_donasi->getmerk(),
-			'getruang'		=> $this->m_form_donasi->getruang(),
+			'namamodule' 	=> "galang_dana2",
+			'namafileview' 	=> "V_galang_dana2_edit",
+			'tampil'		=> $this->M_galang_dana2->tampiledit($id),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
@@ -68,15 +58,15 @@ class Form_donasi extends MX_Controller {
 
 	function edit()
 	{
-		$this->m_form_donasi->edit();
-		redirect('form_donasi');
+		$this->M_galang_dana2->edit();
+		redirect('galang_dana2');
 	}
 
 	
 	function hapus()
 	{
-		$this->m_form_donasi->hapus();
-		redirect('form_donasi');
+		$this->M_galang_dana2->hapus();
+		redirect('galang_dana2');
 	}
 	
 
@@ -99,7 +89,7 @@ class Form_donasi extends MX_Controller {
 		  {
 		   $query = $this->input->post('query');
 		  }
-		  $data = $this->m_form_donasi->fetch_data($query);
+		  $data = $this->m_inventory_peralatan->fetch_data($query);
 		  $output .= '
 
 
@@ -244,7 +234,7 @@ class Form_donasi extends MX_Controller {
     $excel->getActiveSheet()->getStyle('V3')->applyFromArray($style_col);
     $excel->getActiveSheet()->getStyle('W3')->applyFromArray($style_col);
     // Panggil function view yang ada di SiswaModel untuk menampilkan semua data siswanya
-    $peralatanX = $this->m_form_donasi->tampil();
+    $peralatanX = $this->m_inventory_peralatan->tampil();
     $no = 1; // Untuk penomoran tabel, di awal set dengan 1
     $numrow = 4; // Set baris pertama untuk isi tabel adalah baris ke 4
     foreach($peralatanX as $data){ // Lakukan looping pada variabel siswa

@@ -21,7 +21,7 @@
 
  <?php tampilnotif()?>
  <form action="<?php echo base_url('galang_dana2/tambah') ?>" method="POST" enctype="multipart/form-data">
-                    <div class="tab-content">
+                        <div class="tab-content">
                         <div class="tab-pane tabs-animation fade show active" id="tab-content-0" role="tabpanel">
                             <div class="row">
                                 <div class="col-lg-12 col-md-12">
@@ -50,7 +50,7 @@
 
                                                 <div class="form-wizard-content">
                                                     <div id="step-1">
-                                                        <div class="form-row">                                                          
+                                                        <div class="form-row">                                                            
                                                             <div class="col-md-6">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleAddress">Nama</label>
@@ -248,13 +248,14 @@
                                                         </div>
                                                                                                                                               
                                                     </div>
-
                                                     <div id="step-2">
                                                         <div id="accordion" class="accordion-wrapper mb-3">
                                                             <div class="card">             
                                                                 <div data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne" class="collapse show">
-                                                                    <div class="card-body">                     
-                                                                        <div class="form-row">
+                                                                    <div class="card-body">                                                
+                                                                                                                                   
+                                                                        
+                                                                        <div class="form-row">                                                            
                                                                             <div class="col-md-6">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Nama Penerima</label>
@@ -267,7 +268,7 @@
                                                                                     <input name="alamat_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                                 </div>
                                                                             </div>
-                                                                        </div>
+                                                                        </div>                                                        
                                                                         <div class="form-row">
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
@@ -285,17 +286,16 @@
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
-                                                                                    <label for="exampleAddress">Nama Sekolah</label>
+                                                                                    <slabel for="exampleAddress">Nama Sekolah</label>
                                                                                     <input name="sekolah_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                                 </div>
                                                                             </div>
-
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Kelas</label>
                                                                                     <input name="kelas_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                                 </div>
-                                                                            </div>
+                                                                            </div>                     
                                                                         </div>
                                                                         <div class="form-row">
                                                                             <div class="col-md-4">
@@ -337,6 +337,7 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
+
                                                                         <div class="form-row">
                                                                             <div class="col-md-6">
                                                                                 <div class="position-relative form-group">
@@ -358,6 +359,7 @@
                                                                                 </div>
                                                                             </div> 
                                                                         </div>
+                                                                           
                                                                         <div class="form-row">
                                                                             <div class="col-md-12">
                                                                                 <div class="position-relative form-group">
@@ -366,6 +368,7 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
+                                                                                                                                                    <
                                                                         <div class="form-row">
                                                                             <div class="col-md-6">    
                                                                                 <div class="position-relative form-group">
@@ -396,6 +399,8 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
+
+
                                                                         <div class="form-row">
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
@@ -416,6 +421,7 @@
                                                                                 </div>
                                                                             </div> 
                                                                         </div>
+                                                                        </br>
                                                                         <div class="form-row">
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
@@ -452,7 +458,7 @@
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleEmail11" class="">Desa</label>
-                                                                                        <select name="desa_penerima" class="multiselect-dropdown form-control">
+                                                                                        <select name="kode_pos_penerima" class="multiselect-dropdown form-control">
 
                                                                                         </select>
                                                                                 </div>
@@ -460,11 +466,12 @@
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Kode Pos</label>
-                                                                                    <input name="kode_pos_" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                                    <input name="judul_donasi" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                                                                     
                                                                         </div>
+
                                                                         <div class="form-row">
                                                                             <div class="col-md-12">
                                                                                 <div class="position-relative form-group">
@@ -474,6 +481,7 @@
                                                                             </div>
  
                                                                         </div>
+
                                                                         <div class="form-row">
                                                                             <div class="col-md-6">
                                                                                 <div class="position-relative form-group">
@@ -524,14 +532,12 @@
                                                                                 </div>
                                                                             </div>
  
-                                                                        </div>                                                                                                                                            
+                                                                        </div>  
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-
-                                                
                                                     <div id="step-3">
                                                         <div class="no-results">
                                                             <div class="swal2-icon swal2-success swal2-animate-success-icon">
