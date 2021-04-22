@@ -22,6 +22,8 @@ class Galang_dana extends MX_Controller {
       
     $data['path'] = base_url('assets');
     
+    $data['provinsi']=$this->m_wilayah->get_all_provinsi();
+    
     $this->load->view('V_galang_dana_tambah', $data);
 
     echo Modules::run('template/tampilCore', $data);
