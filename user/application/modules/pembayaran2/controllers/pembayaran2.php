@@ -1,15 +1,14 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Inventory_room extends MX_Controller {
+class Pembayaran2 extends MX_Controller {
 
 	function __construct()
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('M_inventory_room');
+		 $this->load->model('M_pembayaran2');
 		 $this->load->model('login/m_session');
-
 	}
 
 	
@@ -17,10 +16,9 @@ class Inventory_room extends MX_Controller {
 	function index()
 	{
 		$data = array(
-			'namamodule' 	=> "inventory_room",
-			'namafileview' 	=> "V_inventory_room",
-			'tampil'		=> $this->donasi_saya->tampil(),
-
+			'namamodule' 	=> "pembayaran2",
+			'namafileview' 	=> "V_pembayaran2",
+			'tampil'		=> $this->M_pembayaran2->tampil(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
@@ -29,10 +27,10 @@ class Inventory_room extends MX_Controller {
 	function tambahview()
 	{
 		$data = array(
-			'namamodule' 	=> "inventory_room",
-			'namafileview' 	=> "V_room_tambah",
+			'namamodule' 	=> "pembayaran2",
+			'namafileview' 	=> "V_pembayaran2_tambah",
 		);
-		echo Modules::run('template/tampilBeranda', $data);
+		echo Modules::run('template/tampilCore', $data);
 	}
 
 		// Halaman Edit
@@ -70,5 +68,4 @@ class Inventory_room extends MX_Controller {
 	}
 	
 }
-
  

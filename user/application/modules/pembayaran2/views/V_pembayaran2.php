@@ -5,15 +5,14 @@
                                     <div class="page-title-icon">
                                         <i class="pe-7s-medal icon-gradient bg-tempting-azure"></i>
                                     </div>
-                                    <div>Data Ruangan
-                                        <div class="page-title-subheading">Halaman Manajemen Data Ruangan</div>
+                                    <div>Pembayaran
                                     </div>
                                 </div>
                                 <div class="page-title-actions">
 
                                 <a href="<?php echo base_url('inventory_peralatan/tambahview'); ?>" class="mb-2 mr-2 btn btn-shadow btn-warning">Halaman Input</a>
                                   
-                                  <a href="<?php echo base_url('inventory_room/tambahview'); ?>" class="mb-2 mr-2 btn btn-shadow btn-success">Tambah Data</a>
+                                  <a href="<?php echo base_url('pembayaran2/tambahview'); ?>" class="mb-2 mr-2 btn btn-shadow btn-success">Tambah Data</a>
 
                                 </div>    </div>
                         </div>
@@ -29,10 +28,13 @@
                                     <tr>
                                         <th>Detail</th>
                                         <th>No</th>
-                                        <th width="20%">Kode Ruangan</th>
-                                        <th width="20%">Nama Ruangan</th>
-                                        <th>Penanggung Jawab</th>
-                                        <th>Keterangan</th>
+                                        <th width="20%">Nominal Donasi</th>
+                                        <th width="20%">Nama Lengkap</th>
+                                        <th>Tanggal Pembayaran</th>
+                                        <th>Nama Rekening</th>
+                                        <th>No.Rekening</th>
+                                        <th>Bukti Pembayaran</th>
+                                        <th>Pesan dan Kesan</th>
                                         <th>Opsi</th>
                                        
                                     </tr>
@@ -48,12 +50,15 @@
                                             <i class="fa fa-search fa-w-16 fa-spin "></i>
                                             </button></td>
                                         <td><?php echo $no;?></td>
-                                        <td><?php echo $rowP->kode_room;?></td>
-                                        <td><?php echo $rowP->nama_room;?></td>
-                                        <td><?php echo $rowP->pj_room;?></td>
-                                        <td><?php echo $rowP->ket_room;?></td>
+                                        <td><?php echo $rowP->nominal_donasi;?></td>
+                                        <td><?php echo $rowP->nama_lengkap;?></td>
+                                        <td><?php echo $rowP->tgl_pembayaran;?></td>
+                                        <td><?php echo $rowP->nama_rekening;?></td>
+                                        <td><?php echo $rowP->no_rekening;?></td>
+                                        <td><?php echo $rowP->bukti_pembayaran;?></td>
+                                        <td><?php echo $rowP->pesan_kesan;?></td>
                                         <td>
-                                            <a href="<?php echo base_url('inventory_room/editview/'. encrypt_url($rowP->id_inv_room)); ?>" class="btn btn-primary">
+                                            <a href="<?php echo base_url('pembayaran 2/editview/'. encrypt_url($rowP->id_inv_room)); ?>" class="btn btn-primary">
                                             <i class="fa fa-pen fa-w-16"></i>
                                             </a>
 
