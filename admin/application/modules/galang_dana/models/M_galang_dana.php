@@ -7,17 +7,23 @@ class M_galang_dana extends CI_Model {
 		parent::__construct();
 	}
 	
-	
+	function get_all_provinsi() {
+		$this->db->select('*');
+		$this->db->from('wilayah_provinsi');
+		$query = $this->db->get();
+		
+		return $query->result();
+	}
 
 	function tampil()
 	{
 
 		$this->db->select('*');
-		$this->db->from('galang_dana_new');
-		$this->db->join('wilayah_provinsi', 'galang_dana_new.wilayah_provinsi = wilayah_provinsi.id');
-		$this->db->join('wilayah_kabupaten', 'galang_dana_new.wilayah_kabupaten = wilayah_kabupaten.id');
-		$this->db->join('wilayah_kecamatan', 'galang_dana_new.wilayah_kecamatan = wilayah_kecamatan.id');
-		$this->db->join('wilayah_desa', 'galang_dana_new.wilayah_desa = wilayah_desa.id_');
+		$this->db->from('galang_dana');
+		$this->db->join('wilayah_provinsi', 'galang_dana.wilayah_provinsi = wilayah_provinsi.id');
+		$this->db->join('wilayah_kabupaten', 'galang_dana.wilayah_kabupaten = wilayah_kabupaten.id');
+		$this->db->join('wilayah_kecamatan', 'galang_dana.wilayah_kecamatan = wilayah_kecamatan.id');
+		$this->db->join('wilayah_desa', 'galang_dana.wilayah_desa = wilayah_desa.id_');
 		$query = $this->db->get();
 
 
@@ -81,7 +87,7 @@ class M_galang_dana extends CI_Model {
 		$wa_pembuka 				= $this->input->post('wa_pembuka');
 		$email_pembuka 				= $this->input->post('email_pembuka');
 		$identitas_pembuka 			= $this->input->post('identitas_pembuka');
-		$wilayah_provinsi		 			= $this->input->post('wilayah_provinsi');
+		$wilayah_provinsi		 			= $this->input->post('provinsi');
 		$wilayah_kabupaten 					= $this->input->post('wilayah_kabupaten');
 		$wilayah_kecamatan 					= $this->input->post('wilayah_kecamatan');
 		$wilayah_desa	 				= $this->input->post('wilayah_desa');
@@ -140,7 +146,7 @@ class M_galang_dana extends CI_Model {
 					'wa_pembuka'				=> $wa_pembuka,
 					'email_pembuka'				=> $email_pembuka,
 					'identitas_pembuka' 		=> $gbr['file_name'],
-					'wilayah_provinsi'					=> $wilayah_provinsi,
+					'wilayah_provinsi'					=> $provinsi,
 					'wilayah_kabupaten'					=> $wilayah_kabupaten,
 					'wilayah_kecamatan'					=> $wilayah_kecamatan,
 					'wilayah_desa'					=> $wilayah_desa,
@@ -184,7 +190,7 @@ class M_galang_dana extends CI_Model {
 					'wa_pembuka'				=> $wa_pembuka,
 					'email_pembuka'				=> $email_pembuka,
 					'identitas_pembuka' 		=> 'kosong1.png',
-					'wilayah_provinsi'					=> $wilayah_provinsi,
+					'wilayah_provinsi'					=> $provinsi,
 					'wilayah_kabupaten'					=> $wilayah_kabupaten,
 					'wilayah_kecamatan'					=> $wilayah_kecamatan,
 					'wilayah_desa'					=> $wilayah_desa,

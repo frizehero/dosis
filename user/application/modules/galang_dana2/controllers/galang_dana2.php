@@ -33,7 +33,7 @@ class galang_dana2 extends MX_Controller {
 			'namamodule' 	         => "galang_dana2",
 			'namafileview' 	       => "V_galang_dana2_tambah",
 		);
-		echo Modules::run('template/tampilCore', $data);
+		echo Modules::run('template/tampilBeranda', $data);
 	}
 
 
