@@ -49,8 +49,8 @@ class Pembayaran2 extends MX_Controller {
 	function tambah()
 	{
 
-		$this->M_inventory_room->tambah();
-		redirect('inventory_room');
+		$this->M_pembayaran2->tambah();
+		redirect('pembayaran2');
 		
 		//redirect('inventory_room');
 	}

@@ -1,4 +1,6 @@
-<div class="content">
+<?php tampilnotif()?>
+<form action="<?php echo base_url('pembayaran2/tambah') ?>" method="POST" enctype="multipart/form-data">
+                <div class="content">
                     <div class="col-md-7"  style="padding: 30px 50px 10px 100px;" >
                         <!-- profile-edit-container--> 
                         <div class="profile-edit-container add-list-container">
@@ -16,7 +18,7 @@
                                 <input name="nama_lengkap" placeholder="" type="text"class="form-control">
                                 <div class="row">
                                     <!--col --> 
-                                    <div class="col-md-5">
+                                    <div class="col-md-6">
                                         <div class="add-list-media-header">
                                             <label class="radio inline"> 
                                             <input type="radio" name="gender">
@@ -118,12 +120,12 @@
                         <div class="profile-edit-container add-list-container"> 
                             <div class="custom-form">
                                 <label><b>Pesan dan Kesan :</b></label>
-                                <input name="pesan_kesan" placeholder="" type="text"class="form-control">
+                                <textarea cols="40" rows="3" placeholder="" input name="pesan_kesan" type="text"class="form-control"></textarea>
                                 <!-- Checkboxes -->
                             </div>
                         </div>
                         <div class="profile-edit-container add-list-container">
-                            <a class="show-reg-form modal-open" style="background-color: rgb(86, 197, 248); padding: 10px; margin-right: 280px; margin-top: -50px;" class="add-list"><i class="fa fa-check"></i>DONASI</a>
+                            <button class="btn  big-btn  color-bg flat-btn" type="submit" >DONASI<i class="fa fa-angle-right"></i></button>
                         </div>
                     </div>
                     <div class="col-md-5"  style="padding: 30px 50px 10px 30px;" >

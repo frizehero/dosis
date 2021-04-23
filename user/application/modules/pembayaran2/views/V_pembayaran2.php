@@ -5,7 +5,8 @@
                                     <div class="page-title-icon">
                                         <i class="pe-7s-medal icon-gradient bg-tempting-azure"></i>
                                     </div>
-                                    <div>Pembayaran
+                                    <div>Data Ruangan
+                                        <div class="page-title-subheading">Halaman Manajemen Data Ruangan</div>
                                     </div>
                                 </div>
                                 <div class="page-title-actions">
@@ -54,11 +55,11 @@
                                         <td><?php echo $rowP->nama_lengkap;?></td>
                                         <td><?php echo $rowP->tgl_pembayaran;?></td>
                                         <td><?php echo $rowP->nama_rekening;?></td>
-                                        <td><?php echo $rowP->no_rekening;?></td>
-                                        <td><?php echo $rowP->bukti_pembayaran;?></td>
-                                        <td><?php echo $rowP->pesan_kesan;?></td>
-                                        <td>
-                                            <a href="<?php echo base_url('pembayaran 2/editview/'. encrypt_url($rowP->id_inv_room)); ?>" class="btn btn-primary">
+                                        <td><?php echo $rowP->nama_rekening;?></td>
+                                        <td><?php echo $rowP->nama_rekening;?></td>
+                                        <td><?php echo $rowP->nama_rekening;?></td>
+
+                                            <a href="<?php echo base_url('inventory_room/editview/'. encrypt_url($rowP->id_inv_room)); ?>" class="btn btn-primary">
                                             <i class="fa fa-pen fa-w-16"></i>
                                             </a>
 
