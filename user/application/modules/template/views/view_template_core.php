@@ -196,7 +196,7 @@ $menu = $uri_segments[3];
                                 <h3>Profile</h3>
                                 <ul>
                                     <?php if ($menu=="edit_profile"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                        <a href="<?php echo base_url('edit_profile'); ?>">
+                                        <a href="<?php echo base_url('user_edit_profile'); ?>">
                                             <i class="fa fa-user-o"></i>Edit profile
                                             </a>
                                         </li>
@@ -205,8 +205,8 @@ $menu = $uri_segments[3];
                                             <i class="fa fa-unlock-alt"></i>Edit Password
                                             </a>
                                         </li>
-                                    <?php if ($menu=="galang_dana2"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                        <a href="<?php echo base_url('galang_dana2'); ?>">
+                                    <?php if ($menu=="hasan_tabel"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                        <a href="<?php echo base_url('hasan_tabel'); ?>">
                                             <i class="fa fa-unlock-alt"></i>Coba Galang Dana
                                             </a>
                                         </li>
