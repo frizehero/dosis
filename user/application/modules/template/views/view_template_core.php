@@ -205,9 +205,9 @@ $menu = $uri_segments[3];
                                             <i class="fa fa-unlock-alt"></i>Edit Password
                                             </a>
                                         </li>
-                                    <?php if ($menu=="hasan_tabel"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                        <a href="<?php echo base_url('hasan_tabel'); ?>">
-                                            <i class="fa fa-unlock-alt"></i>Coba Galang Dana
+                                    <?php if ($menu=="galang_dana2"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                        <a href="<?php echo base_url('galang_dana2'); ?>">
+                                            <i class="fa fa-unlock-alt"></i>Galang Dana
                                             </a>
                                         </li>
                                 </ul>
