@@ -1,6 +1,10 @@
 
 
 
+
+
+
+
 <div class="app-main__inner">
                         <div class="app-page-title">
                             <div class="page-title-wrapper">
@@ -105,19 +109,19 @@
                                                             <div class="col-md-4">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleAddress">No Rekening</label>
-                                                                    <input name="telepon_pembuka" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                    <input name="no_rekening" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                 </div>
                                                             </div>  
                                                             <div class="col-md-4">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleAddress">No Telepon</label>
-                                                                    <input name="wa_pembuka" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                    <input name="telepon_pembuka" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleAddress">No Whatsapp</label>
-                                                                    <input name="no_wa" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                    <input name="wa_pembuka" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -125,19 +129,19 @@
                                                             <div class="col-md-4">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleAddress">Instagram</label>
-                                                                    <input name="telepon_pembuka" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                    <input name="instagram" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                 </div>
                                                             </div>  
                                                             <div class="col-md-4">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleAddress">Facebook</label>
-                                                                    <input name="wa_pembuka" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                    <input name="facebook" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleAddress">Twitter</label>
-                                                                    <input name="email_pembuka" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                    <input name="twitter" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -321,19 +325,19 @@
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Instagram</label>
-                                                                                    <input name="telepon_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                                    <input name="instagram" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                                 </div>
                                                                             </div>  
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Facebook</label>
-                                                                                    <input name="wa_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                                    <input name="facebook" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Twitter</label>
-                                                                                    <input name="email_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                                    <input name="twitter" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -400,13 +404,13 @@
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Tanggal Mulai</label>
-                                                                                    <input type="text" class="form-control" name="tgl_awal" data-toggle="datepicker"/>
+                                                                                    <input type="date" class="form-control" name="tgl_awal">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Tanggal Berakhir</label>
-                                                                                    <input type="text" class="form-control" name="tgl_akhir" data-toggle="datepicker"/>
+                                                                                    <input type="date" class="form-control" name="tgl_akhir">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-4">
@@ -469,7 +473,7 @@
                                                                             <div class="col-md-12">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Deskripsi Peristiwa</label>
-                                                                                    <textarea rows="1" name="deskripsi_penerima" class="form-control autosize-input" style="height: 80px;"></textarea>
+                                                                                    <textarea rows="1" name="deskripsi_peristiwa" class="form-control autosize-input" style="height: 80px;"></textarea>
                                                                                 </div>
                                                                             </div>
  

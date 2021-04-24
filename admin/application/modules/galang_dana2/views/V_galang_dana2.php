@@ -53,7 +53,7 @@
                                             <div class="h5 modal-title">
                                                 <div class="text-right">
                                                     <h6>
-                                                        10/10/2020
+                                                        <div ><?php echo $rowP->tgl_awal;?></div>
                                                     </h6>
                                                 </div>
                                                 <h5 class="menu-header-title">

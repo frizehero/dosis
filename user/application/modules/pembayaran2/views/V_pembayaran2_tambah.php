@@ -9,13 +9,13 @@
                             </div>
                             <div class="custom-form">
                                 <label><b>Masukan Nominal Donasi Anda</b> <i class="fa fa-money"></i></label>
-                                <input name="nominal_donasi" placeholder="" type="text"class="form-control">
+                                <input name="nominal_donasi" placeholder="Minim 5.000" type="text"class="form-control">
                                 <div class="row">
                                 </div>
                             </div>
                             <div class="custom-form">
                                 <label><b>Nama Lengkap</b><i class="fa fa-user-o"></i></label>
-                                <input name="nama_lengkap" placeholder="" type="text"class="form-control">
+                                <input name="nama_lengkap" placeholder="Sandra Lidya" type="text"class="form-control">
                                 <div class="row">
                                     <!--col --> 
                                     <div class="col-md-6">
@@ -29,8 +29,8 @@
                                 </div>
                                 <label></label>
                                 <div class="act-widget fl-wrap">
-                                        <label><i class="fa fa-calendar-check-o"></i>  </label>
-                                        <input type="text" placeholder="Date" class="datepicker picker-input" data-large-mode="true" data-large-default="true" value="" data-id="datedropper-0" readonly="">
+                                    <label><b>Tanggal Pembayaran</b><i></i></label>
+                                    <input name="tgl_pembayaran" placeholder="" type="date"class="form-control">        
                                 </div>
                                 <div class="act-widget fl-wrap">
                                     <label><b>Pilih Bank</b></label>
@@ -81,9 +81,9 @@
                                 </div>
                                 <label></label>
                                 <label><b>Nama Rekening</b><i class="fa fa-money"></i></label>
-                                <input name="nama_rekening" placeholder="" type="text"class="form-control">
+                                <input name="nama_rekening" placeholder="Sandra Fitriani" type="text"class="form-control">
                                 <label><b>No.Rekening</b><i class="fa fa-money"></i></label>
-                                <input name="no_rekening" placeholder="" type="text"class="form-control">
+                                <input name="no_rekening" placeholder="731 025 2527" type="text"class="form-control">
                             </div>
                         </div>
                         <!-- profile-edit-container end-->                                        
@@ -97,13 +97,11 @@
                                     <!--col --> 
                                     <div class="col-md-6">
                                         <div class="add-list-media-wrap">
-                                            <input name="gambar" id="exampleFile" type="file" class="form-control-file">
                                             <form class="fuzone">
                                                 <div class="fu-text">
-                                                    <span><i class="fa fa-picture-o"></i> Click here or drop files to upload</span>
+                                                     <span><i class="fa fa-picture-o"></i> Pilih salah satu foto untuk bukti pembayaran ini</span>
+                                                    <input name="foto" type="file" class="form-control-file">
                                                 </div>
-                                                <input type="file" class="upload">
-                                            </form>
                                         </div>
                                     </div>
                                     <!--col end--> 

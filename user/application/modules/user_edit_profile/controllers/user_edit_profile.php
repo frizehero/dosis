@@ -28,7 +28,7 @@ class User_edit_profile extends MX_Controller {
 	{
 		$data = array(
 			'namamodule' 	=> "user_edit_profile",
-			'namafileview' 	=> "V_user_edit_profile",
+			'namafileview' 	=> "V_user_edit_profile_tambah",
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
@@ -50,7 +50,7 @@ class User_edit_profile extends MX_Controller {
 	{
 
 		$this->M_user_edit_profile->tambah();
-		redirect('User_edit_profile');
+		redirect('user_edit_profile');
 		
 		//redirect('user_edit_profile');
 	}
@@ -58,13 +58,13 @@ class User_edit_profile extends MX_Controller {
 	function edit()
 	{
 		$this->M_user_edit_profile->edit();
-		redirect('User_edit_profile');
+		redirect('user_edit_profile');
 	}
 
 	function hapus()
 	{
 		$this->M_user_edit_profile->hapus();
-		redirect('User_edit_profile');
+		redirect('user_edit_profile');
 	}
 	
 }
