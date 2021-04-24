@@ -23,7 +23,7 @@ class M_galang_dana2 extends CI_Model {
 
 		$this->db->select('*');
 		$this->db->from('galang_dana2');
-		$this->db->where('id_galangdana2',$idnya);
+		$this->db->where('id_galang_dana2',$idnya);
 		$query = $this->db->get();
 
 
@@ -86,7 +86,7 @@ class M_galang_dana2 extends CI_Model {
 
 		$this->load->library('upload');
 		$nmfile = "file_".time();
-		$config['upload_path']		= 'assets/identitas_pembuka/pembuka/';
+		$config['upload_path']		= 'assets/images/galangdana/';
 		$config['allowed_types']	= 'gif|jpg|png|jpeg';
 		$config['max_size']			= 5120;
 		$config['max_width']		= 4300;
@@ -95,9 +95,9 @@ class M_galang_dana2 extends CI_Model {
 		
 		$this->upload->initialize($config);
 		
-		if($_FILES['gambar']['name'])
+		if($_FILES['foto']['name'])
         {
-            if ($this->upload->do_upload('gambar'))
+            if ($this->upload->do_upload('foto'))
             {
 				$gbr = $this->upload->data();
 				$data = array(
@@ -162,7 +162,7 @@ class M_galang_dana2 extends CI_Model {
 					'instagram'					=> $instagram,
 					'facebook'					=> $facebook,
 					'twitter'					=> $twitter,
-					'identitas_pembuka' 		=> 'kosong1.png',
+					'identitas_pembuka' 		=> 'kosong1.jpeg',
 					'provinsi'					=> $provinsi,
 					'kota'						=> $kota,
 					'kelurahan'					=> $kelurahan,
@@ -245,7 +245,7 @@ class M_galang_dana2 extends CI_Model {
 
 		$this->load->library('upload');
 		$nmfile = "file_".time();
-		$config['upload_path']		= 'assets/identitas/pembuka';
+		$config['upload_path']		= 'assets/images/galangdana';
 		$config['allowed_types']	= 'gif|jpg|png|jpeg';
 		$config['max_size']			= 5120;
 		$config['max_width']		= 4300;
@@ -254,9 +254,9 @@ class M_galang_dana2 extends CI_Model {
 		
 		$this->upload->initialize($config);
 		
-		if($_FILES['gambar']['name'])
+		if($_FILES['foto']['name'])
         {
-            if ($this->upload->do_upload('gambar'))
+            if ($this->upload->do_upload('foto'))
             {
 				$gbr = $this->upload->data();
 				$data = array(

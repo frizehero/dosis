@@ -41,7 +41,7 @@
                         <div class="card-hover profile-responsive card-border border-success mb-3 card">
                         <div class="dropdown-menu-header">
                             <div class="wrapper rounded"></div>
-                            <img src="assets/images/Peristiwa/2.jpg" style="width: 305px; height:210px;">   
+                            <img src="<?php echo base_url() ?>assets/images/galangdana/<?php echo $rowP->identitas_pembuka;?>" style="width: 305px; height:210px;">   
                         </div>
                         <div class="p-0 card-body">
                             

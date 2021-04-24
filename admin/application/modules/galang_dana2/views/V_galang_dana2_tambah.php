@@ -149,11 +149,11 @@
                                                         <div class="form-row">
                                                             <div class="col-md-6">
                                                                 <div class="position-relative form-group">
-                                                                    <label name="nobpkb" for="exampleFile" class="">Identitas( KTP/Kartu Pelajar )</label>
+                                                                    <label name="Identitas_pembuka" for="exampleFile" class="">Identitas( KTP/Kartu Pelajar )</label>
                                                                     <div class="card mb-3 bg-primary widget-content">
                                                                         <div class="widget-content-wrapper">
                                                                             <div class="widget-content-left">
-                                                                                <input name="gambar" id="exampleFile" type="file" class="form-control-file">
+                                                                                <input name="foto" id="exampleFile" type="file" class="form-control-file">
                                                                                 <small class="form-text text-light">Gunakan File format PNG/JPG Max 10 MB</small>
 
                                                                                 
@@ -348,7 +348,7 @@
                                                                                     <div class="card mb-3 bg-primary widget-content">
                                                                                         <div class="widget-content-wrapper">
                                                                                             <div class="widget-content-left">
-                                                                                                <input name="gambar" id="exampleFile" type="file" class="form-control-file">
+                                                                                                <input name="foto" type="file" class="form-control-file">
                                                                                                 <small class="form-text text-light">Gunakan File format PNG/JPG Max 10 MB</small>
                                                                                             </div>
                                                                                         </div>
