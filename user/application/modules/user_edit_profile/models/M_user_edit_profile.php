@@ -36,7 +36,7 @@ class M_user_edit_profile extends CI_Model {
 					'kota_kabupaten'=> $kota_kabupaten,
 					'kecamatan'		=> $kecamatan,
 					'kelurahan'		=> $kelurahan,
-					'kode_pos'		=> $kode,
+					'kode_pos'		=> $kode_pos,
 					'facebook'		=> $facebook,
 					'instagram'		=> $instagram,
 					'twitter'		=> $twitter,
@@ -58,7 +58,7 @@ class M_user_edit_profile extends CI_Model {
 
 	function edit()
 	{
-		$id      			=$this->input->post('id');
+		$id      			= $this->input->post('id');
 		$nama 				= $this->input->post('nama');
 		$email				= $this->input->post('email');
 		$jenis_kelamin		= $this->input->post('jenis_kelamin');
@@ -78,7 +78,7 @@ class M_user_edit_profile extends CI_Model {
 					'nama'			=> $nama,
 					'email'			=> $email,
 					'jenis_kelamin'	=> $jenis_kelamin,
-					'no_telepon'	=> $no_whatsapp,
+					'no_telepon'	=> $no_telepon,
 					'no_whatsapp'	=> $no_whatsapp,
 					'alamat_lengkap'=> $alamat_lengkap,
 					'provinsi'		=> $provinsi,
