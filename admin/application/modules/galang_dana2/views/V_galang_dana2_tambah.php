@@ -1,6 +1,10 @@
 
 
 
+
+
+
+
 <div class="app-main__inner">
                         <div class="app-page-title">
                             <div class="page-title-wrapper">
@@ -400,13 +404,13 @@
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Tanggal Mulai</label>
-                                                                                    <input type="text" class="form-control" name="tgl_awal" data-toggle="datepicker"/>
+                                                                                    <input type="date" class="form-control" name="tgl_awal">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Tanggal Berakhir</label>
-                                                                                    <input type="text" class="form-control" name="tgl_akhir" data-toggle="datepicker"/>
+                                                                                    <input type="date" class="form-control" name="tgl_akhir">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-4">
@@ -469,7 +473,7 @@
                                                                             <div class="col-md-12">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Deskripsi Peristiwa</label>
-                                                                                    <textarea rows="1" name="deskripsi_penerima" class="form-control autosize-input" style="height: 80px;"></textarea>
+                                                                                    <textarea rows="1" name="deskripsi_peristiwa" class="form-control autosize-input" style="height: 80px;"></textarea>
                                                                                 </div>
                                                                             </div>
  
