@@ -29,8 +29,8 @@
                                 </div>
                                 <label></label>
                                 <div class="act-widget fl-wrap">
-                                    <label><b>Tanggal Pembayaran</b><i class="fa fa-calendar-o"></i></label>
-                                    <input name="tgl_pembayaran" placeholder="" type="text"class="form-control">        
+                                        <label><i class="fa fa-calendar-check-o"></i>  </label>
+                                        <input type="text" placeholder="Date" class="datepicker picker-input" data-large-mode="true" data-large-default="true" value="" data-id="datedropper-0" readonly="">
                                 </div>
                                 <div class="act-widget fl-wrap">
                                     <label><b>Pilih Bank</b></label>
@@ -97,6 +97,7 @@
                                     <!--col --> 
                                     <div class="col-md-6">
                                         <div class="add-list-media-wrap">
+                                            <input name="gambar" id="exampleFile" type="file" class="form-control-file">
                                             <form class="fuzone">
                                                 <div class="fu-text">
                                                     <span><i class="fa fa-picture-o"></i> Click here or drop files to upload</span>

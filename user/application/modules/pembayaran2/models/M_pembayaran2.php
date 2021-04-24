@@ -38,12 +38,11 @@ class M_pembayaran2 extends CI_Model {
 	{
 
 
-		$id_pembayaran 		= $this->input->post('id_pembayaran');
 		$nominal_donasi		= $this->input->post('nominal_donasi');
 		$nama_lengkap		= $this->input->post('nama_lengkap');
 		$tgl_pembayaran     = $this->input->post('tgl_pembayaran');
-		$pilih_bank         = $this->input->post('pilih_bank');
 		$nama_rekening		= $this->input->post('nama_rekening');
+		$no_rekening	    = $this->input->post('no_rekening');
 		$bukti_pembayaran   = $this->input->post('bukti_pembayaran ');
 		$pesan_kesan 		= $this->input->post('pesan_kesan');
 
@@ -65,11 +64,9 @@ class M_pembayaran2 extends CI_Model {
             {
 				$gbr = $this->upload->data();
 				$data = array(
-					'id_pembayaran'		=> $id_pembayaran,
 					'nominal_donasi'	=> $nominal_donasi,
 					'nama_lengkap'      => $nama_lengkap,
 					'tgl_pembayaran'    => $tgl_pembayaran,
-					'pilih_bank'        => $pilih_bank,
 					'nama_rekening'     => $nama_rekening,
 					'no_rekening'       => $no_rekening,
 					'bukti_pembayaran' 	=> $gbr['file_name'],
@@ -84,11 +81,9 @@ class M_pembayaran2 extends CI_Model {
 		}
 		else{
 				$data = array(
-					'id_pembayaran'		=> $id_pembayaran,
 					'nominal_donasi'	=> $nominal_donasi,
 					'nama_lengkap'      => $nama_lengkap,
 					'tgl_pembayaran'    => $tgl_pembayaran,
-					'pilih_bank'        => $pilih_bank,
 					'nama_rekening'     => $nama_rekening,
 					'no_rekening'       => $no_rekening,
 					'bukti_pembayaran' 	=> 'kosong1.png',
@@ -104,7 +99,6 @@ class M_pembayaran2 extends CI_Model {
 	{
 		$id = $this->input->post('id');
 
-		$id_pembayaran 		= $this->input->post('id_pembayaran');
 		$nominal_donasi		= $this->input->post('nominal_donasi');
 		$nama_lengkap		= $this->input->post('nama_lengkap');
 		$tgl_pembayaran     = $this->input->post('tgl_pembayaran');
@@ -130,7 +124,6 @@ class M_pembayaran2 extends CI_Model {
             {
 				$gbr = $this->upload->data();
 				$data = array(
-					'id_pembayaran'		=> $id_pembayaran,
 					'nominal_donasi'	=> $nominal_donasi,
 					'nama_lengkap'      => $nama_lengkap,
 					'tgl_pembayaran'    => $tgl_pembayaran,

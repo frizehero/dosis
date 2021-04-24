@@ -11,8 +11,6 @@
                                 </div>
                                 <div class="page-title-actions">
 
-                                <a href="<?php echo base_url('inventory_peralatan/tambahview'); ?>" class="mb-2 mr-2 btn btn-shadow btn-warning">Halaman Input</a>
-                                  
                                   <a href="<?php echo base_url('pembayaran2/tambahview'); ?>" class="mb-2 mr-2 btn btn-shadow btn-success">Tambah Data</a>
 
                                 </div>    </div>
@@ -32,6 +30,7 @@
                                         <th width="20%">Nominal Donasi</th>
                                         <th width="20%">Nama Lengkap</th>
                                         <th>Tanggal Pembayaran</th>
+                                        <th>Pilih Bank</th>
                                         <th>Nama Rekening</th>
                                         <th>No.Rekening</th>
                                         <th>Bukti Pembayaran</th>
@@ -54,12 +53,13 @@
                                         <td><?php echo $rowP->nominal_donasi;?></td>
                                         <td><?php echo $rowP->nama_lengkap;?></td>
                                         <td><?php echo $rowP->tgl_pembayaran;?></td>
+                                        <td><?php echo $rowP->pilih_bank;?></td>
                                         <td><?php echo $rowP->nama_rekening;?></td>
                                         <td><?php echo $rowP->nama_rekening;?></td>
                                         <td><?php echo $rowP->nama_rekening;?></td>
                                         <td><?php echo $rowP->nama_rekening;?></td>
 
-                                            <a href="<?php echo base_url('inventory_room/editview/'. encrypt_url($rowP->id_inv_room)); ?>" class="btn btn-primary">
+                                            <a href="<?php echo base_url('pembayaran2/editview/'. encrypt_url($rowP->id_pembayaran)); ?>" class="btn btn-primary">
                                             <i class="fa fa-pen fa-w-16"></i>
                                             </a>
 

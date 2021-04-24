@@ -52,7 +52,7 @@ class Pembayaran2 extends MX_Controller {
 		$this->M_pembayaran2->tambah();
 		redirect('pembayaran2');
 		
-		//redirect('inventory_room');
+		//redirect('pembayaran2');
 	}
 
 	function edit()
