@@ -49,7 +49,7 @@ class M_pembayaran2 extends CI_Model {
 		
 		$this->load->library('upload');
 		$nmfile = "file_".time();
-		$config['upload_path']		= 'assets/identitas_pembuka/pembuka/';
+		$config['upload_path']		= 'images/pembayaran/';
 		$config['allowed_types']	= 'gif|jpg|png|jpeg';
 		$config['max_size']			= 5120;
 		$config['max_width']		= 4300;
@@ -58,9 +58,9 @@ class M_pembayaran2 extends CI_Model {
 		
 		$this->upload->initialize($config);
 		
-		if($_FILES['gambar']['name'])
+		if($_FILES['foto']['name'])
         {
-            if ($this->upload->do_upload('gambar'))
+            if ($this->upload->do_upload('foto'))
             {
 				$gbr = $this->upload->data();
 				$data = array(
@@ -132,7 +132,7 @@ class M_pembayaran2 extends CI_Model {
 					'bukti_pembayaran' 	=> $gbr['file_name'],
 					'pesan_kesan'       => $pesan_kesan,
 				);
-				$this->db->where('id_pembayaran',$id)->update('pembayaran_user', $data);
+				$this->db->where('id_pembayaran',$id)->update('pembayaran2', $data);
 				$this->session->set_flashdata('msg', 'suksesedit');
 			
 			}	 
@@ -148,7 +148,7 @@ class M_pembayaran2 extends CI_Model {
 					'bukti_pembayaran' 	=> $bukti_pembayaran,
 					'pesan_kesan'       => $pesan_kesan,
 				);
-				$this->db->where('id_pembayaran',$id)->update('pembayaran_user', $data);
+				$this->db->where('id_pembayaran',$id)->update('pembayaran2', $data);
 				$this->session->set_flashdata('msg', 'suksesedit');
 			}
 	}
@@ -156,7 +156,7 @@ class M_pembayaran2 extends CI_Model {
 	function hapus()
 	{
 		$id = $this->input->post('id');
-		$this->db->where('id_pemabayaran', $id)->delete('pembayaran_user');
+		$this->db->where('id_pemabayaran', $id)->delete('pembayaran2');
 		$this->session->set_flashdata('msg', 'sukseshapus');
 	}
 
