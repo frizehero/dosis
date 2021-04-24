@@ -10,7 +10,7 @@
                                     </div>
                                 </div>
                                 <div class="page-title-actions">
-
+                    
                                   <a href="<?php echo base_url('pembayaran2/tambahview'); ?>" class="mb-2 mr-2 btn btn-shadow btn-success">Tambah Data</a>
 
                                 </div>    </div>
@@ -55,18 +55,18 @@
                                         <td><?php echo $rowP->tgl_pembayaran;?></td>
                                         <td><?php echo $rowP->pilih_bank;?></td>
                                         <td><?php echo $rowP->nama_rekening;?></td>
-                                        <td><?php echo $rowP->nama_rekening;?></td>
-                                        <td><?php echo $rowP->nama_rekening;?></td>
-                                        <td><?php echo $rowP->nama_rekening;?></td>
-
+                                        <td><?php echo $rowP->no_rekening;?></td>
+                                        <td><?php echo $rowP->bukti_pembayaran;?></td>
+                                        <td><?php echo $rowP->pesan_kesan;?></td>
+                                        <td>
                                             <a href="<?php echo base_url('pembayaran2/editview/'. encrypt_url($rowP->id_pembayaran)); ?>" class="btn btn-primary">
                                             <i class="fa fa-pen fa-w-16"></i>
                                             </a>
 
-                                        <button class="btn btn-warning" data-toggle="modal" data-target="#hapus<?php echo $no ?>">
-                                        <i class="fa fa-trash fa-w-16"></i>
-                                        </button>
-                                    </td>
+                                            <button class="btn btn-warning" data-toggle="modal" data-target="#hapus<?php echo $no ?>">
+                                            <i class="fa fa-trash fa-w-16"></i>
+                                            </button>
+                                        </td>
 
                                     </tr>
 
@@ -81,13 +81,13 @@
                             </button>
                           </div>
 
-                          <form action="<?php echo base_url('inventory_room/hapus') ?>" method="POST" enctype="multipart/form-data">
+                          <form action="<?php echo base_url('pembayaran2/hapus') ?>" method="POST" enctype="multipart/form-data">
                           <div class="modal-body">
                              <!--Modal body-->
                                 <p class="text-semibold text-main"></p>
-                                <p>Anda Yakin Ingin Menghapus <b><?php echo $rowP->nama_room ?></b> ? </p>
+                                <p>Anda Yakin Ingin Menghapus <b><?php echo $rowP->nama_lengkap ?></b> ? </p>
 
-                                <input name="id"  type="hidden" value="<?php echo $rowP->id_inv_room ?>" class="form-control">
+                                <input name="id"  type="hidden" value="<?php echo $rowP->id_pembayaran ?>" class="form-control">
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">tutup</button>
