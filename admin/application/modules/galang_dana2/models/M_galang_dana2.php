@@ -43,8 +43,12 @@ class M_galang_dana2 extends CI_Model {
 		$jenjang_pembuka 			= $this->input->post('jenjang_pembuka');
 		$sekolah_pembuka 			= $this->input->post('sekolah_pembuka');
 		$kelas_pembuka				= $this->input->post('kelas_pembuka');
+		$no_rekening				= $this->input->post('no_rekening');
 		$telepon_pembuka			= $this->input->post('telepon_pembuka');
 		$wa_pembuka 				= $this->input->post('wa_pembuka');
+		$instagram	 				= $this->input->post('instagram');
+		$facebook	 				= $this->input->post('facebook');
+		$twitter	 				= $this->input->post('twitter');
 		$identitas_pembuka 			= $this->input->post('identitas_pembuka');
 		$provinsi		 			= $this->input->post('provinsi');
 		$kota 						= $this->input->post('kota');
@@ -52,7 +56,7 @@ class M_galang_dana2 extends CI_Model {
 		$kelurahan	 				= $this->input->post('kelurahan');
 		$desa	 					= $this->input->post('desa');
 		$kode_pos 					= $this->input->post('kode_pos');
-		$alamat_pembuka 			= $this->input->post('alamat_pembuka ');
+		$alamat_pembuka 			= $this->input->post('alamat_pembuka');
 		$nama_penerima 				= $this->input->post('nama_penerima');
 		$alamat_penerima			= $this->input->post('alamat_penerima');
 		$jenjang_penerima 			= $this->input->post('jenjang_penerima');
@@ -102,8 +106,12 @@ class M_galang_dana2 extends CI_Model {
 					'jenjang_pembuka'			=> $jenjang_pembuka,
 					'sekolah_pembuka'			=> $sekolah_pembuka,
 					'kelas_pembuka'				=> $kelas_pembuka,
+					'no_rekening'				=> $no_rekening,
 					'telepon_pembuka'			=> $telepon_pembuka,
 					'wa_pembuka'				=> $wa_pembuka,
+					'instagram'					=> $instagram,
+					'facebook'					=> $facebook,
+					'twitter'					=> $twitter,
 					'identitas_pembuka' 		=> $gbr['file_name'],
 					'provinsi'					=> $provinsi,
 					'kota'						=> $kota,
@@ -148,8 +156,12 @@ class M_galang_dana2 extends CI_Model {
 					'jenjang_pembuka'			=> $jenjang_pembuka,
 					'sekolah_pembuka'			=> $sekolah_pembuka,
 					'kelas_pembuka'				=> $kelas_pembuka,
+					'no_rekening'				=> $no_rekening,
 					'telepon_pembuka'			=> $telepon_pembuka,
 					'wa_pembuka'				=> $wa_pembuka,
+					'instagram'					=> $instagram,
+					'facebook'					=> $facebook,
+					'twitter'					=> $twitter,
 					'identitas_pembuka' 		=> 'kosong1.png',
 					'provinsi'					=> $provinsi,
 					'kota'						=> $kota,
@@ -192,6 +204,7 @@ class M_galang_dana2 extends CI_Model {
 		$jenjang_pembuka 			= $this->input->post('jenjang_pembuka');
 		$sekolah_pembuka 			= $this->input->post('sekolah_pembuka');
 		$kelas_pembuka				= $this->input->post('kelas_pembuka');
+		$no_rekening				= $this->input->post('no_rekening');
 		$telepon_pembuka			= $this->input->post('telepon_pembuka');
 		$wa_pembuka 				= $this->input->post('wa_pembuka');
 		$email_pembuka 				= $this->input->post('email_pembuka');
@@ -252,6 +265,7 @@ class M_galang_dana2 extends CI_Model {
 					'jenjang_pembuka'			=> $jenjang_pembuka,
 					'sekolah_pembuka'			=> $sekolah_pembuka,
 					'kelas_pembuka'				=> $kelas_pembuka,
+					'no_rekening'				=> $no_rekening,
 					'telepon_pembuka'			=> $telepon_pembuka,
 					'wa_pembuka'				=> $wa_pembuka,
 					'email_pembuka'				=> $email_pembuka,
@@ -260,7 +274,7 @@ class M_galang_dana2 extends CI_Model {
 					'regencies'					=> $regencies,
 					'districts'					=> $districts,
 					'villages'					=> $villages,
-					'alamat_lengkap_pembuka'	=> $alamat_lengkap_pembuka,
+					'alamat_pembuka'			=> $alamat_pembuka,
 					'nama_penerima'				=> $nama_penerima,
 					'status_penerima'			=> $status_penerima,
 					'jenjang_penerima'			=> $jenjang_penerima,
@@ -293,6 +307,7 @@ class M_galang_dana2 extends CI_Model {
 					'jenjang_pembuka'			=> $jenjang_pembuka,
 					'sekolah_pembuka'			=> $sekolah_pembuka,
 					'kelas_pembuka'				=> $kelas_pembuka,
+					'no_rekening'				=> $no_rekening,
 					'telepon_pembuka'			=> $telepon_pembuka,
 					'wa_pembuka'				=> $wa_pembuka,
 					'email_pembuka'				=> $email_pembuka,
@@ -300,7 +315,7 @@ class M_galang_dana2 extends CI_Model {
 					'regencies'					=> $regencies,
 					'districts'					=> $districts,
 					'villages'					=> $villages,
-					'alamat_lengkap_pembuka'	=> $alamat_lengkap_pembuka,
+					'alamat_pembuka'			=> $alamat_pembuka,
 					'nama_penerima'				=> $nama_penerima,
 					'status_penerima'			=> $status_penerima,
 					'jenjang_penerima'			=> $jenjang_penerima,
