@@ -6,7 +6,7 @@
                                         <i class="pe-7s-medal icon-gradient bg-tempting-azure"></i>
                                     </div>
                                     <div>Data Galang Dana
-                                        <div class="page-title-subheading">Data Peralatan Dan Mesin , silahkan gunakan menu di samping untuk menambahkan </div>
+                                        <div class="page-title-subheading">Data User yang Mengajukan Galang Dana </div>
                                     </div>
                                 </div>
                                 <div class="page-title-actions">
@@ -34,7 +34,7 @@
                         </div> 
 
             <?php tampilnotif()?>
-            <div class="row">
+                <div class="row">
                 <?php $no=1;
                 foreach ($tampil AS $rowP ) { ?>
                     <div class="col-sm-12 col-md-4">
@@ -62,7 +62,7 @@
 
                                                 </h5>
                                                 <h6>
-                                            <div>Diposting oleh @Sandrajamet123</div>
+                                                    <div><?php echo $rowP->nama_pembuka;?></div>
                                                 </h6>
                                             </div>
                                         </li>

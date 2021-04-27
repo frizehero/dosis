@@ -15,7 +15,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <label><b>Asal Sekolah/Kelas</b> <i class="fa fa-user-o"></i></label>
-                                        <input name="nama_pembuka" placeholder="" type="text"class="form-control">
+                                        <input name="sekolah_pembuka" placeholder="" type="text"class="form-control">
                                     </div>
                                 </div>
                                 <div class="row">
@@ -38,20 +38,20 @@
                                 </div>
                                 <div class="row">   
                                     <div class="col-md-4">
-                                        <label><b>NO.TELEPON</b><i class="fa fa-phone"></i>  </label>
+                                        <label><b>No. Telephon</b><i class="fa fa-phone"></i>  </label>
                                         <input name="telepon_pembuka" placeholder="" type="text"class="form-control">
                                     </div>
                                     <div class="col-md-4">
-                                        <label><b>NO.WHATSAPP</b><i class="fa fa-whatsapp"></i>  </label>
-                                        <input name="wa_pembuka" placeholder="" type="text"class="form-control">
+                                        <label><b>No. Whatsapp</b><i class="fa fa-whatsapp"></i>  </label>
+                                        <input name="whatsapp_pembuka" placeholder="" type="text"class="form-control">
                                     </div>
                                     <div class="col-md-4">
                                         <label><b>Instagram</b><i class="fa fa-instagram"></i></label>
-                                        <input name="instagram" placeholder="" type="text"class="form-control">  
+                                        <input name="instagram_pembuka" placeholder="" type="text"class="form-control">  
                                     </div>
                                     <div class="col-md-4">
                                         <label><b>Facebook</b><i class="fa fa-facebook"></i></label>
-                                        <input name="facebook" placeholder="" type="text"class="form-control">  
+                                        <input name="facebook_pembuka" placeholder="" type="text"class="form-control">  
                                     </div>
                                 </div>
                                 <div class="row">
@@ -117,12 +117,12 @@
                                         </select>
                                     </div>
                                     <div class="col-md-6">
-                                        <label><b>ALAMAT LENGKAP</b></label>                                              
+                                        <label><b>Alamat Lengkap</b></label>                                              
                                         <textarea  rows="1" name="alamat_pembuka" placeholder="" type="text"class="form-control autosize-input" style="height: 70px" ></textarea>
                                     </div>
                                     <div class="col-md-6">
                                         <label><b>Kode Pos</b><i class="fa fa-map-marker"></i></label>
-                                        <input name="#" placeholder="" type="text"class="form-control">  
+                                        <input name="kode_pos_pembuka" placeholder="" type="text"class="form-control">  
                                     </div>
                                     <div class="col-md-12">
                                         <p></p>
@@ -142,23 +142,19 @@
                             <class class="custom-form">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <div class="custom-form">
-                                            <label><b>Nama Lengkap*</b><i class="fa fa-user-o"></i></label>
-                                            <input type="text" placeholder="Indah Novita" value="">
-                                        </div>
+                                        <label><b>Nama Lengkap</b><i class="fa fa-user-o"></i></label>
+                                        <input name="nama_penerima" placeholder="" type="text"class="form-control">  
                                     </div>
                                     <div class="col-md-6">
-                                        <label><b>Nama Sekolah/Kelas*</b><i class="fa fa-university"></i></label>
-                                        <input type="text" placeholder="SMKN 10 PROBOLINGGO/X OTKP 3" value="">
+                                        <label><b>Nama Sekolah/Kelas</b><i class="fa fa-university"></i></label>
+                                        <input name="sekolah_penerima" placeholder="" type="text"class="form-control">  
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="custom-form">
-                                            <label><b>Tentang Diri Kamu*</b><i class=""></i></label>
-                                            <textarea cols="15" rows="2" placeholder=""></textarea>
-                                        </div>
+                                        <label><b>Tentang Diri Kamu</b><i class=""></i></label>
+                                        <textarea  rows="1" name="tentang_diri_penerima" placeholder="" type="text"class="form-control autosize-input" style="height: 200px" ></textarea>
                                     </div>
                                     <div class="col-md-6">
-                                        <label><b>Identitas(KTP/Kartu pelajar)*</b></label>
+                                        <label><b>Identitas(KTP/Kartu pelajar)</b></label>
                                         <div class="add-list-media-wrap">
                                             <form class="fuzone">
                                                 <div class="fu-text">
@@ -219,12 +215,12 @@
                                         </select>
                                     </div>
                                     <div class="col-md-6">
-                                        <label><b>ALAMAT LENGKAP</b></label>                                              
-                                        <textarea  rows="1" name="alamat_pembuka" placeholder="" type="text"class="form-control autosize-input" style="height: 70px" ></textarea>
+                                        <label><b>Alamat Lengkap</b></label>                                              
+                                        <textarea  rows="1" name="alamat_penerima" placeholder="" type="text"class="form-control autosize-input" style="height: 70px" ></textarea>
                                     </div>
                                     <div class="col-md-6">
                                         <label><b>Kode Pos</b><i class="fa fa-map-marker"></i></label>
-                                        <input name="#" placeholder="" type="text"class="form-control">  
+                                        <input name="kode_pos_penerima" placeholder="" type="text"class="form-control">  
                                     </div>
                                     <div class="col-md-12">
                                         <p></p>
@@ -244,28 +240,20 @@
                             <div class="custom-form">  
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <label><b>Telpon</b><i class="fa fa-phone"></i></label>
-                                        <input type="text" placeholder="+62 __________" value="">  
+                                        <label><b>No. Telephon</b><i class="fa fa-phone"></i>  </label>
+                                        <input name="telepon_penerima" placeholder="" type="text"class="form-control">
                                     </div>
                                     <div class="col-md-4">
-                                        <label><b>Whatsapp</b> <i class="fa fa-whatsapp"></i>  </label>
-                                        <input type="text" placeholder="08XX-XXXX-XXXX" value="">
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label><b>E-mail</b> <i class="fa fa-envelope"></i>  </label>
-                                        <input type="text" placeholder="*********@gmail.com" value="">
+                                        <label><b>No. Whatsapp</b><i class="fa fa-whatsapp"></i>  </label>
+                                        <input name="whatsapp_penerima" placeholder="" type="text"class="form-control">
                                     </div>
                                     <div class="col-md-4">
                                         <label><b>Instagram</b><i class="fa fa-instagram"></i></label>
-                                        <input type="text" placeholder="@indahnr_15" value="">  
+                                        <input name="instagram_penerima" placeholder="" type="text"class="form-control">  
                                     </div>
                                     <div class="col-md-4">
                                         <label><b>Facebook</b><i class="fa fa-facebook"></i></label>
-                                        <input type="text" placeholder="indah novita" value="">  
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label><b>Twitter</b><i class="fa fa-twitter"></i></label>
-                                        <input type="text" placeholder="@indahnov" value="">  
+                                        <input name="facebook_penerima" placeholder="" type="text"class="form-control">  
                                     </div>
                                 </div>
                             </div>
@@ -278,23 +266,27 @@
                                 <div class="row">
                                     <!--col --> 
                                     <div class="col-md-6">
-                                        <label><b>Judul Donasi*</b><i class="fa fa-briefcase"></i></label>
-                                        <input type="text" placeholder="Terdampak Corona. Bantu Wahyudi Siswa Yang Putus Sekolah " value="">
+                                        <label><b>Judul Donasi</b><i class="fa fa-briefcase"></i></label>
+                                        <input name="judul_donasi_penerima" placeholder="" type="text"class="form-control">  
                                     </div>
                                     <div class="col-md-6">
-                                        <label><b>Target Donasi*</b><i class="fa fa-bullseye"></i></label>
-                                        <input type="text" id="long" placeholder="RP.20.000.000" value="">                                                    
-                                    </div> 
+                                        <label><b>Target Donasi</b><i class="fa fa-bullseye"></i></label>
+                                        <input name="target_donasi_penerima" placeholder="" type="text"class="form-control">  
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label><b>Tanggal Mulai</b><i class="fa fa-calendar-check-o"></i></label>
+                                        <input name="tanggal_mulai" placeholder="" type="text"class="form-control">  
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label><b>Tanggal Berakhir</b><i class="fa fa-calendar-check-o"></i></label>
+                                        <input name="tanggal_akhir" placeholder="" type="text"class="form-control">  
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label><b>No. Rekening</b><i class="fa fa-briefcase"></i></label>
+                                        <input name="no_rekening_penerima" placeholder="" type="text"class="form-control">  
+                                    </div>
                                     <div class="col-md-6">
-                                        <label><b>Tanggal Mulai*</b><i class="fa fa-calendar-check-o"></i>  </label>
-                                        <input type="text" placeholder="04/05/2020" value="">
-                                    </div> 
-                                    <div class="col-md-6">
-                                        <label><b>Tanggal Berakhir*</b><i class="fa fa-calendar-check-o"></i>  </label>
-                                        <input type="text" placeholder="04/05/2020" value="">
-                                    </div> 
-                                    <div class="col-md-6">
-                                        <label><b>Batas Waktu Penggalangan Dana*</b><i class="fa fa-calendar-check-o"></i>  </label>
+                                        <label><b>Batas Waktu Penggalangan Dana</b><i class="fa fa-calendar-check-o"></i>  </label>
                                         <select data-placeholder="All Categories" class="chosen-select" style="display: none;">
                                             <option>30 Hari</option>
                                             <option>60 Hari</option>
@@ -303,7 +295,7 @@
                                         </select>
                                     </div> 
                                     <div class="col-md-6">
-                                        <label><b>Kategori*</b></label>
+                                        <label><b>Kategori</b></label>
                                         <select data-placeholder="All Categories" class="chosen-select" style="display: none;">
                                             <option>Siswa Putus Sekolah</option>
                                             <option>Siswa Tidak Mampu</option>
@@ -315,67 +307,61 @@
                                         </select>
                                     </div> 
                                     <div class="col-md-6">
-                                        <label><b>Deskripsi</b></label>
-                                        <textarea cols="15" rows="2" placeholder="Ceritakan tentang diri Anda,alasan penggalangan dana, dan rencana penggunaan dana*"></textarea>
+                                        <label><b>Deskripsi Kejadian</b></label>
+                                        <textarea cols="15" rows="2" name="deskripsi_penerima" placeholder="" type="text"class="form-control autosize-input"></textarea>
                                     </div> 
                                     <div class="col-md-6">
                                         <label><b>Tujuan Galang Dana</b></label>
-                                        <textarea cols="15" rows="2" placeholder="Contoh: Membantu siswa yang rumahnya ambruk karena longsor*"></textarea>
-                                    </div> 
-                                    <div class="profile-edit-container add-list-container">
-                                        <div class="profile-edit-header fl-wrap">
-                                            <h4>Foto</h4>
+                                        <textarea cols="15" rows="2" name="tujuan_penerima" placeholder="" type="text"class="form-control autosize-input"></textarea>
+                                    </div>       
+                                </div>
+                                <div class="profile-edit-container add-list-container">
+                                    <div class="profile-edit-header fl-wrap">
+                                        <h4>Foto</h4>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <!-- act-widget--> 
+                                            <div class="act-widget fl-wrap">
+                                                <div class="add-list-media-wrap">
+                                                    <form class="fuzone">
+                                                        <div class="fu-text">
+                                                            <span><i class="fa fa-picture-o"></i> Click here or drop files to upload</span>
+                                                        </div>
+                                                        <input type="file" class="upload">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <!-- act-widget end-->
                                         </div>
-                                        <div class="custom-form">
-                                            <div class="row">
-                                                <div class="col-md-4">
-                                                    <!-- act-widget--> 
-                                                    <div class="act-widget fl-wrap">
-                                                        <div class="add-list-media-wrap">
-                                                            <form class="fuzone">
-                                                                <div class="fu-text">
-                                                                    <span><i class="fa fa-picture-o"></i> Click here or drop files to upload</span>
-                                                                </div>
-                                                                <input type="file" class="upload">
-                                                            </form>
+                                        <div class="col-md-4">
+                                            <!-- act-widget--> 
+                                            <div class="act-widget fl-wrap">
+                                                <div class="add-list-media-wrap">
+                                                    <form class="fuzone">
+                                                        <div class="fu-text">
+                                                            <span><i class="fa fa-picture-o"></i> Click here or drop files to upload</span>
                                                         </div>
-                                                    </div>
-                                                    <!-- act-widget end-->
+                                                        <input type="file" class="upload">
+                                                    </form>
                                                 </div>
-                                                <div class="col-md-4">
-                                                    <!-- act-widget--> 
-                                                    <div class="act-widget fl-wrap">
-                                                        <div class="add-list-media-wrap">
-                                                            <form class="fuzone">
-                                                                <div class="fu-text">
-                                                                    <span><i class="fa fa-picture-o"></i> Click here or drop files to upload</span>
-                                                                </div>
-                                                                <input type="file" class="upload">
-                                                            </form>
+                                            </div>
+                                            <!-- act-widget end-->
+                                        </div>
+                                        <div class="col-md-4">
+                                            <!-- act-widget--> 
+                                            <div class="act-widget fl-wrap">
+                                                <div class="add-list-media-wrap">
+                                                    <form class="fuzone">
+                                                        <div class="fu-text">
+                                                            <span><i class="fa fa-picture-o"></i> Click here or drop files to upload</span>
                                                         </div>
-                                                    </div>
-                                                    <!-- act-widget end-->
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <!-- act-widget--> 
-                                                    <div class="act-widget fl-wrap">
-                                                        <div class="add-list-media-wrap">
-                                                            <form class="fuzone">
-                                                                <div class="fu-text">
-                                                                    <span><i class="fa fa-picture-o"></i> Click here or drop files to upload</span>
-                                                                </div>
-                                                                <input type="file" class="upload">
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                    <!-- act-widget end-->
+                                                        <input type="file" class="upload">
+                                                    </form>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <button class="btn  big-btn  color-bg flat-btn book-btn">SELESAI<i class="fa fa-angle-right"></i></button>
-                                    </div>            
                                 </div>
                             </div>
                         </div>
