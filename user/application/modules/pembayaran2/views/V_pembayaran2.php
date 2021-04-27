@@ -13,102 +13,53 @@
                     
                                   <a href="<?php echo base_url('pembayaran2/tambahview'); ?>" class="mb-2 mr-2 btn btn-shadow btn-success">Tambah Data</a>
 
-                                </div>    </div>
-                        </div>
-
-                        <?php tampilnotif()?>
-
-                        <div class="main-card mb-3 card">
-                            <div class="card-body">
-                                
-
-                                <table style="width: 100%;" id="example"  class="table table-hover table-striped table-bordered">
-                                    <thead>
-                                    <tr>
-                                        <th>Detail</th>
-                                        <th>No</th>
-                                        <th width="20%">Nominal Donasi</th>
-                                        <th width="20%">Nama Lengkap</th>
-                                        <th>Tanggal Pembayaran</th>
-                                        <th>Pilih Bank</th>
-                                        <th>Nama Rekening</th>
-                                        <th>No.Rekening</th>
-                                        <th>Bukti Pembayaran</th>
-                                        <th>Pesan dan Kesan</th>
-                                        <th>Opsi</th>
-                                       
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-
-                                    <?php  
-                                    $no=1;
-                                           
-                                    foreach ($tampil AS $rowP ) { ?>
-                                    <tr>
-                                        <td><button type="button" class="btn btn-warning">
-                                            <i class="fa fa-search fa-w-16 fa-spin "></i>
-                                            </button></td>
-                                        <td><?php echo $no;?></td>
-                                        <td><?php echo $rowP->nominal_donasi;?></td>
-                                        <td><?php echo $rowP->nama_lengkap;?></td>
-                                        <td><?php echo $rowP->tgl_pembayaran;?></td>
-                                        <td><?php echo $rowP->pilih_bank;?></td>
-                                        <td><?php echo $rowP->nama_rekening;?></td>
-                                        <td><?php echo $rowP->no_rekening;?></td>
-                                        <td><?php echo $rowP->bukti_pembayaran;?></td>
-                                        <td><?php echo $rowP->pesan_kesan;?></td>
-                                        <td>
-                                            <a href="<?php echo base_url('pembayaran2/editview/'. encrypt_url($rowP->id_pembayaran)); ?>" class="btn btn-primary">
-                                            <i class="fa fa-pen fa-w-16"></i>
-                                            </a>
-
-                                            <button class="btn btn-warning" data-toggle="modal" data-target="#hapus<?php echo $no ?>">
-                                            <i class="fa fa-trash fa-w-16"></i>
-                                            </button>
-                                        </td>
-
-                                    </tr>
-
-                                       <!-- Modal HAPUS -->
-                    <div class="modal fade" id="hapus<?php echo $no ?>"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Hapus Data?</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-
-                          <form action="<?php echo base_url('pembayaran2/hapus') ?>" method="POST" enctype="multipart/form-data">
-                          <div class="modal-body">
-                             <!--Modal body-->
-                                <p class="text-semibold text-main"></p>
-                                <p>Anda Yakin Ingin Menghapus <b><?php echo $rowP->nama_lengkap ?></b> ? </p>
-
-                                <input name="id"  type="hidden" value="<?php echo $rowP->id_pembayaran ?>" class="form-control">
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">tutup</button>
-                            <button class="btn btn-primary" type="submit" >Hapus</button>
-                          </div>
-                          </form>
-
-                        </div>
-                      </div>
-                    </div>
-
-
-
-
-                                    <?php $no++;} ?>
-                                   
-                                    
-                                    </tbody>
-                                    
-                                </table>
+                                </div>    
                             </div>
+                        </div>
+                        <?php tampilnotif()?>
+                        <div class="dashboard-list-box fl-wrap activities" style="margin-top:-30px;">
+                            <div class="dashboard-header fl-wrap">
+                                <h3>Riwayat Aktivitas Donasi-mu</h3>
+                            </div>
+                            <?php $no=1; foreach ($tampil AS $rowP ) { ?>          
+                            <div class="dashboard-list">
+                                <div class="dashboard-message">
+                                    <div class="dashboard-listing-table-image" style="padding-left:15px;">
+                                        <img src="images/all/3.jpg" alt="">
+                                    </div>
+                                    <div class="dashboard-message-text">
+                                        <p><i class="fa fa-heart" style="margin-right:10px; color:#4db7fe;"></i>Anda Telah Berdonasi ke Peristiwa :</p>
+                                        <h4><a href="listing-single.html" style="color:#4db7fe;"> Berbagi Sembako Untuk Sekolah Korban Banjir di Dringu,Kabupaten Probolinggo</a></h4>
+                                    </div>
+                                </div>
+                                <div class="dashboard-message">
+                                    <div class="dashboard-message-text">
+                                        <p><i class="fa fa-comments-o"></i> Transfer Rekening a.n : Ahmad Wahyudi (Penggalang Dana)</p>
+                                        <p><i class="fa fa-check"></i> Nominal Donasi : RP 10.000</p>
+                                        <p><i class="fa fa-gears" style="margin-left:1/00px;"></i> Waktu Transfer : 14.00 WIB</p>
+                                        <div class="distance-title" style="margin-bottom:-25px; margin-left:264px;"> 
+                                            <b>Rp 4.580,000</b> Terkumpul   <span style="padding-left: 60px;">1</span> %
+                                            <div> <br></div>
+                                            <div class="distance-radius-wrap fl-wrap">
+                                            <input class="distance-radius rangeslider--horizontal" type="range" min="1" max="100" step="1" value="1" data-title="Radius around selected destination" style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"><div class="rangeslider rangeslider--horizontal" id="js-rangeslider-17"><div class="rangeslider__fill" style="width: 10px;"></div><div class="rangeslider__handle" style="left: 0px;"></div></div>
+                                            <div class="rangeslider rangeslider--horizontal" id="js-rangeslider-0"></div>
+                                            </div>
+                                            <div> <br></div>
+                                            <div class="geodir-category-options fl-wrap">
+                                                <div class="geodir-category-location"><i>Target Rp 8,000,000  <p style="float:right; margin-top:-4px;">59 hari tersisa</p></i> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <?php $no++;} ?>
+                        </div> 
+                        <div class="pagination">
+                            <a href="#" class="prevposts-link"><i class="fa fa-caret-left"></i></a>
+                            <a href="#" class="current-page">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#" class="nextposts-link"><i class="fa fa-caret-right"></i></a>
                         </div>
                     </div>
                    

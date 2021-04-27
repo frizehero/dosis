@@ -170,8 +170,8 @@ $menu = $uri_segments[3];
                             <div class="user-profile-menu">
                                 <h3>Dashboard</h3>
                                 <ul>
-                                    <?php if ($menu=="donasi_saya"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                        <a href="<?php echo base_url('donasi_saya'); ?>">
+                                    <?php if ($menu=="pembayaran2"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                        <a href="<?php echo base_url('pembayaran2'); ?>">
                                             <i class="fa fa-th-list"></i> Donasi Saya
                                             </a>
                                         </li>

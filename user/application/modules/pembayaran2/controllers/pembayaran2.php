@@ -30,7 +30,7 @@ class Pembayaran2 extends MX_Controller {
 			'namamodule' 	=> "pembayaran2",
 			'namafileview' 	=> "V_pembayaran2_tambah",
 		);
-		echo Modules::run('template/tampilCore', $data);
+		echo Modules::run('template/tampilBeranda', $data);
 	}
 
 		// Halaman Edit
