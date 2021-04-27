@@ -5,13 +5,13 @@
                                     <div class="page-title-icon">
                                         <i class="pe-7s-medal icon-gradient bg-tempting-azure"></i>
                                     </div>
-                                    <div>Edit Data Peralatan & Mesin
-                                        <div class="page-title-subheading">Edit Data Peralatan & Mesin , Silahkan Isi semua form di bawah ini dengan lengkap...</div>
+                                    <div>Data Galng Dana
+                                        <div class="page-title-subheading">Data User yang Mengajukan Galang Dana ...</div>
                                     </div>
                                 </div>
                                 <div class="page-title-actions">
                                   
-                                 <a href="<?php echo base_url('inventory_peralatan'); ?>" class="mb-2 mr-2 btn btn-shadow btn-success">Kembali</a>
+                                 <a href="<?php echo base_url('galang_dana2/tambahview'); ?>" class="mb-2 mr-2 btn btn-shadow btn-success">Kembali</a>
                                 </div>    </div>
                         </div>   
 

@@ -68,7 +68,10 @@ class M_galang_dana2 extends CI_Model {
 		$identitas_penerima 		= $this->input->post('identitas_penerima');
 		$judul_donasi		 		= $this->input->post('judul_donasi');
 		$deskripsi_peristiwa		= $this->input->post('deskripsi_peristiwa');
-		$dokumentasi_perisiwa		= $this->input->post('dokumentasi_peristiwa');
+		$tujuan_galang_dana			= $this->input->post('tujuan_galang_dana');
+		$dokumentasi_perisiwa1		= $this->input->post('dokumentasi_peristiwa1');
+		$dokumentasi_perisiwa2		= $this->input->post('dokumentasi_peristiwa2');
+		$dokumentasi_perisiwa3		= $this->input->post('dokumentasi_peristiwa3');
 		$tgl_awal 					= $this->input->post('tgl_awal');
 		$tgl_akhir 					= $this->input->post('tgl_akhir');
 		$jumlah_donasi 				= $this->input->post('jumlah_donasi');
@@ -132,7 +135,10 @@ class M_galang_dana2 extends CI_Model {
 					'identitas_penerima' 		=> $identitas_penerima,
 					'judul_donasi'		 		=> $judul_donasi,
 					'deskripsi_peristiwa'		=> $deskripsi_peristiwa,
-					'dokumentasi_peristiwa' 	=> $dokumentasi_peristiwa,
+					'tujuan_galang_dana'		=> $tujuan_galang_dana,
+					'dokumentasi_peristiwa1' 	=> $dokumentasi_peristiwa1,
+					'dokumentasi_peristiwa2' 	=> $dokumentasi_peristiwa2,
+					'dokumentasi_peristiwa3' 	=> $dokumentasi_peristiwa3,
 					'tgl_awal'					=> $tgl_awal,
 					'tgl_akhir'					=> $tgl_akhir,
 					'jumlah_donasi'				=> $jumlah_donasi,

@@ -487,11 +487,11 @@
                                                                             </div>
                                                                             <div class="col-md-6">
                                                                                 <div class="position-relative form-group">
-                                                                                    <label name="nobpkb" for="exampleFile" class="">Dokumentasi 1</label>
+                                                                                    <label name="dokumentasi1" for="exampleFile" class="">Dokumentasi 1</label>
                                                                                     <div class="card mb-3 bg-primary widget-content">
                                                                                         <div class="widget-content-wrapper">
                                                                                             <div class="widget-content-left">
-                                                                                                <input name="gambar" id="exampleFile" type="file" class="form-control-file">
+                                                                                                <input name="foto" id="exampleFile" type="file" class="form-control-file">
                                                                                                 <small class="form-text text-light">Gunakan File format PNG/JPG Max 10 MB</small>
                                                                                             </div>
                                                                                         </div>
