@@ -15,7 +15,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <label><b>Asal Sekolah/Kelas</b> <i class="fa fa-user-o"></i></label>
-                                        <input name="nama_pembuka" placeholder="" type="text"class="form-control">
+                                        <input name="sekolah_pembuka" placeholder="" type="text"class="form-control">
                                     </div>
                                 </div>
                                 <div class="row">
@@ -43,15 +43,15 @@
                                     </div>
                                     <div class="col-md-4">
                                         <label><b>No. Whatsapp</b><i class="fa fa-whatsapp"></i>  </label>
-                                        <input name="wa_pembuka" placeholder="" type="text"class="form-control">
+                                        <input name="whatsapp_pembuka" placeholder="" type="text"class="form-control">
                                     </div>
                                     <div class="col-md-4">
                                         <label><b>Instagram</b><i class="fa fa-instagram"></i></label>
-                                        <input name="instagram" placeholder="" type="text"class="form-control">  
+                                        <input name="instagram_pembuka" placeholder="" type="text"class="form-control">  
                                     </div>
                                     <div class="col-md-4">
                                         <label><b>Facebook</b><i class="fa fa-facebook"></i></label>
-                                        <input name="facebook" placeholder="" type="text"class="form-control">  
+                                        <input name="facebook_pembuka" placeholder="" type="text"class="form-control">  
                                     </div>
                                 </div>
                                 <div class="row">
@@ -122,7 +122,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <label><b>Kode Pos</b><i class="fa fa-map-marker"></i></label>
-                                        <input name="#" placeholder="" type="text"class="form-control">  
+                                        <input name="kode_pos_pembuka" placeholder="" type="text"class="form-control">  
                                     </div>
                                     <div class="col-md-12">
                                         <p></p>
@@ -143,15 +143,15 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <label><b>Nama Lengkap</b><i class="fa fa-user-o"></i></label>
-                                        <input name="#" placeholder="" type="text"class="form-control">  
+                                        <input name="nama_penerima" placeholder="" type="text"class="form-control">  
                                     </div>
                                     <div class="col-md-6">
                                         <label><b>Nama Sekolah/Kelas</b><i class="fa fa-university"></i></label>
-                                        <input name="#" placeholder="" type="text"class="form-control">  
+                                        <input name="sekolah_penerima" placeholder="" type="text"class="form-control">  
                                     </div>
                                     <div class="col-md-6">
                                         <label><b>Tentang Diri Kamu</b><i class=""></i></label>
-                                        <textarea  rows="1" name="#" placeholder="" type="text"class="form-control autosize-input" style="height: 200px" ></textarea>
+                                        <textarea  rows="1" name="tentang_diri_penerima" placeholder="" type="text"class="form-control autosize-input" style="height: 200px" ></textarea>
                                     </div>
                                     <div class="col-md-6">
                                         <label><b>Identitas(KTP/Kartu pelajar)</b></label>
@@ -216,11 +216,11 @@
                                     </div>
                                     <div class="col-md-6">
                                         <label><b>Alamat Lengkap</b></label>                                              
-                                        <textarea  rows="1" name="alamat_pembuka" placeholder="" type="text"class="form-control autosize-input" style="height: 70px" ></textarea>
+                                        <textarea  rows="1" name="alamat_penerima" placeholder="" type="text"class="form-control autosize-input" style="height: 70px" ></textarea>
                                     </div>
                                     <div class="col-md-6">
                                         <label><b>Kode Pos</b><i class="fa fa-map-marker"></i></label>
-                                        <input name="#" placeholder="" type="text"class="form-control">  
+                                        <input name="kode_pos_penerima" placeholder="" type="text"class="form-control">  
                                     </div>
                                     <div class="col-md-12">
                                         <p></p>
@@ -241,19 +241,19 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <label><b>No. Telephon</b><i class="fa fa-phone"></i>  </label>
-                                        <input name="telepon_pembuka" placeholder="" type="text"class="form-control">
+                                        <input name="telepon_penerima" placeholder="" type="text"class="form-control">
                                     </div>
                                     <div class="col-md-4">
                                         <label><b>No. Whatsapp</b><i class="fa fa-whatsapp"></i>  </label>
-                                        <input name="wa_pembuka" placeholder="" type="text"class="form-control">
+                                        <input name="whatsapp_penerima" placeholder="" type="text"class="form-control">
                                     </div>
                                     <div class="col-md-4">
                                         <label><b>Instagram</b><i class="fa fa-instagram"></i></label>
-                                        <input name="instagram" placeholder="" type="text"class="form-control">  
+                                        <input name="instagram_penerima" placeholder="" type="text"class="form-control">  
                                     </div>
                                     <div class="col-md-4">
                                         <label><b>Facebook</b><i class="fa fa-facebook"></i></label>
-                                        <input name="facebook" placeholder="" type="text"class="form-control">  
+                                        <input name="facebook_penerima" placeholder="" type="text"class="form-control">  
                                     </div>
                                 </div>
                             </div>
@@ -267,23 +267,23 @@
                                     <!--col --> 
                                     <div class="col-md-6">
                                         <label><b>Judul Donasi</b><i class="fa fa-briefcase"></i></label>
-                                        <input name="#" placeholder="" type="text"class="form-control">  
+                                        <input name="judul_donasi_penerima" placeholder="" type="text"class="form-control">  
                                     </div>
                                     <div class="col-md-6">
                                         <label><b>Target Donasi</b><i class="fa fa-bullseye"></i></label>
-                                        <input name="#" placeholder="" type="text"class="form-control">  
+                                        <input name="target_donasi_penerima" placeholder="" type="text"class="form-control">  
                                     </div>
                                     <div class="col-md-4">
                                         <label><b>Tanggal Mulai</b><i class="fa fa-calendar-check-o"></i></label>
-                                        <input name="#" placeholder="" type="text"class="form-control">  
+                                        <input name="tanggal_mulai" placeholder="" type="text"class="form-control">  
                                     </div>
                                     <div class="col-md-4">
-                                        <label><b>Tanggak Berakhir</b><i class="fa fa-calendar-check-o"></i></label>
-                                        <input name="#" placeholder="" type="text"class="form-control">  
+                                        <label><b>Tanggal Berakhir</b><i class="fa fa-calendar-check-o"></i></label>
+                                        <input name="tanggal_akhir" placeholder="" type="text"class="form-control">  
                                     </div>
                                     <div class="col-md-4">
                                         <label><b>No. Rekening</b><i class="fa fa-briefcase"></i></label>
-                                        <input name="#" placeholder="" type="text"class="form-control">  
+                                        <input name="no_rekening_penerima" placeholder="" type="text"class="form-control">  
                                     </div>
                                     <div class="col-md-6">
                                         <label><b>Batas Waktu Penggalangan Dana</b><i class="fa fa-calendar-check-o"></i>  </label>
@@ -308,11 +308,11 @@
                                     </div> 
                                     <div class="col-md-6">
                                         <label><b>Deskripsi Kejadian</b></label>
-                                        <textarea cols="15" rows="2" placeholder="Ceritakan tentang diri Anda,alasan penggalangan dana, dan rencana penggunaan dana*"></textarea>
+                                        <textarea cols="15" rows="2" name="deskripsi_penerima" placeholder="" type="text"class="form-control autosize-input"></textarea>
                                     </div> 
                                     <div class="col-md-6">
                                         <label><b>Tujuan Galang Dana</b></label>
-                                        <textarea cols="15" rows="2" placeholder="Contoh: Membantu siswa yang rumahnya ambruk karena longsor*"></textarea>
+                                        <textarea cols="15" rows="2" name="tujuan_penerima" placeholder="" type="text"class="form-control autosize-input"></textarea>
                                     </div>       
                                 </div>
                                 <div class="profile-edit-container add-list-container">
