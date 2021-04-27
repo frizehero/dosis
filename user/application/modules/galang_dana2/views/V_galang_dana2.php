@@ -30,7 +30,7 @@
                                           <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/5.jpg" alt=""></a>
                                               <span class="avatar-tooltip">Posting oleh  <strong>Dhinda</strong></span>
                                           </div>
-                                          <h3><a href="user-detail-donasi.html"><?php echo $rowP->nama_pembuka;?></a></h3>
+                                          <h3><a href="user-detail-donasi.html"><?php echo $rowP->judul_donasi_penerima;?></a></h3>
                                           <p><b>120</b> <i> hari tersisa</i>  </p>
                                           <div class="distance-title"> 
                                               <b>Rp 4.580,000</b> Terkumpul   <span style="padding-left: 60px;">1</span> %
@@ -41,7 +41,7 @@
                                                   </div>
                                               </div>
                                           <div class="geodir-category-options fl-wrap">
-                                              <div class="geodir-category-location"><i>Target Rp 8,000,000</i></div>
+                                              <div class="geodir-category-location"><i>Target Rp <?php echo $rowP->target_donasi_penerima;?></i></div>
                                           </div>
                                         </div>
                                     </article>
