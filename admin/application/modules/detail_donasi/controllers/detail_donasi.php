@@ -34,8 +34,8 @@ class Detail_donasi extends MX_Controller {
 
 	function tambah()
 	{
-		$this->m_data_sekolah->tambah();
-		redirect('data_sekolah');
+		$this->M_detail_donasi->tambah();
+		redirect('detail_donasi');
 	}
 
 	function edit()

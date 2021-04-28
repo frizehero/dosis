@@ -482,7 +482,7 @@
                                                                             <div class="col-md-6">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Tujuan Membuka Galang Dana</label>
-                                                                                    <textarea rows="1" name="deskripsi_penerima" class="form-control autosize-input" style="height: 80px;"></textarea>
+                                                                                    <textarea rows="1" name="tujuan_galang_dana" class="form-control autosize-input" style="height: 80px;"></textarea>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-6">
