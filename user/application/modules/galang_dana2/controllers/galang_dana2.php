@@ -23,6 +23,16 @@ class Galang_dana2 extends MX_Controller {
 		echo Modules::run('template/tampilCore', $data);
 	}
 
+	function detailview()
+	{
+		$data = array(
+			'namamodule' 	=> "galang_dana2",
+			'namafileview' 	=> "V_galang_dana2_detail",
+			'tampil'		=> $this->M_galang_dana2->tampil(),
+		);
+		echo Modules::run('template/tampilBeranda', $data);
+	}
+
 		// halaman tambah
 	function tambahview()
 	{

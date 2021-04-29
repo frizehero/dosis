@@ -14,7 +14,7 @@ class M_galang_dana2 extends CI_Model {
 	}
 
 
-		function tampiledit($id)
+	function tampiledit($id)
 	{
 		$idnya=decrypt_url($id);
 
@@ -23,11 +23,15 @@ class M_galang_dana2 extends CI_Model {
 		$this->db->where('id_galang_dana2',$idnya);
 		$query = $this->db->get();
 
-
-		
     	return $query->row_array();
 	}
 
+	function tampildetail($id)
+	{
+		$idnya = decrypt_url($id);
+		$this->db->where('id_galang_dana2', $idnya);
+		return $this->db->get('galang_dana2')->row_array();
+	}
 	
 
 	function tambah()
