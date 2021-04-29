@@ -105,7 +105,7 @@ class M_edit_profil extends CI_Model {
 	{
 		$id = $this->input->post('id');
 
-			$foto_profil		= $this->input->post('foto_profil');
+		$foto_profil		= $this->input->post('foto_profil');
 			$nama_lengkap		= $this->input->post('nama_lengkap');
 			$username		= $this->input->post('username');
 			$email     = $this->input->post('email');
@@ -117,10 +117,14 @@ class M_edit_profil extends CI_Model {
 			$facebook   = $this->input->post('facebook ');
 			$twitter 		= $this->input->post('twitter');
 
+		$insert_oleh = date( 'Y-m-d', strtotime($tgl_oleh));
+		$insert_buku = date( 'Y-m-d', strtotime($tgl_buku));
+
+
 
 		$this->load->library('upload');
 		$nmfile = "file_".time();
-		$config['upload_path']		= 'assets/identitas/pembuka';
+		$config['upload_path']		= 'assets/img/';
 		$config['allowed_types']	= 'gif|jpg|png|jpeg';
 		$config['max_size']			= 5120;
 		$config['max_width']		= 4300;
