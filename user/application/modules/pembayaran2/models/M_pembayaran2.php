@@ -11,8 +11,6 @@ class M_pembayaran2 extends CI_Model {
 		$query = $this->db->get();
 
 
-
-
 		return $query->result();
 	}
 
@@ -36,11 +34,10 @@ class M_pembayaran2 extends CI_Model {
 
 	function tambah()
 	{
-
-
 		$nominal_donasi		= $this->input->post('nominal_donasi');
 		$nama_lengkap		= $this->input->post('nama_lengkap');
 		$tgl_pembayaran     = $this->input->post('tgl_pembayaran');
+		$pilih_bank         = $this->input->post('pilih_bank');
 		$nama_rekening		= $this->input->post('nama_rekening');
 		$no_rekening	    = $this->input->post('no_rekening');
 		$bukti_pembayaran   = $this->input->post('bukti_pembayaran ');
@@ -67,6 +64,7 @@ class M_pembayaran2 extends CI_Model {
 					'nominal_donasi'	=> $nominal_donasi,
 					'nama_lengkap'      => $nama_lengkap,
 					'tgl_pembayaran'    => $tgl_pembayaran,
+					'pilih_bank'        => $pilih_bank,
 					'nama_rekening'     => $nama_rekening,
 					'no_rekening'       => $no_rekening,
 					'bukti_pembayaran' 	=> $gbr['file_name'],
@@ -84,6 +82,7 @@ class M_pembayaran2 extends CI_Model {
 					'nominal_donasi'	=> $nominal_donasi,
 					'nama_lengkap'      => $nama_lengkap,
 					'tgl_pembayaran'    => $tgl_pembayaran,
+					'pilih_bank'        => $pilih_bank,
 					'nama_rekening'     => $nama_rekening,
 					'no_rekening'       => $no_rekening,
 					'bukti_pembayaran' 	=> 'kosong1.png',

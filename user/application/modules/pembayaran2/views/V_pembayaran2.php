@@ -5,8 +5,7 @@
                                     <div class="page-title-icon">
                                         <i class="pe-7s-medal icon-gradient bg-tempting-azure"></i>
                                     </div>
-                                    <div>Data Ruangan
-                                        <div class="page-title-subheading">Halaman Manajemen Data Ruangan</div>
+                                    <div>History Pembayaran
                                     </div>
                                 </div>
                                 <div class="page-title-actions">
@@ -34,7 +33,7 @@
                                 </div>
                                 <div class="dashboard-message">
                                     <div class="dashboard-message-text">
-                                        <p><i class="fa fa-comments-o"></i> Transfer Rekening a.n : Ahmad Wahyudi (Penggalang Dana)</p>
+                                        <p><i class="fa fa-comments-o"></i> <?php echo $rowP->nama_rekening;?></p>
                                         <p><i class="fa fa-check"></i> Nominal Donasi : RP 10.000</p>
                                         <p><i class="fa fa-gears" style="margin-left:1/00px;"></i> Waktu Transfer : 14.00 WIB</p>
                                         <div class="distance-title" style="margin-bottom:-25px; margin-left:264px;"> 
