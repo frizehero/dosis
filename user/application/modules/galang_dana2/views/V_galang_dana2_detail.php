@@ -7,9 +7,9 @@
                                                     <div class="list-single-main-media fl-wrap">
                                                         <div class="single-slider-wrapper fl-wrap">
                                                             <div class="single-slider fl-wrap"  >
-                                                                <div class="slick-slide-item"><img src="<?php echo base_url() ?>images/galangdana/<?php echo $rowP->identitas_pembuka;?>"></div>
-                                                                <div class="slick-slide-item"><img src="<?php echo base_url() ?>images/galangdana/<?php echo $rowP->identitas_pembuka;?>"></div>
-                                                                <div class="slick-slide-item"><img src="<?php echo base_url() ?>images/galangdana/<?php echo $rowP->identitas_pembuka;?>"></div>
+                                                                <div class="slick-slide-item"><img src="<?php echo base_url() ?>images/galangdana/<?php echo $rowP->foto1_penerima;?>"></div>
+                                                                <div class="slick-slide-item"><img src="<?php echo base_url() ?>images/galangdana/<?php echo $rowP->foto2_penerima;?>"></div>
+                                                                <div class="slick-slide-item"><img src="<?php echo base_url() ?>images/galangdana/<?php echo $rowP->foto3_penerima;?>"></div>
                                                             </div>
                                                             <div class="swiper-button-prev sw-btn"><i class="fa fa-long-arrow-left"></i></div>
                                                             <div class="swiper-button-next sw-btn"><i class="fa fa-long-arrow-right"></i></div>

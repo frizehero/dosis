@@ -326,9 +326,9 @@
                                                 <div class="add-list-media-wrap">
                                                     <form class="fuzone">
                                                         <div class="fu-text">
-                                                            <span><i class="fa fa-picture-o"></i> Masukkan foto peristiwa</span>
+                                                            <span><i class="fa fa-picture-o"></i> Pilih salah satu foto untuk identitas diri</span>
+                                                            <input name="foto" type="file" class="form-control-file">
                                                         </div>
-                                                        <input type="file" class="upload">
                                                     </form>
                                                 </div>
                                             </div>
