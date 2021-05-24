@@ -34,8 +34,8 @@
                                 <div class="dashboard-message">
                                     <div class="dashboard-message-text">
                                         <p><i class="fa fa-comments-o"></i> <?php echo $rowP->nama_rekening;?></p>
-                                        <p><i class="fa fa-check"></i> Nominal Donasi : RP 10.000</p>
-                                        <p><i class="fa fa-gears" style="margin-left:1/00px;"></i> Waktu Transfer : 14.00 WIB</p>
+                                        <p><i class="fa fa-check"></i> <?php echo $rowP->nominal_donasi;?></p>
+                                        <p><i class="fa fa-gears" style="margin-left:1/00px;"></i> <?php echo $rowP->tgl_pembayaran;?></p>
                                         <div class="distance-title" style="margin-bottom:-25px; margin-left:264px;"> 
                                             <b>Rp 4.580,000</b> Terkumpul   <span style="padding-left: 60px;">1</span> %
                                             <div> <br></div>

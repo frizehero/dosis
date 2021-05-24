@@ -14,8 +14,6 @@
                                 </div>
                             </div>
                             <div class="custom-form">
-                                <label><b>Nama Lengkap</b><i class="fa fa-user-o"></i></label>
-                                <input name="nama_lengkap" placeholder="Sandra Lidya" type="text"class="form-control">
                                 <div class="row">
                                     <!--col --> 
                                     <div class="col-md-6">
