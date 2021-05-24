@@ -20,7 +20,7 @@ class M_pembayaran2 extends CI_Model {
 		$idnya=decrypt_url($id);
 
 		$this->db->select('*');
-		$this->db->from('pembayaran2');
+		$this->db->from('pembayaran');
 		$this->db->where('id_pembayaran',$idnya);
 		$query = $this->db->get();
 
@@ -35,7 +35,6 @@ class M_pembayaran2 extends CI_Model {
 	function tambah()
 	{
 		$nominal_donasi		= $this->input->post('nominal_donasi');
-		$nama_lengkap		= $this->input->post('nama_lengkap');
 		$tgl_pembayaran     = $this->input->post('tgl_pembayaran');
 		$pilih_bank         = $this->input->post('pilih_bank');
 		$nama_rekening		= $this->input->post('nama_rekening');
@@ -46,7 +45,7 @@ class M_pembayaran2 extends CI_Model {
 		
 		$this->load->library('upload');
 		$nmfile = "file_".time();
-		$config['upload_path']		= 'images/pembayaran/';
+		$config['upload_path']		= 'images/pembayaran2/';
 		$config['allowed_types']	= 'gif|jpg|png|jpeg';
 		$config['max_size']			= 5120;
 		$config['max_width']		= 4300;
@@ -62,7 +61,6 @@ class M_pembayaran2 extends CI_Model {
 				$gbr = $this->upload->data();
 				$data = array(
 					'nominal_donasi'	=> $nominal_donasi,
-					'nama_lengkap'      => $nama_lengkap,
 					'tgl_pembayaran'    => $tgl_pembayaran,
 					'pilih_bank'        => $pilih_bank,
 					'nama_rekening'     => $nama_rekening,
@@ -80,17 +78,17 @@ class M_pembayaran2 extends CI_Model {
 		else{
 				$data = array(
 					'nominal_donasi'	=> $nominal_donasi,
-					'nama_lengkap'      => $nama_lengkap,
 					'tgl_pembayaran'    => $tgl_pembayaran,
 					'pilih_bank'        => $pilih_bank,
 					'nama_rekening'     => $nama_rekening,
 					'no_rekening'       => $no_rekening,
-					'bukti_pembayaran' 	=> 'kosong1.png',
+					'bukti_pembayaran' 	=> 'kosong1.jpeg',
 					'pesan_kesan'       => $pesan_kesan,
 					
 				);
 				$this->db->insert('pembayaran2', $data);
 				$this->session->set_flashdata('msg', 'suksestambah');
+
 			}
 	}
 
