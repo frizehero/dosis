@@ -11,8 +11,9 @@
                             <center><img width="100" class="rounded-circle" src="assets/images/avatars/14.jpg" alt=""></center>
                         </div></br>
                         <div class="d-block text-center">
-                            <a href="<?php echo base_url('edit_profil/editview/'); ?>">
-                                <button class="btn-shadow-primary btn btn-primary btn-lg" type="submit" name="gambar">Ganti Foto Profil</button>
+                            <div class="photoUpload">
+                                <input type="file" class="upload">
+                            </div>
                             </a>
                         </div>
                         <div class="card-body">
@@ -48,8 +49,9 @@
                                 <label for="exampleEmail" class="col-sm-3 col-form-label">Jenis Kelamain</label>
                                 <div class="col-sm-9">
                                     <select name="select" id="exampleSelect" class="form-control">
-                                        <option>Laki - laki</option>
-                                        <option>Perempuan</option>
+                                        <option value="Laki-laki">Laki-laki</option>
+                                        <option value="Perempuan">perempuan</option>
+                                        <option value="bencong">bencong</option>
                                     </select>
                                 </div>
                             </div>
