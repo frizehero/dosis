@@ -326,7 +326,7 @@
                                                 <div class="add-list-media-wrap">
                                                     <form class="fuzone">
                                                         <div class="fu-text">
-                                                            <span><i class="fa fa-picture-o"></i> Click here or drop files to upload</span>
+                                                            <span><i class="fa fa-picture-o"></i> Masukkan foto peristiwa</span>
                                                         </div>
                                                         <input type="file" class="upload">
                                                     </form>
@@ -340,7 +340,7 @@
                                                 <div class="add-list-media-wrap">
                                                     <form class="fuzone">
                                                         <div class="fu-text">
-                                                            <span><i class="fa fa-picture-o"></i> Click here or drop files to upload</span>
+                                                            <span><i class="fa fa-picture-o"></i> Masukkan foto peristiwa</span>
                                                         </div>
                                                         <input type="file" class="upload">
                                                     </form>
@@ -354,7 +354,7 @@
                                                 <div class="add-list-media-wrap">
                                                     <form class="fuzone">
                                                         <div class="fu-text">
-                                                            <span><i class="fa fa-picture-o"></i> Click here or drop files to upload</span>
+                                                            <span><i class="fa fa-picture-o"></i> Masukkan foto peristiwa</span>
                                                         </div>
                                                         <input type="file" class="upload">
                                                     </form>

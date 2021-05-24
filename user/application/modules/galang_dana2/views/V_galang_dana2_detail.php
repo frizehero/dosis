@@ -7,9 +7,9 @@
                                                     <div class="list-single-main-media fl-wrap">
                                                         <div class="single-slider-wrapper fl-wrap">
                                                             <div class="single-slider fl-wrap"  >
-                                                                <div class="slick-slide-item"><img src="images/all/4.jpg" alt=""></div>
-                                                                <div class="slick-slide-item"><img src="images/all/5.jpg" alt=""></div>
-                                                                <div class="slick-slide-item"><img src="images/all/6.jpg" alt=""></div>
+                                                                <div class="slick-slide-item"><img src="<?php echo base_url() ?>images/galangdana/<?php echo $rowP->identitas_pembuka;?>"></div>
+                                                                <div class="slick-slide-item"><img src="<?php echo base_url() ?>images/galangdana/<?php echo $rowP->identitas_pembuka;?>"></div>
+                                                                <div class="slick-slide-item"><img src="<?php echo base_url() ?>images/galangdana/<?php echo $rowP->identitas_pembuka;?>"></div>
                                                             </div>
                                                             <div class="swiper-button-prev sw-btn"><i class="fa fa-long-arrow-left"></i></div>
                                                             <div class="swiper-button-next sw-btn"><i class="fa fa-long-arrow-right"></i></div>
@@ -23,7 +23,6 @@
                                                             <h3>DESKRIPSI</h3>
                                                         </div>
                                                         <p><?php echo $rowP->deskripsi_penerima;?></p></br>
-                                                            <img src="images/all/28.jpg" alt="" width="650px">
                                                             <br>
                                                             <br>
                                                             <hr>
@@ -41,10 +40,10 @@
                                                                 Terima kasih atas doa, dukungan dan bantuannya. Semoga Tuhan membalas semua kebaikan teman-teman #OrangBaik.</b></p>
                                                         <div class="list-author-widget-contacts">
                                                         </div>
-                                                        <div class="post-author"><a href="profil-penggalang dana.html"><img src="images/avatar/4.jpg" alt=""><span>By , <?php echo $rowP->nama_pembuka;?></span></a></div>
+                                                        <div class="post-author"><a href="profil-penggalang dana.html"><img src="<?php echo base_url() ?>images/avatar/4.jpg" alt=""><span>By , <?php echo $rowP->nama_pembuka;?></span></a></div>
                                                         <div class="post-opt">
                                                             <ul>
-                                                                <li><i class="fa fa-calendar-check-o"></i> <span>25 April 2021 - 15 Mei 2021</span></li>
+                                                                <li><i class="fa fa-calendar-check-o"></i> <span><?php echo $rowP->tgl_dibuat;?></span></li>
                                                             </ul>
                                                         </div>
                                                         <div class="row">
@@ -67,14 +66,14 @@
                                                             </div>    
                                                         </div>
                                                     </div>
-                                                <div class="list-single-main-item fl-wrap" id="sec4">
+                                                <!--<div class="list-single-main-item fl-wrap" id="sec4">
                                                     <div class="list-single-main-item-title fl-wrap">
                                                         <h3>KOMENTAR</h3>
                                                     </div>
                                                     <div class="reviews-comments-wrap">
                                                         <div class="reviews-comments-item">
                                                             <div class="review-comments-avatar">
-                                                                <img src="images/avatar/1.jpg" alt="">
+                                                                <img src="<?php echo base_url() ?>images/avatar/1.jpg" alt="">
                                                             </div>
                                                             <div class="reviews-comments-item-text">
                                                                 <h4><a href="#">Jessie Manrty</a></h4>
@@ -85,32 +84,8 @@
                                                                 <span class="reviews-comments-item-date"><i class="fa fa-calendar-check-o"></i>27 May 2018</span>
                                                             </div>
                                                         </div>
-                                                        <div class="reviews-comments-item">
-                                                            <div class="review-comments-avatar">
-                                                                <img src="images/avatar/2.jpg" alt="">
-                                                            </div>
-                                                            <div class="reviews-comments-item-text">
-                                                                <h4><a href="#">Mark Rose</a></h4>
-                                                                <h6 style="text-align: right; margin-right: -60px;"><a class="show-reg-form modal-open" style="margin-top: -30px; color: red;"><i class="fa fa-warning"></i></h6>
-                                                                <div class="clearfix"></div>
-                                                                <p>" Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. "</p>
-                                                                <span class="reviews-comments-item-date"><i class="fa fa-calendar-check-o"></i>12 April 2018</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="reviews-comments-item">
-                                                            <div class="review-comments-avatar">
-                                                                <img src="images/avatar/3.jpg" alt="">
-                                                            </div>
-                                                            <div class="reviews-comments-item-text">
-                                                                <h4><a href="#">Adam Koncy</a></h4>
-                                                                <div class="listing-rating card-popup-rainingvis" data-starrating2="5"> </div>
-                                                                <div class="clearfix"></div>
-                                                                <p>" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere convallis purus non cursus. Cras metus neque, gravida sodales massa ut. "</p>
-                                                                <span class="reviews-comments-item-date"><i class="fa fa-calendar-check-o"></i>03 December 2017</span>
-                                                            </div>
-                                                        </div>
                                                     </div>
-                                                </div>  
+                                                </div>-->
                                             </div>
                                         </div>
                                         <div class="col-md-4">
@@ -118,9 +93,9 @@
                                                 <div class="box-widget-item fl-wrap">
                                                     <div class="box-widget list-author-widget">
                                                         <div class="list-author-widget-header shapes-bg-small  color-bg fl-wrap">
-                                                            <h2 style="font-size: 20px;"><b>Farhan Ariyanto</b></h2>
+                                                            <h2 style="font-size: 20px;"><b><?php echo $rowP->nama_penerima;?></b></h2>
                                                             <span class="list-author-widget-link"></span>
-                                                            <img src="images/all/4.jpg" alt=""> 
+                                                            <img src="<?php echo base_url() ?>images/all/4.jpg" alt=""> 
                                                         </div>
                                                         <div class="box-widget-content">
                                                             <div class="list-author-widget-text">
@@ -135,7 +110,7 @@
                                                                         Kategori
                                                                     </div>
                                                                     <div class="col-md-6" style="padding: 0px 5px 0px 5px;">
-                                                                        : Kecelakan/Sakit
+                                                                        : <?php echo $rowP->kategori_penerima;?>
                                                                     </div>
                                                                     </div>
                                                                 </br>
@@ -171,7 +146,7 @@
                                                                             Alamat
                                                                         </div>
                                                                         <div class="col-md-6" style="padding: 0px 5px 0px 5px;">
-                                                                            : Jl.Kalimas No.6, RT 06/RW 07,Kel.Bumiayu,Kec.Kaliwangi,Kota Probolinggo,Jawa Timur,224352
+                                                                            : <?php echo $rowP->alamat_penerima;?>
                                                                         </div>
                                                                     </div>
                                                                 </br>
@@ -215,28 +190,28 @@
                                                         <div class="box-widget-content">
                                                             <ul>
                                                                 <li class="clearfix">
-                                                                    <a href="#"  class="widget-posts-img"><img src="images/all/1.jpg"  alt=""></a>
+                                                                    <a href="#"  class="widget-posts-img"><img src="<?php echo base_url() ?>images/all/1.jpg"  alt=""></a>
                                                                     <div class="widget-posts-descr">
                                                                         <a href="#" title="">Cafe "Lollipop"</a>
                                                                         <span class="widget-posts-date"><i class="fa fa-calendar-check-o"></i> 21 Mar 2017 </span> 
                                                                     </div>
                                                                 </li>
                                                                 <li class="clearfix">
-                                                                    <a href="#"  class="widget-posts-img"><img src="images/all/2.jpg"  alt=""></a>
+                                                                    <a href="#"  class="widget-posts-img"><img src="<?php echo base_url() ?>images/all/2.jpg"  alt=""></a>
                                                                     <div class="widget-posts-descr">
                                                                         <a href="#" title=""> Apartment in the Center</a>
                                                                         <span class="widget-posts-date"><i class="fa fa-calendar-check-o"></i> 7 Mar 2017 </span> 
                                                                     </div>
                                                                 </li>
                                                                 <li class="clearfix">
-                                                                    <a href="#"  class="widget-posts-img"><img src="images/all/3.jpg"  alt=""></a>
+                                                                    <a href="#"  class="widget-posts-img"><img src="<?php echo base_url() ?>images/all/3.jpg"  alt=""></a>
                                                                     <div class="widget-posts-descr">
                                                                         <a href="#" title="">Event in City Mol</a>
                                                                         <span class="widget-posts-date"><i class="fa fa-calendar-check-o"></i> 7 Mar 2017 </span>
                                                                     </div>
                                                                 </li>
                                                                 <li class="clearfix">
-                                                                    <a href="#"  class="widget-posts-img"><img src="images/all/4.jpg"  alt=""></a>
+                                                                    <a href="#"  class="widget-posts-img"><img src="<?php echo base_url() ?>images/all/4.jpg"  alt=""></a>
                                                                     <div class="widget-posts-descr">
                                                                         <a href="#" title="">Event in City Mol</a>
                                                                         <span class="widget-posts-date"><i class="fa fa-calendar-check-o"></i> 7 Mar 2017 </span>
