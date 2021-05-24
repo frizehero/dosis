@@ -65,7 +65,7 @@ $menu = $uri_segments[3];
         <header class="main-header dark-header fs-header sticky">
             <div class="header-inner">
                 <div class="logo-holder">
-                    <a href="<?php echo base_url('beranda'); ?>"><img src="images/logo.png" alt=""></a>
+                    <a href="<?php echo base_url('beranda'); ?>"><img src="<?php echo base_url() ?>images/logo.png" alt=""></a>
                 </div>
                 <div class="header-search vis-header-search">
                     <div class="header-search-input-item">
@@ -77,7 +77,7 @@ $menu = $uri_segments[3];
                 <a href="<?php echo base_url('galang_dana2/tambahview'); ?>" class="add-list">Galang Dana <span><i class="fa fa-plus"></i></span></a>
                 <div class="header-user-menu">
                     <div class="header-user-name">
-                        <span><img src="images/avatar/4.jpg" alt=""></span>
+                        <span><img src="<?php echo base_url() ?>images/avatar/4.jpg" alt=""></span>
                         Abdul Hasan
                     </div>
                     <ul>
