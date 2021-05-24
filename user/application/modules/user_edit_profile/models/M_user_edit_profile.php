@@ -42,7 +42,7 @@ class M_user_edit_profile extends CI_Model {
 					'twitter'		=> $twitter,
 
 				);
-				$this->db->insert('user_edit_profile', $data);
+				$this->db->update('user_edit_profile', $data);
 				$this->session->set_flashdata('msg', 'suksestambah');
 			
 	}
@@ -58,7 +58,6 @@ class M_user_edit_profile extends CI_Model {
 
 	function edit()
 	{
-		$id      			= $this->input->post('id');
 		$nama 				= $this->input->post('nama');
 		$email				= $this->input->post('email');
 		$jenis_kelamin		= $this->input->post('jenis_kelamin');

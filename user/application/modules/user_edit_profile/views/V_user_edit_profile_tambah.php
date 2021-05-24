@@ -52,7 +52,6 @@
                                                 <input name="instagram"  type="text" class="form-control">
                                                 <label><b>TWITTER</b><i class="fa fa-twitter"></i>  </label>
                                                 <input name="twitter"  type="text" class="form-control">
-
                                                 <div class="profile-edit-container add-list-container">
                                                     <button class="btn  big-btn  color-bg flat-btn" type="submit" >SIMPAN DATA<i class="fa fa-angle-right"></i></button>
                                                 </div>
