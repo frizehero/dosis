@@ -31,9 +31,10 @@
                     <div class="mb-3 card">
                         <div class="card-header">
                             <font face= "Times New Roman" color="blue" size="3">Edit Profil</font>
+
                             <a href="<?php echo base_url('edit_profil/editview/'. encrypt_url($res->id_edit_profil)); ?>" type="button" class="btn btn-primary" style="margin-left: 675px;"> 
-                                        Ubahlah Data Dirimu
-                                    </a>
+                                Ubahlah Data Dirimu
+                            </a>
                             <hr>
                         </div>
                         <div class="content-right ">
@@ -41,8 +42,7 @@
                             <center><img width="100" class="rounded-circle" src="assets/images/avatars/14.jpg" alt=""></center>
                         </div></br>
                         <div class="d-block text-center">
-                            <a href="<?php echo base_url('edit_profil/editview/'); ?>">
-                            </a>
+                            <a href="<?php echo base_url('edit_profil/editview/'); ?>"></a>
                         </div>
                         <div class="card-body">
                             <div class="row">
@@ -58,7 +58,7 @@
                             <div class="position-relative row form-group">
                                 <label for="exampleEmail" class="col-sm-3 col-form-label">Username</label>
                                 <div class="col-sm-9">
-                                    <input name="username" placeholder="" type="text"class="form-control">
+                                    <input name="username" value="<?php echo $res->username?>" type="text"class="form-control">
                                 </div>
                             </div>
                             </div>
@@ -68,7 +68,7 @@
                             <div class="position-relative row form-group">
                                 <label for="exampleEmail" class="col-sm-3 col-form-label">Email</label>
                                 <div class="col-sm-9">
-                                    <input name="email" placeholder="" type="text"class="form-control">
+                                    <input name="email" value="<?php echo $res->email?>" type="text"class="form-control">
                                 </div>
                             </div>
                             </div>
@@ -147,7 +147,7 @@
                             <div class="position-relative row form-group">
                                 <label for="exampleEmail" class="col-sm-3 col-form-label">Kode Pos</label>
                                 <div class="col-sm-9">
-                                    <input name="kode_pos" placeholder="" type="text"class="form-control">
+                                    <input name="kode_pos" value="<?php echo $res->kode_pos?>" type="text"class="form-control">
                                 </div>
                             </div>
                             </div>
@@ -157,7 +157,7 @@
                             <div class="position-relative row form-group">
                                 <label for="exampleEmail" class="col-sm-3 col-form-label">No WA</label>
                                 <div class="col-sm-9">
-                                    <input name="no_wa" placeholder="" type="text"class="form-control">
+                                    <input name="no_wa" value="<?php echo $res->no_wa?>" type="text"class="form-control">
                                 </div>
                             </div>
                             </div> 
@@ -165,7 +165,7 @@
                             <div class="position-relative row form-group">
                                 <label for="exampleEmail" class="col-sm-3 col-form-label">No Telepon</label>
                                 <div class="col-sm-9">
-                                    <input name="no_telepon" placeholder="" type="text"class="form-control">
+                                    <input name="no_telepon" value="<?php echo $res->no_telepon?>" type="text"class="form-control">
                                 </div>
                             </div>
                             </div>
@@ -175,7 +175,7 @@
                             <div class="position-relative row form-group">
                                 <label for="exampleEmail" class="col-sm-3 col-form-label">Instagram</label>
                                 <div class="col-sm-9">
-                                    <input name="instagram" placeholder="" type="text"class="form-control">
+                                    <input name="instagram" value="<?php echo $res->instagram?>" type="text"class="form-control">
                                 </div>
                             </div>
                             </div>
@@ -183,7 +183,7 @@
                             <div class="position-relative row form-group">
                                 <label for="exampleEmail" class="col-sm-3 col-form-label">Facebook</label>
                                 <div class="col-sm-9">
-                                    <input name="facebook" placeholder="" type="text"class="form-control">
+                                    <input name="facebook" value="<?php echo $res->facebook?>" type="text"class="form-control">
                                 </div>
                             </div>  
                             </div>
@@ -193,7 +193,7 @@
                             <div class="position-relative row form-group">
                                 <label for="exampleEmail" class="col-sm-3 col-form-label">twitter</label>
                                 <div class="col-sm-9">
-                                    <input name="twitter" placeholder="" type="text"class="form-control">
+                                    <input name="twitter" value="<?php echo $res->twitter?>" type="text"class="form-control">
                                 </div>
                             </div>
                             </div>
