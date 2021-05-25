@@ -22,7 +22,7 @@
                             <?php $no=1; foreach ($tampil AS $rowP ) { ?>
                                 <div class="listing-item" style="width: 320px;">
                                     <article class="geodir-category-listing fl-wrap">
-                                        <div class="geodir-category-img">
+                                        <div class="geodir-category-img" style="height: 170px;">
                                             <img src="<?php echo base_url() ?>images/galangdana/<?php echo $rowP->identitas_pembuka;?>">
                                             <div class="overlay"></div>
                                         </div>
@@ -30,7 +30,7 @@
                                           <div class="listing-avatar"><a href="author-single.html"><img src="<?php echo base_url() ?>images/avatar/5.jpg" alt=""></a>
                                               <span class="avatar-tooltip">Posting oleh  <strong>Dhinda</strong></span>
                                           </div>
-                                          <h3><a href="<?php echo base_url('galang_dana2/detailview/' . encrypt_url($rowP->id_galang_dana2)); ?>"><?php echo $rowP->judul_donasi_penerima; ?></a></h3>
+                                          <h3 style="height: 90px;"><a href="<?php echo base_url('galang_dana2/detailview/' . encrypt_url($rowP->id_galang_dana2)); ?>"><?php echo $rowP->judul_donasi_penerima; ?></a></h3>
                                           <p><b>120</b> <i> hari tersisa</i>  </p>
                                           <div class="distance-title"> 
                                               <b>Rp 4.580,000</b> Terkumpul   <span style="padding-left: 60px;">1</span> %

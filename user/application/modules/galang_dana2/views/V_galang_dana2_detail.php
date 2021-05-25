@@ -4,9 +4,9 @@
                                     <div class="row">
                                         <div class="col-md-8">
                                             <div class="list-single-main-wrapper fl-wrap" id="sec2">
-                                                    <div class="list-single-main-media fl-wrap">
+                                                    <div class="list-single-main-media fl-wrap" style="height: 470px;">
                                                         <div class="single-slider-wrapper fl-wrap">
-                                                            <div class="single-slider fl-wrap"  >
+                                                            <div class="single-slider fl-wrap" >
                                                                 <div class="slick-slide-item"><img src="<?php echo base_url() ?>images/galangdana/<?php echo $rowP->foto1_penerima;?>"></div>
                                                                 <div class="slick-slide-item"><img src="<?php echo base_url() ?>images/galangdana/<?php echo $rowP->foto2_penerima;?>"></div>
                                                                 <div class="slick-slide-item"><img src="<?php echo base_url() ?>images/galangdana/<?php echo $rowP->foto3_penerima;?>"></div>

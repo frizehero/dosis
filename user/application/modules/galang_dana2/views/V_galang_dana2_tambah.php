@@ -21,18 +21,19 @@
                                 <div class="row">
                                 <div class="col-md-6">
                                         <label><b>Jenjang</b></label>
-                                        <select data-placeholder="Status" class="chosen-select" style="display: none;">
-                                            <option>Guru</option>
-                                            <option>Siswa/Siswi</option>
-                                            <option>Orang lain</option>
+                                        <select name="jenjang_pembuka" data-placeholder="Status" class="chosen-select" style="display: none;">
+                                            <option value="SD">SD</option>
+                                            <option value="SMP">SMP</option>
+                                            <option value="SMA">SMA</option>
+                                            <option value="SMK">SMK</option>
                                         </select>
                                     </div>
                                     <div class="col-md-6">
                                         <label><b>Status</b></label>
-                                        <select data-placeholder="Status" class="chosen-select" style="display: none;">
-                                            <option>Guru</option>
-                                            <option>Siswa/Siswi</option>
-                                            <option>Orang lain</option>
+                                        <select name="status_pembuka" data-placeholder="Status" class="chosen-select" style="display: none;">
+                                            <option value="Siswa">Siswa</option>
+                                            <option value="Guru">Guru</option>
+                                            <option value="Orang Lain">Orang Lain</option>
                                         </select>
                                     </div>
                                 </div>
@@ -274,12 +275,12 @@
                                         <input name="target_donasi_penerima" placeholder="" type="text"class="form-control">  
                                     </div>
                                     <div class="col-md-4">
-                                        <label><b>Tanggal Mulai</b><i class="fa fa-calendar-check-o"></i></label>
-                                        <input name="tanggal_mulai" placeholder="" type="text"class="form-control">  
+                                        <label><b>Tanggal Mulai</b></label>
+                                        <input name="tanggal_mulai" placeholder="" type="date"class="form-control">  
                                     </div>
                                     <div class="col-md-4">
-                                        <label><b>Tanggal Berakhir</b><i class="fa fa-calendar-check-o"></i></label>
-                                        <input name="tanggal_akhir" placeholder="" type="text"class="form-control">  
+                                        <label><b>Tanggal Berakhir</b></label>
+                                        <input name="tanggal_akhir" placeholder="" type="date"class="form-control">  
                                     </div>
                                     <div class="col-md-4">
                                         <label><b>No. Rekening</b><i class="fa fa-briefcase"></i></label>
@@ -287,11 +288,13 @@
                                     </div>
                                     <div class="col-md-6">
                                         <label><b>Batas Waktu Penggalangan Dana</b><i class="fa fa-calendar-check-o"></i>  </label>
-                                        <select data-placeholder="All Categories" class="chosen-select" style="display: none;">
-                                            <option>30 Hari</option>
-                                            <option>60 Hari</option>
-                                            <option>90 Hari</option>
-                                            <option>120 Hari</option>
+                                        <select name="batas_waktu_penerima" data-placeholder="Status" class="chosen-select" style="display: none;">
+                                            <option value="15 Hari">15 Hari</option>
+                                            <option value="30 Hari">30 Hari</option>
+                                            <option value="60 Hari">60 Hari</option>
+                                            <option value="90 Hari">90 Hari</option>
+                                            <option value="120 Hari">120 Hari</option>
+                                            <option value="150 Hari">150 Hari</option>
                                         </select>
                                     </div> 
                                     <div class="col-md-6">
@@ -326,7 +329,7 @@
                                                 <div class="add-list-media-wrap">
                                                     <form class="fuzone">
                                                         <div class="fu-text">
-                                                            <span><i class="fa fa-picture-o"></i> Pilih salah satu foto untuk identitas diri</span>
+                                                            <span><i class="fa fa-picture-o"></i> Masukkan foto peristiwa</span>
                                                             <input name="foto" type="file" class="form-control-file">
                                                         </div>
                                                     </form>
@@ -341,8 +344,8 @@
                                                     <form class="fuzone">
                                                         <div class="fu-text">
                                                             <span><i class="fa fa-picture-o"></i> Masukkan foto peristiwa</span>
+                                                            <input name="foto" type="file" class="form-control-file">
                                                         </div>
-                                                        <input type="file" class="upload">
                                                     </form>
                                                 </div>
                                             </div>
@@ -355,8 +358,8 @@
                                                     <form class="fuzone">
                                                         <div class="fu-text">
                                                             <span><i class="fa fa-picture-o"></i> Masukkan foto peristiwa</span>
+                                                            <input name="foto" type="file" class="form-control-file">
                                                         </div>
-                                                        <input type="file" class="upload">
                                                     </form>
                                                 </div>
                                             </div>
