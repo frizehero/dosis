@@ -39,7 +39,7 @@
                         </div>
                         <div class="content-right ">
                         </br>
-                            <center><img width="100" class="rounded-circle" src="assets/images/avatars/14.jpg" alt=""></center>
+                            <center><img width="100" class="rounded-circle" src="<?php echo base_url() ?>assets/images/fotoprofil/ <?php echo $res->foto_profil;?>"></center>
                         </div></br>
                         <div class="d-block text-center">
                             <a href="<?php echo base_url('edit_profil/editview/'); ?>"></a>

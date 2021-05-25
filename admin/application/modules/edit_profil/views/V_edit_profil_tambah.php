@@ -12,9 +12,9 @@
                         </div></br>
                         <div class="d-block text-center">
                             <div class="photoUpload">
-                                <input type="file" class="upload">
+                                <span><i class="fa fa-picture-o"></i> Pilih salah satu foto untuk identitas diri</span>
+                                <input name="foto" type="file" class="form-control-file">
                             </div>
-                            </a>
                         </div>
                         <div class="card-body">
                             <div class="row">
@@ -22,7 +22,7 @@
                             <div class="position-relative row form-group">
                                 <label for="" class="col-sm-3 col-form-label">Nama Lengkap</label>
                                 <div class="col-sm-9">
-                                    <input name="nama_lengkap" placeholder="" type="text"class="form-control">
+                                    <input name="nama_lengkap" placeholder="" type="text"class="form-control" value="">
                                 </div>
                             </div>
                             </div>

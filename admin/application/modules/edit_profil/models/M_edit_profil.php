@@ -46,7 +46,7 @@ class M_edit_profil extends CI_Model {
 		
 		$this->load->library('upload');
 		$nmfile = "file_".time();
-		$config['upload_path']		= 'assets/identitas_pembuka/pembuka/';
+		$config['upload_path']		= 'assets/images/fotoprofil/';
 		$config['allowed_types']	= 'gif|jpg|png|jpeg';
 		$config['max_size']			= 5120;
 		$config['max_width']		= 4300;
@@ -55,10 +55,11 @@ class M_edit_profil extends CI_Model {
 		
 		$this->upload->initialize($config);
 		
-		if($_FILES['gambar']['name'])
+		if($_FILES['foto']['name'])
         {
-            if ($this->upload->do_upload('gambar'))
+            if ($this->upload->do_upload('foto'))
             {
+
 				$gbr = $this->upload->data();
 				$data = array(
 					'foto_profil'		=> $foto_profil,
