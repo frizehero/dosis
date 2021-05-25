@@ -39,9 +39,9 @@ class M_edit_profil extends CI_Model {
 			$alamat     = $this->input->post('alamat');
 			$kode_pos		= $this->input->post('kode_pos');
 			$no_wa	    = $this->input->post('no_wa');
-			$no_telepon   = $this->input->post('no_telepon ');
+			$no_telepon   = $this->input->post('no_telepon');
 			$instagram 		= $this->input->post('instagram');
-			$facebook   = $this->input->post('facebook ');
+			$facebook   = $this->input->post('facebook');
 			$twitter 		= $this->input->post('twitter');
 		
 		$this->load->library('upload');
@@ -75,7 +75,7 @@ class M_edit_profil extends CI_Model {
 					
 					
 				);
-				$this->db->insert('edit_profil', $data);
+				$this->db->update('edit_profil', $data);
 				$this->session->set_flashdata('msg', 'suksestambah');
 			
 			}	 
@@ -95,7 +95,7 @@ class M_edit_profil extends CI_Model {
 					'twitter'		=> $twitter,
 					
 				);
-				$this->db->insert('edit_profil', $data);
+				$this->db->update('edit_profil', $data);
 				$this->session->set_flashdata('msg', 'suksestambah');
 			}
 	}
@@ -112,9 +112,9 @@ class M_edit_profil extends CI_Model {
 			$alamat     = $this->input->post('alamat');
 			$kode_pos		= $this->input->post('kode_pos');
 			$no_wa	    = $this->input->post('no_wa');
-			$no_telepon   = $this->input->post('no_telepon ');
+			$no_telepon   = $this->input->post('no_telepon');
 			$instagram 		= $this->input->post('instagram');
-			$facebook   = $this->input->post('facebook ');
+			$facebook   = $this->input->post('facebook');
 			$twitter 		= $this->input->post('twitter');
 
 		$insert_oleh = date( 'Y-m-d', strtotime($tgl_oleh));
