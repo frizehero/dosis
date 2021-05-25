@@ -33,46 +33,69 @@
                                 <div class="act-widget fl-wrap">
                                     <label><b>Pilih Bank</b></label>
                                     <div class="row">
-                                        <div class="col-md-3">
-                                            <div class="add-list-media-image">
-                                                <img src="images/transfer/1.png" alt="">
+                                        <div class="col-md-4">
+                                            <div class="add-list-media-header">
+                                                <label class="radio inline"> 
+                                                    <input type="radio" value="BCA" name="pilih_bank">
+                                                        <span><img src="<?php echo base_url() ?>images/transfer/1.png" alt=""></span> 
+                                                </label>
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
-                                            <div class="add-list-media-image">
-                                                <img src="images/transfer/2.png" alt="">
+                                        <div class="col-md-4">
+                                            <div class="add-list-media-header">
+                                                <label class="radio inline"> 
+                                                    <input type="radio" value="" pilih_bank">
+                                                        <span><img src="<?php echo base_url() ?>images/transfer/2.png" alt=""></span>
+                                                </label> 
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
-                                            <div class="add-list-media-image">
-                                                <img src="images/transfer/3.png" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="add-list-media-image">
-                                                <img src="images/transfer/4.png" alt="">
+                                        <div class="col-md-4">
+                                            <div class="add-list-media-header">
+                                                <label class="radio inline"> 
+                                                    <input type="radio" name="pilih_bank">
+                                                        <span><img src="<?php echo base_url() ?>images/transfer/3.png" alt=""></span>
+                                                </label> 
                                             </div>
                                         </div>
                                     </div>
                                     <br>
-                                    <div class="row"> 
-                                        <div class="col-md-3">
-                                            <div class="add-list-media-image">
-                                                <a href="#">
-                                                    <img src="images/transfer/5.png" alt="">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="add-list-media-header">
+                                                <label class="radio inline"> 
+                                                    <input type="radio" name="pilih_bank">
+                                                        <span><img src="<?php echo base_url() ?>images/transfer/4.png" alt=""></span>
+                                                </label> 
+                                            </div>
+                                        </div> 
+                                        <div class="col-md-4">
+                                            <div class="add-list-media-header">
+                                                <label class="radio inline"> 
+                                                    <input type="radio" name="pilih_bank">
+                                                        <span><img src="<?php echo base_url() ?>images/transfer/5.png" alt=""></span>
+                                                </label> 
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
-                                            <div class="add-list-media-image">
-                                                <img src="images/transfer/6.png" alt="">
+                                         <div class="col-md-4">
+                                            <div class="add-list-media-header">
+                                                <label class="radio inline"> 
+                                                    <input type="radio" name="pilih_bank">
+                                                        <span><img src="<?php echo base_url() ?>images/transfer/6.png" alt=""></span>
+                                                </label> 
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
-                                            <div class="add-list-media-image">
-                                                <img src="images/transfer/7.png" alt="">
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                         <div class="col-md-4">
+                                            <div class="add-list-media-header">
+                                                <label class="radio inline"> 
+                                                    <input type="radio" name="pilih_bank">
+                                                        <span><img src="<?php echo base_url() ?>images/transfer/7.png" alt=""></span>
+                                                </label> 
                                             </div>
-                                        </div>                                     
+                                        </div>                     
                                     </div>
                                     <br>
                                     <br>
