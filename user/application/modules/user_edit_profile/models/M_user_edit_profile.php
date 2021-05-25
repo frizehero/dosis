@@ -5,7 +5,12 @@ class M_user_edit_profile extends CI_Model {
 
 	function tampil()
 	{
-		return $this->db->get('user_edit_profile')->result();
+		$this->db->select('*');
+		$this->db->from('user_edit_profile');
+		$query = $this->db->get();
+
+
+		return $query->result();
 	}
 
 	function tambah()
@@ -50,14 +55,23 @@ class M_user_edit_profile extends CI_Model {
 	function tampiledit($id)
 	{
 		$idnya=decrypt_url($id);
+
+		$this->db->select('*');
+		$this->db->from('user_edit_profile');
 		$this->db->where('id_user_edit_profile',$idnya);
-    	return $this->db->get('user_edit_profile')->row_array();
+		$query = $this->db->get();
+
+
+		
+    	return $query->row_array();
 	}
 
 
 
 	function edit()
 	{
+		$id = $this->input->post('id');
+		
 		$nama 				= $this->input->post('nama');
 		$email				= $this->input->post('email');
 		$jenis_kelamin		= $this->input->post('jenis_kelamin');
