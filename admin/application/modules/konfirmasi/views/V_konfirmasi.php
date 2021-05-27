@@ -1,3 +1,4 @@
+<?php tampilnotif()?>
 <div class="app-main__inner">
 
                     <ul class="body-tabs body-tabs-layout tabs-animated body-tabs-animated nav">
@@ -176,138 +177,140 @@
                                         </div>                       
                                     </div>
                                 </div>
-                            </div>                           
-                            <div class="tab-pane tabs-animation fade" id="tab-content-1" role="tabpanel">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="main-card mb-3 card">
-                                            <div class="card-header">History Pembayaran
-                                                <div class="btn-actions-pane-right">
-                                                    <button class="btn btn-primary" id="reportrange">
-                                                        <i class="fa fa-calendar pr-1"></i>
-                                                        <span>February 1, 2021 - February 28, 2021</span>
-                                                        <i class="fa pl-1 fa-caret-down"></i>
-                                                    </button>
+                            </div> 
+                            <form action="<?php echo base_url('pembayaran2') ?>" method="POST" enctype="multipart/form-data">      
+                            <input name="id" value="<?php echo $tampil['id_pembayaran2'] ?>" type="hidden" class="form-control">                    
+                                <div class="tab-pane tabs-animation fade" id="tab-content-1" role="tabpanel">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="main-card mb-3 card">
+                                                <div class="card-header">History Pembayaran
+                                                    <div class="btn-actions-pane-right">
+                                                        <button class="btn btn-primary" id="reportrange">
+                                                            <i class="fa fa-calendar pr-1"></i>
+                                                            <span>February 1, 2021 - February 28, 2021</span>
+                                                            <i class="fa pl-1 fa-caret-down"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="table-responsive">
+                                                    <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="text-center">No.</th>
+                                                                <th>Nama</th>
+                                                                <th class="text-center">Tanggal Transfer</th>
+                                                                <th class="text-center">Jumlah</th>
+                                                                <th class="text-center">Nomor Rekening</th>
+                                                                <th class="text-center">Bukti Transfer</th>
+                                                                <th class="text-center">Bank</th>
+                                                                <th class="text-center">Actions</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="text-center text-muted">1.</td>
+                                                                <td>
+                                                                    <div class="widget-content p-0">
+                                                                        <div class="widget-content-wrapper">
+                                                                            <div class="widget-content-left mr-3">
+                                                                                <div class="widget-content-left">
+                                                                                    <img width="40" class="rounded-circle" src="assets/images/avatars/4.jpg" alt="">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="widget-content-left flex2">
+                                                                                <div class="widget-heading">John Doe</div>
+                                                                                <div class="widget-subheading opacity-7">pendonasi</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-center">20 maret 2020</td>
+                                                                <td class="text-center">Rp.20.000,00</td>
+                                                                <td class="text-center">
+                                                                    <div class="badge badge-warning">29372819246</div>
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <img width="100" class="rectangle" src="assets/images/bukti-transfer/bukti-transfer-1.jpg" alt="">
+                                                                </td>
+                                                                <td class="text-center">BCA</td>
+                                                                <td class="text-center">
+                                                                    <div role="group" class="btn-group-sm btn-group">
+                                                                        <button class="btn-shadow btn btn-primary">konfirmasi</button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center text-muted">2.</td>
+                                                                <td>
+                                                                    <div class="widget-content p-0">
+                                                                        <div class="widget-content-wrapper">
+                                                                            <div class="widget-content-left mr-3">
+                                                                                <div class="widget-content-left">
+                                                                                    <img width="40" class="rounded-circle" src="assets/images/avatars/4.jpg" alt="">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="widget-content-left flex2">
+                                                                                <div class="widget-heading">Maulana</div>
+                                                                                <div class="widget-subheading opacity-7">pendonasi</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-center">20 Januari 2021</td>
+                                                                <td class="text-center">Rp.218.000,00</td>
+                                                                <td class="text-center">
+                                                                    <div class="badge badge-warning">0660928898</div>
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <img width="100" class="rectangle" src="assets/images/bukti-transfer/bukti-transfer-2.jpg" alt="">
+                                                                </td>
+                                                                <td class="text-center">BCA</td>
+                                                                <td class="text-center">
+                                                                    <div role="group" class="btn-group-sm btn-group">
+                                                                        <button class="btn-shadow btn btn-primary">konfirmasi</button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center text-muted">3.</td>
+                                                                <td>
+                                                                    <div class="widget-content p-0">
+                                                                        <div class="widget-content-wrapper">
+                                                                            <div class="widget-content-left mr-3">
+                                                                                <div class="widget-content-left">
+                                                                                    <img width="40" class="rounded-circle" src="assets/images/avatars/4.jpg" alt="">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="widget-content-left flex2">
+                                                                                <div class="widget-heading">Ruben Tillman</div>
+                                                                                <div class="widget-subheading opacity-7">pendonasi</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-center">value="<?php echo $tampil['nominal_donasi']?>"</td>
+                                                                <td class="text-center">Rp.550.000,00</td>
+                                                                <td class="text-center">
+                                                                    <div class="badge badge-warning">0660928898</div>
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <img width="100" class="rectangle" src="assets/images/bukti-transfer/bukti-transfer-3.jpg" alt="">
+                                                                </td>
+                                                                <td class="text-center">Mandiri</td>
+                                                                <td class="text-center">
+                                                                    <div role="group" class="btn-group-sm btn-group">
+                                                                        <button class="btn-shadow btn btn-primary">konfirmasi</button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                 </div>
                                             </div>
-                                            <div class="table-responsive">
-                                                <table class="align-middle mb-0 table table-borderless table-striped table-hover">
-                                                    <thead>
-                                                        <tr>
-                                                            <th class="text-center">No.</th>
-                                                            <th>Nama</th>
-                                                            <th class="text-center">Tanggal Transfer</th>
-                                                            <th class="text-center">Jumlah</th>
-                                                            <th class="text-center">Nomor Rekening</th>
-                                                            <th class="text-center">Bukti Transfer</th>
-                                                            <th class="text-center">Bank</th>
-                                                            <th class="text-center">Actions</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td class="text-center text-muted">1.</td>
-                                                            <td>
-                                                                <div class="widget-content p-0">
-                                                                    <div class="widget-content-wrapper">
-                                                                        <div class="widget-content-left mr-3">
-                                                                            <div class="widget-content-left">
-                                                                                <img width="40" class="rounded-circle" src="assets/images/avatars/4.jpg" alt="">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="widget-content-left flex2">
-                                                                            <div class="widget-heading">John Doe</div>
-                                                                            <div class="widget-subheading opacity-7">pendonasi</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td class="text-center">20 maret 2020</td>
-                                                            <td class="text-center">Rp.20.000,00</td>
-                                                            <td class="text-center">
-                                                                <div class="badge badge-warning">29372819246</div>
-                                                            </td>
-                                                            <td class="text-center">
-                                                                <img width="100" class="rectangle" src="assets/images/bukti-transfer/bukti-transfer-1.jpg" alt="">
-                                                            </td>
-                                                            <td class="text-center">BCA</td>
-                                                            <td class="text-center">
-                                                                <div role="group" class="btn-group-sm btn-group">
-                                                                    <button class="btn-shadow btn btn-primary">konfirmasi</button>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="text-center text-muted">2.</td>
-                                                            <td>
-                                                                <div class="widget-content p-0">
-                                                                    <div class="widget-content-wrapper">
-                                                                        <div class="widget-content-left mr-3">
-                                                                            <div class="widget-content-left">
-                                                                                <img width="40" class="rounded-circle" src="assets/images/avatars/4.jpg" alt="">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="widget-content-left flex2">
-                                                                            <div class="widget-heading">Maulana</div>
-                                                                            <div class="widget-subheading opacity-7">pendonasi</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td class="text-center">20 Januari 2021</td>
-                                                            <td class="text-center">Rp.218.000,00</td>
-                                                            <td class="text-center">
-                                                                <div class="badge badge-warning">0660928898</div>
-                                                            </td>
-                                                            <td class="text-center">
-                                                                <img width="100" class="rectangle" src="assets/images/bukti-transfer/bukti-transfer-2.jpg" alt="">
-                                                            </td>
-                                                            <td class="text-center">BCA</td>
-                                                            <td class="text-center">
-                                                                <div role="group" class="btn-group-sm btn-group">
-                                                                    <button class="btn-shadow btn btn-primary">konfirmasi</button>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="text-center text-muted">3.</td>
-                                                            <td>
-                                                                <div class="widget-content p-0">
-                                                                    <div class="widget-content-wrapper">
-                                                                        <div class="widget-content-left mr-3">
-                                                                            <div class="widget-content-left">
-                                                                                <img width="40" class="rounded-circle" src="assets/images/avatars/4.jpg" alt="">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="widget-content-left flex2">
-                                                                            <div class="widget-heading">Ruben Tillman</div>
-                                                                            <div class="widget-subheading opacity-7">pendonasi</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td class="text-center">7 Desember 2020</td>
-                                                            <td class="text-center">Rp.550.000,00</td>
-                                                            <td class="text-center">
-                                                                <div class="badge badge-warning">0660928898</div>
-                                                            </td>
-                                                            <td class="text-center">
-                                                                <img width="100" class="rectangle" src="assets/images/bukti-transfer/bukti-transfer-3.jpg" alt="">
-                                                            </td>
-                                                            <td class="text-center">Mandiri</td>
-                                                            <td class="text-center">
-                                                                <div role="group" class="btn-group-sm btn-group">
-                                                                    <button class="btn-shadow btn btn-primary">konfirmasi</button>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
                                         </div>
-                                    </div>
-                                </div> 
-                            </div>
+                                    </div> 
+                                </div>
                         </div>
             </div>
         </div>
