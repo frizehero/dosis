@@ -41,7 +41,7 @@
                         <div class="card-hover profile-responsive card-border border-success mb-3 card">
                         <div class="dropdown-menu-header">
                             <div class="wrapper rounded"></div>
-                            <img src="<?php echo base_url() ?>assets/images/galangdana/<?php echo $rowP->dokumentasi_peristiwa1;?>" style="width: 314px; height:210px;">   
+                            <img src="<?php echo base_url() ?>assets/images/galangdana/<?php echo $rowP->identitas_pembuka;?>" style="width: 314px; height:210px;">   
                         </div>
                         <div class="p-0 card-body">
                             
@@ -53,11 +53,11 @@
                                             <div class="h5 modal-title">
                                                 <div class="text-right">
                                                     <h6>
-                                                        <div ><?php echo $rowP->tgl_awal;?></div>
+                                                        <div >20-april-2021</div>
                                                     </h6>
                                                 </div>
                                                 <h5 class="menu-header-title">
-                                                    <div ><?php echo $rowP->judul_donasi;?></div>
+                                                    <div ><?php echo $rowP->judul_donasi_penerima;?></div>
                                                 
 
                                                 </h5>
@@ -105,7 +105,7 @@
 
                         </div>
                         <div class="text-center d-block card-footer">
-                            <a href="<?php echo base_url('detail_donasi'); ?>" class="btn-shadow-primary btn btn-primary btn-lg">Detail</a>
+                            <a href="<?php echo base_url('galang_dana2/detailview/' . encrypt_url($rowP->id_galang_dana2)); ?>" class="btn-shadow-primary btn btn-primary btn-lg">Detail</a>
                             <button type="button" class="btn-shadow-primary btn btn-primary btn-lg" data-toggle="modal" data-target=".bd-example-modal-sm">Bagikan</button>
                         </div>
                         </div>

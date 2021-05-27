@@ -366,7 +366,7 @@
                                                                             <div class="col-md-12">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Judul Donasi</label>
-                                                                                    <input name="judul_donasi" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                                    <input name="judul_donasi_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -473,7 +473,7 @@
                                                                             <div class="col-md-12">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Deskripsi Peristiwa</label>
-                                                                                    <textarea rows="1" name="deskripsi_peristiwa" class="form-control autosize-input" style="height: 80px;"></textarea>
+                                                                                    <textarea rows="1" name="deskripsi_penerima" class="form-control autosize-input" style="height: 80px;"></textarea>
                                                                                 </div>
                                                                             </div>
  
@@ -487,7 +487,7 @@
                                                                             </div>
                                                                             <div class="col-md-6">
                                                                                 <div class="position-relative form-group">
-                                                                                    <label name="dokumentasi1" for="exampleFile" class="">Dokumentasi 1</label>
+                                                                                    <label name="foto1_penerima" for="exampleFile" class="">Dokumentasi 1</label>
                                                                                     <div class="card mb-3 bg-primary widget-content">
                                                                                         <div class="widget-content-wrapper">
                                                                                             <div class="widget-content-left">
@@ -503,7 +503,7 @@
                                                                         <div class="form-row">
                                                                             <div class="col-md-6">
                                                                                 <div class="position-relative form-group">
-                                                                                    <label name="nobpkb" for="exampleFile" class="">Dokumentasi 2</label>
+                                                                                    <label name="foto2_penerima" for="exampleFile" class="">Dokumentasi 2</label>
                                                                                     <div class="card mb-3 bg-primary widget-content">
                                                                                         <div class="widget-content-wrapper">
                                                                                             <div class="widget-content-left">
@@ -516,7 +516,7 @@
                                                                             </div>
                                                                             <div class="col-md-6">
                                                                                 <div class="position-relative form-group">
-                                                                                    <label name="nobpkb" for="exampleFile" class="">Dokumentasi 3</label>
+                                                                                    <label name="foto3_penerima" for="exampleFile" class="">Dokumentasi 3</label>
                                                                                     <div class="card mb-3 bg-primary widget-content">
                                                                                         <div class="widget-content-wrapper">
                                                                                             <div class="widget-content-left">
