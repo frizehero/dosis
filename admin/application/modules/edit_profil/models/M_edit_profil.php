@@ -36,8 +36,13 @@ class M_edit_profil extends CI_Model {
 			$nama_lengkap		= $this->input->post('nama_lengkap');
 			$username		= $this->input->post('username');
 			$email     = $this->input->post('email');
+			$jenis_kelamin     = $this->input->post('jenis_kelamin');
+			$provinsi     = $this->input->post('provinsi');
+			$kota     = $this->input->post('kota');
+			$kecamatan     = $this->input->post('kecamatan');
+			$desa     = $this->input->post('desa');
 			$alamat     = $this->input->post('alamat');
-			$kode_pos		= $this->input->post('kode_pos');
+			$kode_pos     = $this->input->post('kode_pos');
 			$no_wa	    = $this->input->post('no_wa');
 			$no_telepon   = $this->input->post('no_telepon');
 			$instagram 		= $this->input->post('instagram');
@@ -62,10 +67,15 @@ class M_edit_profil extends CI_Model {
 
 				$gbr = $this->upload->data();
 				$data = array(
-					'foto_profil'		=> $foto_profil,
+					'foto_profil'		=> $gbr['file_name'],
 					'nama_lengkap'		=> $nama_lengkap,
 					'username'		=> $username,
 					'email'		=> $email,
+					'jenis_kelamin'		=> $jenis_kelamin,
+					'provinsi'		=> $provinsi,
+					'kota'		=> $kota,
+					'kecamatan'		=> $kecamatan,
+					'desa'		=> $desa,
 					'alamat'		=> $alamat,
 					'kode_pos'		=> $kode_pos,
 					'no_wa'		=> $no_wa,
@@ -87,6 +97,11 @@ class M_edit_profil extends CI_Model {
 					'nama_lengkap'		=> $nama_lengkap,
 					'username'		=> $username,
 					'email'		=> $email,
+					'jenis_kelamin'		=> $jenis_kelamin,
+					'provinsi'		=> $provinsi,
+					'kota'		=> $kota,
+					'kecamatan'		=> $kecamatan,
+					'desa'		=> $desa,
 					'alamat'		=> $alamat,
 					'kode_pos'		=> $kode_pos,
 					'no_wa'		=> $no_wa,
@@ -106,7 +121,7 @@ class M_edit_profil extends CI_Model {
 	{
 		$id = $this->input->post('id');
 
-		$foto_profil		= $this->input->post('foto_profil');
+			$foto_profil		= $this->input->post('foto_profil');
 			$nama_lengkap		= $this->input->post('nama_lengkap');
 			$username		= $this->input->post('username');
 			$email     = $this->input->post('email');

@@ -12,8 +12,8 @@
                         </div></br>
                         <div class="d-block text-center">
                             <div class="photoUpload">
+                                <input name="foto" type="file" class="form-control-file" style="margin-left: 400px;">
                                 <span><i class="fa fa-picture-o"></i> Pilih salah satu foto untuk identitas diri</span>
-                                <input name="foto" type="file" class="form-control-file">
                             </div>
                         </div>
                         <div class="card-body">
@@ -46,11 +46,11 @@
                             </div>
                             <div class="col-md-6">
                             <div class="position-relative row form-group">
-                                <label for="exampleEmail" class="col-sm-3 col-form-label">Jenis Kelamain</label>
+                                <label for="exampleEmail" class="col-sm-3 col-form-label">Jenis Kelamin</label>
                                 <div class="col-sm-9">
-                                    <select name="select" id="exampleSelect" class="form-control">
+                                    <select name="jenis_kelamin" id="exampleSelect" class="form-control">
                                         <option value="Laki-laki">Laki-laki</option>
-                                        <option value="Perempuan">perempuan</option>
+                                        <option value="Perempuan">Perempuan</option>
                                         <option value="bencong">bencong</option>
                                     </select>
                                 </div>
@@ -63,7 +63,14 @@
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">Provinsi</label>
                                         <div class="col-sm-9">
                                             <select name="wilayah_provinsi" class="multiselect-dropdown form-control">
-
+                                                <?php
+                                                    foreach ($provinsi as $prov) {
+                                                        ?>
+                                                        <option <?php echo $provinsi_selected == $prov->id_provinsi ? 'selected="selected"' : '' ?>
+                                                            value="<?php echo $prov->id_provinsi ?>"><?php echo $prov->nama_provinsi ?></option>
+                                                        <?php
+                                                    }
+                                                    ?>
                                                 
 
                                             </select>

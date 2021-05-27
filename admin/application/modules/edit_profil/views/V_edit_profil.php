@@ -14,7 +14,7 @@
                                   
 
                                     <a href="<?php echo base_url('edit_profil/tambahview'); ?>" type="button" class="btn btn-primary">
-                                        Tambah Data
+                                        Ubah Datamu Disini
                                     </a>
 
                                 </div>    </div>
@@ -22,9 +22,7 @@
 
                     <?php tampilnotif()?>
 
-                    <?php 
-                     $no=1;
-                    foreach($tampil as $res) { ?>
+                    <?php $no=1; foreach($tampil as $res) { ?>
                     
                     <div class="row">
                     <div class="app-main__inner">
@@ -32,14 +30,15 @@
                         <div class="card-header">
                             <font face= "Times New Roman" color="blue" size="3">Edit Profil</font>
 
-                            <a href="<?php echo base_url('edit_profil/editview/'. encrypt_url($res->id_edit_profil)); ?>" type="button" class="btn btn-primary" style="margin-left: 675px;"> 
-                                Ubahlah Data Dirimu
+                            <a href="<?php echo base_url('edit_profil/tambahview'); ?>" type="button" class="btn btn-primary" style="margin-left: 680px;">
+                                Ubah Datamu Disini
                             </a>
+
                             <hr>
                         </div>
                         <div class="content-right ">
                         </br>
-                            <center><img width="100" class="rounded-circle" src="<?php echo base_url() ?>assets/images/fotoprofil/ <?php echo $res->foto_profil;?>"></center>
+                            <center><img width="100" class="rounded-circle" src="<?php echo base_url('') ?>assets/images/fotoprofil/<?php echo $res->foto_profil;?>"></center>
                         </div></br>
                         <div class="d-block text-center">
                             <a href="<?php echo base_url('edit_profil/editview/'); ?>"></a>
@@ -74,12 +73,9 @@
                             </div>
                             <div class="col-md-6">
                             <div class="position-relative row form-group">
-                                <label for="exampleEmail" class="col-sm-3 col-form-label">Jenis Kelamain</label>
+                                <label for="exampleEmail" class="col-sm-3 col-form-label">Jenis Kelamin</label>
                                 <div class="col-sm-9">
-                                    <select name="select" id="exampleSelect" class="form-control">
-                                        <option>Laki - laki</option>
-                                        <option>Perempuan</option>
-                                    </select>
+                                    <input name="jenis_kelamin" value="<?php echo $res->jenis_kelamin?>" type="text"class="form-control">
                                 </div>
                             </div>
                             </div>
@@ -89,11 +85,7 @@
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">Provinsi</label>
                                         <div class="col-sm-9">
-                                            <select name="wilayah_provinsi" class="multiselect-dropdown form-control">
-
-                                                
-
-                                            </select>
+                                            <input name="provinsi" value="<?php echo $res->provinsi?>" type="text"class="form-control">
                                         </div>
                                     </div>
                                 </div> 
@@ -101,10 +93,7 @@
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">KOTA/KAB.</label>
                                         <div class="col-sm-9">
-                                            <select name="wilayah_kabupaten" class="multiselect-dropdown form-control">
-
-
-                                            </select>
+                                            <input name="kota" value="<?php echo $res->kota?>" type="text"class="form-control">
                                         </div>
                                     </div>
                                 </div>
@@ -114,11 +103,7 @@
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">Kecamatan</label>
                                         <div class="col-sm-9">
-                                            <select name="districts" class="multiselect-dropdown form-control">
-
-                                             
-
-                                            </select>
+                                            <input name="kecamatan" value="<?php echo $res->kecamatan?>" type="text"class="form-control">
                                         </div>
                                     </div>
                                 </div>
@@ -126,10 +111,7 @@
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">Kel./Desa</label>
                                         <div class="col-sm-9">
-                                            <select name="wilayah_desa" class="multiselect-dropdown form-control">
-
-
-                                            </select>
+                                            <input name="desa" value="<?php echo $res->desa?>" type="text"class="form-control">
                                         </div>
                                     </div>
                                 </div>
@@ -139,7 +121,7 @@
                             <div class="position-relative row form-group">
                                 <label class="col-sm-3 col-form-label">Alamat</label>
                                 <div class="col-sm-9">
-                                <textarea rows="1" name="alamat" class="form-control autosize-input" style="height: 80px;"></textarea>
+                                    <input name="alamat" value="<?php echo $res->alamat?>" type="text"class="form-control">
                                 </div>
                             </div>
                             </div>
