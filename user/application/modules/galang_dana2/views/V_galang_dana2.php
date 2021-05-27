@@ -24,8 +24,6 @@
                                     <article class="geodir-category-listing fl-wrap">
                                         <div class="geodir-category-img" style="height: 170px;">
                                             <img src="<?php echo base_url() ?>images/galangdana/<?php echo $rowP->identitas_pembuka;?>">
-                                            <div class="overlay"></div>
-                                            <div class="list-post-counter"><span>Edit</span>/<i class="fa fa-trash fa-w-16"></i></div>
                                         </div>
                                         <div class="geodir-category-content fl-wrap" style="height : 280px;">
                                           <div class="listing-avatar"><a href="author-single.html"><img src="<?php echo base_url() ?>images/avatar/5.jpg" alt=""></a>
@@ -43,9 +41,43 @@
                                               </div>
                                           <div class="geodir-category-options fl-wrap">
                                               <div class="geodir-category-location"><i>Target Rp <?php echo $rowP->target_donasi_penerima;?></i></div>
-                                          </div>
+                                          </div>                                          
                                         </div>
                                     </article>
+                                    <div class="text-center" style="background-color:white;">
+                                        <button class="mr-2 border-0 btn-transition btn btn-outline-danger" data-toggle="modal" data-target="#hapus<?php echo $no ?>">Hapus</button>
+                                        <a href="<?php echo base_url('galang_dana2/editview/'. encrypt_url($rowP->id_galang_dana2)); ?>"class="mr-2 border-0 btn-transition btn btn-outline-danger">
+                                            Edit
+                                        </a>
+                                    </div>
+                                </div>
+                                  <!-- Modal HAPUS -->
+                                <div class="modal fade" id="hapus<?php echo $no ?>" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Hapus Data?</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+
+                                            <form action="<?php echo base_url('galang_dana2/hapus') ?>" method="POST" enctype="multipart/form-data">
+                                                <div class="modal-body">
+                                                    <!--Modal body-->
+                                                    <p class="text-semibold text-main"></p>
+                                                    <p>Anda Yakin Ingin Menghapus <b>galang dana ini</b> ? </p>
+
+                                                    <input name="id" type="hidden" value="<?php echo $rowP->id_galang_dana2 ?>" class="form-control">
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">tutup</button>
+                                                    <button class="btn btn-primary" type="submit">Hapus</button>
+                                                </div>
+                                            </form>
+
+                                        </div>
+                                    </div>
                                 </div>
                             <?php $no++;} ?>
                             </div>
@@ -55,6 +87,9 @@
                             </button>
                         </div>
                     </div>
+
+                    
+                  
 
                   
                    

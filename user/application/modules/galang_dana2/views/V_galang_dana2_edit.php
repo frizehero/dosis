@@ -1,4 +1,3 @@
-<h3 class="card-title"> EDIT GALANG DANA <h3>
 <?php tampilnotif()?>
     <form action="<?php echo base_url('galang_dana2/edit') ?>" method="POST" enctype="multipart/form-data">
     <input name="id" value="<?php echo $tampil['id_galang_dana2'] ?>" type="hidden" class="form-control">
@@ -23,7 +22,7 @@
                                 <div class="row">
                                 <div class="col-md-6">
                                         <label><b>Jenjang</b></label>
-                                        <select name="jenjang_pembuka" data-placeholder="Status" class="chosen-select" style="display: none;">
+                                        <select name="jenjang_pembuka" value="<?php echo $tampil['jenjang_pembuka']?>" class="chosen-select" style="display: none;">
                                             <option value="SD">SD</option>
                                             <option value="SMP">SMP</option>
                                             <option value="SMA">SMA</option>
@@ -32,7 +31,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <label><b>Status</b></label>
-                                        <select name="status_pembuka" data-placeholder="Status" class="chosen-select" style="display: none;">
+                                        <select name="status_pembuka" value="<?php echo $tampil['status_pembuka']?>" class="chosen-select" style="display: none;">
                                             <option value="Siswa">Siswa</option>
                                             <option value="Guru">Guru</option>
                                             <option value="Orang Lain">Orang Lain</option>
@@ -42,19 +41,19 @@
                                 <div class="row">   
                                     <div class="col-md-4">
                                         <label><b>No. Telephon</b><i class="fa fa-phone"></i>  </label>
-                                        <input name="telepon_pembuka" placeholder="" type="text"class="form-control">
+                                        <input name="telepon_pembuka" value="<?php echo $tampil['telepon_pembuka']?>" type="text"class="form-control">
                                     </div>
                                     <div class="col-md-4">
                                         <label><b>No. Whatsapp</b><i class="fa fa-whatsapp"></i>  </label>
-                                        <input name="whatsapp_pembuka" placeholder="" type="text"class="form-control">
+                                        <input name="whatsapp_pembuka" value="<?php echo $tampil['whatsapp_pembuka']?>" type="text"class="form-control">
                                     </div>
                                     <div class="col-md-4">
                                         <label><b>Instagram</b><i class="fa fa-instagram"></i></label>
-                                        <input name="instagram_pembuka" placeholder="" type="text"class="form-control">  
+                                        <input name="instagram_pembuka" value="<?php echo $tampil['instagram_pembuka']?>" type="text"class="form-control">  
                                     </div>
                                     <div class="col-md-4">
                                         <label><b>Facebook</b><i class="fa fa-facebook"></i></label>
-                                        <input name="facebook_pembuka" placeholder="" type="text"class="form-control">  
+                                        <input name="facebook_pembuka" value="<?php echo $tampil['facebook_pembuka']?>" type="text"class="form-control">  
                                     </div>
                                 </div>
                                 <div class="row">
@@ -121,11 +120,11 @@
                                     </div>
                                     <div class="col-md-6">
                                         <label><b>Alamat Lengkap</b></label>                                              
-                                        <textarea  rows="1" name="alamat_pembuka" placeholder="" type="text"class="form-control autosize-input" style="height: 70px" ></textarea>
+                                        <textarea  rows="1" name="alamat_pembuka" value="<?php echo $tampil['alamat_pembuka']?>" type="text"class="form-control autosize-input" style="height: 70px" ></textarea>
                                     </div>
                                     <div class="col-md-6">
                                         <label><b>Kode Pos</b><i class="fa fa-map-marker"></i></label>
-                                        <input name="kode_pos_pembuka" placeholder="" type="text"class="form-control">  
+                                        <input name="kode_pos_pembuka" value="<?php echo $tampil['kode_pos_pembuka']?>" type="text"class="form-control">  
                                     </div>
                                     <div class="col-md-12">
                                         <p></p>
@@ -146,15 +145,15 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <label><b>Nama Lengkap</b><i class="fa fa-user-o"></i></label>
-                                        <input name="nama_penerima" placeholder="" type="text"class="form-control">  
+                                        <input name="nama_penerima" value="<?php echo $tampil['nama_penerima']?>" type="text"class="form-control">  
                                     </div>
                                     <div class="col-md-6">
                                         <label><b>Nama Sekolah/Kelas</b><i class="fa fa-university"></i></label>
-                                        <input name="sekolah_penerima" placeholder="" type="text"class="form-control">  
+                                        <input name="sekolah_penerima" value="<?php echo $tampil['sekolah_penerima']?>" type="text"class="form-control">  
                                     </div>
                                     <div class="col-md-6">
                                         <label><b>Tentang Diri Kamu</b><i class=""></i></label>
-                                        <textarea  rows="1" name="tentang_diri_penerima" placeholder="" type="text"class="form-control autosize-input" style="height: 200px" ></textarea>
+                                        <textarea  rows="1" name="tentang_diri_penerima" value="<?php echo $tampil['tentang_diri_penerima']?>" type="text"class="form-control autosize-input" style="height: 200px" ></textarea>
                                     </div>
                                     <div class="col-md-6">
                                         <label><b>Identitas(KTP/Kartu pelajar)</b></label>
@@ -219,11 +218,11 @@
                                     </div>
                                     <div class="col-md-6">
                                         <label><b>Alamat Lengkap</b></label>                                              
-                                        <textarea  rows="1" name="alamat_penerima" placeholder="" type="text"class="form-control autosize-input" style="height: 70px" ></textarea>
+                                        <textarea  rows="1" name="alamat_penerima" value="<?php echo $tampil['alamat_penerima']?>" type="text"class="form-control autosize-input" style="height: 70px" ></textarea>
                                     </div>
                                     <div class="col-md-6">
                                         <label><b>Kode Pos</b><i class="fa fa-map-marker"></i></label>
-                                        <input name="kode_pos_penerima" placeholder="" type="text"class="form-control">  
+                                        <input name="kode_pos_penerima" value="<?php echo $tampil['kode_pos_penerima']?>" type="text"class="form-control">  
                                     </div>
                                     <div class="col-md-12">
                                         <p></p>
@@ -244,19 +243,19 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <label><b>No. Telephon</b><i class="fa fa-phone"></i>  </label>
-                                        <input name="telepon_penerima" placeholder="" type="text"class="form-control">
+                                        <input name="telepon_penerima" value="<?php echo $tampil['telepon_penerima']?>" type="text"class="form-control">
                                     </div>
                                     <div class="col-md-4">
                                         <label><b>No. Whatsapp</b><i class="fa fa-whatsapp"></i>  </label>
-                                        <input name="whatsapp_penerima" placeholder="" type="text"class="form-control">
+                                        <input name="whatsapp_penerima" value="<?php echo $tampil['whatsapp_penerima']?>" type="text"class="form-control">
                                     </div>
                                     <div class="col-md-4">
                                         <label><b>Instagram</b><i class="fa fa-instagram"></i></label>
-                                        <input name="instagram_penerima" placeholder="" type="text"class="form-control">  
+                                        <input name="instagram_penerima" value="<?php echo $tampil['instagram_penerima']?>" type="text"class="form-control">  
                                     </div>
                                     <div class="col-md-4">
                                         <label><b>Facebook</b><i class="fa fa-facebook"></i></label>
-                                        <input name="facebook_penerima" placeholder="" type="text"class="form-control">  
+                                        <input name="facebook_penerima" value="<?php echo $tampil['facebook_penerima']?>" type="text"class="form-control">  
                                     </div>
                                 </div>
                             </div>
@@ -270,27 +269,27 @@
                                     <!--col --> 
                                     <div class="col-md-6">
                                         <label><b>Judul Donasi</b><i class="fa fa-briefcase"></i></label>
-                                        <input name="judul_donasi_penerima" placeholder="" type="text"class="form-control">  
+                                        <input name="judul_donasi_penerima" value="<?php echo $tampil['judul_donasi_penerima']?>" type="text"class="form-control">  
                                     </div>
                                     <div class="col-md-6">
                                         <label><b>Target Donasi</b><i class="fa fa-bullseye"></i></label>
-                                        <input name="target_donasi_penerima" placeholder="" type="text"class="form-control">  
+                                        <input name="target_donasi_penerima" value="<?php echo $tampil['target_donasi_penerima']?>" type="text"class="form-control">  
                                     </div>
                                     <div class="col-md-4">
                                         <label><b>Tanggal Mulai</b></label>
-                                        <input name="tanggal_mulai" placeholder="" type="date"class="form-control">  
+                                        <input name="tanggal_mulai" value="<?php echo $tampil['tanggal_mulai']?>" type="date"class="form-control">  
                                     </div>
                                     <div class="col-md-4">
                                         <label><b>Tanggal Berakhir</b></label>
-                                        <input name="tanggal_akhir" placeholder="" type="date"class="form-control">  
+                                        <input name="tanggal_akhir" value="<?php echo $tampil['tanggal_akhir']?>" type="date"class="form-control">  
                                     </div>
                                     <div class="col-md-4">
                                         <label><b>No. Rekening</b><i class="fa fa-briefcase"></i></label>
-                                        <input name="no_rekening_penerima" placeholder="" type="text"class="form-control">  
+                                        <input name="no_rekening_penerima" value="<?php echo $tampil['no_rekening_penerima']?>" type="text"class="form-control">  
                                     </div>
                                     <div class="col-md-6">
                                         <label><b>Batas Waktu Penggalangan Dana</b><i class="fa fa-calendar-check-o"></i>  </label>
-                                        <select name="batas_waktu_penerima" data-placeholder="Status" class="chosen-select" style="display: none;">
+                                        <select name="batas_waktu_penerima"  class="chosen-select" style="display: none;">
                                             <option value="15 Hari">15 Hari</option>
                                             <option value="30 Hari">30 Hari</option>
                                             <option value="60 Hari">60 Hari</option>
@@ -301,23 +300,23 @@
                                     </div> 
                                     <div class="col-md-6">
                                         <label><b>Kategori</b></label>
-                                        <select data-placeholder="All Categories" class="chosen-select" style="display: none;">
-                                            <option>Siswa Putus Sekolah</option>
-                                            <option>Siswa Tidak Mampu</option>
-                                            <option>Kecelakaan/Sakit</option>
-                                            <option>Pembangunan</option>
-                                            <option>Kebakaran</option>
-                                            <option>Banjir</option>
-                                            <option>Tanah Longsor</option>
+                                        <select name="kategori_penerima" class="chosen-select" style="display: none;">
+                                            <option value="Siswa Putus Sekolah">Siswa Putus Sekolah</option>
+                                            <option value="Siswa Tidak Mampu">Siswa Tidak Mampu</option>
+                                            <option value="Kecelakaan/Sakit">Kecelakaan/Sakit</option>
+                                            <option value="Pembangunan">Pembangunan</option>
+                                            <option value="Kebakaran">Kebakaran</option>
+                                            <option value="Banjir">Banjir</option>
+                                            <option value="Tanah Longsor">Tanah Longsor</option>
                                         </select>
                                     </div> 
                                     <div class="col-md-6">
                                         <label><b>Deskripsi Kejadian</b></label>
-                                        <textarea cols="15" rows="2" name="deskripsi_penerima" placeholder="" type="text"class="form-control autosize-input"></textarea>
+                                        <textarea cols="15" rows="2" name="deskripsi_penerima" value="<?php echo $tampil['deskripsi_penerima']?>" type="text"class="form-control autosize-input"></textarea>
                                     </div> 
                                     <div class="col-md-6">
                                         <label><b>Tujuan Galang Dana</b></label>
-                                        <textarea cols="15" rows="2" name="tujuan_penerima" placeholder="" type="text"class="form-control autosize-input"></textarea>
+                                        <textarea cols="15" rows="2" name="tujuan_penerima" value="<?php echo $tampil['tujuan_penerima']?>" type="text"class="form-control autosize-input"></textarea>
                                     </div>       
                                 </div>
                                 <div class="profile-edit-container add-list-container">
@@ -372,7 +371,7 @@
                         </div>
                         </div>
                         <div class="profile-edit-container add-list-container">
-                            <button class="btn  big-btn  color-bg flat-btn" type="submit" >DONASI<i class="fa fa-angle-right"></i></button>
+                            <button class="btn  big-btn  color-bg flat-btn" type="submit" >Simpan Perubahan<i class="fa fa-angle-right"></i></button>
                         </div>
                     </div>
                 </div>

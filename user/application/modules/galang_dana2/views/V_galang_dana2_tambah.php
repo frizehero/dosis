@@ -161,7 +161,7 @@
                                                 <div class="fu-text">
                                                     <span><i class="fa fa-picture-o"></i> Pilih salah satu foto untuk identitas diri</span>
                                                 </div>
-                                                <input type="file" class="upload">
+                                                <input name="foto2" type="file" class="form-control-file">
                                             </form>
                                         </div>
                                     </div>  
@@ -330,7 +330,7 @@
                                                     <form class="fuzone">
                                                         <div class="fu-text">
                                                             <span><i class="fa fa-picture-o"></i> Masukkan foto peristiwa</span>
-                                                            <input name="foto" type="file" class="form-control-file">
+                                                            <input name="foto3" type="file" class="form-control-file">
                                                         </div>
                                                     </form>
                                                 </div>
@@ -344,7 +344,7 @@
                                                     <form class="fuzone">
                                                         <div class="fu-text">
                                                             <span><i class="fa fa-picture-o"></i> Masukkan foto peristiwa</span>
-                                                            <input name="foto" type="file" class="form-control-file">
+                                                            <input name="foto4" type="file" class="form-control-file">
                                                         </div>
                                                     </form>
                                                 </div>
@@ -358,7 +358,7 @@
                                                     <form class="fuzone">
                                                         <div class="fu-text">
                                                             <span><i class="fa fa-picture-o"></i> Masukkan foto peristiwa</span>
-                                                            <input name="foto" type="file" class="form-control-file">
+                                                            <input name="foto5" type="file" class="form-control-file">
                                                         </div>
                                                     </form>
                                                 </div>
