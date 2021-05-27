@@ -15,23 +15,6 @@ class M_pembayaran2 extends CI_Model {
 	}
 
 
-		function tampiledit($id)
-	{
-		$idnya=decrypt_url($id);
-
-		$this->db->select('*');
-		$this->db->from('pembayaran');
-		$this->db->where('id_pembayaran',$idnya);
-		$query = $this->db->get();
-
-
-		
-    	return $query->row_array();
-	}
-
-	
-
-
 	function tambah()
 	{
 		$nominal_donasi		= $this->input->post('nominal_donasi');
@@ -45,7 +28,7 @@ class M_pembayaran2 extends CI_Model {
 		
 		$this->load->library('upload');
 		$nmfile = "file_".time();
-		$config['upload_path']		= 'images/pembayaran2/';
+		$config['upload_path']		= 'images/pembayaran/';
 		$config['allowed_types']	= 'gif|jpg|png|jpeg';
 		$config['max_size']			= 5120;
 		$config['max_width']		= 4300;

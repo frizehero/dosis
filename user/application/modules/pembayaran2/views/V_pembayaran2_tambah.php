@@ -44,7 +44,7 @@
                                         <div class="col-md-4">
                                             <div class="add-list-media-header">
                                                 <label class="radio inline"> 
-                                                    <input type="radio" value="" pilih_bank">
+                                                    <input type="radio" value="MANDIRI SYARIAH" name="pilih_bank">
                                                         <span><img src="<?php echo base_url() ?>images/transfer/2.png" alt=""></span>
                                                 </label> 
                                             </div>
@@ -52,7 +52,7 @@
                                         <div class="col-md-4">
                                             <div class="add-list-media-header">
                                                 <label class="radio inline"> 
-                                                    <input type="radio" name="pilih_bank">
+                                                    <input type="radio" value="BNI SYARIAH" name="pilih_bank">
                                                         <span><img src="<?php echo base_url() ?>images/transfer/3.png" alt=""></span>
                                                 </label> 
                                             </div>
@@ -63,7 +63,7 @@
                                         <div class="col-md-4">
                                             <div class="add-list-media-header">
                                                 <label class="radio inline"> 
-                                                    <input type="radio" name="pilih_bank">
+                                                    <input type="radio" value="BANK MEGA SYARIAH" name="pilih_bank">
                                                         <span><img src="<?php echo base_url() ?>images/transfer/4.png" alt=""></span>
                                                 </label> 
                                             </div>
@@ -71,7 +71,7 @@
                                         <div class="col-md-4">
                                             <div class="add-list-media-header">
                                                 <label class="radio inline"> 
-                                                    <input type="radio" name="pilih_bank">
+                                                    <input type="radio" value="BRI" name="pilih_bank">
                                                         <span><img src="<?php echo base_url() ?>images/transfer/5.png" alt=""></span>
                                                 </label> 
                                                 </a>
@@ -80,7 +80,7 @@
                                          <div class="col-md-4">
                                             <div class="add-list-media-header">
                                                 <label class="radio inline"> 
-                                                    <input type="radio" name="pilih_bank">
+                                                    <input type="radio" value="MANDIRI" name="pilih_bank">
                                                         <span><img src="<?php echo base_url() ?>images/transfer/6.png" alt=""></span>
                                                 </label> 
                                             </div>
@@ -91,7 +91,7 @@
                                          <div class="col-md-4">
                                             <div class="add-list-media-header">
                                                 <label class="radio inline"> 
-                                                    <input type="radio" name="pilih_bank">
+                                                    <input type="radio" value="BNI" name="pilih_bank">
                                                         <span><img src="<?php echo base_url() ?>images/transfer/7.png" alt=""></span>
                                                 </label> 
                                             </div>
