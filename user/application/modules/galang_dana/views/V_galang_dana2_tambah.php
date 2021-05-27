@@ -1,7 +1,5 @@
-<h3 class="card-title"> EDIT GALANG DANA <h3>
 <?php tampilnotif()?>
-    <form action="<?php echo base_url('galang_dana2/edit') ?>" method="POST" enctype="multipart/form-data">
-    <input name="id" value="<?php echo $tampil['id_galang_dana2'] ?>" type="hidden" class="form-control">
+<form action="<?php echo base_url('galang_dana2/tambah') ?>" method="POST" enctype="multipart/form-data">
                 <div class="content">
                     <div class="col-md-12"  style="padding: 100px 50px 10px 50px;" >
                         <!-- profile-edit-container--> 
@@ -13,11 +11,11 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <label><b>Nama Lengkap</b> <i class="fa fa-user-o"></i></label>
-                                        <input name="nama_pembuka" value="<?php echo $tampil['nama_pembuka']?>"  type="text" class="form-control">
+                                        <input name="nama_pembuka" placeholder="" type="text"class="form-control">
                                     </div>
                                     <div class="col-md-6">
                                         <label><b>Asal Sekolah/Kelas</b> <i class="fa fa-user-o"></i></label>
-                                        <input name="sekolah_pembuka" value="<?php echo $tampil['sekolah_pembuka']?>" type="text"class="form-control">
+                                        <input name="sekolah_pembuka" placeholder="" type="text"class="form-control">
                                     </div>
                                 </div>
                                 <div class="row">
@@ -376,4 +374,3 @@
                         </div>
                     </div>
                 </div>
-    </form>

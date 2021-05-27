@@ -13,30 +13,8 @@ class M_galang_dana2 extends CI_Model {
 		return $query->result();
 	}
 
-
-	function tampiledit($id)
-	{
-		$idnya=decrypt_url($id);
-
-		$this->db->select('*');
-		$this->db->from('galang_dana2');
-		$this->db->where('id_galang_dana2',$idnya);
-		$query = $this->db->get();
-
-    	return $query->row_array();
-	}
-
-	function tampildetail($id)
-	{
-		$idnya = decrypt_url($id);
-		$this->db->where('id_galang_dana2', $idnya);
-		return $this->db->get('galang_dana2')->row_array();
-	}
-	
-
 	function tambah()
 	{
-
 
 		$nama_pembuka				= $this->input->post('nama_pembuka');
 		$sekolah_pembuka			= $this->input->post('sekolah_pembuka');
@@ -195,6 +173,25 @@ class M_galang_dana2 extends CI_Model {
 				$this->db->insert('galang_dana2', $data);
 				$this->session->set_flashdata('msg', 'suksestambah');
 			}
+	}
+
+	function tampildetail($id)
+	{
+		$idnya = decrypt_url($id);
+		$this->db->where('id_galang_dana2', $idnya);
+		return $this->db->get('galang_dana2')->row_array();
+	}
+
+	function tampiledit($id)
+	{
+		$idnya=decrypt_url($id);
+
+		$this->db->select('*');
+		$this->db->from('galang_dana2');
+		$this->db->where('id_galang_dana2',$idnya);
+		$query = $this->db->get();
+
+    	return $query->row_array();
 	}
 
 	function edit()

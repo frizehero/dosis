@@ -28,7 +28,7 @@ class Galang_dana2 extends MX_Controller {
 		$data = array(
 			'namamodule' 	=> "galang_dana2",
 			'namafileview' 	=> "V_galang_dana2_detail",
-			'tampil'		=> $this->M_galang_dana2->tampil($id),
+			'tampil'		=> $this->M_galang_dana2->tampildetail($id),
 		);
 		echo Modules::run('template/tampilBeranda', $data);
 	}

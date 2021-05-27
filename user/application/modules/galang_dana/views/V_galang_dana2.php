@@ -25,7 +25,6 @@
                                         <div class="geodir-category-img" style="height: 170px;">
                                             <img src="<?php echo base_url() ?>images/galangdana/<?php echo $rowP->identitas_pembuka;?>">
                                             <div class="overlay"></div>
-                                            <div class="list-post-counter"><span>Edit</span>/<i class="fa fa-trash fa-w-16"></i></div>
                                         </div>
                                         <div class="geodir-category-content fl-wrap" style="height : 280px;">
                                           <div class="listing-avatar"><a href="author-single.html"><img src="<?php echo base_url() ?>images/avatar/5.jpg" alt=""></a>
