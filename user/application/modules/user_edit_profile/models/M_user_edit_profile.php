@@ -29,6 +29,7 @@ class M_user_edit_profile extends CI_Model {
 		$facebook			= $this->input->post('facebook');
 		$instagram			= $this->input->post('instagram');
 		$twitter			= $this->input->post('twitter');
+		
 
 				$data = array(
 					'nama'			=> $nama,
@@ -43,8 +44,10 @@ class M_user_edit_profile extends CI_Model {
 					'kelurahan'		=> $kelurahan,
 					'kode_pos'		=> $kode_pos,
 					'facebook'		=> $facebook,
-					'instagram'		=> $instagram,
+					'instagram'		=> $instagram,	
 					'twitter'		=> $twitter,
+				
+
 
 				);
 				$this->db->update('user_edit_profile', $data);
@@ -65,8 +68,6 @@ class M_user_edit_profile extends CI_Model {
 		
     	return $query->row_array();
 	}
-
-
 
 	function edit()
 	{

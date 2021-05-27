@@ -18,15 +18,10 @@
                                             <div class="custom-form">
                                                 <label><b>NAMA LENGKAP</b> <i class="fa fa-user-o"></i></label>
                                                 <input name="nama" placeholder="" type="text"class="form-control">
+                                                <label><b>JENIS KELAMIN</b><i class="fa fa-male"></i>  </label>
+                                                <input name="jenis_kelamin" placeholder="" type="text" class="form-control">
                                                 <label><b>EMAIL</b><i class="fa fa-envelope-o"></i></label>
                                                 <input name="email" placeholder="" type="text" class="form-control">
-                                                <label><b>JENIS KELAMIN</b><i class="fa fa-male"></i>  </label>
-                                                <select data-placeholder="jenis kelamin" class="chosen-select" style="display: none;">
-                                                    <option>Jenis kelamin</option>
-                                                    <option>Laki-laki</option>
-                                                    <option>Perempuan</option>
-                                                </select>
-                                                <input name="jenis_kelamin" placeholder="" type="text" class="form-control">
                                                 <label><b>NO.TELEPON</b><i class="fa fa-phone"></i></label>
                                                 <input name="no_telepon" placeholder="" type="text" class="form-control">
                                                 <label><b>NO.WHATSAPP</b><i class="fa fa-whatsapp"></i></label>
@@ -66,7 +61,7 @@
                                     </div>
                                     <div class="col-md-3">
                                         <div class="edit-profile-photo fl-wrap">
-                                            <img src="images/avatar/4.jpg" class="respimg" alt="">
+                                            <center><img width="100" class="rounded-circle" src="images/edit_profil_user/14.jpg" alt=""></center>
                                             <div class="change-photo-btn">
                                                 <div class="photoUpload">
                                                     <span><i class="fa fa-upload"></i> Upload Photo</span>
