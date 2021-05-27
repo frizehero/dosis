@@ -23,7 +23,7 @@
                                 <div class="listing-item" style="width: 320px;">
                                     <article class="geodir-category-listing fl-wrap">
                                         <div class="geodir-category-img" style="height: 170px;">
-                                            <img src="<?php echo base_url() ?>images/galangdana/<?php echo $rowP->identitas_pembuka;?>">
+                                            <img style="height: 170px;" src="<?php echo base_url() ?>images/galangdana/<?php echo $rowP->identitas_pembuka;?>">
                                         </div>
                                         <div class="geodir-category-content fl-wrap" style="height : 280px;">
                                           <div class="listing-avatar"><a href="author-single.html"><img src="<?php echo base_url() ?>images/avatar/5.jpg" alt=""></a>
