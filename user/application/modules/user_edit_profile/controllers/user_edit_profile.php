@@ -34,13 +34,12 @@ class User_edit_profile extends MX_Controller {
 	}
 
 		// Halaman Edit
-	function editview($id)
+	function editview()
 	{
 
 		$data = array(
 			'namamodule' 	=> "user_edit_profile",
 			'namafileview' 	=> "V_user_edit_profile_edit",
-			'tampil'		=> $this->M_user_edit_profile->tampiledit($id),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
