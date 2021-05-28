@@ -1,6 +1,5 @@
 <div class="app-main__inner">
-                <?php tampilnotif()?>
-                <form action="<?php echo base_url('galang_dana2/tampildetail') ?>" method="POST" enctype="multipart/form-data">
+                    
                     <ul class="body-tabs body-tabs-layout tabs-animated body-tabs-animated nav">
                         <li class="nav-item">
                             <a role="tab" class="nav-link active" id="tab-0" data-toggle="tab" href="#tab-content-0">
@@ -31,10 +30,12 @@
                                                 </div>
                                             </div>
                                             <div class="card-body">
-                                                <div class="mt-2"><?php echo $tampil['deskripsi_penerima'] ?></div>
+                                                <div class="mt-2">
+                                                    <?php echo $tampil['deskripsi_penerima'] ?>
+                                                </div>
                                                 </br>
                                                 <div> 
-                                                    <img src="<?php echo base_url() ?>images/galangdana/<?php echo $tampil['foto1_penerima'] ?>" width="300" height="200" class="dashboard-sparkline-carousel-4-pop" alt=""> 
+                                                    <img width="300" height="200" class="dashboard-sparkline-carousel-4-pop" src="<?php echo base_url() ?>images/galangdana/<?php echo $tampil['foto2_penerima'] ?>" alt=""> 
                                                     &nbsp;
                                                     <img width="300" height="200" class="dashboard-sparkline-carousel-4-pop" src="assets/images/Peristiwa/2.jpg" alt=""> 
                                                 </div>
@@ -43,11 +44,7 @@
                                                 </div>
                                                 
                                                 <div class="mt-2">
-                                                    Reyhan seharusnya menjalani pemeriksaan dan pengobatan, namun Reyhan hanya dirawat seadanya di rumah karena terbentur kondisi ekonomi keluarga.
-
-                                                    Ayah Reyhan, Ismail, berprofesi sebagai OJOL dengan penghasilan Rp20.000 – 50.000 yang hanya cukup untuk kebutuhan sehari-hari. Bahkan untuk membayar kontrakan pun terkadang mereka terpaksa meminjam ke tetangga atau saudara.
-
-                                                    Doa selalu mereka panjatkan dan usaha terus mereka lakukan. Berharap Reyhan bisa segera dibawa ke rumah sakit dan mendapatkan pengobatan. 
+                                                    <?php echo $tampil['deskripsi_penerima'] ?>
                                                 </div>
                                             </div>
                                         </div>

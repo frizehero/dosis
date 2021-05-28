@@ -10,9 +10,6 @@ class M_galang_dana2 extends CI_Model {
 		$this->db->from('galang_dana2');
 		$query = $this->db->get();
 
-
-
-
 		return $query->result();
 	}
 
@@ -31,7 +28,6 @@ class M_galang_dana2 extends CI_Model {
     	return $query->row_array();
 	}
 
-	
 
 
 	function tambah()
@@ -197,6 +193,13 @@ class M_galang_dana2 extends CI_Model {
 				$this->db->insert('galang_dana2', $data);
 				$this->session->set_flashdata('msg', 'suksestambah');
 			}
+	}
+
+	function tampildetail($id)
+	{
+		$idnya = decrypt_url($id);
+		$this->db->where('id_galang_dana2', $idnya);
+		return $this->db->get('galang_dana2')->row_array();
 	}
 
 	function edit()
