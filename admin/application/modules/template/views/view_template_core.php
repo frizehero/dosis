@@ -283,6 +283,7 @@ $menu = $uri_segments[3];
                                             <img width="42" class="rounded-circle" src="assets/images/avatars/13.jpg" alt="">
                                             <i class="fa fa-angle-down ml-2 opacity-8"></i>
                                         </a>
+                                        
                                         <div tabindex="-1" role="menu" aria-hidden="true" class="rm-pointers dropdown-menu-lg dropdown-menu dropdown-menu-right">
                                             <div class="dropdown-menu-header">
                                                 <div class="dropdown-menu-header-inner bg-info">

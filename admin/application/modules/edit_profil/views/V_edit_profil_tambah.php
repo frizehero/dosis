@@ -62,16 +62,11 @@
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">Provinsi</label>
                                         <div class="col-sm-9">
-                                            <select name="wilayah_provinsi" class="multiselect-dropdown form-control">
-                                                <?php
-                                                    foreach ($provinsi as $prov) {
-                                                        ?>
-                                                        <option <?php echo $provinsi_selected == $prov->id_provinsi ? 'selected="selected"' : '' ?>
-                                                            value="<?php echo $prov->id_provinsi ?>"><?php echo $prov->nama_provinsi ?></option>
-                                                        <?php
-                                                    }
-                                                    ?>
-                                                
+                                            <select name="provinsi" class="multiselect-dropdown form-control">
+                                                <option value="Jawa Timur">Jawa Timur</option>
+                                                <option value="Jawa Tengah">Jawa Tengah</option>
+                                                <option value="Jawa Barat">Jawa Barat</option>
+                                                    
 
                                             </select>
                                         </div>
@@ -81,8 +76,10 @@
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">KOTA/KAB.</label>
                                         <div class="col-sm-9">
-                                            <select name="wilayah_kabupaten" class="multiselect-dropdown form-control">
-
+                                            <select name="kota" class="multiselect-dropdown form-control">
+                                                <option value="Probolinggo">Probolinggo</option>
+                                                <option value="Yogyakarta">Yogyakarta</option>
+                                                <option value="Jakarta">Jakarta</option>
 
                                             </select>
                                         </div>
@@ -94,10 +91,11 @@
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">Kecamatan</label>
                                         <div class="col-sm-9">
-                                            <select name="districts" class="multiselect-dropdown form-control">
-
+                                            <select name="kecamatan" class="multiselect-dropdown form-control">
+                                                <option value="Mayangan">Mayangan</option>
+                                                <option value="Mangunharjo">Mangunharjo</option>
+                                                <option value="Jati">Jati</option>
                                              
-
                                             </select>
                                         </div>
                                     </div>
@@ -106,8 +104,10 @@
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">Kel./Desa</label>
                                         <div class="col-sm-9">
-                                            <select name="wilayah_desa" class="multiselect-dropdown form-control">
-
+                                            <select name="desa" class="multiselect-dropdown form-control">
+                                                <option value="Muneng">Muneng</option>
+                                                <option value="Lowokwaru">Lowokwaru</option>
+                                                <option value="Sukapura">Jakarta</option>
 
                                             </select>
                                         </div>
@@ -119,7 +119,7 @@
                             <div class="position-relative row form-group">
                                 <label class="col-sm-3 col-form-label">Alamat</label>
                                 <div class="col-sm-9">
-                                    <textarea id="w3review" name="" rows="4" cols="54"></textarea>
+                                    <textarea rows="1" name="alamat" class="form-control autosize-input" style="height: 35px;"></textarea>
                                 </div>
                             </div>
                             </div>

@@ -11,12 +11,6 @@
                                 </div>
                                 <div class="page-title-actions">
 
-                                  
-
-                                    <a href="<?php echo base_url('edit_profil/tambahview'); ?>" type="button" class="btn btn-primary">
-                                        Ubah Datamu Disini
-                                    </a>
-
                                 </div>    </div>
                         </div>
 
@@ -38,7 +32,7 @@
                         </div>
                         <div class="content-right ">
                         </br>
-                            <center><img width="100" class="rounded-circle" src="<?php echo base_url('') ?>assets/images/fotoprofil/<?php echo $res->foto_profil;?>"></center>
+                            <center><img width="100" height="100" class="rounded-circle" src="<?php echo base_url('') ?>assets/images/fotoprofil/<?php echo $res->foto_profil;?>"></center>
                         </div></br>
                         <div class="d-block text-center">
                             <a href="<?php echo base_url('edit_profil/editview/'); ?>"></a>
@@ -111,7 +105,7 @@
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">Kel./Desa</label>
                                         <div class="col-sm-9">
-                                            <input name="desa" value="<?php echo $res->desa?>" type="text"class="form-control">
+                                            <input name="desa" value="<?php echo $res->desa?>" type="text" class="form-control">
                                         </div>
                                     </div>
                                 </div>
@@ -121,7 +115,7 @@
                             <div class="position-relative row form-group">
                                 <label class="col-sm-3 col-form-label">Alamat</label>
                                 <div class="col-sm-9">
-                                    <input name="alamat" value="<?php echo $res->alamat?>" type="text"class="form-control">
+                                    <input name="alamat" value="<?php echo $res->alamat?>" class="form-control autosize-input">
                                 </div>
                             </div>
                             </div>
