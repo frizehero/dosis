@@ -213,7 +213,7 @@ $menu = $uri_segments[3];
                                 </ul>
                             </div>
                             <!-- user-profile-menu end-->                                        
-                            <a href="#" class="log-out-btn">Log Out</a>
+                            <a href="<?php echo base_url('login'); ?>" class="log-out-btn">Log Out</a>
                         </div>
                     </div>
                 </div>

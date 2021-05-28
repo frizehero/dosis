@@ -9,8 +9,14 @@ class M_galang_dana2 extends CI_Model {
 		$this->db->select('*');
 		$this->db->from('galang_dana2');
 		$query = $this->db->get();
+		$this->db->join('pembayaran2', 'galang_dana2.pesan_kesan = pembayaran2.id_pembayaran2');
 
 		return $query->result();
+	}
+
+	function getpesan_kesan()
+	{
+		return $this->db->get('pembayaran2')->result();
 	}
 
 	function tambah()

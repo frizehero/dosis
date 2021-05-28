@@ -70,7 +70,7 @@
                         <div class="list-single-main-item-title fl-wrap">
                             <h3>KOMENTAR</h3>
                         </div>
-                        <div class="reviews-comments-wrap">
+                        <div class="reviews-comments-wrap" style="align: right;">
                             <div class="reviews-comments-item">
                                 <div class="review-comments-avatar">
                                     <img src="<?php echo base_url() ?>images/avatar/1.jpg" alt="">
@@ -78,9 +78,10 @@
                                 <div class="reviews-comments-item-text">
                                     <h4><a href="#">Jessie Manrty</a></h4>
                                     <h6 style="text-align: right; margin-right: -60px;"><a class="show-reg-form modal-open" style="margin-top: -30px; color: red;"><i class="fa fa-warning"></i></a></h6>
-                                    
-                                    <div class="clearfix"></div>
-                                    <p>" Commodo est luctus eget. Proin in nunc laoreet justo volutpat blandit enim. Sem felis, ullamcorper vel aliquam non, varius eget justo. Duis quis nunc tellus sollicitudin mauris. "</p>
+                                    <p>
+                                    <?php foreach($getpesan_kesan as $res2) ?>
+                                        <?php echo $res2->pesan_kesan?>
+                                    </p>
                                     <span class="reviews-comments-item-date"><i class="fa fa-calendar-check-o"></i>27 May 2018</span>
                                 </div>
                             </div>
