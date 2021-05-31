@@ -43,7 +43,7 @@
                             <div class="position-relative row form-group">
                                 <label for="" class="col-sm-3 col-form-label">Nama Lengkap</label>
                                 <div class="col-sm-9">
-                                    <input name="nama_lengkap" value="<?php echo $res->nama_lengkap?>" type="text"class="form-control">
+                                    <input name="nama_lengkap" value="<?php echo $res->nama_lengkap?>" type="text"class="form-control" disabled>
                                 </div>
                             </div>
                             </div>
@@ -51,7 +51,7 @@
                             <div class="position-relative row form-group">
                                 <label for="exampleEmail" class="col-sm-3 col-form-label">Username</label>
                                 <div class="col-sm-9">
-                                    <input name="username" value="<?php echo $res->username?>" type="text"class="form-control">
+                                    <input name="username" value="<?php echo $res->username?>" type="text"class="form-control" disabled>
                                 </div>
                             </div>
                             </div>
@@ -61,7 +61,7 @@
                             <div class="position-relative row form-group">
                                 <label for="exampleEmail" class="col-sm-3 col-form-label">Email</label>
                                 <div class="col-sm-9">
-                                    <input name="email" value="<?php echo $res->email?>" type="text"class="form-control">
+                                    <input name="email" value="<?php echo $res->email?>" type="text"class="form-control" disabled>
                                 </div>
                             </div>
                             </div>
@@ -69,7 +69,7 @@
                             <div class="position-relative row form-group">
                                 <label for="exampleEmail" class="col-sm-3 col-form-label">Jenis Kelamin</label>
                                 <div class="col-sm-9">
-                                    <input name="jenis_kelamin" value="<?php echo $res->jenis_kelamin?>" type="text"class="form-control">
+                                    <input name="jenis_kelamin" value="<?php echo $res->jenis_kelamin?>" type="text"class="form-control" disabled>
                                 </div>
                             </div>
                             </div>
@@ -79,7 +79,7 @@
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">Provinsi</label>
                                         <div class="col-sm-9">
-                                            <input name="provinsi" value="<?php echo $res->provinsi?>" type="text"class="form-control">
+                                            <input name="provinsi" value="<?php echo $res->provinsi?>" type="text"class="form-control" disabled>
                                         </div>
                                     </div>
                                 </div> 
@@ -87,7 +87,7 @@
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">KOTA/KAB.</label>
                                         <div class="col-sm-9">
-                                            <input name="kota" value="<?php echo $res->kota?>" type="text"class="form-control">
+                                            <input name="kota" value="<?php echo $res->kota?>" type="text"class="form-control" disabled>
                                         </div>
                                     </div>
                                 </div>
@@ -97,7 +97,7 @@
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">Kecamatan</label>
                                         <div class="col-sm-9">
-                                            <input name="kecamatan" value="<?php echo $res->kecamatan?>" type="text"class="form-control">
+                                            <input name="kecamatan" value="<?php echo $res->kecamatan?>" type="text"class="form-control" disabled> 
                                         </div>
                                     </div>
                                 </div>
@@ -105,7 +105,7 @@
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">Kel./Desa</label>
                                         <div class="col-sm-9">
-                                            <input name="desa" value="<?php echo $res->desa?>" type="text" class="form-control">
+                                            <input name="desa" value="<?php echo $res->desa?>" type="text" class="form-control" disabled>
                                         </div>
                                     </div>
                                 </div>
@@ -115,7 +115,7 @@
                             <div class="position-relative row form-group">
                                 <label class="col-sm-3 col-form-label">Alamat</label>
                                 <div class="col-sm-9">
-                                    <input name="alamat" value="<?php echo $res->alamat?>" class="form-control autosize-input">
+                                    <input name="alamat" value="<?php echo $res->alamat?>" class="form-control autosize-input" disabled>
                                 </div>
                             </div>
                             </div>
@@ -123,7 +123,7 @@
                             <div class="position-relative row form-group">
                                 <label for="exampleEmail" class="col-sm-3 col-form-label">Kode Pos</label>
                                 <div class="col-sm-9">
-                                    <input name="kode_pos" value="<?php echo $res->kode_pos?>" type="text"class="form-control">
+                                    <input name="kode_pos" value="<?php echo $res->kode_pos?>" type="text"class="form-control" disabled>
                                 </div>
                             </div>
                             </div>
@@ -133,7 +133,7 @@
                             <div class="position-relative row form-group">
                                 <label for="exampleEmail" class="col-sm-3 col-form-label">No WA</label>
                                 <div class="col-sm-9">
-                                    <input name="no_wa" value="<?php echo $res->no_wa?>" type="text"class="form-control">
+                                    <input name="no_wa" value="<?php echo $res->no_wa?>" type="text"class="form-control" disabled>
                                 </div>
                             </div>
                             </div> 
@@ -141,7 +141,7 @@
                             <div class="position-relative row form-group">
                                 <label for="exampleEmail" class="col-sm-3 col-form-label">No Telepon</label>
                                 <div class="col-sm-9">
-                                    <input name="no_telepon" value="<?php echo $res->no_telepon?>" type="text"class="form-control">
+                                    <input name="no_telepon" value="<?php echo $res->no_telepon?>" type="text"class="form-control" disabled>
                                 </div>
                             </div>
                             </div>
@@ -151,7 +151,7 @@
                             <div class="position-relative row form-group">
                                 <label for="exampleEmail" class="col-sm-3 col-form-label">Instagram</label>
                                 <div class="col-sm-9">
-                                    <input name="instagram" value="<?php echo $res->instagram?>" type="text"class="form-control">
+                                    <input name="instagram" value="<?php echo $res->instagram?>" type="text"class="form-control" disabled>
                                 </div>
                             </div>
                             </div>
@@ -159,7 +159,7 @@
                             <div class="position-relative row form-group">
                                 <label for="exampleEmail" class="col-sm-3 col-form-label">Facebook</label>
                                 <div class="col-sm-9">
-                                    <input name="facebook" value="<?php echo $res->facebook?>" type="text"class="form-control">
+                                    <input name="facebook" value="<?php echo $res->facebook?>" type="text"class="form-control" disabled>
                                 </div>
                             </div>  
                             </div>
@@ -169,7 +169,7 @@
                             <div class="position-relative row form-group">
                                 <label for="exampleEmail" class="col-sm-3 col-form-label">twitter</label>
                                 <div class="col-sm-9">
-                                    <input name="twitter" value="<?php echo $res->twitter?>" type="text"class="form-control">
+                                    <input name="twitter" value="<?php echo $res->twitter?>" type="text"class="form-control" disabled>
                                 </div>
                             </div>
                             </div>
