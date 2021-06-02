@@ -15,8 +15,9 @@ class M_user_edit_profile extends CI_Model {
 
 	function tambah()
 	{
-		$nama 				= $this->input->post('nama');
-		$email				= $this->input->post('email');
+		$foto_profilenya   	= $this->input->post('foto_profilenya');
+		$nama_lengkap 		= $this->input->post('nama_lengkap');
+		$emailnya 			= $this->input->post('emailnya');
 		$jenis_kelamin		= $this->input->post('jenis_kelamin');
 		$no_telepon			= $this->input->post('no_telepon');
 		$no_whatsapp		= $this->input->post('no_whatsapp');
@@ -30,10 +31,28 @@ class M_user_edit_profile extends CI_Model {
 		$instagram			= $this->input->post('instagram');
 		$twitter			= $this->input->post('twitter');
 		
+		$this->load->library('upload');
+		$nmfile = "file_".time();
+		$config['upload_path']		= 'assets/images/edit_profil_user/';
+		$config['allowed_types']	= 'gif|jpg|png|jpeg';
+		$config['max_size']			= 5120;
+		$config['max_width']		= 4300;
+		$config['max_height']		= 4300;
+		$config['file_name'] 		= $nmfile;
+		
+		$this->upload->initialize($config);
+		
+		if($_FILES['foto']['name'])
+        {
+            if ($this->upload->do_upload('foto'))
+            {
 
+				$gbr = $this->upload->data();
 				$data = array(
-					'nama'			=> $nama,
-					'email'			=> $email,
+					
+					'foto_profilenya'	=> $gbr['file_name'],
+					'nama_lengkap'	=> $nama_lengkap,
+					'emailnya'		=> $emailnya,
 					'jenis_kelamin'	=> $jenis_kelamin,
 					'no_telepon'	=> $no_whatsapp,
 					'no_whatsapp'	=> $no_whatsapp,
@@ -52,9 +71,35 @@ class M_user_edit_profile extends CI_Model {
 				);
 				$this->db->update('user_edit_profile', $data);
 				$this->session->set_flashdata('msg', 'suksestambah');
-			
-	}
+			}
+		}
+		else{
+				$data = array(
+					'foto_profilenya'	=> $foto_profilenya,
+					'nama_lengkap'	=> $nama_lengkap,
+					'emailnya'		=> $emailnya,
+					'jenis_kelamin'	=> $jenis_kelamin,
+					'no_telepon'	=> $no_whatsapp,
+					'no_whatsapp'	=> $no_whatsapp,
+					'alamat_lengkap'=> $alamat_lengkap,
+					'provinsi'		=> $provinsi,
+					'kota_kabupaten'=> $kota_kabupaten,
+					'kecamatan'		=> $kecamatan,
+					'kelurahan'		=> $kelurahan,
+					'kode_pos'		=> $kode_pos,
+					'facebook'		=> $facebook,
+					'instagram'		=> $instagram,	
+					'twitter'		=> $twitter,
+				
 
+
+				);
+				$this->db->update('user_edit_profile', $data);
+				$this->session->set_flashdata('msg', 'suksestambah');
+			}
+	}
+	
+	
 	function tampiledit($id)
 	{
 		$idnya=decrypt_url($id);
@@ -73,8 +118,8 @@ class M_user_edit_profile extends CI_Model {
 	{
 		$id = $this->input->post('id');
 		
-		$nama 				= $this->input->post('nama');
-		$email				= $this->input->post('email');
+		$nama_lengkap 				= $this->input->post('nama_lengkap');
+		$emailnya				= $this->input->post('emailnya');
 		$jenis_kelamin		= $this->input->post('jenis_kelamin');
 		$no_telepon			= $this->input->post('no_telepon');
 		$no_whatsapp		= $this->input->post('no_whatsapp');
@@ -89,7 +134,7 @@ class M_user_edit_profile extends CI_Model {
 		$twitter			= $this->input->post('twitter');
 
 				$data = array(
-					'nama'			=> $nama,
+					'nama_lengkap'	=> $nama_lengkap,
 					'email'			=> $email,
 					'jenis_kelamin'	=> $jenis_kelamin,
 					'no_telepon'	=> $no_telepon,

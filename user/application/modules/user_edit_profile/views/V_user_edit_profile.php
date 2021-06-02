@@ -9,10 +9,6 @@
                                         <div class="page-title-subheading">Silahkan Ubah Profil Kamu</div>
                                     </div>
                                 </div>
-                                <div class="page-title-actions">
-
-                                    <a href="<?php echo base_url('user_edit_profile/tambahview'); ?>" class="mb-2 mr-2 btn btn-shadow btn-success">Ubah Data</a>
-                                </div>    
                             </div>
                         </div>
 
@@ -33,18 +29,19 @@
                                                 <h4>My Account</h4>
                                             </div>
                                             <div><br></div>
+                                            <center><img width="100" class="rounded-square" src="<?php echo base_url('') ?>assets/images/edit_profil_user/<?php echo $res->foto_profilenya;?>"></center>
                                             <div class="custom-form">
                                                 <label><b>NAMA LENGKAP</b> <i class="fa fa-user-o"></i></label>
-                                                <input name="nama" value="<?php echo $res->nama?>" type="text"class="form-control">
+                                                <input name="nama_lengkap" value="<?php echo $res->nama_lengkap?>" type="text"class="form-control">
+                                                <label><b>EMAIL</b> <i class="fa fa-envelope-o"></i></label>
+                                                <input name="emailnya" value="<?php echo $res->emailnya?>" type="text"class="form-control">
                                                 <label><b>JENIS KELAMIN</b><i class="fa fa-male"></i>  </label>
                                                 <input name="jenis_kelamin" value="<?php echo $res->jenis_kelamin?>" type="text"class="form-control">
-                                                <label><b>EMAIL</B><i class="fa fa-envelope-o"></i>  </label>
-                                                <input name="email" value="<?php echo $res->email?>" type="text"class="form-control">
                                                 <label><b>NO.TELEPON</b><i class="fa fa-phone"></i>  </label>
                                                 <input name="no_telepon" value="<?php echo $res->no_telepon?>" type="text"class="form-control">
                                                 <label><b>NO.WHATSAPP</b><i class="fa fa-whatsapp"></i>  </label>
                                                 <input name="no_whatsapp" value="<?php echo $res->no_whatsapp?>" type="text"class="form-control">
-                                                <label><b>ALAMAT LENGKAP</b><i class="fa fa-map-marker"></i></label>                                              
+                                                <label><b>ALAMAT LENGKAP</b><i class="fa fa-map-marker"></i></label>
                                                 <input name="alamat_lengkap" value="<?php echo $res->alamat_lengkap?>" type="text"class="form-control">
                                             </div>
                                         </div>
@@ -70,11 +67,14 @@
                                                 <input name="instagram" value="<?php echo $res->instagram?>" type="text"class="form-control">
                                                 <label><b>TWITTER</b><i class="fa fa-twitter"></i>  </label>
                                                 <input name="twitter" value="<?php echo $res->twitter?>" type="text"class="form-control">
+                                                <div class="page-title-actions">
+                                                    <a href="<?php echo base_url('user_edit_profile/tambahview'); ?>" class="btn  big-btn  color-bg flat-btn" style="margin-bottom:30px; margin-left:250px;">Ubah Data</a>
+                                                </div>    
                                             </div>
                                         </div>
                                         <!-- profile-edit-container end-->                                        
                                     </div>
-                                    <center><img width="100" class="rounded-circle" src="<?php echo base_url('') ?>images/edit_profil_user/<?php echo $res->foto;?>"></center>
+                                    
                         </form>
                         </div> 
                     
@@ -84,14 +84,8 @@
                     </div>
 
 
-
-
                                     <?php $no++;} ?>
                                    
-                                    
-                                    </tbody>
-                                    
-                                </table>
                             </div>
                         </div>
                     </div>
