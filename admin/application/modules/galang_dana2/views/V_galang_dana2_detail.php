@@ -35,9 +35,10 @@
                                                 </div>
                                                 </br>
                                                 <div> 
-                                                    <img width="300" height="200" class="dashboard-sparkline-carousel-4-pop" src="<?php echo base_url() ?>images/galangdana/<?php echo $tampil['foto2_penerima'] ?>" alt=""> 
+                                                    <img width="300" height="200" class="dashboard-sparkline-carousel-4-pop" src="<?php echo base_url() ?>assets/images/galangdana/<?php echo $tampil['foto2_penerima'] ?>" alt=""> 
+                                                    <img width="300" height="200" class="dashboard-sparkline-carousel-4-pop" src="<?php echo base_url() ?>assets/images/galangdana/<?php echo $tampil['foto3_penerima'] ?>" alt="">
                                                     &nbsp;
-                                                    <img width="300" height="200" class="dashboard-sparkline-carousel-4-pop" src="assets/images/Peristiwa/2.jpg" alt=""> 
+                                                    
                                                 </div>
                                                 <div> 
                                                     <br> 

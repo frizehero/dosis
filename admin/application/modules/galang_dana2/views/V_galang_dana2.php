@@ -41,7 +41,7 @@
                         <div class="card-hover profile-responsive card-border border-success mb-3 card">
                         <div class="dropdown-menu-header">
                             <div class="wrapper rounded"></div>
-                            <img src="<?php echo base_url() ?>assets/images/galangdana/<?php echo $rowP->identitas_pembuka;?>" style="width: 314px; height:210px;">   
+                            <img src="<?php echo base_url() ?>assets/images/galangdana/<?php echo $rowP->foto1_penerima;?>" style="width: 314px; height:210px;">   
                         </div>
                         <div class="p-0 card-body">
                             
@@ -50,6 +50,9 @@
                                 <div class="tab-pane active show" id="tab-2-eg1">
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item">
+
+
+                                        	
                                             <div class="h5 modal-title">
                                                 <div class="text-right">
                                                     <h6>
@@ -62,7 +65,7 @@
 
                                                 </h5>
                                                 <h6>
-                                                    <div><?php echo $rowP->nama_pembuka;?></div>
+                                                    <div>Diposting oleh : <?php echo $rowP->nama_pembuka;?></div>
                                                 </h6>
                                             </div>
                                         </li>
