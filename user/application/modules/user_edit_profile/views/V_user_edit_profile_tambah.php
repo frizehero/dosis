@@ -63,8 +63,8 @@
                                         <div class="edit-profile-photo fl-wrap">
                                             <div class="change-photo-btn">
                                                 <div class="photoUpload">
-                                                    <span><i class="fa fa-upload"></i> Upload Photo</span>
-                                                    <input type="file" class="upload">
+                                                    <span><i name="foto_profilenya"class="fa fa-upload"></i> Upload Photo</span>
+                                                    <input type="file" name="foto" class="upload">
                                                 </div>
                                             </div>
                                         </div>

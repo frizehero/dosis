@@ -22,27 +22,27 @@
                         <div class="main-card mb-3 card">
                         <form action="<?php echo base_url('user_edit_profile/edit') ?>" method="POST" enctype="multipart/form-data">
                             <div class="card-body">
-                               <div class="col-md-9">
+                               <div class="col-md-12">
                                         <!-- profile-edit-container--> 
                                         <div class="profile-edit-container">
                                             <div class="profile-edit-header fl-wrap">
                                                 <h4>My Account</h4>
                                             </div>
                                             <div><br></div>
-                                            <center><img width="100" class="rounded-square" src="<?php echo base_url('') ?>assets/images/edit_profil_user/<?php echo $res->foto_profilenya;?>"></center>
+                                            <center><img width="200" height="200" class="rounded-circle" src="<?php echo base_url() ?>assets/images/edit_profil_user/<?php echo $res->foto_profilenya;?>"></center>
                                             <div class="custom-form">
                                                 <label><b>NAMA LENGKAP</b> <i class="fa fa-user-o"></i></label>
-                                                <input name="nama_lengkap" value="<?php echo $res->nama_lengkap?>" type="text"class="form-control">
+                                                <input name="nama_lengkap" value="<?php echo $res->nama_lengkap?>" type="text"class="form-control" disabled>
                                                 <label><b>EMAIL</b> <i class="fa fa-envelope-o"></i></label>
-                                                <input name="emailnya" value="<?php echo $res->emailnya?>" type="text"class="form-control">
+                                                <input name="emailnya" value="<?php echo $res->emailnya?>" type="text"class="form-control" disabled>
                                                 <label><b>JENIS KELAMIN</b><i class="fa fa-male"></i>  </label>
                                                 <input name="jenis_kelamin" value="<?php echo $res->jenis_kelamin?>" type="text"class="form-control">
                                                 <label><b>NO.TELEPON</b><i class="fa fa-phone"></i>  </label>
-                                                <input name="no_telepon" value="<?php echo $res->no_telepon?>" type="text"class="form-control">
+                                                <input name="no_telepon" value="<?php echo $res->no_telepon?>" type="text"class="form-control" disabled>
                                                 <label><b>NO.WHATSAPP</b><i class="fa fa-whatsapp"></i>  </label>
-                                                <input name="no_whatsapp" value="<?php echo $res->no_whatsapp?>" type="text"class="form-control">
+                                                <input name="no_whatsapp" value="<?php echo $res->no_whatsapp?>" type="text"class="form-control" disabled>
                                                 <label><b>ALAMAT LENGKAP</b><i class="fa fa-map-marker"></i></label>
-                                                <input name="alamat_lengkap" value="<?php echo $res->alamat_lengkap?>" type="text"class="form-control">
+                                                <input name="alamat_lengkap" value="<?php echo $res->alamat_lengkap?>" type="text"class="form-control" disabled>
                                             </div>
                                         </div>
                                         <!-- profile-edit-container end--> 
@@ -52,23 +52,24 @@
                                         <div class="profile-edit-container">
                                             <div class="custom-form">
                                                 <label><b>PROVINSI</b> <i class="fa fa-map-marker"></i></label>
-                                                <input name="provinsi" value="<?php echo $res->provinsi?>" type="text"class="form-control">
+                                                <input name="provinsi" value="<?php echo $res->provinsi?>" type="text"class="form-control" disabled>
                                                 <label><b>KOTA/KABUPATEN</b><i class="fa fa-map-marker"></i>  </label>
-                                                <input name="kota_kabupaten" value="<?php echo $res->kota_kabupaten?>" type="text"class="form-control">
+                                                <input name="kota_kabupaten" value="<?php echo $res->kota_kabupaten?>" type="text"class="form-control" disabled>
                                                 <label><b>KECAMATAN</b><i class="fa fa-map-marker"></i>  </label>
-                                                <input name="kecamatan" value="<?php echo $res->kecamatan?>" type="text"class="form-control">
+                                                <input name="kecamatan" value="<?php echo $res->kecamatan?>" type="text"class="form-control" disabled>
                                                 <label><b>KELURAHAN/DESA</b><i class="fa fa-map-marker"></i>  </label>
-                                                <input name="kelurahan" value="<?php echo $res->kelurahan?>" type="text"class="form-control">
+                                                <input name="kelurahan" value="<?php echo $res->kelurahan?>" type="text"class="form-control" disabled>
                                                 <label><b>KODE POS</b><i class="fa fa-map-marker"></i>  </label>
-                                                <input name="kode_pos" value="<?php echo $res->kode_pos?>" type="text"class="form-control">
+                                                <input name="kode_pos" value="<?php echo $res->kode_pos?>" type="text"class="form-control" disabled>
                                                 <label><b>FACEBOOK</b><i class="fa fa-facebook"></i></label>
-                                                <input name="facebook" value="<?php echo $res->facebook?>" type="text"class="form-control">
+                                                <input name="facebook" value="<?php echo $res->facebook?>" type="text"class="form-control" disabled>
                                                 <label><b>INSTAGRAM</b><i class="fa fa-instagram"></i>  </label>
-                                                <input name="instagram" value="<?php echo $res->instagram?>" type="text"class="form-control">
+                                                <input name="instagram" value="<?php echo $res->instagram?>" type="text"class="form-control" disabled>
                                                 <label><b>TWITTER</b><i class="fa fa-twitter"></i>  </label>
-                                                <input name="twitter" value="<?php echo $res->twitter?>" type="text"class="form-control">
+                                                <input name="twitter" value="<?php echo $res->twitter?>" type="text"class="form-control" disabled>
                                                 <div class="page-title-actions">
-                                                    <a href="<?php echo base_url('user_edit_profile/tambahview'); ?>" class="btn  big-btn  color-bg flat-btn" style="margin-bottom:30px; margin-left:250px;">Ubah Data</a>
+                                                    <center><a href="<?php echo base_url('user_edit_profile/tambahview'); ?>" class="btn  big-btn  color-bg flat-btn" style="margin-bottom:30px; margin-left:50px;">Tambah Data</a></center>
+                                                    <center><a href="<?php echo base_url('user_edit_profile/tambahview'); ?>" class="btn  big-btn  color-bg flat-btn" style="margin-bottom:30px; margin-left:50px;">Edit Data</a></center>
                                                 </div>    
                                             </div>
                                         </div>
