@@ -43,8 +43,14 @@
                                                     <br> 
                                                 </div>
                                                 
+                                                <div class="card-header"><i class="header-icon lnr-license icon-gradient bg-plum-plate"> </i>Tujuan Donasi
+                                                <div class="btn-actions-pane-right">   
+                                                    <a href="donasi.html">
+                                                    </a>
+                                                </div>
+                                                </div>
                                                 <div class="mt-2">
-                                                    <?php echo $tampil['deskripsi_penerima'] ?>
+                                                    <?php echo $tampil['tujuan_penerima'] ?>
                                                 </div>
                                             </div>
                                         </div>
