@@ -3,59 +3,35 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Konfirmasi extends MX_Controller {
 
-	function __construct()
-	{
-		parent::__construct();
-		// model
-		 $this->load->model('M_konfirmasi');
-		 $this->load->model('admin_login/m_session');
+	function __construct(){
+		parent::__construct();		
+		$this->load->model('M_konfirmasi');
+                $this->load->helper('url');
 	}
-
 	
-	// index
 	function index()
 	{
-
-		if ( empty( $this->session->userdata('session_id') ) )
-		{
-			redirect('login');
-
-		} else {
-
+		$data['galang_dana2'] = $this->M_konfirmasi->tampil_data()->result();
+		$this->load->view('v_konfirmasi',$data);
 			$data = array(
 			'namamodule' 	=> "konfirmasi",
 			'namafileview' 	=> "V_konfirmasi",
 		);
 		echo Modules::run('template/tampilCore', $data);
-		}
-
-
-	}
-
-	function tambah()
-	{
-		$this->m_data_sekolah->tambah();
-		redirect('data_sekolah');
-	}
-
-	function edit()
-	{
-		$this->m_data_sekolah->edit();
-		redirect('data_sekolah');
 	}
 
 	function hapus($id)
 	{
-		$this->m_data_sekolah->hapus($id);
-		redirect('data_sekolah');
+		$this->M_konfirmasi->hapus($id);
+		redirect('galang_dana2');
 	}
 
 	function cari()
 	{
 		$data = array(
-			'namamodule' 	=> "data_sekolah",
-			'namafileview' 	=> "V_data_sekolah",
-			'tampil'		=> $this->m_data_sekolah->cari(),
+			'namamodule' 	=> "konfirmasi",
+			'namafileview' 	=> "V_konfirmasi",
+			'tampil'		=> $this->M_konfirmasi->cari(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}

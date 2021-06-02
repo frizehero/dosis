@@ -738,8 +738,8 @@ $menu = $uri_segments[3];
             </div>
             <div class="app-main__outer">
      <?php
-                                  $this->load->view($namamodule .'/'.$namafileview);
-                                ?>           
+            $this->load->view($namamodule .'/'.$namafileview);
+        ?>           
 
 
 
