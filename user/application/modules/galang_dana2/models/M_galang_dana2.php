@@ -188,6 +188,13 @@ class M_galang_dana2 extends CI_Model {
 		return $this->db->get('galang_dana2')->row_array();
 	}
 
+	function tampilwilayah($id)
+	{
+		$idnya = decrypt_url($id);
+		$this->db->where('id_galang_dana2', $idnya);
+		return $this->db->get('galang_dana2')->row_array();
+	}
+
 	function tampiledit($id)
 	{
 		$idnya=decrypt_url($id);
