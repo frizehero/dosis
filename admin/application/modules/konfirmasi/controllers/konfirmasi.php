@@ -19,9 +19,12 @@ class Konfirmasi extends MX_Controller {
 			'namamodule' 	=> "konfirmasi",
 			'namafileview' 	=> "V_konfirmasi",
 			'tampil'		=> $this->M_konfirmasi->tampil(),
+			
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
+
+
 
 	function hapus($id)
 	{
