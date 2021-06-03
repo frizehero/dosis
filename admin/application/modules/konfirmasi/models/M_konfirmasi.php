@@ -3,9 +3,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class M_konfirmasi extends CI_Model {
 
-	function tampil_data(){
-		return $this->db->get('galang_dana2');
+	function tampil()
+	{
+		$this->db->select('*');
+		$this->db->from('pembayaran2');
+		$query = $this->db->get();
+
+		return $query->result();
 	}
+	
 
 	function hapus($id)
 	{
