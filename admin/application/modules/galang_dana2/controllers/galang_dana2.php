@@ -78,4 +78,4 @@ class Galang_dana2 extends MX_Controller {
 		$this->M_galang_dana2->hapus();
 		redirect('galang_dana2');
     }
-	}
+}

@@ -211,10 +211,8 @@
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <div class="position-relative form-group">
-                                                                    <label for="exampleEmail11" class="">Kode POS</label>
-                                                                        <select name="kode_pos_pembuka" class="multiselect-dropdown form-control">
-
-                                                                        </select>
+                                                                    <label for="exampleAddress">Kode Pos</label>
+                                                                    <input name="kode_pos_pembuka" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-12">
@@ -362,13 +360,13 @@
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Tanggal Mulai</label>
-                                                                                    <input type="date" class="form-control" name="tgl_awal">
+                                                                                    <input type="date" class="form-control" value="" name="tanggal_mulai">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Tanggal Berakhir</label>
-                                                                                    <input type="date" class="form-control" name="tgl_akhir">
+                                                                                    <input type="date" class="form-control" name="tanggal_akhir">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-4">
@@ -415,13 +413,13 @@
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Kode Pos</label>
-                                                                                    <input name="kode_pos_" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                                    <input name="kode_pos_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">No Rekening</label>
-                                                                                    <input name="kode_pos_" id="exampleAddress" placeholder="" type="text" class="form-control">
+                                                                                    <input name="no_rekening_penerima" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                                                                     
@@ -439,7 +437,7 @@
                                                                             <div class="col-md-6">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Tujuan Membuka Galang Dana</label>
-                                                                                    <textarea rows="1" name="tujuan_galang_dana" class="form-control autosize-input" style="height: 80px;"></textarea>
+                                                                                    <textarea rows="1" name="tujuan_penerima" class="form-control autosize-input" style="height: 80px;"></textarea>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-6">
@@ -464,7 +462,7 @@
                                                                                     <div class="card mb-3 bg-primary widget-content">
                                                                                         <div class="widget-content-wrapper">
                                                                                             <div class="widget-content-left">
-                                                                                                <input name="gambar" id="exampleFile" type="file" class="form-control-file">
+                                                                                                <input name="foto1" id="exampleFile" type="file" class="form-control-file">
                                                                                                 <small class="form-text text-light">Gunakan File format PNG/JPG Max 10 MB</small>
                                                                                             </div>
                                                                                         </div>
@@ -477,7 +475,7 @@
                                                                                     <div class="card mb-3 bg-primary widget-content">
                                                                                         <div class="widget-content-wrapper">
                                                                                             <div class="widget-content-left">
-                                                                                                <input name="gambar" id="exampleFile" type="file" class="form-control-file">
+                                                                                                <input name="" id="exampleFile" type="file" class="form-control-file">
                                                                                                 <small class="form-text text-light">Gunakan File format PNG/JPG Max 10 MB</small>
                                                                                             </div>
                                                                                         </div>
@@ -506,11 +504,11 @@
                                                                 <div class="swal2-success-fix" style="background-color: rgb(255, 255, 255);"></div>
                                                                 <div class="swal2-success-circular-line-right" style="background-color: rgb(255, 255, 255);"></div>
                                                             </div>
-                                                            <div class="results-subtitle mt-4">Selesai! silahkan klik simpan di bwah ini!.</div>                                        
+                                                            <div class="results-subtitle mt-4">Selesai! silahkan klik simpan di bawah ini!.</div>                                        
                                                             <div class="mt-3 mb-3"></div>
                                                             <div class="text-center">
 
-                                                            <button class="btn-wide btn btn-success"  type="submit" >Simpan Data</button>
+                                                            <button class="btn-wide btn btn-success"  type="submit" >Simpan Perubahan</button>
                                                             </div>
                                                         </div>
                                                     </div>

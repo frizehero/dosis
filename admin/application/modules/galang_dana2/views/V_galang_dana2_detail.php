@@ -35,7 +35,7 @@
                                                 </div>
                                                 </br>
                                                 <div> 
-                                                    <img width="300" height="200" class="dashboard-sparkline-carousel-4-pop" src="<?php echo base_url() ?>assets/images/galangdana/<?php echo $tampil['foto2_penerima'] ?>" alt=""> 
+                                                    <img width="300" height="200" class="dashboard-sparkline-carousel-4-pop" src="<?php echo base_url() ?>assets/images/galangdana/<?php echo $tampil['foto2_penerima'] ?>" name="foto2"alt=""> 
                                                     <img width="300" height="200" class="dashboard-sparkline-carousel-4-pop" src="<?php echo base_url() ?>assets/images/galangdana/<?php echo $tampil['foto3_penerima'] ?>" alt="">
                                                     &nbsp;
                                                     
@@ -51,7 +51,7 @@
                                                 </div>
                                                 </div>
                                                 <div class="mt-2">
-                                                    <?php echo $tampil['tujuan_penerima'] ?>
+                                                   <?php echo $tampil['tujuan_penerima'] ?>
                                                 </div>
                                             </div>
                                         </div>

@@ -28,6 +28,16 @@
                                                 </li>
                                             </ul>
                                         </div>
+                                        <div tabindex="-2" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <ul class="nav flex-column">
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="galang_dana2/view">
+                                                        <i class="nav-link-icon lnr-inbox"></i>
+                                                        <span> Edit Data</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>    
                             </div>
@@ -41,7 +51,7 @@
                         <div class="card-hover profile-responsive card-border border-success mb-3 card">
                         <div class="dropdown-menu-header">
                             <div class="wrapper rounded"></div>
-                            <img src="<?php echo base_url() ?>assets/images/galangdana/<?php echo $rowP->foto1_penerima;?>" style="width: 314px; height:210px;">   
+                            <img src="<?php echo base_url() ?>assets/images/galangdana/<?php echo $rowP->foto1_penerima;?>" name="foto" style="width: 314px; height:210px;">   
                         </div>
                         <div class="p-0 card-body">
                             
@@ -60,8 +70,7 @@
                                                     </h6>
                                                 </div>
                                                 <h5 class="menu-header-title">
-                                                    <div ><?php echo $rowP->judul_donasi_penerima;?></div>
-                                                
+                                                    <div><a href="<?php echo base_url('galang_dana2/detailview/' . encrypt_url($rowP->id_galang_dana2)); ?>"><?php echo $rowP->judul_donasi_penerima; ?></a></div>
 
                                                 </h5>
                                                 <h6>
@@ -108,12 +117,39 @@
 
                         </div>
                         <div class="text-center d-block card-footer">
-                            <a href="<?php echo base_url('galang_dana2/detailview/' . encrypt_url($rowP->id_galang_dana2)); ?>" class="btn-shadow-primary btn btn-primary btn-lg">Detail</a>
-                            <button type="button" class="btn-shadow-primary btn btn-primary btn-lg" data-toggle="modal" data-target=".bd-example-modal-sm">Bagikan</button>
+                        	<button type="button" class="btn-shadow-primary btn btn-primary btn-lg" data-toggle="modal" data-target="#hapus<?php echo $no ?>">Hapus</button>
+                            <a href="<?php echo base_url('galang_dana2/editview/'. encrypt_url($rowP->id_galang_dana2)); ?>" class="btn-shadow-primary btn btn-primary btn-lg">Edit</a>
                         </div>
                         </div>
      
                     </div>
+                        <div class="modal fade" id="hapus<?php echo $no ?>" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Hapus Data?</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+
+                                            <form action="<?php echo base_url('galang_dana2/hapus') ?>" method="POST" enctype="multipart/form-data">
+                                                <div class="modal-body">
+                                                    <!--Modal body-->
+                                                    <p class="text-semibold text-main"></p>
+                                                    <p>Anda Yakin Ingin Menghapus <b>galang dana ini</b> ? </p>
+
+                                                    <input name="id" type="hidden" value="<?php echo $rowP->id_galang_dana2 ?>" class="form-control">
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">tutup</button>
+                                                    <button class="btn btn-primary" type="submit">Hapus</button>
+                                                </div>
+                                            </form>
+
+                                        </div>
+                                    </div>
+                                </div>
                 <?php $no++;} ?>
             </div>
 
