@@ -1,32 +1,49 @@
-<?php tampilnotif()?>
-<form action="<?php echo base_url('edit_profil/edit') ?>" method="POST" enctype="multipart/form-data">
-
 <div class="app-main__inner">
+                        <div class="app-page-title">
+                            <div class="page-title-wrapper">
+                                <div class="page-title-heading">
+                                    <div class="page-title-icon">
+                                        <i class="pe-7s-medal icon-gradient bg-tempting-azure"></i>
+                                    </div>
+                                    <div>EDIT PROFIL
+                                        <div class="page-title-subheading">Silahkan Ubah Profil Kamu</div>
+                                    </div>
+                                </div>
+                                <div class="page-title-actions">
+
+                                </div>    </div>
+                        </div>
+
+                    <?php tampilnotif()?>
+                    
+                    <?php $no=1; foreach($tampil as $res) { ?>
+                    
+                    <div class="row">
+                    <div class="app-main__inner">
                     <div class="mb-3 card">
                         <div class="card-header">
                             <font face= "Times New Roman" color="blue" size="3">Edit Profil</font>
+
+                            <a href="<?php echo base_url('edit_profil2/tambahview'); ?>" type="button" class="btn btn-primary" style="margin-left: 680px;">
+                                Ubah Datamu Disini
+                            </a>
+
                             <hr>
                         </div>
                         <div class="content-right ">
                         </br>
-                            <center><img width="100" class="rounded-circle" src="assets/images/avatars/14.jpg" alt=""></center>
+                            <center><img width="100" height="100" class="rounded-circle" src="<?php echo base_url('') ?>assets/images/fotoprofil/<?php echo $res->foto_profil;?>"></center>
                         </div></br>
                         <div class="d-block text-center">
-                            <div class="photoUpload">
-                                <input name="foto" type="file" class="form-control-file" style="margin-left: 400px;">
-                                <span><i class="fa fa-picture-o"></i> Pilih salah satu foto untuk identitas diri</span>
-                            </div>
+                            <a href="<?php echo base_url('edit_profil2/editview/'); ?>"></a>
                         </div>
-
-                        <input name="id" value="<?php echo $tampil['id_edit_profil']?>" type="hidden" class="form-control">
-
                         <div class="card-body">
                             <div class="row">
                             <div class="col-md-6">
                             <div class="position-relative row form-group">
                                 <label for="" class="col-sm-3 col-form-label">Nama Lengkap</label>
                                 <div class="col-sm-9">
-                                    <input name="nama_lengkap" type="text" class="form-control" placeholder="" value="<?php echo $tampil['nama_lengkap']?>">
+                                    <input name="nama_lengkap" value="<?php echo $res->nama_lengkap?>" type="text"class="form-control" disabled>
                                 </div>
                             </div>
                             </div>
@@ -34,7 +51,7 @@
                             <div class="position-relative row form-group">
                                 <label for="exampleEmail" class="col-sm-3 col-form-label">Username</label>
                                 <div class="col-sm-9">
-                                    <input name="username" placeholder="" type="text"class="form-control">
+                                    <input name="username" value="<?php echo $res->username?>" type="text"class="form-control" disabled>
                                 </div>
                             </div>
                             </div>
@@ -44,7 +61,7 @@
                             <div class="position-relative row form-group">
                                 <label for="exampleEmail" class="col-sm-3 col-form-label">Email</label>
                                 <div class="col-sm-9">
-                                    <input name="email" placeholder="" type="text"class="form-control">
+                                    <input name="email" value="<?php echo $res->email?>" type="text"class="form-control" disabled>
                                 </div>
                             </div>
                             </div>
@@ -52,11 +69,7 @@
                             <div class="position-relative row form-group">
                                 <label for="exampleEmail" class="col-sm-3 col-form-label">Jenis Kelamin</label>
                                 <div class="col-sm-9">
-                                    <select name="jenis_kelamin" id="exampleSelect" class="form-control">
-                                        <option value="Laki-laki">Laki-laki</option>
-                                        <option value="Perempuan">Perempuan</option>
-                                        <option value="bencong">bencong</option>
-                                    </select>
+                                    <input name="jenis_kelamin" value="<?php echo $res->jenis_kelamin?>" type="text"class="form-control" disabled>
                                 </div>
                             </div>
                             </div>
@@ -66,13 +79,7 @@
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">Provinsi</label>
                                         <div class="col-sm-9">
-                                            <select name="provinsi" class="multiselect-dropdown form-control">
-                                                <option value="Jawa Timur">Jawa Timur</option>
-                                                <option value="Jawa Tengah">Jawa Tengah</option>
-                                                <option value="Jawa Barat">Jawa Barat</option>
-                                                    
-
-                                            </select>
+                                            <input name="provinsi" value="<?php echo $res->provinsi?>" type="text"class="form-control" disabled>
                                         </div>
                                     </div>
                                 </div> 
@@ -80,12 +87,7 @@
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">KOTA/KAB.</label>
                                         <div class="col-sm-9">
-                                            <select name="kota" class="multiselect-dropdown form-control">
-                                                <option value="Probolinggo">Probolinggo</option>
-                                                <option value="Yogyakarta">Yogyakarta</option>
-                                                <option value="Jakarta">Jakarta</option>
-
-                                            </select>
+                                            <input name="kota" value="<?php echo $res->kota?>" type="text"class="form-control" disabled>
                                         </div>
                                     </div>
                                 </div>
@@ -95,12 +97,7 @@
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">Kecamatan</label>
                                         <div class="col-sm-9">
-                                            <select name="kecamatan" class="multiselect-dropdown form-control">
-                                                <option value="Mayangan">Mayangan</option>
-                                                <option value="Mangunharjo">Mangunharjo</option>
-                                                <option value="Jati">Jati</option>
-                                             
-                                            </select>
+                                            <input name="kecamatan" value="<?php echo $res->kecamatan?>" type="text"class="form-control" disabled> 
                                         </div>
                                     </div>
                                 </div>
@@ -108,12 +105,7 @@
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">Kel./Desa</label>
                                         <div class="col-sm-9">
-                                            <select name="desa" class="multiselect-dropdown form-control">
-                                                <option value="Muneng">Muneng</option>
-                                                <option value="Lowokwaru">Lowokwaru</option>
-                                                <option value="Sukapura">Jakarta</option>
-
-                                            </select>
+                                            <input name="desa" value="<?php echo $res->desa?>" type="text" class="form-control" disabled>
                                         </div>
                                     </div>
                                 </div>
@@ -123,7 +115,7 @@
                             <div class="position-relative row form-group">
                                 <label class="col-sm-3 col-form-label">Alamat</label>
                                 <div class="col-sm-9">
-                                    <textarea rows="1" name="alamat" class="form-control autosize-input" style="height: 35px;"></textarea>
+                                    <input name="alamat" value="<?php echo $res->alamat?>" class="form-control autosize-input" disabled>
                                 </div>
                             </div>
                             </div>
@@ -131,7 +123,7 @@
                             <div class="position-relative row form-group">
                                 <label for="exampleEmail" class="col-sm-3 col-form-label">Kode Pos</label>
                                 <div class="col-sm-9">
-                                    <input name="kode_pos" placeholder="" type="text"class="form-control">
+                                    <input name="kode_pos" value="<?php echo $res->kode_pos?>" type="text"class="form-control" disabled>
                                 </div>
                             </div>
                             </div>
@@ -141,7 +133,7 @@
                             <div class="position-relative row form-group">
                                 <label for="exampleEmail" class="col-sm-3 col-form-label">No WA</label>
                                 <div class="col-sm-9">
-                                    <input name="no_wa" placeholder="" type="text"class="form-control">
+                                    <input name="no_wa" value="<?php echo $res->no_wa?>" type="text"class="form-control" disabled>
                                 </div>
                             </div>
                             </div> 
@@ -149,7 +141,7 @@
                             <div class="position-relative row form-group">
                                 <label for="exampleEmail" class="col-sm-3 col-form-label">No Telepon</label>
                                 <div class="col-sm-9">
-                                    <input name="no_telepon" placeholder="" type="text"class="form-control">
+                                    <input name="no_telepon" value="<?php echo $res->no_telepon?>" type="text"class="form-control" disabled>
                                 </div>
                             </div>
                             </div>
@@ -159,7 +151,7 @@
                             <div class="position-relative row form-group">
                                 <label for="exampleEmail" class="col-sm-3 col-form-label">Instagram</label>
                                 <div class="col-sm-9">
-                                    <input name="instagram" placeholder="" type="text"class="form-control">
+                                    <input name="instagram" value="<?php echo $res->instagram?>" type="text"class="form-control" disabled>
                                 </div>
                             </div>
                             </div>
@@ -167,7 +159,7 @@
                             <div class="position-relative row form-group">
                                 <label for="exampleEmail" class="col-sm-3 col-form-label">Facebook</label>
                                 <div class="col-sm-9">
-                                    <input name="facebook" placeholder="" type="text"class="form-control">
+                                    <input name="facebook" value="<?php echo $res->facebook?>" type="text"class="form-control" disabled>
                                 </div>
                             </div>  
                             </div>
@@ -177,16 +169,20 @@
                             <div class="position-relative row form-group">
                                 <label for="exampleEmail" class="col-sm-3 col-form-label">twitter</label>
                                 <div class="col-sm-9">
-                                    <input name="twitter" placeholder="" type="text"class="form-control">
+                                    <input name="twitter" value="<?php echo $res->twitter?>" type="text"class="form-control" disabled>
                                 </div>
                             </div>
                             </div>
                             </div>
                             <div>
-                                <div class="d-block text-center ">
-                                    <button class="btn-shadow-primary btn btn-primary btn-lg" type="submit">SIMPAN</button>
-                                </div>
                             </div>
+                            
+                            
+                            <a href="<?php echo base_url('edit_profil2/editview'); ?>" type="button" class="btn btn-primary" style="margin-left: 680px;">
+                                Ubah Datamu Disini
+                            </a>
                         </div>
                     </div>
+                    <?php $no++;} ?>
+
                 </div>

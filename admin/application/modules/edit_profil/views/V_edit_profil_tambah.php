@@ -1,5 +1,6 @@
 <?php tampilnotif()?>
 <form action="<?php echo base_url('edit_profil/tambah') ?>" method="POST" enctype="multipart/form-data">
+
                 <div class="app-main__inner">
                     <div class="mb-3 card">
                         <div class="card-header">
@@ -16,13 +17,14 @@
                                 <span><i class="fa fa-picture-o"></i> Pilih salah satu foto untuk identitas diri</span>
                             </div>
                         </div>
+
                         <div class="card-body">
                             <div class="row">
                             <div class="col-md-6">
                             <div class="position-relative row form-group">
                                 <label for="" class="col-sm-3 col-form-label">Nama Lengkap</label>
                                 <div class="col-sm-9">
-                                    <input name="nama_lengkap" placeholder="" type="text"class="form-control" value="">
+                                    <input name="nama_lengkap" type="text"class="form-control" value="">
                                 </div>
                             </div>
                             </div>

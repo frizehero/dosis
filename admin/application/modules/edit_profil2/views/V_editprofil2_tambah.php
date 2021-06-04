@@ -1,7 +1,7 @@
 <?php tampilnotif()?>
-<form action="<?php echo base_url('edit_profil/edit') ?>" method="POST" enctype="multipart/form-data">
+<form action="<?php echo base_url('edit_profil2/tambah') ?>" method="POST" enctype="multipart/form-data">
 
-<div class="app-main__inner">
+                <div class="app-main__inner">
                     <div class="mb-3 card">
                         <div class="card-header">
                             <font face= "Times New Roman" color="blue" size="3">Edit Profil</font>
@@ -18,15 +18,13 @@
                             </div>
                         </div>
 
-                        <input name="id" value="<?php echo $tampil['id_edit_profil']?>" type="hidden" class="form-control">
-
                         <div class="card-body">
                             <div class="row">
                             <div class="col-md-6">
                             <div class="position-relative row form-group">
                                 <label for="" class="col-sm-3 col-form-label">Nama Lengkap</label>
                                 <div class="col-sm-9">
-                                    <input name="nama_lengkap" type="text" class="form-control" placeholder="" value="<?php echo $tampil['nama_lengkap']?>">
+                                    <input name="nama_lengkap" type="text"class="form-control" value="">
                                 </div>
                             </div>
                             </div>

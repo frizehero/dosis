@@ -1,5 +1,5 @@
 <?php tampilnotif()?>
-<form action="<?php echo base_url('edit_profil/edit') ?>" method="POST" enctype="multipart/form-data">
+<form action="<?php echo base_url('edit_profil2/edit') ?>" method="POST" enctype="multipart/form-data">
 
 <div class="app-main__inner">
                     <div class="mb-3 card">

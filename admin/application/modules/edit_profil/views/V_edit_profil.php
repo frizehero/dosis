@@ -15,7 +15,7 @@
                         </div>
 
                     <?php tampilnotif()?>
-
+                    
                     <?php $no=1; foreach($tampil as $res) { ?>
                     
                     <div class="row">
@@ -176,6 +176,11 @@
                             </div>
                             <div>
                             </div>
+                            
+                            
+                            <a href="<?php echo base_url('edit_profil/editview'); ?>" type="button" class="btn btn-primary" style="margin-left: 680px;">
+                                Ubah Datamu Disini
+                            </a>
                         </div>
                     </div>
                     <?php $no++;} ?>
