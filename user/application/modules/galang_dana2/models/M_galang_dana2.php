@@ -31,8 +31,8 @@ class M_galang_dana2 extends CI_Model {
 		$instagram_pembuka 			= $this->input->post('instagram_pembuka');
 		$facebook_pembuka 			= $this->input->post('facebook_pembuka');
 		$identitas_pembuka 			= $this->input->post('identitas_pembuka');
-		$provinsi_pembuka 			= $this->input->post('provinsi_pembuka');
-		$kota_pembuka 				= $this->input->post('kota_pembuka');
+		$wilayah_provinsi 			= $this->input->post('wilayah_provinsi');
+		$wilayah_kabupaten 				= $this->input->post('wilayah_kabupaten');
 		$kecamatan_pembuka 			= $this->input->post('kecamatan_pembuka');
 		$kelurahan_pembuka 			= $this->input->post('kelurahan_pembuka');
 		$alamat_pembuka 			= $this->input->post('alamat_pembuka');
@@ -91,8 +91,8 @@ class M_galang_dana2 extends CI_Model {
 					'instagram_pembuka'			=> $instagram_pembuka,
 					'facebook_pembuka'			=> $facebook_pembuka,
 					'identitas_pembuka'			=> $gbr['file_name'],
-					'provinsi_pembuka'			=> $provinsi_pembuka,
-					'kota_pembuka'				=> $kota_pembuka,
+					'wilayah_provinsi'			=> $wilayah_provinsi,
+					'wilayah_kabupaten'			=> $wilayah_kabupaten,
 					'kecamatan_pembuka'			=> $kecamatan_pembuka,
 					'kelurahan_pembuka'			=> $kelurahan_pembuka,
 					'alamat_pembuka'			=> $alamat_pembuka,
@@ -188,12 +188,14 @@ class M_galang_dana2 extends CI_Model {
 		return $this->db->get('galang_dana2')->row_array();
 	}
 
-	function tampilwilayah($id)
+
+	function provinsi()
 	{
-		$idnya = decrypt_url($id);
-		$this->db->where('id_galang_dana2', $idnya);
-		return $this->db->get('galang_dana2')->row_array();
+		
+		$get_prov = $this->db->select('*')->from('wilayah_provinsi')->get();
+		return $get_prov->result();
 	}
+	
 
 	function tampiledit($id)
 	{
@@ -220,8 +222,8 @@ class M_galang_dana2 extends CI_Model {
 		$instagram_pembuka 			= $this->input->post('instagram_pembuka');
 		$facebook_pembuka 			= $this->input->post('facebook_pembuka');
 		$identitas_pembuka 			= $this->input->post('identitas_pembuka');
-		$provinsi_pembuka 			= $this->input->post('provinsi_pembuka');
-		$kota_pembuka 				= $this->input->post('kota_pembuka');
+		$wilayah_provinsi 			= $this->input->post('wilayah_provinsi');
+		$wilayah_kabupaten 				= $this->input->post('wilayah_kabupaten');
 		$kecamatan_pembuka 			= $this->input->post('kecamatan_pembuka');
 		$kelurahan_pembuka 			= $this->input->post('kelurahan_pembuka');
 		$alamat_pembuka 			= $this->input->post('alamat_pembuka');

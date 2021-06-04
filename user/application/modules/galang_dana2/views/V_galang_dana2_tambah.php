@@ -1,3 +1,25 @@
+<script src="<?php echo $path; ?>/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("#provinsi").change(function (){
+                    var url = "<?php echo site_url('galang_dana2/add_ajax_kab');?>/"+$(this).val();
+                    $('#kabupaten').load(url);
+                    return false;
+                })
+    
+    $("#kabupaten").change(function (){
+                    var url = "<?php echo site_url('galang_dana2/add_ajax_kec');?>/"+$(this).val();
+                    $('#kecamatan').load(url);
+                    return false;
+                })
+    
+    $("#kecamatan").change(function (){
+                    var url = "<?php echo site_url('galang_dana2/add_ajax_des');?>/"+$(this).val();
+                    $('#desa').load(url);
+                    return false;
+                })
+            });
+    </script>
 <?php tampilnotif()?>
 <form action="<?php echo base_url('galang_dana2/tambah') ?>" method="POST" enctype="multipart/form-data">
                 <div class="content">
@@ -74,47 +96,34 @@
                             <div class="custom-form">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <label><b>Provinsi</b> <i class="fa fa-map-marker"></i></label>
-                                        <select data-placeholder="Provinsi" class="chosen-select" style="display: none;">
-                                            <option>Aceh</option>
-                                            <option>Sumatera Utara</option>
-                                            <option>Sumatera Barat</option>
-                                        </select>
+                                        <label><b>Provinsi</b></label>
+                                        
+                                        <select name="prov" class="form-control" id="provinsi">
+                                                                    <option>Pilih Provinsi</option>
+                                                                    <?php 
+                                                                        foreach($provinsi as $prov)
+                                                                        {
+                                                                            echo '<option value="'.$prov->id.'">'.$prov->nama.'</option>';
+                                                                        }
+                                                                    ?>
+                                                                </select>
                                     </div>
                                     <div class="col-md-6">
                                         <label><b>Kota/Kabupaten</b></label>
-                                        <select data-placeholder="All Categories" class="chosen-select" style="display: none;">
-                                            <option>KOTA MALANG</option>
-                                            <option>KOTA SURABAYA</option>
-                                            <option>KOTA PROBOLINGGO</option>
-                                            <option>KOTA BLITAR</option>
-                                            <option>KOTA PASURUAN</option>
-                                            <option>KOTA MOJOKERTO</option>
-                                            <option>KOTA SURAKARTA</option>\
-                                        </select>
+                                        <select name="kab" class="form-control" id="kabupaten">
+                                                                    <option value=''>Pilih Kota / Kab</option>
+                                                                </select>
                                     </div>
                                     <div class="col-md-6">
                                         <label><b>Kecamatan</b></label>
-                                        <select data-placeholder="All Categories" class="chosen-select" style="display: none;">
-                                            <option>KOTA MALANG</option>
-                                            <option>KOTA SURABAYA</option>
-                                            <option>KOTA PROBOLINGGO</option>
-                                            <option>KOTA BLITAR</option>
-                                            <option>KOTA PASURUAN</option>
-                                            <option>KOTA MOJOKERTO</option>
-                                            <option>KOTA SURAKARTA</option>\
-                                        </select>
+                                        <select name="kec" class="form-control" id="kecamatan">
+                                                                    <option>Pilih Kecamatan</option>
+                                                                </select>
                                     </div>
                                     <div class="col-md-6">
                                         <label><b>Kelurahan/Desa</b></label>
-                                        <select data-placeholder="All Categories" class="chosen-select" style="display: none;">
-                                            <option>KOTA MALANG</option>
-                                            <option>KOTA SURABAYA</option>
-                                            <option>KOTA PROBOLINGGO</option>
-                                            <option>KOTA BLITAR</option>
-                                            <option>KOTA PASURUAN</option>
-                                            <option>KOTA MOJOKERTO</option>
-                                            <option>KOTA SURAKARTA</option>\
+                                        <select name="des" id="desa" class="form-control" >
+                                            <option>Select Desa</option>
                                         </select>
                                     </div>
                                     <div class="col-md-6">
@@ -173,10 +182,11 @@
                             <div class="row">
                                     <div class="col-md-6">
                                         <label><b>Provinsi</b> <i class="fa fa-map-marker"></i></label>
-                                        <select data-placeholder="Provinsi" class="chosen-select" style="display: none;">
-                                            <option>Aceh</option>
-                                            <option>Sumatera Utara</option>
-                                            <option>Sumatera Barat</option>
+                                        <select name="prov" class="form-control" id="provinsi">
+                                            <option>- Select Provinsi -</option>
+                                            <?php foreach($provinsi as $prov){
+                                                echo '<option value="'.$prov->id.'">'.$prov->nama.'</option>';
+                                            } ?>
                                         </select>
                                     </div>
                                     <div class="col-md-6">
