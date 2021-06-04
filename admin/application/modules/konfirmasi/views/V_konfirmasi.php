@@ -15,29 +15,62 @@
                         <class class="tab-content">
                             <div class="tab-pane tabs-animation fade show active" id="tab-content-0" role="tabpanel">
                                 <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="main-card mb-3 card">
-                                            <div class="card-header"><i class="header-icon lnr-license icon-gradient bg-plum-plate"> </i>Postingan
-                                                <div class="btn-actions-pane-right">
-                                                    <a href="detail-donasi.html">
-                                                    <button class="mr-2 text-danger btn btn-link btn-sm">Views</button>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="card-body">
-                                                <div class="tab-content">
-                                                    <div class="dropdown-menu-header">
-                                                        <div class="wrapper rounded"></div>
-                                                        <img src="assets/images/Peristiwa/1.jpg" style="width: 278px; height:210px;">   
+                                    <?php $no=1; 
+                                    foreach ($tampilpostingan AS $rowA ) { ?>
+                                        <div class="col-md-4">
+                                            <div class="main-card mb-3 card">
+                                                <div class="card-header"><i class="header-icon lnr-license icon-gradient bg-plum-plate"> </i>Postingan
+                                                    <div class="btn-actions-pane-right">
+                                                        <a href="detail-donasi.html">
+                                                        <button class="mr-2 text-danger btn btn-link btn-sm">Views</button>
+                                                        </a>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="d-block text-center card-footer">
-                                                <a href="javascript:void(0);" class="btn-wide btn btn-success">Terima</a>
-                                                <a href="javascript:void(0);" class="btn-wide btn-shadow btn btn-danger">Hapus</a>
+                                                <div class="card-body">
+                                                    <div class="tab-content">
+                                                        <div class="dropdown-menu-header">
+                                                            <div class="wrapper rounded"></div>
+                                                            <img src="http://localhost/dosis/user/images/galangdana/<?php echo $rowA->identitas_penerima;?>" style="width: 278px; height:210px;">   
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-block text-center card-footer">
+                                                    <a href="javascript:void(0);" class="btn-wide btn btn-success">Terima</a>
+                                                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#hapus1">
+                                                        Hapus
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                        <!-- Modal HAPUS -->
+                                        <div class="modal fade" id="hapus<?php echo $no ?>" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Hapus Data?</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+
+                                                    <form action="<?php echo base_url('galang_dana2/hapus') ?>" method="POST" enctype="multipart/form-data">
+                                                        <div class="modal-body">
+                                                            <!--Modal body-->
+                                                            <p class="text-semibold text-main"></p>
+                                                            <p>Anda Yakin Ingin Menghapus <b>galang dana ini</b> ? </p>
+
+                                                            <input name="id" type="hidden" value="<?php echo $rowA->id_galang_dana2 ?>" class="form-control">
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">tutup</button>
+                                                            <button class="btn btn-primary" type="submit">Hapus</button>
+                                                        </div>
+                                                    </form>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <?php $no++;} ?>
                                 </div>
                             </div>                                    
                             <div class="tab-pane tabs-animation fade" id="tab-content-1" role="tabpanel">

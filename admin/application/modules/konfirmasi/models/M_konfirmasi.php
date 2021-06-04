@@ -11,6 +11,15 @@ class M_konfirmasi extends CI_Model {
 
 		return $query->result();
 	}
+
+	function tampilpostingan()
+	{
+		$this->db->select('*');
+		$this->db->from('galang_dana2');
+		$query = $this->db->get();
+
+		return $query->result();
+	}
 	
 
 	function hapus($id)
