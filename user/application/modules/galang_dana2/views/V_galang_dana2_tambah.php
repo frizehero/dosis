@@ -96,29 +96,33 @@
                             <div class="custom-form">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <label><b>Provinsi</b> <i class="fa fa-map-marker"></i></label>
-                                        <select data-placeholder="Provinsi" name="prov" id="provinsi" class="chosen-select" style="display: none;">
-                                            <option>- Select Provinsi -</option>
-                                                <?php foreach($provinsi as $prov){
-                                                    echo '<option value="'.$prov->id.'">'.$prov->nama.'</option>';
-                                                } ?>
-                                        </select>
+                                        <label><b>Provinsi</b></label>
+                                        
+                                        <select name="prov" class="form-control" id="provinsi">
+                                                                    <option>Pilih Provinsi</option>
+                                                                    <?php 
+                                                                        foreach($provinsi as $prov)
+                                                                        {
+                                                                            echo '<option value="'.$prov->id.'">'.$prov->nama.'</option>';
+                                                                        }
+                                                                    ?>
+                                                                </select>
                                     </div>
                                     <div class="col-md-6">
                                         <label><b>Kota/Kabupaten</b></label>
-                                        <select name="kab" id="kabupaten" class="chosen-select" style="display: none;">
-                                            <option value=''>Select Kabupaten</option>
-                                        </select>
+                                        <select name="kab" class="form-control" id="kabupaten">
+                                                                    <option value=''>Pilih Kota / Kab</option>
+                                                                </select>
                                     </div>
                                     <div class="col-md-6">
                                         <label><b>Kecamatan</b></label>
-                                        <select name="kec" id="kecamatan" class="chosen-select" style="display: none;">
-                                            <option>Select Kecamatan</option>
-                                        </select>
+                                        <select name="kec" class="form-control" id="kecamatan">
+                                                                    <option>Pilih Kecamatan</option>
+                                                                </select>
                                     </div>
                                     <div class="col-md-6">
                                         <label><b>Kelurahan/Desa</b></label>
-                                        <select name="des" id="desa" class="chosen-select" style="display: none;">
+                                        <select name="des" id="desa" class="form-control" >
                                             <option>Select Desa</option>
                                         </select>
                                     </div>
