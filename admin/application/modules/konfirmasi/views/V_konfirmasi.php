@@ -98,6 +98,10 @@
                                                                 <td class="text-center">
                                                                     <div role="group" class="btn-group-sm btn-group">
                                                                         <button class="btn-shadow btn btn-primary">konfirmasi</button>
+                                                                <td class="text-center">
+                                                                    <div role="group" class="btn-group-sm btn-group">
+                                                                        <button class="btn-shadow btn btn-primary">tolak</button>
+
                                                                     </div>
                                                                 </td>
                                                             </tr>
