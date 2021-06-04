@@ -128,17 +128,43 @@
                                                                     <img width="100" src="http://localhost/dosis/user/images/pembayaran/<?php echo $rowP->bukti_pembayaran;?>" alt="">
                                                                 </td>
                                                                 <td class="text-center"><?php echo $rowP->pilih_bank; ?></td>
+                                                                 <div class="d-block text-center card-footer">
                                                                 <td class="text-center">
                                                                     <div role="group" class="btn-group-sm btn-group">
                                                                         <button class="btn-shadow btn btn-primary">konfirmasi</button>
-                                                                <td class="text-center">
-                                                                    <div role="group" class="btn-group-sm btn-group">
-                                                                        <button class="btn-shadow btn btn-primary">tolak</button>
-
-                                                                    </div>
+                                                                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#hapus2<?php echo $no ?>">
+                                                                            Hapus
+                                                                        </button>
                                                                 </td>
                                                             </tr>
                                                         </tbody>
+                                                     <!-- Modal HAPUS -->
+                                                        <div class="modal fade" id="hapus2<?php echo $no ?>" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog" role="document">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="exampleModalLabel">Hapus Data?</h5>
+                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                        </button>
+                                                                    </div>
+
+                                                                    <form action="<?php echo base_url('konfirmasi/hapus2') ?>" method="POST" enctype="multipart/form-data">
+                                                                        <div class="modal-body">
+                                                                            <!--Modal body-->
+                                                                            <p class="text-semibold text-main"></p>
+                                                                            <p>Anda Yakin Ingin Menghapus <b>pembayaran ini</b> ? </p>
+
+                                                                            <input name="id" type="hidden" value="<?php echo $rowP->id_pembayaran?>" class="form-control">
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">tutup</button>
+                                                                            <button class="btn btn-primary" type="submit">Hapus</button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     <?php $no++;} ?>
                                                 </table>
                                             </div>

@@ -27,6 +27,14 @@ class M_konfirmasi extends CI_Model {
 		$this->db->where('id_galang_dana2', $id)->delete('galang_dana');
 	}
 
+	function hapus2()
+	{
+		$id 		= $this->input->post('id');
+
+		$this->db->where('id_pembayaran', $id)->delete('pembayaran2');
+	}
+
+
 	function cari()
 	{
 		$cari 		= $this->input->post('cari');

@@ -25,12 +25,18 @@ class Konfirmasi extends MX_Controller {
 		echo Modules::run('template/tampilCore', $data);
 	}
 
-
-
 	function hapus($id)
 	{
 		$this->M_konfirmasi->hapus($id);
 		redirect('galang_dana2');
+
+	}
+
+    function hapus2()
+	{
+		$this->M_konfirmasi->hapus2();
+		redirect('konfirmasi');
+
 	}
 
 	function cari()
