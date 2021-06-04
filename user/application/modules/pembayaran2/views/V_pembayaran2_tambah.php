@@ -154,6 +154,8 @@
                                 <h3>Contacts : </h3>
                             </div>
                             <div class="box-widget">
+                            <?php $no=1; 
+                            foreach ($tampilinformasi AS $rowS ) { ?>
                                 <div class="box-widget-content">
                                     <div class="list-author-widget-contacts list-item-widget-contacts">
                                         <ul>
@@ -166,7 +168,7 @@
                                                         Nama
                                                     </div>
                                                     <div class="col-md-6" style="padding: 0px 5px 0px 5px;">
-                                                        : Sandra Lidya
+                                                        : <?php echo $rowS->nama_pembuka; ?>
                                                     </div>
                                                 </div>
                                             </li>
@@ -179,8 +181,7 @@
                                                         Alamat
                                                     </div>
                                                     <div class="col-md-6" style="padding: 0px 5px 0px 5px;">
-                                                        : Perum GPA blok ED-22
-                                                    </div>
+                                                        : <?php echo $rowS->alamat_pembuka; ?>
                                                 </div>
                                             </li>
                                             <li>
@@ -192,7 +193,7 @@
                                                         Nama Rekening
                                                     </div>
                                                     <div class="col-md-6" style="padding: 0px 5px 0px 5px;">
-                                                        : Sandra Fitriani
+                                                        : <?php echo $rowS->nama_penerima; ?>
                                                     </div>
                                                 </div>
                                             </li>
@@ -205,7 +206,7 @@
                                                         No.Rekening</b>
                                                     </div>
                                                     <div class="col-md-6" style="padding: 0px 5px 0px 5px;"><b>
-                                                        : 731 025 2527</b>
+                                                        : <?php echo $rowS->no_rekening_penerima; ?></b>
                                                     </div>
                                                 </div>
                                             </li>
@@ -218,7 +219,7 @@
                                                         Phone
                                                     </div>
                                                     <div class="col-md-6" style="padding: 0px 5px 0px 5px;">
-                                                        : 085859057437
+                                                        : <?php echo $rowS->telepon_pembuka; ?>
                                                     </div>
                                                 </div>
                                             </li>
@@ -228,16 +229,17 @@
                                                         <span><i class="fa fa-envelope-o"></i>
                                                     </div>
                                                     <div class="col-md-4" style="padding: 0px 5px 0px 1opx;">
-                                                        Email
+                                                        Whatsapp
                                                     </div>
                                                     <div class="col-md-6" style="padding: 0px 5px 0px 5px;">
-                                                        :Sndrfitriani03@gmail.com
+                                                        :<?php echo $rowS->whatsapp_pembuka; ?>
                                                     </div>
                                                 </div>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
+                            <?php $no++;} ?>
                             </div>
                         </div>
                     </div>

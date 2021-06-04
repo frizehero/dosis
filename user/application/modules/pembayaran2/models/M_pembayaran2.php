@@ -14,8 +14,7 @@ class M_pembayaran2 extends CI_Model {
 		return $query->result();
 	}
 
-
-		function tampiledit($id)
+	function tampiledit($id)
 	{
 		$idnya=decrypt_url($id);
 
@@ -90,6 +89,17 @@ class M_pembayaran2 extends CI_Model {
 				$this->session->set_flashdata('msg', 'suksestambah');
 
 			}
+	}
+
+	function tampilinformasi()
+	{
+
+		$this->db->select('*');
+		$this->db->from('galang_dana2');
+		$query = $this->db->get();
+
+
+		return $query->result();
 	}
 
 	function edit()

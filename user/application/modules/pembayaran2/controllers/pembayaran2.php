@@ -29,6 +29,7 @@ class Pembayaran2 extends MX_Controller {
 		$data = array(
 			'namamodule' 	=> "pembayaran2",
 			'namafileview' 	=> "V_pembayaran2_tambah",
+			'tampilinformasi'		=> $this->M_pembayaran2->tampilinformasi(),
 		);
 		echo Modules::run('template/tampilBeranda', $data);
 	}
