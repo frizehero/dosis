@@ -1,3 +1,26 @@
+<script src="<?php echo $path; ?>/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+    $("#provinsi").change(function (){
+                    var url = "<?php echo site_url('edit_profil/add_ajax_kab');?>/"+$(this).val();
+                    $('#kabupaten').load(url);
+                    return false;
+                })
+    
+    $("#kabupaten").change(function (){
+                    var url = "<?php echo site_url('edit_profil/add_ajax_kec');?>/"+$(this).val();
+                    $('#kecamatan').load(url);
+                    return false;
+                })
+    
+    $("#kecamatan").change(function (){
+                    var url = "<?php echo site_url('edit_profil/add_ajax_des');?>/"+$(this).val();
+                    $('#desa').load(url);
+                    return false;
+                })
+            });
+</script>
+
 <?php tampilnotif()?>
 <form action="<?php echo base_url('edit_profil/tambah') ?>" method="POST" enctype="multipart/form-data">
 
@@ -17,7 +40,6 @@
                                 <span><i class="fa fa-picture-o"></i> Pilih salah satu foto untuk identitas diri</span>
                             </div>
                         </div>
-
                         <div class="card-body">
                             <div class="row">
                             <div class="col-md-6">
@@ -64,26 +86,27 @@
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">Provinsi</label>
                                         <div class="col-sm-9">
-                                            <select name="provinsi" class="multiselect-dropdown form-control">
-                                                <option value="Jawa Timur">Jawa Timur</option>
-                                                <option value="Jawa Tengah">Jawa Tengah</option>
-                                                <option value="Jawa Barat">Jawa Barat</option>
-                                                    
 
-                                            </select>
+                                        <select name="prov" class="form-control" id="provinsi">
+                                            <option>Pilih Provinsi</option>
+                                                <?php 
+                                                    foreach($provinsi as $prov)
+                                                    {
+                                                        echo '<option value="'.$prov->id.'">'.$prov->nama.'</option>';
+                                                    }
+                                                ?>
+                                        </select>
                                         </div>
                                     </div>
-                                </div> 
+                                </div>
                                 <div class="col-md-6">
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">KOTA/KAB.</label>
                                         <div class="col-sm-9">
-                                            <select name="kota" class="multiselect-dropdown form-control">
-                                                <option value="Probolinggo">Probolinggo</option>
-                                                <option value="Yogyakarta">Yogyakarta</option>
-                                                <option value="Jakarta">Jakarta</option>
-
-                                            </select>
+                                            
+                                        <select name="kab" class="form-control" id="kabupaten">
+                                                                    <option value=''>Pilih Kota / Kab</option>
+                                                                </select>
                                         </div>
                                     </div>
                                 </div>
@@ -93,12 +116,10 @@
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">Kecamatan</label>
                                         <div class="col-sm-9">
-                                            <select name="kecamatan" class="multiselect-dropdown form-control">
-                                                <option value="Mayangan">Mayangan</option>
-                                                <option value="Mangunharjo">Mangunharjo</option>
-                                                <option value="Jati">Jati</option>
-                                             
-                                            </select>
+
+                                        <select name="kec" class="form-control" id="kecamatan">
+                                                                    <option>Pilih Kecamatan</option>
+                                                                </select>
                                         </div>
                                     </div>
                                 </div>
@@ -106,12 +127,10 @@
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">Kel./Desa</label>
                                         <div class="col-sm-9">
-                                            <select name="desa" class="multiselect-dropdown form-control">
-                                                <option value="Muneng">Muneng</option>
-                                                <option value="Lowokwaru">Lowokwaru</option>
-                                                <option value="Sukapura">Jakarta</option>
 
-                                            </select>
+                                        <select name="des" id="desa" class="form-control" >
+                                            <option>Select Desa</option>
+                                        </select>
                                         </div>
                                     </div>
                                 </div>
