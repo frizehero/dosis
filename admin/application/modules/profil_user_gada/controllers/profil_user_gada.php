@@ -1,13 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class 	Profil_user extends MX_Controller {
+class 	Profil_user_gada extends MX_Controller {
 
 	function __construct()
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('M_profil_user');
+		 $this->load->model('M_profil_user_gada');
 		 $this->load->model('admin_login/m_session');
 	}
 
@@ -23,8 +23,8 @@ class 	Profil_user extends MX_Controller {
 		} else {
 
 			$data = array(
-			'namamodule' 	=> "profil_user",
-			'namafileview' 	=> "V_profil_user",
+			'namamodule' 	=> "profil_user_gada",
+			'namafileview' 	=> "V_profil_user_gada",
 		);
 		echo Modules::run('template/tampilCore', $data);
 		}
@@ -36,7 +36,7 @@ class 	Profil_user extends MX_Controller {
 	{
 		$data = array(
 			'namamodule' 	=> "profil_user",
-			'namafileview' 	=> "V_profil_user_donasi",
+			'namafileview' 	=> "V_profil_user_gada",
 			'tampil'		=> $this->M_profil_user->tampildonasi($id),
 		);
 		echo Modules::run('template/tampilBeranda', $data);

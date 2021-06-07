@@ -27,7 +27,12 @@ class M_edit_profil extends CI_Model {
     	return $query->row_array();
 	}
 
-
+	function provinsi()
+	{	
+		
+		$get_prov = $this->db->select('*')->from('wilayah_provinsi')->get();
+		return $get_prov->result();
+	}
 
 	function tambah()
 	{

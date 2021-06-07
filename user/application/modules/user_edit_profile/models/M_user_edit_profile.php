@@ -170,7 +170,7 @@ class M_user_edit_profile extends CI_Model {
 
 
 				);
-				$this->db->update('user_edit_profile', $data);
+				$this->db->where('id_user_edit_profile',$id)->update('user_edit_profile', $data);
 				$this->session->set_flashdata('msg', 'suksesedit');
 			}
 		}
@@ -195,7 +195,7 @@ class M_user_edit_profile extends CI_Model {
 
 
 				);
-				$this->db->update('user_edit_profile', $data);
+				$this->db->where('id_user_edit_profile',$id)->update('user_edit_profile', $data);
 				$this->session->set_flashdata('msg', 'suksesedit');
 			}
 	}

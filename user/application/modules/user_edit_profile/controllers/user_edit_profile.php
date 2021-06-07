@@ -40,8 +40,9 @@ class User_edit_profile extends MX_Controller {
 		$data = array(
 			'namamodule' 	=> "user_edit_profile",
 			'namafileview' 	=> "V_user_edit_profile_edit",
+			
 		);
-		echo Modules::run('template/tampilCore', $data);
+		echo Modules::run('template/tampilBeranda', $data);
 	}
 
 

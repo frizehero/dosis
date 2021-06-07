@@ -30,18 +30,18 @@
                                                 <div class="no-gutters row">
                                                     <div class="d-block col-sm-6">
                                                         <div class="p-1">
-                                                            <a href="profil-user-gada.html">
-                                                            <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-dark">
+                                                            <a href="<?php echo base_url('profil_user_gada'); ?>">
+                                                             <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-dark">
                                                                 <i class="lnr-lighter text-dark opacity-7 btn-icon-wrapper mb-2"></i>
-                                                                Galang dana
+                                                                Galang Dana
                                                             </button>
-                                                            </a>
+                                                        </a>
                                                         </div>
                                                     </div>
                                                     <div class="d-block col-sm-6">
                                                         <div class="p-1">
-                                                            <a href="profil-user-donasi.html">
-                                                            <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
+                                                            <a href="<?php echo base_url('profil_user_donasi'); ?>">
+                                                             <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
                                                                 <i class="lnr-construction text-danger opacity-7 btn-icon-wrapper mb-2"></i>
                                                                 Donasi
                                                             </button>
@@ -83,18 +83,22 @@
                                                 <div class="no-gutters row">
                                                     <div class="d-block col-sm-6">
                                                         <div class="p-1">
-                                                            <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-dark">
+                                                            <a href="<?php echo base_url('profil_user_gada'); ?>">
+                                                             <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-dark">
                                                                 <i class="lnr-lighter text-dark opacity-7 btn-icon-wrapper mb-2"></i>
-                                                                Galang dana
+                                                                Galang Dana
                                                             </button>
+                                                            </a>
                                                         </div>
                                                     </div>
                                                     <div class="d-block col-sm-6">
                                                         <div class="p-1">
-                                                            <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
+                                                           <a href="<?php echo base_url('profil_user_donasi'); ?>">
+                                                             <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
                                                                 <i class="lnr-construction text-danger opacity-7 btn-icon-wrapper mb-2"></i>
                                                                 Donasi
                                                             </button>
+                                                            </a> 
                                                         </div>
                                                     </div>
                                                 </div>
@@ -132,18 +136,22 @@
                                                 <div class="no-gutters row">
                                                     <div class="d-block col-sm-6">
                                                         <div class="p-1">
-                                                            <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-dark">
+                                                            <a href="<?php echo base_url('profil_user_gada'); ?>">
+                                                             <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-dark">
                                                                 <i class="lnr-lighter text-dark opacity-7 btn-icon-wrapper mb-2"></i>
-                                                                Galang dana
+                                                                Galang Dana
                                                             </button>
+                                                            </a>
                                                         </div>
                                                     </div>
                                                     <div class="d-block col-sm-6">
                                                         <div class="p-1">
-                                                            <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
+                                                            <a href="<?php echo base_url('profil_user_donasi'); ?>">
+                                                             <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
                                                                 <i class="lnr-construction text-danger opacity-7 btn-icon-wrapper mb-2"></i>
                                                                 Donasi
                                                             </button>
+                                                            </a> 
                                                         </div>
                                                     </div>
                                                 </div>
@@ -181,18 +189,22 @@
                                                 <div class="no-gutters row">
                                                     <div class="d-block col-sm-6">
                                                         <div class="p-1">
-                                                            <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-dark">
+                                                            <a href="<?php echo base_url('profil_user_gada'); ?>">
+                                                             <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-dark">
                                                                 <i class="lnr-lighter text-dark opacity-7 btn-icon-wrapper mb-2"></i>
-                                                                Galang dana
+                                                                Galang Dana
                                                             </button>
+                                                        </a>
                                                         </div>
                                                     </div>
                                                     <div class="d-block col-sm-6">
                                                         <div class="p-1">
-                                                            <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
+                                                            <a href="<?php echo base_url('profil_user_donasi'); ?>">
+                                                             <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
                                                                 <i class="lnr-construction text-danger opacity-7 btn-icon-wrapper mb-2"></i>
                                                                 Donasi
                                                             </button>
+                                                            </a> 
                                                         </div>
                                                     </div>
                                                 </div>
@@ -230,18 +242,22 @@
                                                 <div class="no-gutters row">
                                                     <div class="d-block col-sm-6">
                                                         <div class="p-1">
-                                                            <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-dark">
+                                                            <a href="<?php echo base_url('profil_user_gada'); ?>">
+                                                             <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-dark">
                                                                 <i class="lnr-lighter text-dark opacity-7 btn-icon-wrapper mb-2"></i>
-                                                                Galang dana
+                                                                Galang Dana
                                                             </button>
+                                                        </a>
                                                         </div>
                                                     </div>
                                                     <div class="d-block col-sm-6">
                                                         <div class="p-1">
-                                                            <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
+                                                            <a href="<?php echo base_url('profil_user_donasi'); ?>">
+                                                             <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
                                                                 <i class="lnr-construction text-danger opacity-7 btn-icon-wrapper mb-2"></i>
                                                                 Donasi
                                                             </button>
+                                                            </a> 
                                                         </div>
                                                     </div>
                                                 </div>
@@ -279,18 +295,22 @@
                                                 <div class="no-gutters row">
                                                     <div class="d-block col-sm-6">
                                                         <div class="p-1">
-                                                            <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-dark">
+                                                            <a href="<?php echo base_url('profil_user_gada'); ?>">
+                                                             <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-dark">
                                                                 <i class="lnr-lighter text-dark opacity-7 btn-icon-wrapper mb-2"></i>
-                                                                Galang dana
+                                                                Galang Dana
                                                             </button>
+                                                        </a>
                                                         </div>
                                                     </div>
                                                     <div class="d-block col-sm-6">
                                                         <div class="p-1">
-                                                            <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
+                                                            <a href="<?php echo base_url('profil_user_donasi'); ?>">
+                                                             <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
                                                                 <i class="lnr-construction text-danger opacity-7 btn-icon-wrapper mb-2"></i>
                                                                 Donasi
                                                             </button>
+                                                            </a> 
                                                         </div>
                                                     </div>
                                                 </div>
@@ -328,18 +348,22 @@
                                                 <div class="no-gutters row">
                                                     <div class="d-block col-sm-6">
                                                         <div class="p-1">
-                                                            <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-dark">
+                                                            <a href="<?php echo base_url('profil_user_gada'); ?>">
+                                                             <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-dark">
                                                                 <i class="lnr-lighter text-dark opacity-7 btn-icon-wrapper mb-2"></i>
-                                                                Galang dana
+                                                                Galang Dana
                                                             </button>
+                                                        </a>
                                                         </div>
                                                     </div>
                                                     <div class="d-block col-sm-6">
                                                         <div class="p-1">
-                                                            <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
+                                                            <a href="<?php echo base_url('profil_user_donasi'); ?>">
+                                                             <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
                                                                 <i class="lnr-construction text-danger opacity-7 btn-icon-wrapper mb-2"></i>
                                                                 Donasi
                                                             </button>
+                                                            </a> 
                                                         </div>
                                                     </div>
                                                 </div>
@@ -377,18 +401,22 @@
                                                 <div class="no-gutters row">
                                                     <div class="d-block col-sm-6">
                                                         <div class="p-1">
-                                                            <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-dark">
+                                                           <a href="<?php echo base_url('profil_user_gada'); ?>">
+                                                             <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-dark">
                                                                 <i class="lnr-lighter text-dark opacity-7 btn-icon-wrapper mb-2"></i>
-                                                                Galang dana
+                                                                Galang Dana
                                                             </button>
+                                                        </a>
                                                         </div>
                                                     </div>
                                                     <div class="d-block col-sm-6">
                                                         <div class="p-1">
-                                                            <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
+                                                           <a href="<?php echo base_url('profil_user_donasi'); ?>">
+                                                             <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
                                                                 <i class="lnr-construction text-danger opacity-7 btn-icon-wrapper mb-2"></i>
                                                                 Donasi
                                                             </button>
+                                                            </a> 
                                                         </div>
                                                     </div>
                                                 </div>

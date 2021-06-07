@@ -69,7 +69,6 @@
                                                 <input name="twitter" value="<?php echo $res->twitter?>" type="text"class="form-control" disabled>
                                                 <div class="page-title-actions">
                                                     <center><a href="<?php echo base_url('user_edit_profile/tambahview'); ?>" class="btn  big-btn  color-bg flat-btn" style="margin-bottom:30px; margin-left:50px;">Tambah Data</a></center>
-                                                    <center><a href="<?php echo base_url('user_edit_profile/tambahview'); ?>" class="btn  big-btn  color-bg flat-btn" style="margin-bottom:30px; margin-left:50px;">Edit Data</a></center>
                                                 </div>    
                                             </div>
                                         </div>
