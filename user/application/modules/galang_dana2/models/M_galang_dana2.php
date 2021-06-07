@@ -18,6 +18,7 @@ class M_galang_dana2 extends CI_Model {
 	{
 		return $this->db->get('pembayaran2')->result();
 	}
+	
 
 	function tambah()
 	{

@@ -151,6 +151,9 @@
                     <div class="col-md-5"  style="padding: 30px 50px 10px 30px;" >
                         <div class="box-widget-item fl-wrap">
                             <div class="box-widget-item-header">
+                                <h3>Donasi Ke : </h3>
+                            </div>
+                            <div class="box-widget-item-header">
                                 <h3>Contacts : </h3>
                             </div>
                             <div class="box-widget">

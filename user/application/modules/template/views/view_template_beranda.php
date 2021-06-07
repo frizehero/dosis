@@ -256,28 +256,7 @@ $menu = $uri_segments[3];
     <script src="<?php echo base_url('assets/') ?>scripts/jquery.dataTables.min.js" type="text/javascript"></script>
     <script src="<?php echo base_url('assets/') ?>scripts/dataTables.bootstrap4.min.js" type="text/javascript"></script>
 
-    <script src="<?php echo $path; ?>/jquery.min.js"></script>
-    <script>
-            $(document).ready(function(){
-                $("#provinsi").change(function (){
-                    var url = "<?php echo site_url('galang_dana2/add_ajax_kab');?>/"+$(this).val();
-                    $('#kabupaten').load(url);
-                    return false;
-                })
     
-    $("#kabupaten").change(function (){
-                    var url = "<?php echo site_url('galang_dana2/add_ajax_kec');?>/"+$(this).val();
-                    $('#kecamatan').load(url);
-                    return false;
-                })
-    
-    $("#kecamatan").change(function (){
-                    var url = "<?php echo site_url('galang_dana2/add_ajax_des');?>/"+$(this).val();
-                    $('#desa').load(url);
-                    return false;
-                })
-            });
-    </script>
 
   <script>
 $(document).ready( function () {
