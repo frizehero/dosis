@@ -75,7 +75,14 @@
                                                             </div>
                                                         </div>                                                        
                                                         <div class="form-row">
-                                                            <div class="col-md-6">
+                                                            <div class="col-md-4">
+                                                                <div class="position-relative form-group">
+                                                                    <label for="">Alamat Lengkap</label>
+                                                                    <input name="alamat_pembuka"exampleAddress telepon_pembuka="exampleAddress" placeholder="" value="<?php echo $tampil['alamat_pembuka']?>" type="text" class="form-control">
+                                                                </div>                                                                    
+                                                                
+                                                            </div>
+                                                            <div class="col-md-4">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleEmail11" class="">Jenjang</label>
                                                                     <select name="jenjang_pembuka"  value="<?php echo $tampil['jenjang_pembuka']?>" class="multiselect-dropdown form-control">
@@ -90,12 +97,13 @@
                                                                     </select>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-6">
+                                                            <div class="col-md-4">
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleAddress">Asal Sekolah/Kelas</label>
                                                                     <input name="sekolah_pembuka" value="<?php echo $tampil['sekolah_pembuka']?>" id="exampleAddress" placeholder="" type="text" class="form-control">
                                                                 </div>
-                                                            </div>                  
+                                                            </div>
+
                                                         </div>
                                                         <div class="form-row">  
                                                             <div class="col-md-6">
@@ -143,13 +151,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-12">
-                                                                <div class="position-relative form-group">
-                                                                    <label for="exampleAddress">Alamat Lengkap</label>
-                                                                    <textarea rows="1" name="alamat_pembuka" value="<?php echo $tampil['alamat_pembuka']?>" class="form-control autosize-input" style="height: 80px;"></textarea>
-                                                                </div>
-                                                            </div>
-                                                            
+                                                        
                                                         </div>   
                                                         <div class="form-row">
                                                             <div class="col-md-4">
@@ -313,7 +315,7 @@
                                                                             <div class="col-md-6">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Tentang Diri Kamu</label>
-                                                                                    <textarea rows="1" name="tentang_diri_kamu" value="<?php echo $tampil['tentang_diri_penerima']?>" class="form-control autosize-input" style="height: 80px;"></textarea>
+                                                                                    <textarea rows="1" name="tentang_diri_penerima" class="form-control autosize-input" style="height: 80px;"><?php echo $tampil['tentang_diri_penerima']?></textarea>
                                                                                 </div>
                                                                             </div> 
                                                                         </div>
@@ -427,7 +429,7 @@
                                                                             <div class="col-md-12">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Deskripsi Peristiwa</label>
-                                                                                    <textarea rows="1" name="deskripsi_penerima" value="<?php echo $tampil['deskripsi_penerima']?>" class="form-control autosize-input" style="height: 80px;"></textarea>
+                                                                                    <textarea rows="1" name="deskripsi_penerima" class="form-control autosize-input" style="height: 80px;"><?php echo $tampil['deskripsi_penerima']?></textarea>
                                                                                 </div>
                                                                             </div>
  
@@ -436,7 +438,7 @@
                                                                             <div class="col-md-6">
                                                                                 <div class="position-relative form-group">
                                                                                     <label for="exampleAddress">Tujuan Membuka Galang Dana</label>
-                                                                                    <textarea rows="1" name="tujuan_penerima" value="<?php echo $tampil['tujuan_penerima']?>" class="form-control autosize-input" style="height: 80px;"></textarea>
+                                                                                    <textarea rows="1" name="tujuan_penerima" class="form-control autosize-input" style="height: 80px;"><?php echo $tampil['tujuan_penerima']?></textarea>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-6">
@@ -508,7 +510,7 @@
                                                             <div class="mt-3 mb-3"></div>
                                                             <div class="text-center">
 
-                                                            <button class="btn-wide btn btn-success"  type="submit" >Simpan Data</button>
+                                                            <button class="btn-wide btn btn-success"  type="submit" >Simpan Perubahan</button>
                                                             </div>
                                                         </div>
                                                     </div>

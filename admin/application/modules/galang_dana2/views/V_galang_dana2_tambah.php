@@ -509,7 +509,7 @@
                                                             <div class="mt-3 mb-3"></div>
                                                             <div class="text-center">
 
-                                                            <button class="btn-wide btn btn-success"  type="submit" >Simpan Perubahan</button>
+                                                            <button class="btn-wide btn btn-success"  type="submit" >Simpan Data</button>
                                                             </div>
                                                         </div>
                                                     </div>
