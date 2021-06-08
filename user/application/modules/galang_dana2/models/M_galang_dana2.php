@@ -10,6 +10,10 @@ class M_galang_dana2 extends CI_Model {
 		$this->db->from('galang_dana2');
 		$query = $this->db->get();
 		$this->db->join('pembayaran2', 'galang_dana2.pesan_kesan = pembayaran2.id_pembayaran2');
+		$this->db->join('wilayah_provinsi', 'galang_dana2.wilayah_provinsi = wilayah_provinsi.id');
+		$this->db->join('wilayah_kabupaten', 'galang_dana2.wilayah_kabupaten = wilayah_kabupaten.id');
+		$this->db->join('wilayah_kecamatan', 'galang_dana2.wilayah_kecamatan = wilayah_kecamatan.id');
+		$this->db->join('wilayah_desa', 'galang_dana2.wilayah_desa = wilayah_desa.id');
 
 		return $query->result();
 	}
@@ -32,10 +36,10 @@ class M_galang_dana2 extends CI_Model {
 		$instagram_pembuka 			= $this->input->post('instagram_pembuka');
 		$facebook_pembuka 			= $this->input->post('facebook_pembuka');
 		$identitas_pembuka 			= $this->input->post('identitas_pembuka');
-		$wilayah_provinsi 			= $this->input->post('provinsi_pembuka');
-		$wilayah_kabupaten 			= $this->input->post('kota_pembuka');
-		$wilayah_kecamatan 			= $this->input->post('kecamatan_pembuka');
-		$wilayah_desa 				= $this->input->post('kelurahan_pembuka');
+		$wilayah_provinsi 			= $this->input->post('wilayah_provinsi');
+		$wilayah_kabupaten 			= $this->input->post('wilayah_kabupaten');
+		$wilayah_kecamatan 			= $this->input->post('wilayah_kecamatan');
+		$wilayah_desa 				= $this->input->post('wilayah_desa');
 		$alamat_pembuka 			= $this->input->post('alamat_pembuka');
 		$kode_pos_pembuka 			= $this->input->post('kode_pos_pembuka');
 		$nama_penerima				= $this->input->post('nama_penerima');
@@ -92,10 +96,10 @@ class M_galang_dana2 extends CI_Model {
 					'instagram_pembuka'			=> $instagram_pembuka,
 					'facebook_pembuka'			=> $facebook_pembuka,
 					'identitas_pembuka'			=> $gbr['file_name'],
-					'provinsi_pembuka'			=> $wilayah_provinsi,
-					'kota_pembuka'				=> $wilayah_kabupaten,
-					'kecamatan_pembuka'			=> $wilayah_kecamatan,
-					'kelurahan_pembuka'			=> $wilayah_desa,
+					'wilayah_provinsi'			=> $wilayah_provinsi,
+					'wilayah_kabupaten'			=> $wilayah_kabupaten,
+					'wilayah_kecamatan'			=> $wilayah_kecamatan,
+					'wilayah_desa'				=> $wilayah_desa,
 					'alamat_pembuka'			=> $alamat_pembuka,
 					'kode_pos_pembuka'			=> $kode_pos_pembuka,
 					'nama_penerima'				=> $nama_penerima,
@@ -143,10 +147,10 @@ class M_galang_dana2 extends CI_Model {
 					'instagram_pembuka'			=> $instagram_pembuka,
 					'facebook_pembuka'			=> $facebook_pembuka,
 					'identitas_pembuka'			=> 'kosong.jpeg',
-					'provinsi_pembuka'			=> $provinsi_pembuka,
-					'kota_pembuka'				=> $kota_pembuka,
-					'kecamatan_pembuka'			=> $kecamatan_pembuka,
-					'kelurahan_pembuka'			=> $kelurahan_pembuka,
+					'wilayah_provinsi'			=> $wilayah_provinsi,
+					'wilayah_kabupaten'			=> $wilayah_kabupaten,
+					'wilayah_kecamatan'			=> $wilayah_kecamatan,
+					'wilayah_desa'				=> $wilayah_desa,
 					'alamat_pembuka'			=> $alamat_pembuka,
 					'kode_pos_pembuka'			=> $kode_pos_pembuka,
 					'nama_penerima'				=> $nama_penerima,
@@ -189,12 +193,12 @@ class M_galang_dana2 extends CI_Model {
 		return $this->db->get('galang_dana2')->row_array();
 	}
 
-
-	function provinsi()
-	{
+	function get_all_provinsi() {
+		$this->db->select('*');
+		$this->db->from('wilayah_provinsi');
+		$query = $this->db->get();
 		
-		$get_prov = $this->db->select('*')->from('wilayah_provinsi')->get();
-		return $get_prov->result();
+		return $query->result();
 	}
 	
 

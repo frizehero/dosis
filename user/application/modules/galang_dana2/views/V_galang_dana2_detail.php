@@ -97,7 +97,7 @@
                     <div class="box-widget-item fl-wrap">
                         <div class="box-widget list-author-widget">
                             <div class="list-author-widget-header shapes-bg-small  color-bg fl-wrap">
-                                <h2 style="font-size: 20px;"><b><?php echo $tampil['nama_penerima'] ?></b></h2>
+                                <h2 style="font-size: 20px;"><b>Profil Penerima</b></h2>
                                 <span class="list-author-widget-link"></span>
                                 <img src="<?php echo base_url() ?>images/all/4.jpg" alt=""> 
                             </div>
@@ -150,7 +150,7 @@
                                                 Alamat
                                             </div>
                                             <div class="col-md-6" style="padding: 0px 5px 0px 5px;">
-                                                : <?php echo $tampil['alamat_penerima'] ?>
+                                                : <?php echo $tampil['alamat_penerima'] ?> <?php echo $tampil['wilayah_desa'] ?> <?php echo $tampil['wilayah_kecamatan'] ?> <?php echo $tampil['wilayah_kabupaten'] ?> <?php echo $tampil['wilayah_desa'] ?>
                                             </div>
                                         </div>
                                     </br>

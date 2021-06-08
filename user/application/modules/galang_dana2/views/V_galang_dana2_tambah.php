@@ -137,8 +137,9 @@
                                         <p></p>
                                     </div>
                                     <div class="col-md-12">
+                                        <?php echo $map['js']; ?>    
                                         <div class="map-container">
-                                            <div id="singleMap" data-latitude="40.7427837" data-longitude="-73.11445617675781" style="position: relative; overflow: hidden;"><div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);"><div class="gm-err-container"><div class="gm-err-content"><div class="gm-err-icon"><img src="http://maps.gstatic.com/mapfiles/api-3/images/icon_error.png" draggable="false" style="user-select: none;"></div><div class="gm-err-title">Ups! Ada sesuatu yang salah.</div><div class="gm-err-message">Halaman ini tidak memuat Google Maps dengan benar. Lihat konsol JavaScript untuk mengetahui detail teknisnya.</div></div></div></div></div>
+                                            <?php echo $map['html']; ?>
                                         </div>
                                     </div>
                                 </div>
@@ -230,7 +231,7 @@
                         </div>
                         <div class="profile-edit-container add-list-container">
                             <div class="profile-edit-header fl-wrap">
-                                <h4>Contacts Person</h4>
+                                <h4>Kontak Person</h4>
                             </div>
                             <div class="custom-form">  
                                 <div class="row">
@@ -293,7 +294,7 @@
                                     </div> 
                                     <div class="col-md-6">
                                         <label><b>Kategori</b></label>
-                                        <select data-placeholder="All Categories" class="chosen-select" style="display: none;">
+                                        <select name="kategori_penerima" class="chosen-select" style="display: none;">
                                             <option>Siswa Putus Sekolah</option>
                                             <option>Siswa Tidak Mampu</option>
                                             <option>Kecelakaan/Sakit</option>
@@ -314,7 +315,7 @@
                                 </div>
                                 <div class="profile-edit-container add-list-container">
                                     <div class="profile-edit-header fl-wrap">
-                                        <h4>Foto</h4>
+                                        <h4>Foto Peristiwa</h4>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-4">
