@@ -8,6 +8,10 @@ class M_user_edit_profile extends CI_Model {
 		$this->db->select('*');
 		$this->db->from('user_edit_profile');
 		$query = $this->db->get();
+		$this->db->join('wilayah_provinsi', 'user_edit_profile.wilayah_provinsi = wilayah_provinsi.id');
+		$this->db->join('wilayah_kabupaten', 'user_edit_profile.wilayah_kabupaten = wilayah_kabupaten.id');
+		$this->db->join('wilayah_kecamatan', 'user_edit_profile.wilayah_kecamatan = wilayah_kecamatan.id');
+		$this->db->join('wilayah_desa', 'user_edit_profile.wilayah_desa = wilayah_desa.id');
 
 
 		return $query->result();
@@ -22,10 +26,10 @@ class M_user_edit_profile extends CI_Model {
 		$no_telepon			= $this->input->post('no_telepon');
 		$no_whatsapp		= $this->input->post('no_whatsapp');
 		$alamat_lengkap		= $this->input->post('alamat_lengkap');
-		$provinsi			= $this->input->post('provinsi');
-		$kota_kabupaten		= $this->input->post('kota_kabupaten');
-		$kecamatan			= $this->input->post('kecamatan');
-		$kelurahan			= $this->input->post('kelurahan');
+		$wilayah_provinsi 	= $this->input->post('wilayah_provinsi');
+		$wilayah_kabupaten 	= $this->input->post('wilayah_kabupaten');
+		$wilayah_kecamatan 	= $this->input->post('wilayah_kecamatan');
+		$wilayah_desa 		= $this->input->post('wilayah_desa');
 		$kode_pos			= $this->input->post('kode_pos');
 		$facebook			= $this->input->post('facebook');
 		$instagram			= $this->input->post('instagram');
@@ -50,21 +54,21 @@ class M_user_edit_profile extends CI_Model {
 				$gbr = $this->upload->data();
 				$data = array(
 					
-					'foto_profilenya'=> $gbr['file_name'],
-					'nama_lengkap'	=> $nama_lengkap,
-					'emailnya'		=> $emailnya,
-					'jenis_kelamin'	=> $jenis_kelamin,
-					'no_telepon'	=> $no_whatsapp,
-					'no_whatsapp'	=> $no_whatsapp,
-					'alamat_lengkap'=> $alamat_lengkap,
-					'provinsi'		=> $provinsi,
-					'kota_kabupaten'=> $kota_kabupaten,
-					'kecamatan'		=> $kecamatan,
-					'kelurahan'		=> $kelurahan,
-					'kode_pos'		=> $kode_pos,
-					'facebook'		=> $facebook,
-					'instagram'		=> $instagram,	
-					'twitter'		=> $twitter,
+					'foto_profilenya'	=> $gbr['file_name'],
+					'nama_lengkap'		=> $nama_lengkap,
+					'emailnya'			=> $emailnya,
+					'jenis_kelamin'		=> $jenis_kelamin,
+					'no_telepon'		=> $no_whatsapp,
+					'no_whatsapp'		=> $no_whatsapp,
+					'alamat_lengkap'	=> $alamat_lengkap,
+					'wilayah_provinsi'	=> $wilayah_provinsi,
+					'wilayah_kabupaten'	=> $wilayah_kabupaten,
+					'wilayah_kecamatan'	=> $wilayah_kecamatan,
+					'wilayah_desa'		=> $wilayah_desa,
+					'kode_pos'			=> $kode_pos,
+					'facebook'			=> $facebook,
+					'instagram'			=> $instagram,	
+					'twitter'			=> $twitter,
 				
 
 
@@ -75,21 +79,21 @@ class M_user_edit_profile extends CI_Model {
 		}
 		else{
 				$data = array(
-					'foto_profilenya'=> 'kosong.jpeg',
-					'nama_lengkap'	=> $nama_lengkap,
-					'emailnya'		=> $emailnya,
-					'jenis_kelamin'	=> $jenis_kelamin,
-					'no_telepon'	=> $no_whatsapp,
-					'no_whatsapp'	=> $no_whatsapp,
-					'alamat_lengkap'=> $alamat_lengkap,
-					'provinsi'		=> $provinsi,
-					'kota_kabupaten'=> $kota_kabupaten,
-					'kecamatan'		=> $kecamatan,
-					'kelurahan'		=> $kelurahan,
-					'kode_pos'		=> $kode_pos,
-					'facebook'		=> $facebook,
-					'instagram'		=> $instagram,	
-					'twitter'		=> $twitter,
+					'foto_profilenya'	=> 'kosong.jpeg',
+					'nama_lengkap'		=> $nama_lengkap,
+					'emailnya'			=> $emailnya,
+					'jenis_kelamin'		=> $jenis_kelamin,
+					'no_telepon'		=> $no_whatsapp,
+					'no_whatsapp'		=> $no_whatsapp,
+					'alamat_lengkap'	=> $alamat_lengkap,
+					'wilayah_provinsi'	=> $wilayah_provinsi,
+					'wilayah_kabupaten'	=> $wilayah_kabupaten,
+					'wilayah_kecamatan'	=> $wilayah_kecamatan,
+					'wilayah_desa'		=> $wilayah_desa,
+					'kode_pos'			=> $kode_pos,
+					'facebook'			=> $facebook,
+					'instagram'			=> $instagram,	
+					'twitter'			=> $twitter,
 				
 
 
@@ -99,6 +103,13 @@ class M_user_edit_profile extends CI_Model {
 			}
 	}
 	
+	function get_all_provinsi() {
+		$this->db->select('*');
+		$this->db->from('wilayah_provinsi');
+		$query = $this->db->get();
+		
+		return $query->result();
+	}
 	
 	function tampiledit($id)
 	{
