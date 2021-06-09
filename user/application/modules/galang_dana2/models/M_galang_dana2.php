@@ -193,12 +193,10 @@ class M_galang_dana2 extends CI_Model {
 		return $this->db->get('galang_dana2')->row_array();
 	}
 
-	function get_all_provinsi() {
-		$this->db->select('*');
-		$this->db->from('wilayah_provinsi');
-		$query = $this->db->get();
-		
-		return $query->result();
+	function provinsi()
+	{
+		$get_prov = $this->db->select('*')->from('wilayah_provinsi')->get();
+		return $get_prov->result();
 	}
 	
 

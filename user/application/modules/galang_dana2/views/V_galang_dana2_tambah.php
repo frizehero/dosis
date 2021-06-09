@@ -1,25 +1,3 @@
-<script src="<?php echo $path; ?>/jquery.min.js"></script>
-    <script>
-    $(document).ready(function(){
-    $("#provinsi").change(function (){
-                    var url = "<?php echo site_url('galang_dana2/add_ajax_kab');?>/"+$(this).val();
-                    $('#kabupaten').load(url);
-                    return false;
-                })
-    
-    $("#kabupaten").change(function (){
-                    var url = "<?php echo site_url('galang_dana2/add_ajax_kec');?>/"+$(this).val();
-                    $('#kecamatan').load(url);
-                    return false;
-                })
-    
-    $("#kecamatan").change(function (){
-                    var url = "<?php echo site_url('galang_dana2/add_ajax_des');?>/"+$(this).val();
-                    $('#desa').load(url);
-                    return false;
-                })
-            });
-    </script>
 <?php tampilnotif()?>
 <form action="<?php echo base_url('galang_dana2/tambah') ?>" method="POST" enctype="multipart/form-data">
                 <div class="content">
@@ -137,9 +115,8 @@
                                         <p></p>
                                     </div>
                                     <div class="col-md-12">
-                                        <?php echo $map['js']; ?>    
                                         <div class="map-container">
-                                            <?php echo $map['html']; ?>
+                                            <div id="singleMap" data-latitude="40.7427837" data-longitude="-73.11445617675781" style="position: relative; overflow: hidden;"><div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);"><div class="gm-err-container"><div class="gm-err-content"><div class="gm-err-icon"><img src="http://maps.gstatic.com/mapfiles/api-3/images/icon_error.png" draggable="false" style="user-select: none;"></div><div class="gm-err-title">Ups! Ada sesuatu yang salah.</div><div class="gm-err-message">Halaman ini tidak memuat Google Maps dengan benar. Lihat konsol JavaScript untuk mengetahui detail teknisnya.</div></div></div></div></div>
                                         </div>
                                     </div>
                                 </div>
@@ -369,3 +346,25 @@
                         </div>
                     </div>
                 </div>
+                <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+                <script>
+                    $(document).ready(function(){
+                        $("#provinsi").change(function (){
+                            var url = "<?php echo site_url('galang_dana2/add_ajax_kab');?>/"+$(this).val();
+                            $('#kabupaten').load(url);
+                            return false;
+                        })
+                        
+                        $("#kabupaten").change(function (){
+                            var url = "<?php echo site_url('galang_dana2/add_ajax_kec');?>/"+$(this).val();
+                            $('#kecamatan').load(url);
+                            return false;
+                        })
+            
+                        $("#kecamatan").change(function (){
+                            var url = "<?php echo site_url('galang_dana2/add_ajax_des');?>/"+$(this).val();
+                            $('#desa').load(url);
+                            return false;
+                        })
+                    });
+                </script>

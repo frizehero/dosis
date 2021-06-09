@@ -29,7 +29,7 @@ class Galang_dana2 extends MX_Controller {
 			'namamodule' 	=> "galang_dana2",
 			'namafileview' 	=> "V_galang_dana2_detail",
 			'tampil'		=> $this->M_galang_dana2->tampildetail($id),
-			'getpesan_kesan'		=> $this->M_galang_dana2->getpesan_kesan($id),
+			'getpesan_kesan'		=> $this->M_galang_dana2->getpesan_kesan(),
 		);
 		echo Modules::run('template/tampilBeranda', $data);
 	}
@@ -42,19 +42,8 @@ class Galang_dana2 extends MX_Controller {
 		$data = array(
 			'namamodule' 	=> "galang_dana2",
 			'namafileview' 	=> "V_galang_dana2_tambah",
-			'provinsi'		=> $this->M_galang_dana2->get_all_provinsi(),
+			'provinsi'			=> $this->M_galang_dana2->provinsi(),
 		);
-		$this->load->library('googlemaps');
-		$config=array();
-		$config['center']="37.4419, -122.1419";
-		$config['zoom']=17;
-		$config['map_height']="400px";
-		$this->googlemaps->initialize($config);
-		$marker=array();
-		$marker['position']="37.4419, -122.1419";
-		$this->googlemaps->add_marker($marker);
-		$data['map']=$this->googlemaps->create_map();
-        $this->load->view('V_galang_dana2_tambah',$data);
 		
 		echo Modules::run('template/tampilBeranda', $data);
 	}
