@@ -162,12 +162,12 @@
                                                 No HP/No WA
                                             </div>
                                             <div class="col-md-6" style="padding: 0px 5px 0px 5px;">
-                                                : <?php echo $tampil['telepon_penerima'] ?><?php echo $tampil['whatsapp_penerima'] ?>
+                                                : <?php echo $tampil['telepon_penerima'] ?>/<?php echo $tampil['whatsapp_penerima'] ?>
                                             </div>
                                         </div>
                                     </br>
                                     <hr>
-                                        <a class="trs-btn" href="<?php echo base_url('pembayaran2/tambahview'); ?>" style="padding: 15px 105px 15px 102px; margin-bottom: -100;"> Donasi Sekarang </a>
+                                        <a class="trs-btn" href="<?php echo base_url('galang_dana2/bayarview/'. encrypt_url($tampil['id_galang_dana2'])); ?>" style="padding: 15px 105px 15px 102px; margin-bottom: -100;"> Donasi Sekarang </a>
                                         <p style="margin-right: 240px; margin-top: 20px;"><b>20</b> <i> hari tersisa</i>  </p>
                                         <div class="distance-title"> 
                                             <b>Rp 12.820,000</b> Terkumpul   <span style="padding-left: 120px;">1</span> %

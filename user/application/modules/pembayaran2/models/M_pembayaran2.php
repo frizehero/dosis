@@ -93,11 +93,9 @@ class M_pembayaran2 extends CI_Model {
 
 	function tampilinformasi()
 	{
-
 		$this->db->select('*');
 		$this->db->from('galang_dana2');
 		$query = $this->db->get();
-
 
 		return $query->result();
 	}
