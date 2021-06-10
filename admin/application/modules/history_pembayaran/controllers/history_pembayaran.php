@@ -25,6 +25,7 @@ class History_pembayaran extends MX_Controller {
 			$data = array(
 			'namamodule' 	=> "history_pembayaran",
 			'namafileview' 	=> "V_history_pembayaran",
+			'tampil'		=> $this->M_history_pembayaran->tampil(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 		}
@@ -55,7 +56,7 @@ class History_pembayaran extends MX_Controller {
 		$data = array(
 			'namamodule' 	=> "data_sekolah",
 			'namafileview' 	=> "V_data_sekolah",
-			'tampil'		=> $this->m_data_sekolah->cari(),
+			'tampil'		=> $this->M_history_pembayaran->cari(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}

@@ -19,7 +19,7 @@ class Konfirmasi extends MX_Controller {
 			'namamodule' 	=> "konfirmasi",
 			'namafileview' 	=> "V_konfirmasi",
 			'tampil'		=> $this->M_konfirmasi->tampil(),
-			'tampilpostingan'		=> $this->M_konfirmasi->tampilpostingan(),
+			'tampilpostingan'=> $this->M_konfirmasi->tampilpostingan(),
 			
 		);
 		echo Modules::run('template/tampilCore', $data);

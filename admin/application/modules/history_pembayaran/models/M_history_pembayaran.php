@@ -5,7 +5,11 @@ class M_history_pembayaran extends CI_Model {
 
 	function tampil()
 	{
-		return $this->db->get('sekolah')->result();
+		$this->db->select('*');
+		$this->db->from('pembayaran2');
+		$query = $this->db->get();
+
+		return $query->result();
 	}
 
 	function tambah()

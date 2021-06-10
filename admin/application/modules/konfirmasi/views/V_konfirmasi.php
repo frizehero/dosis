@@ -91,9 +91,10 @@
                                                     <thead>
                                                         <tr>
                                                             <th class="text-center">No.</th>
-                                                            <th>Nama</th>
+                                                            <th  class="text-center">Nama Rekening</th>
+                                                             <th class="text-center">Judul Donasi</th>
                                                             <th class="text-center">Tanggal Transfer</th>
-                                                            <th class="text-center">Jumlah</th>
+                                                            <th class="text-center">Nominal</th>
                                                             <th class="text-center">Nomor Rekening</th>
                                                             <th class="text-center">Bukti Transfer</th>
                                                             <th class="text-center">Bank</th>
@@ -108,17 +109,13 @@
                                                                 <td>
                                                                     <div class="widget-content p-0">
                                                                         <div class="widget-content-wrapper"<?php echo $rowP->nama_rekening; ?>>
-                                                                            <div class="widget-content-left mr-3">
-                                                                                <div class="widget-content-left">
-                                                                                    <img width="40" class="rounded-circle" src="assets/images/avatars/4.jpg" alt="">
-                                                                                </div>
-                                                                            </div>
                                                                             <div class="widget-content-left flex2">
                                                                                 <div class="widget-heading"><?php echo $rowP->nama_rekening; ?></div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </td>
+                                                                 <td class="text-center"><?php echo $rowP->judul_donasi; ?></td>
                                                                 <td class="text-center"><?php echo $rowP->tgl_pembayaran; ?></td>
                                                                 <td class="text-center">Rp.<?php echo $rowP->nominal_donasi; ?></td>
                                                                 <td class="text-center">

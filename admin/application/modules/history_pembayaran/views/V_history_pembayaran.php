@@ -29,316 +29,47 @@
                                                     <thead>
                                                         <tr>
                                                             <th class="text-center">No.</th>
-                                                            <th>Nama</th>
+                                                            <th  class="text-center">Nama Rekening</th>
+                                                            <th class="text-center">Judul Donasi</th>
                                                             <th class="text-center">Tanggal Transfer</th>
-                                                            <th class="text-center">Jumlah</th>
+                                                            <th class="text-center">Nominal</th>
                                                             <th class="text-center">Nomor Rekening</th>
                                                             <th class="text-center">Bukti Transfer</th>
                                                             <th class="text-center">Bank</th>
                                                             <th class="text-center">Status</th>
                                                         </tr>
                                                     </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td class="text-center text-muted">1.</td>
-                                                            <td>
-                                                                <div class="widget-content p-0">
-                                                                    <div class="widget-content-wrapper">
-                                                                        <div class="widget-content-left mr-3">
-                                                                            <div class="widget-content-left">
-                                                                                <img width="40" class="rounded-circle" src="assets/images/avatars/4.jpg" alt="">
+                                                    <?php $no=1; 
+                                                    foreach ($tampil AS $rowP ) { ?>    
+                                                        <tbody>
+                                                            <tr>
+                                                                 <td class="text-center text-muted"><?php echo $no;?></td>
+                                                                 <td>
+                                                                    <div class="widget-content p-0">
+                                                                        <div class="widget-content-wrapper">
+                                                                            <div class="widget-content-left flex2">
+                                                                                <div class="widget-heading"><?php echo $rowP->nama_rekening; ?></div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="widget-content-left flex2">
-                                                                            <div class="widget-heading">John Doe</div>
-                                                                            <div class="widget-subheading opacity-7">pendonasi</div>
-                                                                        </div>
                                                                     </div>
-                                                                </div>
-                                                            </td>
-                                                            <td class="text-center">20 maret 2020</td>
-                                                            <td class="text-center">Rp.20.000,00</td>
-                                                            <td class="text-center">
-                                                                <div class="badge badge-warning">29372819246</div>
-                                                            </td>
-                                                            <td class="text-center">
-                                                                <img width="100" class="rectangle" src="assets/images/bukti-transfer/bukti-transfer-1.jpg" alt="">
-                                                            </td>
-                                                            <td class="text-center">BCA</td>
-                                                            <td class="text-center">
-                                                                <div class="badge badge-pill badge-danger">gagal</div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="text-center text-muted">2.</td>
-                                                            <td>
-                                                                <div class="widget-content p-0">
-                                                                    <div class="widget-content-wrapper">
-                                                                        <div class="widget-content-left mr-3">
-                                                                            <div class="widget-content-left">
-                                                                                <img width="40" class="rounded-circle" src="assets/images/avatars/4.jpg" alt="">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="widget-content-left flex2">
-                                                                            <div class="widget-heading">Maulana</div>
-                                                                            <div class="widget-subheading opacity-7">pendonasi</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td class="text-center">20 Januari 2021</td>
-                                                            <td class="text-center">Rp.218.000,00</td>
-                                                            <td class="text-center">
-                                                                <div class="badge badge-warning">0660928898</div>
-                                                            </td>
-                                                            <td class="text-center">
-                                                                <img width="100" class="rectangle" src="assets/images/bukti-transfer/bukti-transfer-1.jpg" alt="">
-                                                            </td>
-                                                            <td class="text-center">BRI</td>
-                                                            <td class="text-center">
-                                                                <div class="badge badge-pill badge-success">success</div>
-                                                            </td>
-                                                        <tr>
-                                                            <td class="text-center text-muted">3.</td>
-                                                            <td>
-                                                                <div class="widget-content p-0">
-                                                                    <div class="widget-content-wrapper">
-                                                                        <div class="widget-content-left mr-3">
-                                                                            <div class="widget-content-left">
-                                                                                <img width="40" class="rounded-circle" src="assets/images/avatars/4.jpg" alt="">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="widget-content-left flex2">
-                                                                            <div class="widget-heading">Ruben Tillman</div>
-                                                                            <div class="widget-subheading opacity-7">pendonasi</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td class="text-center">7 Desember 2020</td>
-                                                            <td class="text-center">Rp.550.000,00</td>
-                                                            <td class="text-center">
-                                                                <div class="badge badge-warning">0660928898</div>
-                                                            </td>
-                                                            <td class="text-center">
-                                                                <img width="100" class="rectangle" src="assets/images/bukti-transfer/bukti-transfer-1.jpg" alt="">
-                                                            </td>
-                                                            <td class="text-center">Mandiri</td>
-                                                            <td class="text-center">
-                                                                <div class="badge badge-pill badge-success">success</div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="text-center text-muted">4.</td>
-                                                            <td>
-                                                                <div class="widget-content p-0">
-                                                                    <div class="widget-content-wrapper">
-                                                                        <div class="widget-content-left mr-3">
-                                                                            <div class="widget-content-left">
-                                                                                <img width="40" class="rounded-circle" src="assets/images/avatars/4.jpg" alt="">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="widget-content-left flex2">
-                                                                            <div class="widget-heading">John Doe</div>
-                                                                            <div class="widget-subheading opacity-7">pendonasi</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td class="text-center">20 maret 2020</td>
-                                                            <td class="text-center">Rp.20.000,00</td>
-                                                            <td class="text-center">
-                                                                <div class="badge badge-warning">29372819246</div>
-                                                            </td>
-                                                            <td class="text-center">
-                                                                <img width="100" class="rectangle" src="assets/images/bukti-transfer/bukti-transfer-1.jpg" alt="">
-                                                            </td>
-                                                            <td class="text-center">BCA</td>
-                                                            <td class="text-center">
-                                                                <div class="badge badge-pill badge-danger">Gagal</div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="text-center text-muted">5.</td>
-                                                            <td>
-                                                                <div class="widget-content p-0">
-                                                                    <div class="widget-content-wrapper">
-                                                                        <div class="widget-content-left mr-3">
-                                                                            <div class="widget-content-left">
-                                                                                <img width="40" class="rounded-circle" src="assets/images/avatars/4.jpg" alt="">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="widget-content-left flex2">
-                                                                            <div class="widget-heading">John Doe</div>
-                                                                            <div class="widget-subheading opacity-7">pendonasi</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td class="text-center">20 maret 2020</td>
-                                                            <td class="text-center">Rp.20.000,00</td>
-                                                            <td class="text-center">
-                                                                <div class="badge badge-warning">29372819246</div>
-                                                            </td>
-                                                            <td class="text-center">
-                                                                <img width="100" class="rectangle" src="assets/images/bukti-transfer/bukti-transfer-1.jpg" alt="">
-                                                            </td>
-                                                            <td class="text-center">BCA</td>
-                                                            <td class="text-center">
-                                                                <div class="badge badge-pill badge-success">success</div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="text-center text-muted">6.</td>
-                                                            <td>
-                                                                <div class="widget-content p-0">
-                                                                    <div class="widget-content-wrapper">
-                                                                        <div class="widget-content-left mr-3">
-                                                                            <div class="widget-content-left">
-                                                                                <img width="40" class="rounded-circle" src="assets/images/avatars/4.jpg" alt="">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="widget-content-left flex2">
-                                                                            <div class="widget-heading">John Doe</div>
-                                                                            <div class="widget-subheading opacity-7">pendonasi</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td class="text-center">20 maret 2020</td>
-                                                            <td class="text-center">Rp.20.000,00</td>
-                                                            <td class="text-center">
-                                                                <div class="badge badge-warning">29372819246</div>
-                                                            </td>
-                                                            <td class="text-center">
-                                                                <img width="100" class="rectangle" src="assets/images/bukti-transfer/bukti-transfer-1.jpg" alt="">
-                                                            </td>
-                                                            <td class="text-center">Mandiri</td>
-                                                            <td class="text-center">
-                                                                <div class="badge badge-pill badge-success">success</div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="text-center text-muted">7.</td>
-                                                            <td>
-                                                                <div class="widget-content p-0">
-                                                                    <div class="widget-content-wrapper">
-                                                                        <div class="widget-content-left mr-3">
-                                                                            <div class="widget-content-left">
-                                                                                <img width="40" class="rounded-circle" src="assets/images/avatars/4.jpg" alt="">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="widget-content-left flex2">
-                                                                            <div class="widget-heading">John Doe</div>
-                                                                            <div class="widget-subheading opacity-7">pendonasi</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td class="text-center">20 maret 2020</td>
-                                                            <td class="text-center">Rp.20.000,00</td>
-                                                            <td class="text-center">
-                                                                <div class="badge badge-warning">29372819246</div>
-                                                            </td>
-                                                            <td class="text-center">
-                                                                <img width="100" class="rectangle" src="assets/images/bukti-transfer/bukti-transfer-1.jpg" alt="">
-                                                            </td>
-                                                            <td class="text-center">BCA</td>
-                                                            <td class="text-center">
-                                                                <div class="badge badge-pill badge-success">success</div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="text-center text-muted">8.</td>
-                                                            <td>
-                                                                <div class="widget-content p-0">
-                                                                    <div class="widget-content-wrapper">
-                                                                        <div class="widget-content-left mr-3">
-                                                                            <div class="widget-content-left">
-                                                                                <img width="40" class="rounded-circle" src="assets/images/avatars/4.jpg" alt="">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="widget-content-left flex2">
-                                                                            <div class="widget-heading">John Doe</div>
-                                                                            <div class="widget-subheading opacity-7">pendonasi</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td class="text-center">20 maret 2020</td>
-                                                            <td class="text-center">Rp.20.000,00</td>
-                                                            <td class="text-center">
-                                                                <div class="badge badge-warning">29372819246</div>
-                                                            </td>
-                                                            <td class="text-center">
-                                                                <img width="100" class="rectangle" src="assets/images/bukti-transfer/bukti-transfer-1.jpg" alt="">
-                                                            </td>
-                                                            <td class="text-center">BCA</td>
-                                                            <td class="text-center">
-                                                                <div class="badge badge-pill badge-success">success</div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="text-center text-muted">9.</td>
-                                                            <td>
-                                                                <div class="widget-content p-0">
-                                                                    <div class="widget-content-wrapper">
-                                                                        <div class="widget-content-left mr-3">
-                                                                            <div class="widget-content-left">
-                                                                                <img width="40" class="rounded-circle" src="assets/images/avatars/4.jpg" alt="">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="widget-content-left flex2">
-                                                                            <div class="widget-heading">John Doe</div>
-                                                                            <div class="widget-subheading opacity-7">pendonasi</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td class="text-center">20 maret 2020</td>
-                                                            <td class="text-center">Rp.20.000,00</td>
-                                                            <td class="text-center">
-                                                                <div class="badge badge-warning">29372819246</div>
-                                                            </td>
-                                                            <td class="text-center">
-                                                                <img width="100" class="rectangle" src="assets/images/bukti-transfer/bukti-transfer-1.jpg" alt="">
-                                                            </td>
-                                                            <td class="text-center">BRI</td>
-                                                            <td class="text-center">
-                                                                <div class="badge badge-pill badge-success">success</div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="text-center text-muted">10.</td>
-                                                            <td>
-                                                                <div class="widget-content p-0">
-                                                                    <div class="widget-content-wrapper">
-                                                                        <div class="widget-content-left mr-3">
-                                                                            <div class="widget-content-left">
-                                                                                <img width="40" class="rounded-circle" src="assets/images/avatars/4.jpg" alt="">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="widget-content-left flex2">
-                                                                            <div class="widget-heading">John Doe</div>
-                                                                            <div class="widget-subheading opacity-7">pendonasi</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td class="text-center">20 maret 2020</td>
-                                                            <td class="text-center">Rp.20.000,00</td>
-                                                            <td class="text-center">
-                                                                <div class="badge badge-warning">29372819246</div>
-                                                            </td>
-                                                            <td class="text-center">
-                                                                <img width="100" class="rectangle" src="assets/images/bukti-transfer/bukti-transfer-1.jpg" alt="">
-                                                            </td>
-                                                            <td class="text-center">BCA</td>
-                                                            <td class="text-center">
-                                                                <div class="badge badge-pill badge-success">success</div>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
+                                                                </td>
+                                                                 <td class="text-center"><?php echo $rowP->judul_donasi; ?></td>
+                                                                <td class="text-center"><?php echo $rowP->tgl_pembayaran; ?></td>
+                                                                <td class="text-center"><?php echo $rowP->nominal_donasi; ?></td>
+                                                                <td class="text-center">
+                                                                    <div class="badge badge-warning"><?php echo $rowP->no_rekening; ?></div>
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <img width="100" src="http://localhost/dosis/user/images/pembayaran/<?php echo $rowP->bukti_pembayaran;?>" alt="">
+                                                                </td>
+                                                                <td class="text-center"><?php echo $rowP->pilih_bank; ?></td>
+                                                                <td class="text-center">
+                                                                    <div class="badge badge-pill badge-danger">gagal</div>
+                                                                </td>
+                                                            </tr>
+                                    
+                                                        </tbody>
+                                                    <?php $no++;} ?>
                                                 </table>
                                             </div>
                                         </div>
