@@ -26,14 +26,15 @@ class Edit_profil extends MX_Controller {
 		// halaman tambah
 	function tambahview()
 	{
-			$data['path'] = base_url('assets');
-			$this->load->view('V_edit_profil_tambah', $data);
-			$data = array(
-				'namamodule' 	=> "edit_profil",
-				'namafileview' 	=> "V_edit_profil_tambah",
-				'provinsi'			=> $this->M_edit_profil->provinsi(),
-			);
-			echo Modules::run('template/tampilCore', $data);
+		$data['path'] = base_url('assets');
+		$this->load->view('V_edit_profil_tambah', $data);
+		$data = array(
+			'namamodule' 	=> "edit_profil",
+			'namafileview' 	=> "V_edit_profil_tambah",
+			'provinsi'			=> $this->M_edit_profil->provinsi(),
+		);
+		
+		echo Modules::run('template/tampilCore', $data);
 	}
 
 	function add_ajax_kab($id_prov)
@@ -66,7 +67,6 @@ class Edit_profil extends MX_Controller {
     	}
     	echo $data;
 	}
-
 		// halaman edit
 	function editview()
 	{

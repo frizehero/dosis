@@ -79,7 +79,7 @@
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">Provinsi</label>
                                         <div class="col-sm-9">
-                                            <input name="provinsi" value="<?php echo $res->provinsi?>" type="text"class="form-control" disabled>
+                                            <input name="wilayah_provinsi" value="<?php echo $res->wilayah_provinsi?>" type="text"class="form-control" disabled>
                                         </div>
                                     </div>
                                 </div> 
@@ -87,7 +87,7 @@
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">KOTA/KAB.</label>
                                         <div class="col-sm-9">
-                                            <input name="kota" value="<?php echo $res->kota?>" type="text"class="form-control" disabled>
+                                            <input name="wilayah_kabupaten" value="<?php echo $res->wilayah_kabupaten?>" type="text"class="form-control" disabled>
                                         </div>
                                     </div>
                                 </div>
@@ -97,7 +97,7 @@
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">Kecamatan</label>
                                         <div class="col-sm-9">
-                                            <input name="kecamatan" value="<?php echo $res->kecamatan?>" type="text"class="form-control" disabled> 
+                                            <input name="wilayah_kecamatan" value="<?php echo $res->wilayah_kecamatan?>" type="text"class="form-control" disabled> 
                                         </div>
                                     </div>
                                 </div>
@@ -105,7 +105,7 @@
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">Kel./Desa</label>
                                         <div class="col-sm-9">
-                                            <input name="desa" value="<?php echo $res->desa?>" type="text" class="form-control" disabled>
+                                            <input name="wilayah_desa" value="<?php echo $res->wilayah_desa?>" type="text" class="form-control" disabled>
                                         </div>
                                     </div>
                                 </div>

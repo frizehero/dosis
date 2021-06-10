@@ -8,6 +8,10 @@ class M_edit_profil extends CI_Model {
 		$this->db->select('*');
 		$this->db->from('edit_profil');
 		$query = $this->db->get();
+		$this->db->join('wilayah_provinsi', 'edit_profil.wilayah_provinsi = wilayah_provinsi.id');
+		$this->db->join('wilayah_kabupaten', 'edit_profil.wilayah_kabupaten = wilayah_kabupaten.id');
+		$this->db->join('wilayah_kecamatan', 'edit_profil.wilayah_kecamatan = wilayah_kecamatan.id');
+		$this->db->join('wilayah_desa', 'edit_profil.wilayah_desa = wilayah_desa.id');
 
 
 		return $query->result();
@@ -42,10 +46,10 @@ class M_edit_profil extends CI_Model {
 			$username		= $this->input->post('username');
 			$email     = $this->input->post('email');
 			$jenis_kelamin     = $this->input->post('jenis_kelamin');
-			$provinsi     = $this->input->post('provinsi');
-			$kota     = $this->input->post('kota');
-			$kecamatan     = $this->input->post('kecamatan');
-			$desa     = $this->input->post('desa');
+			$wilayah_provinsi     = $this->input->post('wilayah_provinsi');
+			$wilayah_kabupaten     = $this->input->post('wilayah_kabupaten');
+			$wilayah_kecamatan     = $this->input->post('wilayah_kecamatan');
+			$wilayah_desa     = $this->input->post('wilayah_desa');
 			$alamat     = $this->input->post('alamat');
 			$kode_pos     = $this->input->post('kode_pos');
 			$no_wa	    = $this->input->post('no_wa');
@@ -77,10 +81,10 @@ class M_edit_profil extends CI_Model {
 					'username'		=> $username,
 					'email'		=> $email,
 					'jenis_kelamin'		=> $jenis_kelamin,
-					'provinsi'		=> $provinsi,
-					'kota'		=> $kota,
-					'kecamatan'		=> $kecamatan,
-					'desa'		=> $desa,
+					'wilayah_provinsi'		=> $wilayah_provinsi,
+					'wilayah_kabupaten'		=> $wilayah_kabupaten,
+					'wilayah_kecamatan'		=> $wilayah_kecamatan,
+					'wilayah_desa'		=> $wilayah_desa,
 					'alamat'		=> $alamat,
 					'kode_pos'		=> $kode_pos,
 					'no_wa'		=> $no_wa,
@@ -103,10 +107,10 @@ class M_edit_profil extends CI_Model {
 					'username'		=> $username,
 					'email'		=> $email,
 					'jenis_kelamin'		=> $jenis_kelamin,
-					'provinsi'		=> $provinsi,
-					'kota'		=> $kota,
-					'kecamatan'		=> $kecamatan,
-					'desa'		=> $desa,
+					'wilayah_provinsi'		=> $wilayah_provinsi,
+					'wilayah_kabupaten'		=> $wilayah_kabupaten,
+					'wilayah_kecamatan'		=> $wilayah_kecamatan,
+					'wilayah_desa'		=> $wilayah_desa,
 					'alamat'		=> $alamat,
 					'kode_pos'		=> $kode_pos,
 					'no_wa'		=> $no_wa,

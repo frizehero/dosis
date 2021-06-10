@@ -1,26 +1,3 @@
-<script src="<?php echo $path; ?>/jquery.min.js"></script>
-<script>
-    $(document).ready(function(){
-    $("#provinsi").change(function (){
-                    var url = "<?php echo site_url('edit_profil/add_ajax_kab');?>/"+$(this).val();
-                    $('#kabupaten').load(url);
-                    return false;
-                })
-    
-    $("#kabupaten").change(function (){
-                    var url = "<?php echo site_url('edit_profil/add_ajax_kec');?>/"+$(this).val();
-                    $('#kecamatan').load(url);
-                    return false;
-                })
-    
-    $("#kecamatan").change(function (){
-                    var url = "<?php echo site_url('edit_profil/add_ajax_des');?>/"+$(this).val();
-                    $('#desa').load(url);
-                    return false;
-                })
-            });
-</script>
-
 <?php tampilnotif()?>
 <form action="<?php echo base_url('edit_profil/tambah') ?>" method="POST" enctype="multipart/form-data">
 
@@ -30,6 +7,9 @@
                             <font face= "Times New Roman" color="blue" size="3">Edit Profil</font>
                             <hr>
                         </div>
+
+                        <a href="<?php echo base_url('edit_profil'); ?>" class="mb-2 mr-2 btn btn-shadow btn-success" style="margin-left: 900px; margin-top: -45px;">Kembali</a>
+
                         <div class="content-right ">
                         </br>
                             <center><img width="100" class="rounded-circle" src="assets/images/avatars/14.jpg" alt=""></center>
@@ -86,15 +66,14 @@
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">Provinsi</label>
                                         <div class="col-sm-9">
-
                                         <select name="prov" class="form-control" id="provinsi">
                                             <option>Pilih Provinsi</option>
-                                                <?php 
-                                                    foreach($provinsi as $prov)
-                                                    {
-                                                        echo '<option value="'.$prov->id.'">'.$prov->nama.'</option>';
-                                                    }
-                                                ?>
+                                            <?php 
+                                                foreach($provinsi as $prov)
+                                                {
+                                                    echo '<option value="'.$prov->id.'">'.$prov->nama.'</option>';
+                                                }
+                                            ?>
                                         </select>
                                         </div>
                                     </div>
@@ -103,10 +82,9 @@
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">KOTA/KAB.</label>
                                         <div class="col-sm-9">
-                                            
                                         <select name="kab" class="form-control" id="kabupaten">
-                                                                    <option value=''>Pilih Kota / Kab</option>
-                                                                </select>
+                                            <option value=''>Pilih Kota / Kab</option>
+                                        </select>
                                         </div>
                                     </div>
                                 </div>
@@ -116,10 +94,9 @@
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">Kecamatan</label>
                                         <div class="col-sm-9">
-
                                         <select name="kec" class="form-control" id="kecamatan">
-                                                                    <option>Pilih Kecamatan</option>
-                                                                </select>
+                                            <option>Pilih Kecamatan</option>
+                                        </select>
                                         </div>
                                     </div>
                                 </div>
@@ -127,9 +104,8 @@
                                     <div class="position-relative row form-group">
                                         <label for="exampleEmail" class="col-sm-3 col-form-label">Kel./Desa</label>
                                         <div class="col-sm-9">
-
                                         <select name="des" id="desa" class="form-control" >
-                                            <option>Select Desa</option>
+                                            <option>Pilih Desa</option>
                                         </select>
                                         </div>
                                     </div>
@@ -207,3 +183,25 @@
                         </div>
                     </div>
                 </div>
+                <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+                <script>
+                    $(document).ready(function(){
+                        $("#provinsi").change(function (){
+                            var url = "<?php echo site_url('edit_profil/add_ajax_kab');?>/"+$(this).val();
+                            $('#kabupaten').load(url);
+                            return false;
+                        })
+                        
+                        $("#kabupaten").change(function (){
+                            var url = "<?php echo site_url('edit_profil/add_ajax_kec');?>/"+$(this).val();
+                            $('#kecamatan').load(url);
+                            return false;
+                        })
+            
+                        $("#kecamatan").change(function (){
+                            var url = "<?php echo site_url('edit_profil/add_ajax_des');?>/"+$(this).val();
+                            $('#desa').load(url);
+                            return false;
+                        })
+                    });
+                </script>
