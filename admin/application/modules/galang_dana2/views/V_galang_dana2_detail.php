@@ -35,8 +35,8 @@
                                                 </div>
                                                 </br>
                                                 <div> 
-                                                    <img width="300" height="200" class="dashboard-sparkline-carousel-4-pop" src="<?php echo base_url() ?>assets/images/galangdana/<?php echo $tampil['foto2_penerima'] ?>" name="foto2"alt=""> 
-                                                    <img width="300" height="200" class="dashboard-sparkline-carousel-4-pop" src="<?php echo base_url() ?>assets/images/galangdana/<?php echo $tampil['foto3_penerima'] ?>" alt="">
+                                                    <img width="300" height="200" class="dashboard-sparkline-carousel-4-pop" src="<?php echo base_url() ?>assets/images/galangdana/<?php echo $tampil['foto2_penerima'] ?>" name="foto2" alt=""> 
+                                                    <img width="300" height="200" class="dashboard-sparkline-carousel-4-pop" src="<?php echo base_url() ?>assets/images/galangdana/<?php echo $tampil['foto3_penerima'] ?>" name="foto3" alt="">
                                                     &nbsp;
                                                     
                                                 </div>
@@ -223,7 +223,7 @@
                                 justo porta, quis
                                 blandit velit bibendum. Donec eu leo dignissim, condimentum libero eu, dapibus odio. Etiam sodales
                                 venenatis posuere. Etiam condimentum nec velit eu scelerisque. Donec cursus tellus est, at hendrerit
-                                nulla commodo eu.
+                                nulla commoido eu.
                                 Praesent euismod pellentesque tempor.
                             </p>
                             <p>

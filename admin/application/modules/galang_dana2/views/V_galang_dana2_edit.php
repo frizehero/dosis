@@ -64,11 +64,9 @@
                                                                     <label for="exampleEmail11" class="">Status</label>
                                                                     <select name="status_pembuka" value="<?php echo $tampil['status_pembuka']?>" class="multiselect-dropdown form-control">
 
-                                                                        <?php foreach($getstatus as $res) { ?>
-
-                                                                            <option value="<?php echo $res->id_status_pembuka?>"><?php echo $res->jenis_status_pembuka?></option>
-
-                                                                        <?php } ?>
+                                                                        <option value="Siswa">Siswa</option>
+                                                                        <option value="Guru">Guru</option>
+                                                                        <option value="Orang Lain">Orang Lain</option>
 
                                                                     </select>
                                                                 </div>
@@ -86,13 +84,10 @@
                                                                 <div class="position-relative form-group">
                                                                     <label for="exampleEmail11" class="">Jenjang</label>
                                                                     <select name="jenjang_pembuka"  value="<?php echo $tampil['jenjang_pembuka']?>" class="multiselect-dropdown form-control">
-
-                                                                        <?php foreach($getjenjang_pembuka as $res) { ?>
-
-                                                                            <option value="<?php echo $res->id_jenjang_pembuka?>"><?php echo $res->name?></option>
-
-                                                                        <?php } ?>
-
+                                                                        <option value="SD">SD</option>
+                                                                        <option value="SMP">SMP</option>
+                                                                        <option value="SMA">SMA</option>
+                                                                        <option value="SMK">SMK</option>
 
                                                                     </select>
                                                                 </div>
@@ -333,12 +328,14 @@
                                                                                         <label for="exampleEmail11" class="">Kategori Donasi</label>
                                                                                         <select name="jenjang_penerima" class="multiselect-dropdown form-control">
 
-                                                                                            <?php foreach($getjenjang_penerima as $res) { ?>
-
-                                                                                                <option value="<?php echo $res->id_jenjang_penerima?>"><?php echo $res->name?></option>
-
-                                                                                            <?php } ?>
-
+                                                                                            <option value="Siswa putus sekolah">Siswa putus sekolah</option>
+                                                                                            <option value="Siswa tidak mampu">Siswa tidak mampu</option>
+                                                                                            <option value="Kecelakaan / sakit">Kecelakaan / sakit</option>
+                                                                                            <option value="Pembangunan">Pembangunan</option>
+                                                                                            <option value="Kebakaran">Kebakaran</option>
+                                                                                            <option value="Banjir">Banjir</option>
+                                                                                            <option value="Tanah Longsor">Tanah Longsor</option>
+                                                                                            <option value="Lainnya">Lainnya</option>
                                                                                         </select>
                                                                                 </div>
                                                                             </div>
@@ -346,13 +343,10 @@
                                                                                 <div class="position-relative form-group">
                                                                                         <label for="exampleEmail11" class="">Batas Waktu Penggalangan Dana</label>
                                                                                         <select name="jenjang_penerima" class="multiselect-dropdown form-control">
-
-                                                                                            <?php foreach($getjenjang_penerima as $res) { ?>
-
-                                                                                                <option value="<?php echo $res->id_jenjang_penerima?>"><?php echo $res->name?></option>
-
-                                                                                            <?php } ?>
-
+                                                                                            <option value="Banjir">15 hari</option>
+                                                                                            <option value="Banjir">30 hari</option>
+                                                                                            <option value="Banjir">60 hari</option>
+                                                                                            <option value="Banjir">90 hari</option>
                                                                                         </select>
                                                                                 </div>
                                                                             </div>
@@ -447,7 +441,7 @@
                                                                                     <div class="card mb-3 bg-primary widget-content">
                                                                                         <div class="widget-content-wrapper">
                                                                                             <div class="widget-content-left">
-                                                                                                <input name="foto" value="<?php echo $tampil['foto1_penerima']?>" id="exampleFile" type="file" class="form-control-file">
+                                                                                                <input name="foto1" value="<?php echo $tampil['foto1_penerima']?>" id="exampleFile" type="file" class="form-control-file">
                                                                                                 <small class="form-text text-light">Gunakan File format PNG/JPG Max 10 MB</small>
                                                                                             </div>
                                                                                         </div>
@@ -463,7 +457,7 @@
                                                                                     <div class="card mb-3 bg-primary widget-content">
                                                                                         <div class="widget-content-wrapper">
                                                                                             <div class="widget-content-left">
-                                                                                                <input name="foto" value="<?php echo $tampil['foto2_penerima']?>" id="exampleFile" type="file" class="form-control-file">
+                                                                                                <input name="foto2" value="<?php echo $tampil['foto2_penerima']?>" id="exampleFile" type="file" class="form-control-file">
                                                                                                 <small class="form-text text-light">Gunakan File format PNG/JPG Max 10 MB</small>
                                                                                             </div>
                                                                                         </div>
@@ -476,7 +470,7 @@
                                                                                     <div class="card mb-3 bg-primary widget-content">
                                                                                         <div class="widget-content-wrapper">
                                                                                             <div class="widget-content-left">
-                                                                                                <input name="foto" value="<?php echo $tampil['foto3_penerima']?>" id="exampleFile" type="file" class="form-control-file">
+                                                                                                <input name="foto3" value="<?php echo $tampil['foto3_penerima']?>" id="exampleFile" type="file" class="form-control-file">
                                                                                                 <small class="form-text text-light">Gunakan File format PNG/JPG Max 10 MB</small>
                                                                                             </div>
                                                                                         </div>

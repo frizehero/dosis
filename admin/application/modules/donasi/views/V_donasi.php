@@ -41,10 +41,12 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>        
-                   
+                        </div>
+
+                <?php tampilnotif()?>
                     <div class="tabs-animation">
                         <div class="row">
+                            
                             <div class="col-lg-12 col-xl-12">
                                 <div class="mt-3 row">
                                     <div class="col-sm-12 col-md-4">

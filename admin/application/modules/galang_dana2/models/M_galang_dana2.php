@@ -60,6 +60,7 @@ class M_galang_dana2 extends CI_Model {
 		$foto3_penerima 			= $this->input->post('foto3_penerima');
 
 
+
 		$this->load->library('upload');
 		$nmfile = "file_".time();
 		$config['upload_path']		= 'assets/images/galangdana/';
@@ -71,15 +72,13 @@ class M_galang_dana2 extends CI_Model {
 		
 		$this->upload->initialize($config);
 		
-		if($_FILES['foto1']['name'])
+		if($_FILES['foto1']['foto2']['foto3'])
         {
-            if ($this->upload->do_upload('foto1'))
+            if ($this->upload->do_upload('foto1')('foto2')('foto3'))
             {
 				$gbr = $this->upload->data();
 
-
 		
-
 				$data = array(
 					'nama_pembuka'				=> $nama_pembuka,
 					'sekolah_pembuka'			=> $sekolah_pembuka,

@@ -51,7 +51,7 @@
                         <div class="card-hover profile-responsive card-border border-success mb-3 card">
                         <div class="dropdown-menu-header">
                             <div class="wrapper rounded"></div>
-                            <img src="<?php echo base_url() ?>assets/images/galangdana/<?php echo $rowP->foto1_penerima;?>" name="foto" style="width: 314px; height:210px;">   
+                            <img src="<?php echo base_url() ?>assets/images/galangdana/<?php echo $rowP->foto1_penerima;?>" name="foto1" style="width: 314px; height:210px;">   
                         </div>
                         <div class="p-0 card-body">
                             

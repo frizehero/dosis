@@ -7,8 +7,8 @@ class Galang_dana2 extends MX_Controller {
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('M_galang_dana2');
-		 $this->load->model('login/m_session');
+		$this->load->model('M_galang_dana2');
+		$this->load->model('login/m_session');
 	}
 
 	
