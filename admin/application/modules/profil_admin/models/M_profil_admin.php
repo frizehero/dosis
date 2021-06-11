@@ -5,7 +5,11 @@ class M_profil_admin extends CI_Model {
 
 	function tampil()
 	{
-		return $this->db->get('sekolah')->result();
+		$this->db->select('*');
+		$this->db->from('edit_profil');
+		$query = $this->db->get();
+
+		return $query->result();
 	}
 
 	function tambah()

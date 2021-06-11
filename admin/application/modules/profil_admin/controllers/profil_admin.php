@@ -25,6 +25,7 @@ class Profil_admin extends MX_Controller {
 			$data = array(
 			'namamodule' 	=> "profil_admin",
 			'namafileview' 	=> "V_profil_admin",
+			'tampil'		=> $this->M_profil_admin->tampil(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 		}
@@ -55,7 +56,7 @@ class Profil_admin extends MX_Controller {
 		$data = array(
 			'namamodule' 	=> "data_sekolah",
 			'namafileview' 	=> "V_data_sekolah",
-			'tampil'		=> $this->m_data_sekolah->cari(),
+			'tampil'		=> $this->M_profil_admin->cari(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}

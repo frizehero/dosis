@@ -27,7 +27,6 @@ class Edit_profil extends MX_Controller {
 	function tambahview()
 	{
 		$data['path'] = base_url('assets');
-		$this->load->view('V_edit_profil_tambah', $data);
 		$data = array(
 			'namamodule' 	=> "edit_profil",
 			'namafileview' 	=> "V_edit_profil_tambah",
@@ -67,15 +66,18 @@ class Edit_profil extends MX_Controller {
     	}
     	echo $data;
 	}
-		// halaman edit
-	function editview()
-	{
-		$data = array(
-			'namamodule' 	=> "edit_profil",
-			'namafileview' 	=> "V_edit_profil_edit",
+
+		// Halaman Edit
+		function editview($id)
+		{
+	
+			$data = array(
+				'namamodule' 	=> "edit_profil2",
+				'namafileview' 	=> "V_edit_profil_edit",
+				'tampil'		=> $this->M_edit_profil->tampiledit($id),
 			);
-		echo Modules::run('template/tampilCore', $data);
-	}
+			echo Modules::run('template/tampilCore', $data);
+		}
 
 	function tambah()
 	{

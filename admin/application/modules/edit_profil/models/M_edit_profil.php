@@ -8,29 +8,32 @@ class M_edit_profil extends CI_Model {
 		$this->db->select('*');
 		$this->db->from('edit_profil');
 		$query = $this->db->get();
-		$this->db->join('wilayah_provinsi', 'edit_profil.wilayah_provinsi = wilayah_provinsi.id');
-		$this->db->join('wilayah_kabupaten', 'edit_profil.wilayah_kabupaten = wilayah_kabupaten.id');
-		$this->db->join('wilayah_kecamatan', 'edit_profil.wilayah_kecamatan = wilayah_kecamatan.id');
-		$this->db->join('wilayah_desa', 'edit_profil.wilayah_desa = wilayah_desa.id');
 
 
 		return $query->result();
 	}
 
-	function tampiledit()
+	function tampiledit($id)
 	{
-		$idnya=decrypt_url();
-
-		$this->db->select('*');
-		$this->db->from('edit_profil');
+		$idnya=decrypt_url($id);
 		$this->db->where('id_edit_profil',$idnya);
-		$query = $this->db->get();
-
-
-		
-    	return $query->row_array();
+    	return $this->db->get('edit_profil')->row_array();
 	}
 
+	function tampilprovinsi($id)
+	{
+	
+		$this->db->select('*,wilayah_provinsi.nama AS provinsi, wilayah_kabupaten.nama AS kota_kab, wilayah_kecamatan.nama AS kecamatan, wilayah_desa.nama AS kelurahan');
+		$this->db->from('edit_profil');
+		$this->db->join('wilayah_provinsi','edit_profil.provinsi_sekolah = wilayah_provinsi.id');
+		$this->db->join('wilayah_kabupaten','edit_profil.kota_kab_sekolah = wilayah_kabupaten.id');
+		$this->db->join('wilayah_kecamatan','edit_profil.kec_sekolah = wilayah_kecamatan.id');
+		$this->db->join('wilayah_desa','edit_profil.kel_sekolah = wilayah_desa.id');
+		$this->db->where('id_edit_profil',$id);
+		$query = $this->db->get();
+    	return $query->result();
+	}
+	
 	function provinsi()
 	{	
 		
@@ -46,10 +49,10 @@ class M_edit_profil extends CI_Model {
 			$username		= $this->input->post('username');
 			$email     = $this->input->post('email');
 			$jenis_kelamin     = $this->input->post('jenis_kelamin');
-			$wilayah_provinsi     = $this->input->post('wilayah_provinsi');
-			$wilayah_kabupaten     = $this->input->post('wilayah_kabupaten');
-			$wilayah_kecamatan     = $this->input->post('wilayah_kecamatan');
-			$wilayah_desa     = $this->input->post('wilayah_desa');
+			$provinsi     = $this->input->post('provinsi');
+			$kabupaten     = $this->input->post('kabupaten');
+			$kecamatan     = $this->input->post('kecamatan');
+			$desa     = $this->input->post('desa');
 			$alamat     = $this->input->post('alamat');
 			$kode_pos     = $this->input->post('kode_pos');
 			$no_wa	    = $this->input->post('no_wa');
@@ -81,10 +84,10 @@ class M_edit_profil extends CI_Model {
 					'username'		=> $username,
 					'email'		=> $email,
 					'jenis_kelamin'		=> $jenis_kelamin,
-					'wilayah_provinsi'		=> $wilayah_provinsi,
-					'wilayah_kabupaten'		=> $wilayah_kabupaten,
-					'wilayah_kecamatan'		=> $wilayah_kecamatan,
-					'wilayah_desa'		=> $wilayah_desa,
+					'provinsi'		=> $provinsi,
+					'kabupaten'		=> $kabupaten,
+					'kecamatan'		=> $kecamatan,
+					'desa'		=> $desa,
 					'alamat'		=> $alamat,
 					'kode_pos'		=> $kode_pos,
 					'no_wa'		=> $no_wa,
@@ -107,10 +110,10 @@ class M_edit_profil extends CI_Model {
 					'username'		=> $username,
 					'email'		=> $email,
 					'jenis_kelamin'		=> $jenis_kelamin,
-					'wilayah_provinsi'		=> $wilayah_provinsi,
-					'wilayah_kabupaten'		=> $wilayah_kabupaten,
-					'wilayah_kecamatan'		=> $wilayah_kecamatan,
-					'wilayah_desa'		=> $wilayah_desa,
+					'provinsi'		=> $provinsi,
+					'kabupaten'		=> $kabupaten,
+					'kecamatan'		=> $kecamatan,
+					'desa'		=> $desa,
 					'alamat'		=> $alamat,
 					'kode_pos'		=> $kode_pos,
 					'no_wa'		=> $no_wa,
@@ -130,13 +133,13 @@ class M_edit_profil extends CI_Model {
 	{
 		$id = $this->input->post('id');
 
-			$foto_profil		= $this->input->post('foto_profil');
+		$foto_profil		= $this->input->post('foto_profil');
 			$nama_lengkap		= $this->input->post('nama_lengkap');
 			$username		= $this->input->post('username');
 			$email     = $this->input->post('email');
 			$jenis_kelamin     = $this->input->post('jenis_kelamin');
 			$provinsi     = $this->input->post('provinsi');
-			$kota     = $this->input->post('kota');
+			$kabupaten     = $this->input->post('kabupaten');
 			$kecamatan     = $this->input->post('kecamatan');
 			$desa     = $this->input->post('desa');
 			$alamat     = $this->input->post('alamat');
@@ -172,7 +175,7 @@ class M_edit_profil extends CI_Model {
 					'email'		=> $email,
 					'jenis_kelamin'		=> $jenis_kelamin,
 					'provinsi'		=> $provinsi,
-					'kota'		=> $kota,
+					'kabupaten'		=> $kabupaten,
 					'kecamatan'		=> $kecamatan,
 					'desa'		=> $desa,
 					'alamat'		=> $alamat,
@@ -196,7 +199,7 @@ class M_edit_profil extends CI_Model {
 					'email'		=> $email,
 					'jenis_kelamin'		=> $jenis_kelamin,
 					'provinsi'		=> $provinsi,
-					'kota'		=> $kota,
+					'kabupaten'		=> $kabupaten,
 					'kecamatan'		=> $kecamatan,
 					'desa'		=> $desa,
 					'alamat'		=> $alamat,
@@ -207,7 +210,7 @@ class M_edit_profil extends CI_Model {
 					'facebook'		=> $facebook,
 					'twitter'		=> $twitter,
 				);
-				$this->db->where('id_inv_peralatan',$id)->update('inv_peralatan', $data);
+				$this->db->where('id_edit_profil',$id)->update('edit_profil', $data);
 				$this->session->set_flashdata('msg', 'suksesedit');
 			}
 	}
