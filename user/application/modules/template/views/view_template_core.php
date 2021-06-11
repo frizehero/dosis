@@ -175,8 +175,8 @@ $menu = $uri_segments[3];
                                             <i class="fa fa-th-list"></i> Donasi Saya
                                             </a>
                                         </li>
-                                    <?php if ($menu=="galang_dana"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                        <a href="<?php echo base_url('galang_dana'); ?>">
+                                    <?php if ($menu=="donasi_saya"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                        <a href="<?php echo base_url('donasi_saya'); ?>">
                                             <i class="fa fa-calendar-check-o"></i> Galang Dana Saya
                                             </a>
                                         </li>

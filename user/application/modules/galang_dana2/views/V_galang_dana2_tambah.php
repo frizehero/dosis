@@ -116,7 +116,7 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="map-container">
-                                            <div id="singleMap" data-latitude="40.7427837" data-longitude="-73.11445617675781" style="position: relative; overflow: hidden;"><div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);"><div class="gm-err-container"><div class="gm-err-content"><div class="gm-err-icon"><img src="http://maps.gstatic.com/mapfiles/api-3/images/icon_error.png" draggable="false" style="user-select: none;"></div><div class="gm-err-title">Ups! Ada sesuatu yang salah.</div><div class="gm-err-message">Halaman ini tidak memuat Google Maps dengan benar. Lihat konsol JavaScript untuk mengetahui detail teknisnya.</div></div></div></div></div>
+                                            <div id="googleMap" style="width:100%;height:380px;"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -259,8 +259,8 @@
                                         <input name="no_rekening_penerima" placeholder="" type="text"class="form-control">  
                                     </div>
                                     <div class="col-md-6">
-                                        <label><b>Batas Waktu Penggalangan Dana</b><i class="fa fa-calendar-check-o"></i>  </label>
-                                        <select name="batas_waktu_penerima" data-placeholder="Status" class="chosen-select" style="display: none;">
+                                        <label><b>Batas Waktu Penggalangan Dana</b></label>
+                                        <select name="batas_waktu_penerima" data-placeholder="Status" class="chos-select" style="display: none;">
                                             <option value="15 Hari">15 Hari</option>
                                             <option value="30 Hari">30 Hari</option>
                                             <option value="60 Hari">60 Hari</option>
@@ -272,13 +272,13 @@
                                     <div class="col-md-6">
                                         <label><b>Kategori</b></label>
                                         <select name="kategori_penerima" class="chosen-select" style="display: none;">
-                                            <option>Siswa Putus Sekolah</option>
-                                            <option>Siswa Tidak Mampu</option>
-                                            <option>Kecelakaan/Sakit</option>
-                                            <option>Pembangunan</option>
-                                            <option>Kebakaran</option>
-                                            <option>Banjir</option>
-                                            <option>Tanah Longsor</option>
+                                            <option value="Siswa Putus Sekolah">Siswa Putus Sekolah</option>
+                                            <option value="Siswa Tidak Mampu">Siswa Tidak Mampu</option>
+                                            <option value="Kecelakaan/Sakit">Kecelakaan/Sakit</option>
+                                            <option value="Pembangunan">Pembangunan</option>
+                                            <option value="Kebakaran">Kebakaran</option>
+                                            <option value="Banjir">Banjir</option>
+                                            <option value="Tanah Longsor">Tanah Longsor</option>
                                         </select>
                                     </div> 
                                     <div class="col-md-6">
@@ -346,6 +346,22 @@
                         </div>
                     </div>
                 </div>
+                <script src="http://maps.googleapis.com/maps/api/js"></script>
+                <script>
+                    // fungsi initialize untuk mempersiapkan peta
+                    function initialize() {
+                    var propertiPeta = {
+                        center:new google.maps.LatLng(-8.5830695,116.3202515),
+                        zoom:9,
+                        mapTypeId:google.maps.MapTypeId.ROADMAP
+                    };
+                    
+                    var peta = new google.maps.Map(document.getElementById("googleMap"), propertiPeta);
+                    }
+
+                    // event jendela di-load  
+                    google.maps.event.addDomListener(window, 'load', initialize);
+                </script>
                 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
                 <script>
                     $(document).ready(function(){

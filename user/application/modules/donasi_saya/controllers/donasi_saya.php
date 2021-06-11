@@ -7,7 +7,7 @@ class Donasi_saya extends MX_Controller {
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('m_donasi_saya');
+		 $this->load->model('M_donasi_saya');
 		 $this->load->model('login/m_session');
 	}
 
@@ -15,33 +15,13 @@ class Donasi_saya extends MX_Controller {
 	// index
 	function index()
 	{
-
-		if ( empty( $this->session->userdata('session_id') ) )
-		{
-			redirect('login');
-
-		} else {
-
-			$data = array(
+		$data = array(
 			'namamodule' 	=> "donasi_saya",
 			'namafileview' 	=> "V_donasi_saya",
+			'tampil'		=> $this->M_donasi_saya->tampil(),
+			
 		);
 		echo Modules::run('template/tampilCore', $data);
-		}
-
-
-	}
-
-	function tambah()
-	{
-		$this->m_data_sekolah->tambah();
-		redirect('data_sekolah');
-	}
-
-	function edit()
-	{
-		$this->m_data_sekolah->edit();
-		redirect('data_sekolah');
 	}
 
 	function hapus($id)
